@@ -62,8 +62,16 @@ $(TDSZIP):
 	mv $(TDSDIR)/$(TDSZIP) .
 	rm -rf $(TDSDIR)
 
+.PHONY: doc test doctest ctancheck clean docclean testclean
+
+doc:
+	@cd doc && make doc
+
 test:
-	cd test && make test
+	@cd test && make test
+
+doctest:
+	@cd doc && make test
 
 ctancheck:
 	@echo "CTAN upload info:"
@@ -80,7 +88,12 @@ ctancheck:
 	@echo "\tbiblatex-sbl copyright: $(BIBLATEX-SBL-COPYRIGHT)"
 	@echo "\tsbl-paper.sty copyright: $(SBL-PAPER-COPYRIGHT)"
 
-clean:
+clean: testclean docclean
 	@rm -rf $(TDSZIP) $(CTANZIP) $(CTANDIR) $(TDSDIR)
 	@echo "Cleaning CTAN and TDS zip files"
+
+docclean:
+	@cd doc && make clean
+
+testclean:
 	@cd test && make clean

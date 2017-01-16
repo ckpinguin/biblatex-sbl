@@ -14,6 +14,8 @@ PDFLATEX-TEST-FILES=standard-entries-minimal.txt \
 
 LUALATEX-TEST-FILES=sblhs-tests.txt
 
+.PHONY: test clean
+
 test: $(PDFLATEX-TEST-FILES) $(LUALATEX-TEST-FILES)
 
 $(PDFLATEX-TEST-FILES): .FORCE
@@ -27,6 +29,7 @@ $(PDFLATEX-TEST-FILES): .FORCE
 	@$(PDFLATEX) $(basename $@) > /dev/null
 	@pdftotext $(addprefix $(basename $@), .pdf)
 	@$(CMP) $@ $(addprefix $(basename $@), .ref.txt) && /bin/echo -e $(TEST-PASS) || /bin/echo -e $(TEST-FAIL)
+	@rm $@
 
 $(LUALATEX-TEST-FILES): .FORCE
 	@echo -n "Testing $(basename $@) ..."
@@ -39,6 +42,7 @@ $(LUALATEX-TEST-FILES): .FORCE
 	@$(LUALATEX) $(basename $@) > /dev/null
 	@pdftotext $(addprefix $(basename $@), .pdf)
 	@$(CMP) $@ $(addprefix $(basename $@), .ref.txt) && /bin/echo -e $(TEST-PASS) || /bin/echo -e $(TEST-FAIL)
+	@rm $@
 
 clean:
 	@echo -n "Cleaning test temporary files... "
@@ -48,6 +52,3 @@ clean:
 	@rm -f $(addprefix biblatex-examples, $(TEMP-EXTENSIONS))
 	@rm -f $(addprefix sblhs-tests, $(TEMP-EXTENSIONS))
 	@echo "Done."
-
-.FORCE:
-
