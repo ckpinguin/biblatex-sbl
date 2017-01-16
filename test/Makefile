@@ -18,7 +18,7 @@ LUALATEX-TEST-FILES=sblhs-tests.txt
 
 test: $(PDFLATEX-TEST-FILES) $(LUALATEX-TEST-FILES)
 
-$(PDFLATEX-TEST-FILES): .FORCE
+$(PDFLATEX-TEST-FILES):
 	@echo -n "Testing $(basename $@) ..."
 	@rm -f $(addprefix $(basename $@), $(TEMP-EXTENSIONS))
 	@$(PDFLATEX) $(basename $@) > /dev/null
@@ -31,7 +31,7 @@ $(PDFLATEX-TEST-FILES): .FORCE
 	@$(CMP) $@ $(addprefix $(basename $@), .ref.txt) && /bin/echo -e $(TEST-PASS) || /bin/echo -e $(TEST-FAIL)
 	@rm $@
 
-$(LUALATEX-TEST-FILES): .FORCE
+$(LUALATEX-TEST-FILES):
 	@echo -n "Testing $(basename $@) ..."
 	@rm -f $(addprefix $(basename $@), $(TEMP-EXTENSIONS))
 	@$(LUALATEX) $(basename $@) > /dev/null
