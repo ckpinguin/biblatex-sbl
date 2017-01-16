@@ -1,0 +1,684 @@
+\documentclass[a4paper]{article}
+
+\PassOptionsToPackage{obeyspaces}{url}
+
+\usepackage[margin=1cm,left=2cm,right=2cm]{geometry}
+\usepackage{fontspec}
+\usepackage{xparse}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{imakeidx}
+\makeindex[title=Author Index,intoc,options=-q]
+\usepackage[style=sbl,indexing=cite,backend=biber]{biblatex}
+\usepackage{hyperref}
+\addbibresource{biblatex-sbl.bib}
+
+\pagestyle{empty}
+\frenchspacing
+\raggedright
+\parindent 0em
+
+\DeclareBibliographyCategory{ignore}
+\addtocategory{ignore}{pritchard:1969}
+
+\setromanfont{Linux Libertine O}
+
+\newcommand{\textgreek}[1]{{\greekfont #1}}
+
+\newfontfamily\greekfont[Script=Greek,Contextuals=Alternate,Ligatures=Required,
+  Scale=MatchLowercase]{SBL BibLit}
+
+\newcommand*{\refbibnamedash}{%
+  \leavevmode\raise 0.6ex\hbox to 3em{\hrulefill}.\space}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titleformat{\subparagraph}
+{\normalfont\small\scshape}{\thesubparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{2ex plus 1ex minus 0.2ex}{0.5ex}
+\titleformat{\subparagraph}{\normalfont\small\tt}{}{1em}{}
+\titlespacing*{\subparagraph}{0pt}{0pt}{0pt}
+
+\setcounter{secnumdepth}{4} % how many sectioning levels to assign numbers to
+
+\setlength{\parskip}{1ex plus 0.5ex minus 0.25ex}
+
+\hyphenation{nash-ville deu-te-ro-ca-no-ni-cal}
+\renewcommand{\slash}{/\penalty\exhyphenpenalty\hspace{0pt}}
+
+\ExplSyntaxOn
+\NewDocumentCommand \sblrefsamplecite { s m m m o o m }
+  {
+    \IfNoValueTF { #5 }
+      {
+        \IfNoValueT { #6 }
+          {
+            \IfBooleanF { #1 }
+              { }
+            \hspace*{\bibindent}#4\csuse{#3}{#7}
+          }
+      }
+      {
+        \IfNoValueTF { #6 }
+          {
+            \IfBooleanF { #1 }
+              { }
+            \hspace*{\bibindent}#4\csuse{#3}[#5]{#7}
+          }
+          {
+            \IfBooleanF { #1 }
+              { }
+            \hspace*{\bibindent}#4\csuse{#3}[#5][#6]{#7}
+          }
+      }
+  }
+\NewDocumentCommand \samplecite { s m o o m }
+  {
+    \IfBooleanTF { #1 }
+      {
+        \sblrefsamplecite*{autocite}{cite}{#2.~}[#3][#4]{#5}.\par
+      }
+      {
+        \sblrefsamplecite{autocite}{cite}{#2.~}[#3][#4]{#5}.\par
+      }
+  }
+\NewDocumentCommand \sampleparencite { s o o m }
+  {
+    {\setlength{\bibindent}{0pt}%
+    \IfBooleanTF { #1 }
+      {
+        \sblrefsamplecite*{parencite}{parencite}{}[#2][#3]{#4}\par
+      }
+      {
+        \sblrefsamplecite{parencite}{parencite}{}[#2][#3]{#4}\par
+      }
+    }
+  }
+\NewDocumentCommand \samplebib { s m }
+  {
+    \IfBooleanF { #1 }
+      { }
+    \hangindent\bibindent\bibentrycite{#2}.\par
+  }
+\NewDocumentCommand \samplebiblist { s m }
+  {
+    \IfBooleanF { #1 }
+      { }
+    \biblistcite{#2}
+  }
+\ExplSyntaxOff
+
+\begin{document}
+
+\setcounter{section}{5}
+
+\section{Notes and Bibliographies}
+
+\setcounter{subsection}{1}
+\subsection{General Examples: Books}
+
+\subsubsection{A Book by a Single Author}
+
+\samplecite{15}[127]{talbert:1992}
+\samplecite{19}[22]{talbert:1992}
+\samplebib{talbert:1992}
+
+\subsubsection{A Book by Two or Three Authors}
+
+\samplecite{4}[237]{robinson+koester:1971}
+\samplecite{12}[23]{robinson+koester:1971}
+\samplebib{robinson+koester:1971}
+
+\subsubsection{A Book by More than Three Authors}
+
+\samplecite{7}[53]{scott+etal:1993}
+\samplecite{9}[42]{scott+etal:1993}
+\samplebib{scott+etal:1993}
+
+\subsubsection{A Translated Volume}
+
+\samplecite{14}[28]{egger:1996}
+\samplecite{18}[291]{egger:1996}
+\samplebib{egger:1996}
+
+\subsubsection{The Full History of a Translated Volume}
+
+\samplecite{3}[296]{wellhausen:1957}
+\samplebib{wellhausen:1957}
+
+\subsubsection{A Book with One Editor}
+
+\samplecite{5}[35]{tigay:1985}
+\samplecite{9}[38]{tigay:1985}
+\samplebib{tigay:1985}
+
+\subsubsection{A Book with Two or Three Editors}
+
+\samplecite{44}[xii]{kaltner+mckenzie:2002}
+\samplecite{47}[viii]{kaltner+mckenzie:2002}
+\samplebib{kaltner+mckenzie:2002}
+\samplebiblist{kaltner+mckenzie:2002}
+
+\subsubsection{A Book with Four or More Editors}
+
+\samplecite{4}[10]{oates+etal:2001}
+\samplebib{oates+etal:2001}
+\samplebiblist{oates+etal:2001}
+
+\subsubsection{A Book with Both Author and Editor}
+
+\samplecite{45}[20]{schillebeeckx:1986}
+\samplebib{schillebeeckx:1986}
+
+\subsubsection{A Book with Author, Editor, and Translator}
+
+\samplecite{3}[40]{blass+debrunner:1982}
+\samplebib{blass+debrunner:1982}
+
+\subsubsection{A Title in a Modern Work Citing a Nonroman Alphabet}
+
+\samplecite{34}{irvine:2014}
+\samplebiblist{irvine:2014}
+
+\subsubsection{An Article in and Edited Volume}
+
+\samplecite{3}{attridge:1986}
+\samplecite{6}{attridge:1986}
+\samplebib{attridge:1986}
+
+\subsubsection{An Article in a Festschrift}
+
+\samplecite{8}{vanseters:1995}
+\samplecite{17}[222]{vanseters:1995}
+\samplebib{vanseters:1995}
+
+\subsubsection{An Introduction, Preface, or Foreword Written by Someone Other
+Than the Author}
+
+\samplecite{2}[xi-xii]{boers:1996}
+\samplecite{6}[xi-xx]{boers:1996}
+\samplebib{boers:1996}
+
+\subsubsection{Multiple Publishers for a Single Book}
+
+\samplebib{gerhardsson:1961}
+\samplebiblist{gerhardsson:1961}
+
+\subsubsection{A Revised Edition}
+
+\samplecite{87}[xxi]{pritchard:1969}
+\samplebib{pritchard:1969}
+
+\samplecite{56}[81]{blenkinsopp:1996}
+\samplebib{blenkinsopp:1996}
+
+\subsubsection{A Recent Reprint Title}
+
+\samplecite{5}[35]{vanseters:1997}
+\samplebib{vanseters:1997}
+
+\subsubsection{A Reprint Title in the Public Domain}
+
+\samplecite{5}[55]{deissmann:1995}
+\samplebib{deissmann:1995}
+
+\subsubsection{A Forthcoming Book}
+
+\samplecite{9}{harrison+welborn:forthcoming}
+\samplecite{12}[201]{harrison+welborn:forthcoming}
+\samplebib{harrison+welborn:forthcoming}
+\samplebiblist{harrison+welborn:forthcoming}
+
+\subsubsection{A Multivolume Work}
+
+\samplecite{5}{harnack:1896-1905}
+\samplecite{9}[2:126]{harnack:1896-1905}
+\samplebib{harnack:1896-1905}
+
+\subsubsection{A Titled Volume in a Multivolume, Edited Work}
+
+\samplecite{5}[25]{winter+clarke:1993}
+\samplecite{16}[25]{winter+clarke:1993}
+\samplebib{winter+clarke:1993}
+
+\subsubsection{A Chapter within a Multivolume Work}
+
+\samplecite{24}{mason:1996}
+\samplecite{28}[224]{mason:1996}
+\samplebib{mason:1996}
+
+\subsubsection{A Chapter within a Titled Volume in a Multivolume Work}
+
+\samplecite{66}{peterson:1993}
+\samplecite{78}[92]{peterson:1993}
+\samplebib{peterson:1993}
+
+\subsubsection{A Work in a Series}
+
+\samplecite{12}[122]{hofius:1989}
+\samplecite{14}[124]{hofius:1989}
+\samplebib{hofius:1989}
+\samplebiblist{hofius:1989}
+
+\samplecite{23}[123-127]{jeremias:1967}
+\samplecite{32}[126]{jeremias:1967}
+\samplebib{jeremias:1967}
+\samplebiblist{jeremias:1967}
+
+\subsubsection{Electronic Book}
+
+\samplecite{14}[ch.~1.3]{reventlow:2009}
+\samplecite{18}[ch.~1.3]{reventlow:2009}
+\samplebib{reventlow:2009}
+
+\samplecite{3}[ch.~3, \mkbibquote{Introducing David}]{wright:2014}
+\samplecite{21}[ch.~5, \mkbibquote{Evidence from Qumran}]{wright:2014}
+\samplebib{wright:2014}
+
+\samplecite{53}{killebrew+steiner:2014}
+\samplecite{55}{killebrew+steiner:2014}
+\samplebib{killebrew+steiner:2014}
+
+\samplecite{29}{kaufman:1974}
+\samplecite{32}[123]{kaufman:1974}
+\samplebib{kaufman:1974}
+\samplebiblist{kaufman:1974}
+
+\subsection{General Examples: Journal Articles, Reviews, and Dissertations}
+
+\subsubsection{A Journal Article}
+
+\samplecite{7}{leyerle:1993}
+\samplecite{23}[161]{leyerle:1993}
+\samplebib{leyerle:1993}
+\samplebiblist{leyerle:1993}
+
+\subsubsection{A Journal Article with Multiple Page Locations and Volumes}
+
+\samplecite{21}{wildberger:1965}
+\samplebib{wildberger:1965}
+\samplebiblist{wildberger:1965}
+
+\samplecite{24}{wellhausen:1876-1877}
+\samplebib{wellhausen:1876-1877}
+\samplebiblist{wellhausen:1876-1877}
+
+\subsubsection{A Journal Article Republished in a Collected Volume}
+
+\samplecite{20}[20]{freedman:1977}
+\samplebib{freedman:1977}
+\samplebiblist{freedman:1977}
+
+\samplecite{20}[14]{freedman:1980}
+\samplebib{freedman:1980}
+
+\subsubsection{A Book Review}
+
+\samplecite{8}{teeple:1966}
+\samplecite{21}[369]{teeple:1966}
+\samplebib{teeple:1966}
+\samplebiblist{teeple:1966}
+
+\samplecite{9}{pelikan:1992}
+\samplebib{pelikan:1992}
+
+\samplecite{7}{petersen:1988}
+\samplecite{14}[8]{petersen:1988}
+\samplebib{petersen:1988}
+\samplebiblist{petersen:1988}
+
+\subsubsection{An Unpublished Dissertation or Thesis}
+
+\samplecite{21}[22-44]{klosinski:1988}
+\samplecite{26}[23]{klosinski:1988}
+\samplebib{klosinski:1988}
+
+\subsubsection{An Article in an Encyclopaedia or a Dictionary}
+
+\paragraph{An Article in a Multivolume Encyclopaedia or Dictionary}
+
+\samplecite{33}{stendahl:1962}
+\samplecite{36}[419]{stendahl:1962}
+\samplebib{stendahl:1962}
+\toggletrue{fullbibrefs}
+\samplebib{stendahl:1962}
+\togglefalse{fullbibrefs}
+\samplebiblist{IDB}
+
+\paragraph{An Article in a Single-Volume Encyclopaedia or Dictionary}
+
+\samplecite{33}{olson:2003}
+\samplecite{36}[612]{olson:2003}
+\samplebib{olson:2003}
+\samplebiblist{DOTP}
+
+\subsubsection{An Article in a Lexicon or Theological Dictionary}
+
+\samplecite{3}{dahn+liefeld:see+vision+eye}
+\samplebib{NIDNTT}
+\samplebiblist{NIDNTT}
+
+\samplecite{6}{beyer:diakoneo+diakonia+ktl}
+\samplecite{25}[83]{beyer:diakoneo+diakonia+ktl}
+\samplebib{TDNT}
+\samplebiblist{TDNT}
+
+\samplecite{7}{spicq:atakteo+ataktos+ataktos}
+\samplebib{TLNT}
+\samplebiblist{TLNT}
+
+\samplecite{143}{spicq:amoibe}
+\samplecite{147}[95]{spicq:amoibe}
+\samplebib{TLNT}
+\samplebiblist{TLNT}
+
+\samplecite{23}{beyer:diakoneo}
+\samplebib{TDNT}
+\samplebiblist{TDNT}
+
+\samplecite{26}{dahn:horao}
+\samplecite{29}[511]{dahn:horao}
+\samplebib{NIDNTT}
+\samplebiblist{NIDNTT}
+
+\subsubsection{A Paper Presented at a Professional Society}
+
+\samplecite{31}[13-17]{niditch:1994}
+\samplecite{35}[14]{niditch:1994}
+\samplebib{niditch:1994}
+\samplebiblist{SBL}
+
+\subsubsection{An Article in a Magazine}
+
+\samplecite{8}{saldarini:1998}
+\samplecite{27}[28]{saldarini:1998}
+\samplebib{saldarini:1998}
+\samplebiblist{saldarini:1998}
+
+\subsubsection{An Electronic Journal Article}
+
+\samplecite{43}{springer:2014}
+\samplecite{45}[158]{springer:2014}
+\samplebib{springer:2014}
+\samplebiblist{springer:2014}
+
+\samplecite{8}{truehart:1996}
+\samplecite{12}[37]{truehart:1996}
+\samplebib{truehart:1996}
+
+\samplecite{31}{kirk:2007}
+\samplecite{35}[186]{kirk:2007}
+\samplebib{kirk:2007}
+\samplebiblist{kirk:2007}
+
+\subsection{Special Examples}
+
+\subsubsection{Texts from the Ancient Near East}
+
+\paragraph{Citing \textsl{COS}}
+
+\samplecite{7}{greathymnaten}
+\samplecite{11}{greathymnaten}
+\samplebib{hallo:1997}
+\samplebiblist{COS}
+
+\paragraph{Citing Other Texts}
+
+\samplecite{16}[319]{suppiluliumas}
+\samplebib{ANET}
+\samplebiblist{ANET}
+
+\samplecite{5}{erraandishum}
+\samplebib{dalley:1991}
+
+\samplecite{5}{erraandishum:foster}
+\samplebib{foster:1993}
+
+\samplecite{34}{doomedprince}
+\samplecite{36}[200-203]{doomedprince}
+\samplebib{lichtheim:1976}
+\samplebiblist{AEL}
+
+\samplecite{12}[(§3 \mkbibparens{A I 11--17})26]{disappearanceofsungod}
+\samplebib{hoffner:1990}
+\samplebiblist{hoffner:1990}
+
+\samplecite{32}[(obv.\ lines 10--17)]{ashurinscription}
+\samplecite{34}[(obv.\ lines 10--17)]{ashurinscription}
+\samplebib{RIMA}
+\samplebiblist{series-RIMA}
+
+\samplecite{33}[(lines 3--4)125]{esarhaddonchronicle}
+\samplecite{34}[(lines 3--4)125]{esarhaddonchronicle}
+\samplebib{ABC}
+\samplebiblist{ABC}
+\samplebiblist{series-ABC}
+
+\samplecite{45}[1.3]{ARM1}
+\samplebib{ARM1}
+\samplebiblist{series-ARM1}
+
+\samplecite{45}[1.3]{ARMT1}
+\samplebib{ARMT1}
+\samplebiblist{series-ARMT1}
+
+\subsubsection{Loeb Classical Library (Greek and Latin)}
+
+\sampleparencite[2.233-235]{josephus:ant}
+\samplecite{1}[2.233-235]{josephus:ant}
+\samplebib{josephus}
+\samplebiblist{josephus}
+
+\samplecite{4}[15.18-19]{tacitus:ann}
+\samplebib{tacitus}
+\samplebiblist{tacitus}
+
+\sampleparencite[2.233-235]{josephus:ant:thackery}
+\samplecite{5}[2.233-235]{josephus:ant:thackery}
+\samplebib{josephus}
+\samplebiblist{josephus}
+
+\samplecite{6}[15.18-19]{tacitus:ann:jackson}
+\samplebib{tacitus}
+\samplebiblist{tacitus}
+
+\samplecite{14}{josephus:ant1-19}
+\samplebib{josephus}
+\samplebiblist{josephus}
+
+\subsubsection{Papyri, Ostraca, and Epigraphica}
+
+\paragraph{Papyri and Ostraca in General}
+
+\sampleparencite[59003]{p.cair.zen.}
+\samplecite{22}[59003]{p.cair.zen.}
+\samplebiblist{p.cair.zen.}
+
+\samplecite{22}[(59003)1:96]{p.cair.zen.:hunt+edgar}
+\samplecite{22}[(59003)§31]{p.cair.zen.:hunt+edgar}
+\samplebib{hunt+edgar:1932}
+\samplebiblist{hunt+edgar:1932}
+\samplebiblist{p.cair.zen.:hunt+edgar}
+
+\paragraph{Epigraphica}
+
+\paragraph{Greek Magical Papyri}
+
+\sampleparencite[III. 1-164]{PGM}
+\samplecite{22}[III. 1-164]{PGM}
+\samplebiblist{PGM}
+
+\samplecite{22}[(III. 1-164)]{PGM:betz}
+\samplebib{betz:1996}
+\samplebiblist{PGM:betz}
+
+\subsubsection{Ancient Epistles and Homilies}
+
+\sampleparencite[10]{heraclitus:epistle1}
+\samplecite{34}[10]{heraclitus:epistle1}
+
+\samplecite{36}[10]{heraclitus:epistle1:worley}
+\samplebib{heraclitus:epistle1:worley}
+If \texttt{malherbe:1977} is referenced \texttt{microssrefs} times or more
+then:\par
+\samplebib{heraclitus:epistle1:worley}
+\samplebib{malherbe:1977}
+\samplebiblist{malherbe:1977}
+
+\subsubsection{\emph{ANF} and \emph{NPNF}, First and Second Series}
+
+\samplecite{14}[(1.3)8:223]{clementinehomilies}
+\samplebib{ANF}
+\samplebiblist{ANF:abbreviation}
+
+\samplecite{44}[(28.3.5)252]{augustine:letters}
+\samplebib{augustine:letters}
+\samplebiblist{NPNF1:abbreviation}
+
+\subsubsection{J.-P. Migne's Patrologia Latina and Patrologia Graeca}
+
+\samplecite{6}[(4)12c]{gregory:orationestheologicae}
+\samplebib{PG}
+\samplebib{PL}
+\samplebiblist{PG}
+\samplebiblist{PL}
+
+\subsubsection{Strack-Billerbeck, \emph{Kommentar zum Neuen Testament}}
+
+\samplecite{3}[See the discussion of \textgreek{ἐκρατοῦντο} in][2:271]{Str-B}
+\samplebib{Str-B}
+\samplebiblist{Str-B}
+
+\subsubsection{\emph{Aufstieg und Niedergang der römischen Welt (ANRW)}}
+
+\samplecite{76}{anderson:pepaideumenos}
+\samplecite{79}[86]{anderson:pepaideumenos}
+\samplebib{anderson:pepaideumenos}
+\samplebib{ANRW}
+\samplebiblist{ANRW}
+
+\subsubsection{Bible Commentaries}
+
+\samplecite{6}[223]{hooker:1991}
+\samplebib{hooker:1991}
+\samplebiblist{hooker:1991}
+
+\paragraph{Articles and Notes in Study Bibles}
+
+\samplecite{3}[1096]{petersen:2006}
+\samplecite{5}[1096]{petersen:2006}
+\samplebib{petersen:2006}
+
+\paragraph{Single-Volume Commentaries on the Entire Bible}
+
+\samplecite{5}{partain:1995}
+\samplecite{8}[175]{partain:1995}
+\samplebib{partain:1995}
+
+\subsubsection{Multivolume Commentaries}
+
+\paragraph{Multivolume Commentaries on a Single Biblical Book by One Author}
+
+\samplecite{4}[3:127]{dahood:1965-1970}
+\samplecite{7}[2:121]{dahood:1965-1970}
+\samplebib{dahood:1965-1970}
+\samplebiblist{dahood:1965-1970}
+
+\samplecite{78}[44]{dahood:1965}
+\samplecite{79}[78]{dahood:1965}
+\samplecite{82}[374]{dahood:1968}
+\samplebib{dahood:1965}
+\bgroup
+\renewbibmacro*{dashcheck}[2]{%
+  \usebibmacro{cbx:dashcheck}{#1}{#1}}
+\samplebib{dahood:1968}
+\samplebiblist{dahood:1965}
+\egroup
+
+\paragraph{Multivolume Commentaries for the Entire Bible by Multiple Authors}
+
+\samplecite{1}[577]{miller:2001}
+\samplebib{miller:2001}
+\toggletrue{fullbibrefs}
+\samplebib{miller:2001}
+\togglefalse{fullbibrefs}
+\samplebiblist{NIB}
+
+\subsubsection{SBL Seminar Papers}
+
+\samplecite{33}{crenshaw:2001}
+\samplebib{crenshaw:2001}
+\samplebiblist{crenshaw:2001}
+
+\subsubsection{A CD-ROM Reference (with a Corresponding Print Edition)}
+
+Books on CD-ROM should be cited according to the print edition. It is not
+necessary to indicate the medium in the citation.
+
+\subsubsection{Text Editions Published Online with No Print Counterpart}
+
+\samplecite{2}{wilhelm:2013}
+\samplecite{4}{wilhelm:2013}
+\samplebib{wilhelm:2013}
+
+\subsubsection{Online Database}
+
+\samplecite{37}{cobb:figurines}
+\samplebib{cobb:figurines}
+
+\samplecite{15}{caraher:2013}
+\samplecite{17}{caraher:2013}
+\samplebib{caraher:2013}
+
+\subsubsection{Websites and Blogs}
+
+\samplecite{10}{100cuneiform}
+\samplebib{100cuneiform}
+
+\samplecite{3}{goodacre:2014}
+
+\section{Other Examples}
+
+\subsection{BDAG, BDB, BDF}
+
+\samplecite{1}[35]{BDAG}
+\samplebib{BDAG}
+\samplebiblist{BDAG}
+
+\samplecite{2}[432]{BDB}
+\samplebib{BDB}
+\samplebiblist{BDB:abbreviation}
+
+\samplecite{3}[§441]{BDF}
+\samplebib{BDF}
+\samplebiblist{BDF}
+
+\subsection{\emph{HALOT, TLOT}}
+
+\samplecite{4}[2:223]{HALOT}
+\samplebib{HALOT}
+\samplebiblist{HALOT}
+
+\samplecite{5}[1:24]{TLOT}
+\samplebib{TLOT}
+\samplebiblist{TLOT}
+
+\subsection{\emph{SBLHS}}
+
+\samplecite{1}[§6.2.1]{SBLHS}
+\samplebib{SBLHS}
+\samplebiblist{SBLHS}
+
+\clearpage
+
+\printbiblist[heading=biblistintoc]{abbreviations}
+
+\clearpage
+
+\printbibliography[heading=bibintoc,notcategory=ignore]
+
+\clearpage
+
+\printindex
+
+\end{document}

@@ -1,0 +1,1091 @@
+\documentclass{article}
+
+\usepackage{filecontents}
+\usepackage[accessdate,isbn,style=sbl,backend=biber]{biblatex}
+\usepackage[margin=1cm,left=2cm,right=2cm]{geometry}
+\pagestyle{empty}
+\frenchspacing
+\raggedright
+\parindent 0em
+\usepackage{hyperref}
+
+\begin{filecontents}{\jobname.bib}
+@article{article,
+  author = {Author},
+  title = {Title},
+  journaltitle = {JournalTitle},
+  date = {2016-01-02},
+  translator = {Translator},
+  annotator = {Annotator},
+  commentator = {Commentator},
+  subtitle = {Subtitle},
+  titleaddon = {TitleAddon},
+  editor = {Editor},
+  editora = {EditorA},
+  editorb = {EditorB},
+  editorc = {EditorC},
+  journalsubtitle = {JournalSubtitle},
+  issuetitle = {IssueTitle},
+  issuesubtitle = {IssueSubTitle},
+  language = {langfrench},
+  origlanguage = {german},
+  series = {2},
+  volume = {1},
+  number = {2},
+  eid = {123456},
+  issue = {Spring},
+  pages = {1-2},
+  version = {1.1},
+  note = {Note},
+  issn = {0317-8471},
+  addendum = {Addendum},
+  pubstate = {Pubstate},
+  doi = {10.1000/182},
+  eprint = {Eprint},
+  eprintclass = {EprintClass},
+  eprinttype = {EprintType},
+  url = {http://www.example.com/},
+  urldate = {2016-02-03}
+}
+
+@book{book,
+  author = {Author},
+  title = {Title},
+  date = {2016-01-02},
+  editor = {Editor},
+  editora = {Editora},
+  editorb = {Editorb},
+  editorc = {Editorc},
+  translator = {Translator},
+  annotator = {Annotator},
+  commentator = {Commentator},
+  introduction = {Introducer},
+  foreword = {Foreward},
+  afterword = {Afterward},
+  subtitle = {SubTitle},
+  titleaddon = {TitleAddon},
+  maintitle = {MainTitle},
+  mainsubtitle = {MainSubTitle},
+  maintitleaddon = {MainTitleAddon},
+  language = {langfrench},
+  origlanguage = {german},
+  volume = {1},
+  part = {4},
+  edition = {2},
+  volumes = {3},
+  series = {Series},
+  number = {1},
+  note = {Note},
+  publisher = {Publisher},
+  location = {Location},
+  isbn = {0321173856},
+  chapter = {7},
+  pages = {1-2},
+  pagetotal = {5}, % not supported
+  addendum = {Addendum},
+  pubstate = {PubState},
+  doi = {10.1000/182},
+  eprint = {Eprint},
+  eprintclass = {EprintClass},
+  eprinttype = {EprintType},
+  url = {http://www.example.com/},
+  urldate = {2016-02-03}
+}
+
+@mvbook{mvbook,
+  author = {Author},
+  title = {Title},
+  date = {2016-01-02},
+  editor = {Editor},
+  editora = {Editora},
+  editorb = {Editorb},
+  editorc = {Editorc},
+  translator = {Translator},
+  annotator = {Annotator},
+  commentator = {Commentator},
+  introduction = {Introducer},
+  foreword = {Foreword},
+  afterword = {Afterword},
+  subtitle = {Subtitle},
+  titleaddon = {TitleAddon},
+  language = {langfrench},
+  origlanguage = {german},
+  edition = {2},
+  volumes = {3},
+  series = {Series},
+  number = {2},
+  note = {Note},
+  publisher = {Publisher},
+  location = {Location},
+  isbn = {0321173856},
+  pagetotal = {5}, % not supported
+  addendum = {Addendum},
+  pubstate = {Pubstate},
+  doi = {10.1000/182},
+  eprint = {Eprint},
+  eprintclass = {EprintClass},
+  eprinttype = {EprintType},
+  url = {http://www.example.com},
+  urldate = {2016-03-04}
+}
+
+@inbook{inbook,
+  author = {Author},
+  title = {Title},
+  booktitle = {BookTitle},
+  date = {2016-01-02},
+  bookauthor = {BookAuthor},
+  editor = {Editor},
+  editora = {Editora},
+  editorb = {Editorb},
+  editorc = {Editorc},
+  translator = {Translator},
+  annotator = {Annotator},
+  commentator = {Commentator},
+  introduction = {Introducer},
+  foreword = {Foreword},
+  afterword = {Afterword},
+  subtitle = {SubTitle},
+  titleaddon = {TitleAddon},
+  maintitle = {MainTitle},
+  mainsubtitle = {MainSubtitle},
+  maintitleaddon = {MaintitleAddon},
+  booksubtitle = {BookSubTitle},
+  booktitleaddon = {BookTitleAddon},
+  language = {langfrench},
+  origlanguage = {german},
+  volume = {2},
+  part = {3},
+  edition = {4},
+  volumes = {5},
+  series = {Series},
+  number = {6},
+  note = {Note},
+  publisher = {Publisher},
+  location = {Location},
+  isbn = {0321173856},
+  chapter = {7},
+  pages = {1-5},
+  addendum = {Addendum},
+  pubstate = {Pubstate},
+  doi = {10.1000/182},
+  eprint = {Eprint},
+  eprintclass = {EprintClass},
+  eprinttype = {EprintType},
+  url = {http://www.example.com},
+  urldate = {2016-02-03}
+}
+
+@bookinbook{bookinbook,
+  author = {Author},
+  title = {Title},
+  booktitle = {BookTitle},
+  date = {2016-01-02},
+  bookauthor = {BookAuthor},
+  editor = {Editor},
+  editora = {Editora},
+  editorb = {Editorb},
+  editorc = {Editorc},
+  translator = {Translator},
+  annotator = {Annotator},
+  commentator = {Commentator},
+  introduction = {Introducer},
+  foreword = {Foreword},
+  afterword = {Afterword},
+  subtitle = {SubTitle},
+  titleaddon = {TitleAddon},
+  maintitle = {MainTitle},
+  mainsubtitle = {MainSubtitle},
+  maintitleaddon = {MaintitleAddon},
+  booksubtitle = {BookSubTitle},
+  booktitleaddon = {BookTitleAddon},
+  language = {langfrench},
+  origlanguage = {german},
+  volume = {2},
+  part = {3},
+  edition = {4},
+  volumes = {5},
+  series = {Series},
+  number = {6},
+  note = {Note},
+  publisher = {Publisher},
+  location = {Location},
+  isbn = {0321173856},
+  chapter = {7},
+  pages = {1-5},
+  addendum = {Addendum},
+  pubstate = {Pubstate},
+  doi = {10.1000/182},
+  eprint = {Eprint},
+  eprintclass = {EprintClass},
+  eprinttype = {EprintType},
+  url = {http://www.example.com},
+  urldate = {2016-02-03}
+}
+
+@suppbook{suppbook,
+  author = {Author},
+  title = {Title},
+  booktitle = {BookTitle},
+  date = {2016-01-02},
+  bookauthor = {BookAuthor},
+  editor = {Editor},
+  editora = {Editora},
+  editorb = {Editorb},
+  editorc = {Editorc},
+  translator = {Translator},
+  annotator = {Annotator},
+  commentator = {Commentator},
+  introduction = {Introducer},
+  foreword = {Foreword},
+  afterword = {Afterword},
+  subtitle = {SubTitle},
+  titleaddon = {TitleAddon},
+  maintitle = {MainTitle},
+  mainsubtitle = {MainSubtitle},
+  maintitleaddon = {MaintitleAddon},
+  booksubtitle = {BookSubTitle},
+  booktitleaddon = {BookTitleAddon},
+  language = {langfrench},
+  origlanguage = {german},
+  volume = {2},
+  part = {3},
+  edition = {4},
+  volumes = {5},
+  series = {Series},
+  number = {6},
+  note = {Note},
+  publisher = {Publisher},
+  location = {Location},
+  isbn = {0321173856},
+  chapter = {1},
+  pages = {1-5},
+  addendum = {Addendum},
+  pubstate = {Pubstate},
+  doi = {10.1000/182},
+  eprint = {Eprint},
+  eprintclass = {EprintClass},
+  eprinttype = {EprintType},
+  url = {http://www.example.com},
+  urldate = {2016-02-03}
+}
+
+@booklet{booklet,
+  author = {Author},
+  editor = {Editor},
+  title = {Title},
+  date = {2016-01-02},
+  subtitle = {SubTitle},
+  titleaddon = {TitleAddon},
+  language = {langfrench},
+  howpublished = {HowPublished},
+  type = {Type},
+  note = {Note},
+  location = {Location},
+  chapter = {2},
+  pages = {5-10},
+  pagetotal = {6}, % not supported
+  addendum = {Addendum},
+  pubstate = {Pubstate},
+  doi = {10.1000/182},
+  eprint = {Eprint},
+  eprintclass = {EprintClass},
+  eprinttype = {EprintType},
+  url = {http://www.example.com},
+  urldate = {2016-02-03}
+}
+
+@collection{collection,
+  editor = {Editor},
+  title = {Title},
+  date = {2016-01-02},
+  editora = {Editora},
+  editorb = {Editorb},
+  editorc = {Editorc},
+  translator = {Translator},
+  annotator = {Annotator},
+  commentator = {Commentator},
+  introduction = {Introducer},
+  foreword = {Foreward},
+  afterword = {Afterward},
+  subtitle = {SubTitle},
+  titleaddon = {TitleAddon},
+  maintitle = {MainTitle},
+  mainsubtitle = {MainSubTitle},
+  maintitleaddon = {MainTitleAddon},
+  language = {langfrench},
+  origlanguage = {german},
+  volume = {1},
+  part = {4},
+  edition = {2},
+  volumes = {3},
+  series = {Series},
+  number = {1},
+  note = {Note},
+  publisher = {Publisher},
+  location = {Location},
+  isbn = {0321173856},
+  chapter = {1},
+  pages = {1-2},
+  pagetotal = {5}, % not supported
+  addendum = {Addendum},
+  pubstate = {PubState},
+  doi = {10.1000/182},
+  eprint = {Eprint},
+  eprintclass = {EprintClass},
+  eprinttype = {EprintType},
+  url = {http://www.example.com/},
+  urldate = {2016-02-03}
+}
+
+@mvcollection{mvcollection,
+  editor = {Editor},
+  title = {Title},
+  date = {2016-01-02},
+  editora = {Editora},
+  editorb = {Editorb},
+  editorc = {Editorc},
+  translator = {Translator},
+  annotator = {Annotator},
+  commentator = {Commentator},
+  introduction = {Introducer},
+  foreword = {Foreword},
+  afterword = {Afterword},
+  subtitle = {Subtitle},
+  titleaddon = {TitleAddon},
+  language = {langfrench},
+  origlanguage = {german},
+  edition = {2},
+  volumes = {3},
+  series = {Series},
+  number = {2},
+  note = {Note},
+  publisher = {Publisher},
+  location = {Location},
+  isbn = {0321173856},
+  pagetotal = {5}, % not supported
+  addendum = {Addendum},
+  pubstate = {Pubstate},
+  doi = {10.1000/182},
+  eprint = {Eprint},
+  eprintclass = {EprintClass},
+  eprinttype = {EprintType},
+  url = {http://www.example.com},
+  urldate = {2016-03-04}
+}
+
+@incollection{incollection,
+  author = {Author},
+  title = {Title},
+  booktitle = {BookTitle},
+  date = {2016-01-02},
+  editor = {Editor},
+  editora = {Editora},
+  editorb = {Editorb},
+  editorc = {Editorc},
+  translator = {Translator},
+  annotator = {Annotator},
+  commentator = {Commentator},
+  introduction = {Introducer},
+  foreword = {Foreword},
+  afterword = {Afterword},
+  subtitle = {SubTitle},
+  titleaddon = {TitleAddon},
+  maintitle = {MainTitle},
+  mainsubtitle = {MainSubtitle},
+  maintitleaddon = {MaintitleAddon},
+  booksubtitle = {BookSubTitle},
+  booktitleaddon = {BookTitleAddon},
+  language = {langfrench},
+  origlanguage = {german},
+  volume = {2},
+  part = {3},
+  edition = {4},
+  volumes = {5},
+  series = {Series},
+  number = {6},
+  note = {Note},
+  publisher = {Publisher},
+  location = {Location},
+  isbn = {0321173856},
+  chapter = {1},
+  pages = {1-5},
+  addendum = {Addendum},
+  pubstate = {Pubstate},
+  doi = {10.1000/182},
+  eprint = {Eprint},
+  eprintclass = {EprintClass},
+  eprinttype = {EprintType},
+  url = {http://www.example.com},
+  urldate = {2016-02-03}
+}
+
+@suppcollection{suppcollection,
+  author = {Author},
+  title = {Title},
+  booktitle = {BookTitle},
+  date = {2016-01-02},
+  editor = {Editor},
+  editora = {Editora},
+  editorb = {Editorb},
+  editorc = {Editorc},
+  translator = {Translator},
+  annotator = {Annotator},
+  commentator = {Commentator},
+  introduction = {Introducer},
+  foreword = {Foreword},
+  afterword = {Afterword},
+  subtitle = {SubTitle},
+  titleaddon = {TitleAddon},
+  maintitle = {MainTitle},
+  mainsubtitle = {MainSubtitle},
+  maintitleaddon = {MaintitleAddon},
+  booksubtitle = {BookSubTitle},
+  booktitleaddon = {BookTitleAddon},
+  language = {langfrench},
+  origlanguage = {german},
+  volume = {2},
+  part = {3},
+  edition = {4},
+  volumes = {5},
+  series = {Series},
+  number = {6},
+  note = {Note},
+  publisher = {Publisher},
+  location = {Location},
+  isbn = {0321173856},
+  chapter = {1},
+  pages = {1-5},
+  addendum = {Addendum},
+  pubstate = {Pubstate},
+  doi = {10.1000/182},
+  eprint = {Eprint},
+  eprintclass = {EprintClass},
+  eprinttype = {EprintType},
+  url = {http://www.example.com},
+  urldate = {2016-02-03}
+}
+
+@manual{manual,
+  author = {Author},
+  title = {Title},
+  date = {2016-01-02},
+  subtitle = {SubTitle},
+  titleaddon = {TitleAddon},
+  language = {langfrench},
+  edition = {2},
+  type = {Type},
+  series = {Series},
+  number = {2},
+  version = {1.2},
+  note = {Note},
+  organization = {Organization},
+  publisher = {Publisher},
+  location = {Location},
+  isbn = {0321173856},
+  chapter = {1},
+  pages = {1-5},
+  pagetotal = {5}, % not supported
+  addendum = {Addendum},
+  pubstate = {Pubstate},
+  doi = {10.1000/182},
+  eprint = {Eprint},
+  eprintclass = {EprintClass},
+  eprinttype = {EprintType},
+  url = {http://www.example.com},
+  urldate = {2016-02-03}
+}
+
+@misc{misc,
+  author = {Author},
+  title = {Title},
+  date = {2016-01-02},
+  subtitle = {SubTitle},
+  titleaddon = {TitleAddon},
+  language = {langfrench},
+  howpublished = {HowPublished},
+  type = {Type},
+  version = {1.2},
+  note = {Note},
+  organization = {Organization},
+  location = {Location},
+  addendum = {Addendum},
+  pubstate = {Pubstate},
+  doi = {10.1000/182},
+  eprint = {Eprint},
+  eprintclass = {EprintClass},
+  eprinttype = {EprintType},
+  url = {http://www.example.com},
+  urldate = {2016-02-03}
+}
+
+@online{online,
+  author = {Author},
+  title = {Title},
+  date = {2016-01-02},
+  url = {http://www.example.com},
+  subtitle = {SubTitle},
+  titleaddon = {TitleAddon},
+  language = {langfrench},
+  version = {1.2},
+  note = {Note},
+  organization = {Organization},
+  addendum = {Addendum},
+  pubstate = {Pubstate},
+  urldate = {2016-02-03}
+}
+
+@patent{patent,
+  author = {Author},
+  title = {Title},
+  number = {1234567},
+  date = {2016-01-02},
+  holder = {Holder},
+  subtitle = {SubTitle},
+  titleaddon = {TitleAddon},
+  type = {Type},
+  version = {1.2},
+  location = {Location},
+  note = {Note},
+  addendum = {Addendum},
+  pubstate = {Pubstate},
+  doi = {10.1000/182},
+  eprint = {Eprint},
+  eprintclass = {EprintClass},
+  eprinttype = {EprintType},
+  url = {http://www.example.com},
+  urldate = {2016-02-03}
+}
+
+@periodical{periodical,
+  editor = {Editor},
+  title = {Title},
+  date = {2016-01-02},
+  editora = {Editora},
+  editorb = {Editorb},
+  editorc = {Editorc},
+  subtitle = {SubTitle},
+  issuetitle = {IssueTitle},
+  issuesubtitle = {IssueSubTitle},
+  language = {langfrench},
+  series = {2},
+  volume = {3},
+  number = {2},
+  issue = {Spring},
+  note = {Note},
+  issn = {1234-5678},
+  addendum = {Addendum},
+  pubstate = {Pubstate},
+  doi = {10.1000/182},
+  eprint = {Eprint},
+  eprintclass = {EprintClass},
+  eprinttype = {EprintType},
+  url = {http://www.example.com},
+  urldate = {2016-02-03}
+}
+
+@suppperiodical{suppperiodical,
+  author = {Author},
+  title = {Title},
+  journaltitle = {JournalTitle},
+  date = {2016-01-02},
+  translator = {Translator},
+  annotator = {Annotator},
+  commentator = {Commentator},
+  subtitle = {Subtitle},
+  titleaddon = {TitleAddon},
+  editor = {Editor},
+  editora = {EditorA},
+  editorb = {EditorB},
+  editorc = {EditorC},
+  journalsubtitle = {JournalSubtitle},
+  issuetitle = {IssueTitle},
+  issuesubtitle = {IssueSubTitle},
+  language = {langfrench},
+  origlanguage = {german},
+  series = {2},
+  volume = {1},
+  number = {2},
+  eid = {123456},
+  issue = {Spring},
+  pages = {1-2},
+  version = {1.1},
+  note = {Note},
+  issn = {0317-8471},
+  addendum = {Addendum},
+  pubstate = {Pubstate},
+  doi = {10.1000/182},
+  eprint = {Eprint},
+  eprintclass = {EprintClass},
+  eprinttype = {EprintType},
+  url = {http://www.example.com/},
+  urldate = {2016-02-03}
+}
+
+@proceedings{proceedings,
+  title = {Title},
+  date = {2016-01-02},
+  editor = {Editor},
+  subtitle = {SubTitle},
+  titleaddon = {TitleAddon},
+  maintitle = {MainTitle},
+  mainsubtitle = {MainSubTitle},
+  maintitleaddon = {MainTitleAddon},
+  eventtitle = {EventTitle},
+  eventtitleaddon = {EventTitleAddon},
+  eventdate = {2015-02-03},
+  venue = {Venue},
+  language = {langfrench},
+  volume = {1},
+  part = {4},
+  volumes = {3},
+  series = {Series},
+  number = {1},
+  note = {Note},
+  organization = {Organization},
+  publisher = {Publisher},
+  location = {Location},
+  isbn = {0321173856},
+  chapter = {1},
+  pages = {1-2},
+  pagetotal = {5}, % not supported
+  addendum = {Addendum},
+  pubstate = {PubState},
+  doi = {10.1000/182},
+  eprint = {Eprint},
+  eprintclass = {EprintClass},
+  eprinttype = {EprintType},
+  url = {http://www.example.com/},
+  urldate = {2016-02-03}
+}
+
+@mvproceedings{mvproceedings,
+  title = {Title},
+  date = {2016-01-02},
+  editor = {Editor},
+  subtitle = {SubTitle},
+  titleaddon = {TitleAddon},
+  eventtitle = {EventTitle},
+  eventtitleaddon = {EventTitleAddon},
+  eventdate = {2015-02-03},
+  venue = {Venue},
+  language = {langfrench},
+  volumes = {3},
+  series = {Series},
+  number = {1},
+  note = {Note},
+  organization = {Organization},
+  publisher = {Publisher},
+  location = {Location},
+  isbn = {0321173856},
+  chapter = {1},
+  pagetotal = {5}, % not supported
+  addendum = {Addendum},
+  pubstate = {PubState},
+  doi = {10.1000/182},
+  eprint = {Eprint},
+  eprintclass = {EprintClass},
+  eprinttype = {EprintType},
+  url = {http://www.example.com/},
+  urldate = {2016-02-03}
+}
+
+@inproceedings{inproceedings,
+  author = {Author},
+  title = {Title},
+  booktitle = {BookTitle},
+  date = {2016-01-02},
+  subtitle = {SubTitle},
+  titleaddon = {TitleAddon},
+  maintitle = {MainTitle},
+  mainsubtitle = {MainSubtitle},
+  maintitleaddon = {MaintitleAddon},
+  booksubtitle = {BookSubTitle},
+  booktitleaddon = {BookTitleAddon},
+  eventtitle = {EventTitle},
+  eventtitleaddon = {EventTitleAddon},
+  eventdate = {2015-02-03},
+  venue = {Venue},
+  language = {langfrench},
+  volume = {2},
+  part = {3},
+  volumes = {5},
+  series = {Series},
+  number = {6},
+  note = {Note},
+  organization = {Organization},
+  publisher = {Publisher},
+  location = {Location},
+  isbn = {0321173856},
+  chapter = {1},
+  pages = {1-5},
+  addendum = {Addendum},
+  pubstate = {Pubstate},
+  doi = {10.1000/182},
+  eprint = {Eprint},
+  eprintclass = {EprintClass},
+  eprinttype = {EprintType},
+  url = {http://www.example.com},
+  urldate = {2016-02-03}
+}
+
+@reference{reference,
+  editor = {Editor},
+  title = {Title},
+  date = {2016-01-02},
+  editora = {Editora},
+  editorb = {Editorb},
+  editorc = {Editorc},
+  translator = {Translator},
+  annotator = {Annotator},
+  commentator = {Commentator},
+  introduction = {Introducer},
+  foreword = {Foreward},
+  afterword = {Afterward},
+  subtitle = {SubTitle},
+  titleaddon = {TitleAddon},
+  maintitle = {MainTitle},
+  mainsubtitle = {MainSubTitle},
+  maintitleaddon = {MainTitleAddon},
+  language = {langfrench},
+  origlanguage = {german},
+  volume = {1},
+  part = {4},
+  edition = {2},
+  volumes = {3},
+  series = {Series},
+  number = {1},
+  note = {Note},
+  publisher = {Publisher},
+  location = {Location},
+  isbn = {0321173856},
+  chapter = {1},
+  pages = {1-2},
+  pagetotal = {5}, % not supported
+  addendum = {Addendum},
+  pubstate = {PubState},
+  doi = {10.1000/182},
+  eprint = {Eprint},
+  eprintclass = {EprintClass},
+  eprinttype = {EprintType},
+  url = {http://www.example.com/},
+  urldate = {2016-02-03}
+}
+
+@mvreference{mvreference,
+  editor = {Editor},
+  title = {Title},
+  date = {2016-01-02},
+  editora = {Editora},
+  editorb = {Editorb},
+  editorc = {Editorc},
+  translator = {Translator},
+  annotator = {Annotator},
+  commentator = {Commentator},
+  introduction = {Introducer},
+  foreword = {Foreword},
+  afterword = {Afterword},
+  subtitle = {Subtitle},
+  titleaddon = {TitleAddon},
+  language = {langfrench},
+  origlanguage = {german},
+  edition = {2},
+  volumes = {3},
+  series = {Series},
+  number = {2},
+  note = {Note},
+  publisher = {Publisher},
+  location = {Location},
+  isbn = {0321173856},
+  pagetotal = {5}, % not supported
+  addendum = {Addendum},
+  pubstate = {Pubstate},
+  doi = {10.1000/182},
+  eprint = {Eprint},
+  eprintclass = {EprintClass},
+  eprinttype = {EprintType},
+  url = {http://www.example.com},
+  urldate = {2016-03-04}
+}
+
+@inreference{inreference,
+  author = {Author},
+  title = {Title},
+  booktitle = {BookTitle},
+  date = {2016-01-02},
+  editor = {Editor},
+  editora = {Editora},
+  editorb = {Editorb},
+  editorc = {Editorc},
+  translator = {Translator},
+  annotator = {Annotator},
+  commentator = {Commentator},
+  introduction = {Introducer},
+  foreword = {Foreword},
+  afterword = {Afterword},
+  subtitle = {SubTitle},
+  titleaddon = {TitleAddon},
+  maintitle = {MainTitle},
+  mainsubtitle = {MainSubtitle},
+  maintitleaddon = {MaintitleAddon},
+  booksubtitle = {BookSubTitle},
+  booktitleaddon = {BookTitleAddon},
+  language = {langfrench},
+  origlanguage = {german},
+  volume = {2},
+  part = {3},
+  edition = {4},
+  volumes = {5},
+  series = {Series},
+  number = {6},
+  note = {Note},
+  publisher = {Publisher},
+  location = {Location},
+  isbn = {0321173856},
+  chapter = {1},
+  pages = {1-5},
+  addendum = {Addendum},
+  pubstate = {Pubstate},
+  doi = {10.1000/182},
+  eprint = {Eprint},
+  eprintclass = {EprintClass},
+  eprinttype = {EprintType},
+  url = {http://www.example.com},
+  urldate = {2016-02-03}
+}
+
+@report{report,
+  author = {Author},
+  title = {Title},
+  type = {Type},
+  institution = {Institution},
+  date = {2016-01-02},
+  subtitle = {SubTitle},
+  titleaddon = {TitleAddon},
+  language = {langfrench},
+  number = {2},
+  version = {1.2},
+  note = {Note},
+  location = {Location},
+  isrn = {0123-4567},
+  chapter = {3},
+  pages = {4-5},
+  pagetotal = {3}, % not supported
+  addendum = {Addendum},
+  pubstate = {Pubstate},
+  doi = {10.1000/182},
+  eprint = {Eprint},
+  eprintclass = {EprintClass},
+  eprinttype = {EprintType},
+  url = {http://www.example.com},
+  urldate = {2016-02-03}
+}
+
+@thesis{thesis,
+  author = {Author},
+  title = {Title},
+  type = {Type},
+  institution = {Institution},
+  date = {2016-01-02},
+  subtitle = {SubTitle},
+  titleaddon = {TitleAddon},
+  language = {langfrench},
+  note = {Note},
+  location = {Location},
+  isbn = {0321173856},
+  chapter = {7},
+  pages = {1-5},
+  pagetotal = {5}, % not supported
+  addendum = {Addendum},
+  pubstate = {Pubstate},
+  doi = {10.1000/182},
+  eprint = {Eprint},
+  eprintclass = {EprintClass},
+  eprinttype = {EprintType},
+  url = {http://www.example.com},
+  urldate = {2016-02-03}
+}
+
+@unpublished{unpublished,
+  author = {Author},
+  title = {Title},
+  date = {2016-01-02},
+  subtitle = {SubTitle},
+  titleaddon = {TitleAddon},
+  language = {langfrench},
+  howpublished = {HowPublished},
+  note = {Note},
+  location = {Location},
+  isbn = {0321173856},
+  addendum = {Addendum},
+  pubstate = {Pubstate},
+  url = {http://www.example.com},
+  urldate = {2016-02-03}
+}
+\end{filecontents}
+
+\addbibresource{\jobname.bib}
+
+\begin{document}
+
+\section{article}
+
+\cite[1]{article}
+
+\cite[1]{article}
+
+\section{book}
+
+\cite[1]{book}
+
+\cite[1]{book}
+
+\section{mvbook}
+
+\cite[1]{mvbook}
+
+\cite[1]{mvbook}
+
+\section{inbook}
+
+\cite[1]{inbook}
+
+\cite[1]{inbook}
+
+\section{bookinbook}
+
+\cite[1]{bookinbook}
+
+\cite[1]{bookinbook}
+
+\section{suppbook}
+
+\cite[1]{suppbook}
+
+\cite[1]{suppbook}
+
+\section{booklet}
+
+\cite[1]{booklet}
+
+\cite[1]{booklet}
+
+\section{collection}
+
+\cite[1]{collection}
+
+\cite[1]{collection}
+
+\section{mvcollection}
+
+\cite[1]{mvcollection}
+
+\cite[1]{mvcollection}
+
+\section{incollection}
+
+\cite[1]{incollection}
+
+\cite[1]{incollection}
+
+\section{suppcollection}
+
+\cite[1]{suppcollection}
+
+\cite[1]{suppcollection}
+
+\section{manual}
+
+\cite[1]{manual}
+
+\cite[1]{manual}
+
+\section{misc}
+
+\cite[1]{misc}
+
+\cite[1]{misc}
+
+\section{online}
+
+\cite[1]{online}
+
+\cite[1]{online}
+
+\section{patent}
+
+\cite[1]{patent}
+
+\cite[1]{patent}
+
+\section{periodical}
+
+\cite[1]{periodical}
+
+\cite[1]{periodical}
+
+\section{suppperiodical}
+
+\cite[1]{suppperiodical}
+
+\cite[1]{suppperiodical}
+
+\section{proceedings}
+
+\cite[1]{proceedings}
+
+\cite[1]{proceedings}
+
+\section{mvproceedings}
+
+\cite[1]{mvproceedings}
+
+\cite[1]{mvproceedings}
+
+\section{inproceedings}
+
+\cite[1]{inproceedings}
+
+\cite[1]{inproceedings}
+
+\section{reference}
+
+\cite[1]{reference}
+
+\cite[1]{reference}
+
+\section{mvreference}
+
+\cite[1]{mvreference}
+
+\cite[1]{mvreference}
+
+\section{inreference}
+
+\cite[1]{inreference}
+
+\cite[1]{inreference}
+
+\section{report}
+
+\cite[1]{report}
+
+\cite[1]{report}
+
+\section{thesis}
+
+\cite[1]{thesis}
+
+\cite[1]{thesis}
+
+\section{unpublished}
+
+\cite[1]{unpublished}
+
+\cite[1]{unpublished}
+
+\printbiblist{abbreviations}
+
+\printbibliography
+
+\end{document}

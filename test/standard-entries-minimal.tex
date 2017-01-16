@@ -1,0 +1,347 @@
+\documentclass{article}
+
+\usepackage{filecontents}
+\usepackage[style=sbl,backend=biber]{biblatex}
+\usepackage[margin=1cm,left=2cm,right=2cm]{geometry}
+\pagestyle{empty}
+\frenchspacing
+\raggedright
+\parindent 0em
+\usepackage{hyperref}
+
+\begin{filecontents}{\jobname.bib}
+@article{article,
+  author = {Author},
+  title = {Title},
+  journaltitle = {JournalTitle},
+  date = {2016}
+}
+
+@book{book,
+  author = {Author},
+  title = {Title},
+  date = {2016}
+}
+
+@mvbook{mvbook,
+  author = {Author},
+  title = {Title},
+  date = {2016}
+}
+
+@inbook{inbook,
+  author = {Author},
+  title = {Title},
+  booktitle = {BookTitle},
+  date = {2016}
+}
+
+@bookinbook{bookinbook,
+  author = {Author},
+  title = {Title},
+  booktitle = {BookTitle},
+  date = {2016}
+}
+
+@suppbook{suppbook,
+  author = {Author},
+  title = {Title},
+  booktitle = {BookTitle},
+  date = {2016}
+}
+
+@booklet{booklet,
+  author = {Author},
+  title = {Title},
+  date = {2016}
+}
+
+@collection{collection,
+  editor = {Editor},
+  title = {Title},
+  date = {2016}
+}
+
+@mvcollection{mvcollection,
+  editor = {Editor},
+  title = {Title},
+  date = {2016}
+}
+
+@incollection{incollection,
+  author = {Author},
+  title = {Title},
+  booktitle = {BookTitle},
+  date = {2016}
+}
+
+@suppcollection{suppcollection,
+  author = {Author},
+  title = {Title},
+  booktitle = {BookTitle},
+  date = {2016}
+}
+
+@manual{manual,
+  author = {Author},
+  title = {Title},
+  date = {2016}
+}
+
+@misc{misc,
+  author = {Author},
+  title = {Title},
+  date = {2016}
+}
+
+@online{online,
+  author = {Author},
+  title = {Title},
+  date = {2016},
+  url = {http://www.example.com}
+}
+
+@patent{patent,
+  author = {Author},
+  title = {Title},
+  number = {1234567},
+  date = {2016}
+}
+
+@periodical{periodical,
+  editor = {Editor},
+  title = {Title},
+  date = {2016}
+}
+
+@suppperiodical{suppperiodical,
+  author = {Author},
+  title = {Title},
+  journaltitle = {JournalTitle},
+  date = {2016}
+}
+
+@proceedings{proceedings,
+  title = {Title},
+  date = {2016}
+}
+
+@mvproceedings{mvproceedings,
+  title = {Title},
+  date = {2016}
+}
+
+@inproceedings{inproceedings,
+  author = {Author},
+  title = {Title},
+  booktitle = {BookTitle},
+  date = {2016}
+}
+
+@reference{reference,
+  editor = {Editor},
+  title = {Title},
+  date = {2016}
+}
+
+@mvreference{mvreference,
+  editor = {Editor},
+  title = {Title},
+  date = {2016}
+}
+
+@inreference{inreference,
+  author = {Author},
+  title = {Title},
+  booktitle = {BookTitle},
+  date = {2016}
+}
+
+@report{report,
+  author = {Author},
+  title = {Title},
+  type = {Type},
+  institution = {Institution},
+  date = {2016}
+}
+
+@thesis{thesis,
+  author = {Author},
+  title = {Title},
+  type = {Type},
+  institution = {Institution},
+  date = {2016}
+}
+
+@unpublished{unpublished,
+  author = {Author},
+  title = {Title},
+  date = {2016}
+}
+\end{filecontents}
+
+\addbibresource{\jobname.bib}
+
+\begin{document}
+
+\section{article}
+
+\cite[1]{article}
+
+\cite[1]{article}
+
+\section{book}
+
+\cite[1]{book}
+
+\cite[1]{book}
+
+\section{mvbook}
+
+\cite[1]{mvbook}
+
+\cite[1]{mvbook}
+
+\section{inbook}
+
+\cite[1]{inbook}
+
+\cite[1]{inbook}
+
+\section{bookinbook}
+
+\cite[1]{bookinbook}
+
+\cite[1]{bookinbook}
+
+\section{suppbook}
+
+\cite[1]{suppbook}
+
+\cite[1]{suppbook}
+
+\section{booklet}
+
+\cite[1]{booklet}
+
+\cite[1]{booklet}
+
+\section{collection}
+
+\cite[1]{collection}
+
+\cite[1]{collection}
+
+\section{mvcollection}
+
+\cite[1]{mvcollection}
+
+\cite[1]{mvcollection}
+
+\section{incollection}
+
+\cite[1]{incollection}
+
+\cite[1]{incollection}
+
+\section{suppcollection}
+
+\cite[1]{suppcollection}
+
+\cite[1]{suppcollection}
+
+\section{manual}
+
+\cite[1]{manual}
+
+\cite[1]{manual}
+
+\section{misc}
+
+\cite[1]{misc}
+
+\cite[1]{misc}
+
+\section{online}
+
+\cite[1]{online}
+
+\cite[1]{online}
+
+\section{patent}
+
+\cite[1]{patent}
+
+\cite[1]{patent}
+
+\section{periodical}
+
+\cite[1]{periodical}
+
+\cite[1]{periodical}
+
+\section{suppperiodical}
+
+\cite[1]{suppperiodical}
+
+\cite[1]{suppperiodical}
+
+\section{proceedings}
+
+\cite[1]{proceedings}
+
+\cite[1]{proceedings}
+
+\section{mvproceedings}
+
+\cite[1]{mvproceedings}
+
+\cite[1]{mvproceedings}
+
+\section{inproceedings}
+
+\cite[1]{inproceedings}
+
+\cite[1]{inproceedings}
+
+\section{reference}
+
+\cite[1]{reference}
+
+\cite[1]{reference}
+
+\section{mvreference}
+
+\cite[1]{mvreference}
+
+\cite[1]{mvreference}
+
+\section{inreference}
+
+\cite[1]{inreference}
+
+\cite[1]{inreference}
+
+\section{report}
+
+\cite[1]{report}
+
+\cite[1]{report}
+
+\section{thesis}
+
+\cite[1]{thesis}
+
+\cite[1]{thesis}
+
+\section{unpublished}
+
+\cite[1]{unpublished}
+
+\cite[1]{unpublished}
+
+\printbiblist{abbreviations}
+
+\printbibliography
+
+\end{document}

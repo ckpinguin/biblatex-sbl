@@ -1,0 +1,211 @@
+1
+
+article
+
+Author, “Title,” JournalTitle, 2016, 1
+Author, “Title,” 1
+
+2
+
+book
+
+Author, Title (2016), 1
+Author, Title, 1
+
+3
+
+mvbook
+
+Author, Title (2016), 1
+Author, Title, 1
+
+4
+
+inbook
+
+Author, “Title,” in BookTitle (2016), 1
+Author, “Title,” 1
+
+5
+
+bookinbook
+
+Author, Title, in BookTitle (2016), 1
+Author, Title, 1
+
+6
+
+suppbook
+
+Author, Title in BookTitle (2016), 1
+Author, Title, 1
+
+7
+
+booklet
+
+Author, Title (2016), 1
+Author, Title, 1
+
+8
+
+collection
+
+Editor, ed., Title (2016), 1
+Editor, Title, 1
+
+9
+
+mvcollection
+
+Editor, ed., Title (2016), 1
+Editor, Title, 1
+
+10
+
+incollection
+
+Author, “Title,” in BookTitle (2016), 1
+Author, “Title,” 1
+
+11
+
+suppcollection
+
+Author, Title in BookTitle (2016), 1
+Author, Title, 1
+
+12
+
+manual
+
+Author, Title (2016), 1
+Author, Title, 1
+
+13
+
+misc
+
+Author, Title (2016), 1
+Author, Title, 1
+
+14
+
+online
+
+Author, “Title,” 2016, 1, http://www.example.com
+Author, “Title,” 1
+
+15
+
+patent
+
+Author, Title (1234567, filed 2016), 1
+Author, Title, 1
+
+16
+
+periodical
+
+Editor, ed., Title, 2016, 1
+Editor, Title, 1
+
+17
+
+suppperiodical
+
+Author, “Title,” JournalTitle, 2016, 1
+Author, “Title,” 1
+
+18
+
+proceedings
+
+Title (2016), 1
+Title, 1
+
+19
+
+mvproceedings
+
+Title (2016), 1
+Title, 1
+
+20
+
+inproceedings
+
+Author, “Title,” in BookTitle (2016), 1
+Author, “Title,” 1
+
+21
+
+reference
+
+Editor, ed., Title (2016), 1
+Editor, Title, 1
+
+22
+
+mvreference
+
+Editor, ed., Title (2016), 1
+Editor, Title, 1
+
+23
+
+inreference
+
+Author, “Title,” BookTitle, 1
+Author, “Title,” 1
+
+24
+
+report
+
+Author, Title, Type (Institution, 2016), 1
+Author, Title, 1
+
+25
+
+thesis
+
+Author, “Title” (Type, Institution, 2016), 1
+Author, “Title,” 1
+
+26
+
+unpublished
+
+Author, “Title” (2016), 1
+Author, “Title,” 1
+
+References
+Author. “Title.” JournalTitle, 2016.
+. Title. 2016.
+. Title. 2016.
+. “Title.” In BookTitle. 2016.
+. Title. In BookTitle. 2016.
+. Title in BookTitle. 2016.
+. Title. 2016.
+. “Title.” In BookTitle. 2016.
+. Title in BookTitle. 2016.
+. Title. 2016.
+. Title. 2016.
+. “Title.” 2016. http://www.example.com.
+. Title. 1234567, filed 2016.
+. “Title.” JournalTitle, 2016.
+. “Title.” In BookTitle. 2016.
+. “Title.” In BookTitle. 2016.
+. Title. Type. Institution, 2016.
+. “Title.” Type, Institution, 2016.
+. “Title.” 2016.
+Editor, ed. Title. 2016.
+, ed. Title. 2016.
+, ed. Title, 2016.
+, ed. Title. 2016.
+, ed. Title. 2016.
+Title. 2016.
+Title. 2016.
+
+

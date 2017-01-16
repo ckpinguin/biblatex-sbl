@@ -56,5 +56,10 @@ $(TDSZIP):
 	mv $(TDSDIR)/$(TDSZIP) .
 	rm -rf $(TDSDIR)
 
+test:
+	cd test && make test
+
 clean:
-	rm -rf $(TDSZIP) $(CTANZIP) $(CTANDIR) $(TDSDIR)
+	@rm -rf $(TDSZIP) $(CTANZIP) $(CTANDIR) $(TDSDIR)
+	@echo "Cleaning CTAN and TDS zip files"
+	@cd test && make clean
