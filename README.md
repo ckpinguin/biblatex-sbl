@@ -26,6 +26,10 @@ You can find `$TEXMFHOME` by running:
 kpsewhich -var-value=TEXMFHOME
 ```
 
+## Installation from git
+
+Under Linux, run `make install`
+
 ## Requirements
 
 The following packages are required:

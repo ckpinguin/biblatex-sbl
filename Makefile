@@ -36,6 +36,16 @@ BIBLATEX-SBL-COPYRIGHT = $(shell grep Copyright README.md)
 SBL-PAPER-DATE = $(shell grep Society.of.Bibilical.Literature.Paper.Style doc/sbl-paper.sty | awk -vRS=']' -vFS='[' '{print $$2}' | awk '{print $$1}')
 SBL-PAPER-COPYRIGHT = $(shell grep Copyright doc/sbl-paper.sty | sed -r 's/^.//')
 
+help:
+	@echo "Make options:"
+	@echo "\tmake install:   Install the package"
+	@echo "\tmake doc:       Build the package documentation"
+	@echo "\tmake test:      Run some basic tests on the package"
+	@echo "\tmake ctancheck: Run some basic tests before uploading to CTAN"
+	@echo "\tmake ctanzip:   Build a zipfile for upload to CTAN"
+	@echo "\tmake tdszip:    Build a TeX Document Structure zipfile"
+	@echo "\tmake clean:     Clean the source tree"
+
 ctanzip: $(CTANZIP)
 
 tdszip: $(TDSZIP)
@@ -62,12 +72,23 @@ $(TDSZIP):
 	mv $(TDSDIR)/$(TDSZIP) .
 	rm -rf $(TDSDIR)
 
-.PHONY: doc test doctest ctancheck clean docclean testclean
+.PHONY: doc test doctest ctancheck clean docclean testclean install
+
+install:
+	rm -rf ~/texmf/doc/latex/biblatex-sbl
+	rm -rf ~/texmf/tex/latex/biblatex-sbl
+	rm -rf ~/texmf/makeindex/biblatex-sbl
+	mkdir -p ~/texmf/doc/latex/biblatex-sbl
+	mkdir -p ~/texmf/tex/latex/biblatex-sbl
+	mkdir -p ~/texmf/makeindex/biblatex-sbl
+	cp $(ISTFILES) ~/texmf/makeindex/biblatex-sbl
+	cp $(README) $(DOCFILES) ~/texmf/doc/latex/biblatex-sbl
+	cp $(TEXFILES) ~/texmf/tex/latex/biblatex-sbl
 
 doc:
 	@cd doc && make doc
 
-test:
+test: doctest
 	@cd test && make test
 
 doctest:
