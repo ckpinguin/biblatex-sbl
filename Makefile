@@ -30,6 +30,12 @@ TEXFILES = doc/sbl-paper.sty \
 TDSZIP   = biblatex-sbl.tds.zip
 CTANZIP  = biblatex-sbl.zip
 
+BIBLATEX-SBL-VERSION = $(shell grep def.sbl@abx@version latex/biblatex-sbl.def | awk -vRS='}' -vFS='{' '{print $$2}')
+BIBLATEX-SBL-DATE = $(shell grep def.sbl@abx@date latex/biblatex-sbl.def | awk -vRS='}' -vFS='{' '{print $$2}')
+BIBLATEX-SBL-COPYRIGHT = $(shell grep Copyright README.md)
+SBL-PAPER-DATE = $(shell grep Society.of.Bibilical.Literature.Paper.Style doc/sbl-paper.sty | awk -vRS=']' -vFS='[' '{print $$2}' | awk '{print $$1}')
+SBL-PAPER-COPYRIGHT = $(shell grep Copyright doc/sbl-paper.sty | sed -r 's/^.//')
+
 ctanzip: $(CTANZIP)
 
 tdszip: $(TDSZIP)
@@ -58,6 +64,21 @@ $(TDSZIP):
 
 test:
 	cd test && make test
+
+ctancheck:
+	@echo "CTAN upload info:"
+	@echo "\tName: biblatex-sbl"
+	@echo "\tVersion: $(BIBLATEX-SBL-VERSION) $(BIBLATEX-SBL-DATE)"
+	@echo "\tAuthor: David Purton"
+	@echo "\tEmail: dcpurton@marshwiggle.net"
+	@echo "\tSummary: Society of Biblical Literature (SBL) style files for BibLaTeX"
+	@echo "\tCTAN directory: /macros/latex/contrib/biblatex-contrib/biblatex-sbl"
+	@echo "\tType of Upload: Update (with announcement)"
+	@echo "\tLicense type: license type: LaTeX Public Project License (version 1.3)"
+	@echo "\nOther Checks:"
+	@echo "\tsbl-paper.sty date: $(SBL-PAPER-DATE)"
+	@echo "\tbiblatex-sbl copyright: $(BIBLATEX-SBL-COPYRIGHT)"
+	@echo "\tsbl-paper.sty copyright: $(SBL-PAPER-COPYRIGHT)"
 
 clean:
 	@rm -rf $(TDSZIP) $(CTANZIP) $(CTANDIR) $(TDSDIR)
