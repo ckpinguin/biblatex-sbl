@@ -31,7 +31,7 @@ TDSZIP   = biblatex-sbl.tds.zip
 CTANZIP  = biblatex-sbl.zip
 
 BIBLATEX-SBL-VERSION = $(shell grep def.sbl@abx@version latex/biblatex-sbl.def | awk -vRS='}' -vFS='{' '{print $$2}')
-BIBLATEX-SBL-DATE = $(shell grep def.sbl@abx@date latex/biblatex-sbl.def | awk -vRS='}' -vFS='{' '{print $$2}')
+BIBLATEX-SBL-DATE = $(shell grep def.sbl@abx@date latex/biblatex-sbl.def | awk -vRS='}' -vFS='{' '{print $$2}' | sed -r 's/\//-/g')
 BIBLATEX-SBL-COPYRIGHT = $(shell grep Copyright README.md)
 SBL-PAPER-DATE = $(shell grep Society.of.Bibilical.Literature.Paper.Style doc/sbl-paper.sty | awk -vRS=']' -vFS='[' '{print $$2}' | awk '{print $$1}')
 SBL-PAPER-COPYRIGHT = $(shell grep Copyright doc/sbl-paper.sty | sed -r 's/^.//')
