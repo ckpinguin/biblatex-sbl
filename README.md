@@ -14,6 +14,20 @@ All example notes and bibliography entries from the handbook are supported.
 * `sbl-paper.tex`: An example paper using `sbl-paper.sty`.
 * `sbl-paper-bibleref.ist`: An index style file for printing a Scripture Reference Index (used with `sbl-paper.tex`).
 
+## Installation from CTAN, TeXLive, or MiKTeX
+
+`biblatex-sbl` is available in CTAN at https://www.ctan.org/pkg/biblatex-sbl
+
+It is also in TeXLive and MiKTeX and can be installed in the usual way through your distribution.
+
+## Installation from Git Source
+
+```
+git clone https://github.com/dcpurton/biblatex-sbl.git
+cd biblatex-sbl
+make install
+```
+
 ## Manual Installation
 
 * Copy `sbl-paper.sty`, `biblatex-sbl.def`, `sbl.cbx`, `sbl.bbx`, `sbl.dbx`, and `*.lbx` into `$TEXMFHOME/tex/latex/biblatex-sbl/`
@@ -25,10 +39,6 @@ You can find `$TEXMFHOME` by running:
 ```        
 kpsewhich -var-value=TEXMFHOME
 ```
-
-## Installation from git
-
-Under Linux, run `make install`
 
 ## Requirements
 

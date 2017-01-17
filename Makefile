@@ -5,6 +5,7 @@ TDSDIR = biblatex-sbl.tds
 TDSDOCDIR = $(TDSDIR)/doc/latex/biblatex-sbl
 TDSTEXDIR = $(TDSDIR)/tex/latex/biblatex-sbl
 TDSISTDIR = $(TDSDIR)/makeindex/biblatex-sbl
+TEXMFHOME = $(shell kpsewhich -var-value=TEXMFHOME)
 
 README   = README.md
 ISTFILES = doc/sbl-paper-bibleref.ist
@@ -72,18 +73,20 @@ $(TDSZIP):
 	mv $(TDSDIR)/$(TDSZIP) .
 	rm -rf $(TDSDIR)
 
-.PHONY: doc test doctest ctancheck clean docclean testclean install
+.PHONY: doc test doctest ctancheck clean docclean testclean install uninstall
 
-install:
-	rm -rf ~/texmf/doc/latex/biblatex-sbl
-	rm -rf ~/texmf/tex/latex/biblatex-sbl
-	rm -rf ~/texmf/makeindex/biblatex-sbl
-	mkdir -p ~/texmf/doc/latex/biblatex-sbl
-	mkdir -p ~/texmf/tex/latex/biblatex-sbl
-	mkdir -p ~/texmf/makeindex/biblatex-sbl
-	cp $(ISTFILES) ~/texmf/makeindex/biblatex-sbl
-	cp $(README) $(DOCFILES) ~/texmf/doc/latex/biblatex-sbl
-	cp $(TEXFILES) ~/texmf/tex/latex/biblatex-sbl
+install: uninstall
+	mkdir -p $(TEXMFHOME)/doc/latex/biblatex-sbl
+	mkdir -p $(TEXMFHOME)/tex/latex/biblatex-sbl
+	mkdir -p $(TEXMFHOME)/makeindex/biblatex-sbl
+	cp $(ISTFILES) $(TEXMFHOME)/makeindex/biblatex-sbl
+	cp $(README) $(DOCFILES) $(TEXMFHOME)/doc/latex/biblatex-sbl
+	cp $(TEXFILES) $(TEXMFHOME)/tex/latex/biblatex-sbl
+
+uninstall:
+	rm -rf $(TEXMFHOME)/doc/latex/biblatex-sbl
+	rm -rf $(TEXMFHOME)/tex/latex/biblatex-sbl
+	rm -rf $(TEXMFHOME)/makeindex/biblatex-sbl
 
 doc:
 	@cd doc && make doc
