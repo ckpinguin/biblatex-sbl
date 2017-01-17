@@ -39,7 +39,8 @@ SBL-PAPER-COPYRIGHT = $(shell grep Copyright doc/sbl-paper.sty | sed -r 's/^.//'
 
 help:
 	@echo "Make options:"
-	@echo "\tmake install:   Install the package"
+	@echo "\tmake install:   Install the package into your local tex tree"
+	@echo "\tmake uninstall: Uninstall the package from your local tex tree"
 	@echo "\tmake doc:       Build the package documentation"
 	@echo "\tmake test:      Run some basic tests on the package"
 	@echo "\tmake ctancheck: Run some basic tests before uploading to CTAN"
