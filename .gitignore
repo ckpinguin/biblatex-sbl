@@ -11,3 +11,5 @@
 *.idx
 *.ilg
 *.ind
+test/*.pdf
+test/*.bib
