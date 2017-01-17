@@ -38,7 +38,7 @@ test: $(TXTS)
 	@$(LUALATEX) $< > /dev/null
 	@echo "Done."
 
-sbl-paper.bcf: sbl-paper.tex $(DEPS) sbl-paper-bibleref.ist
+sbl-paper.bcf: sbl-paper.tex $(DEPS) sbl-paper.sty sbl-paper-bibleref.ist
 	@echo -n "Building $< (first pass) ... "
 	@$(XELATEX) $< > /dev/null
 	@echo "Done."
