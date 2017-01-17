@@ -1,6 +1,5 @@
 Biblatex-SBL Examples and Test File
 David Purton
-15 January 2017
 
 Contents
 6 Notes and Bibliographies
@@ -38,7 +37,8 @@ Other Than the Author . . . . . . . . . . . . . . . . . . . . . .
 6.3.4 A Book Review . . . . . . . . . . . . . . . . . . . . . . . . . .
 6.3.5 An Unpublished Dissertation or Thesis . . . . . . . . . . . . .
 6.3.6 An Article in an Encyclopaedia or a Dictionary . . . . . . . .
-
+6.3.7 An Article in a Lexicon or Theological Dictionary . . . . . . .
+6.3.8 A Paper Presented at a Professional Society . . . . . . . . . .
 1
 
 3
@@ -75,6 +75,8 @@ Other Than the Author . . . . . . . . . . . . . . . . . . . . . .
 27
 29
 30
+31
+36
 
 .
 .
@@ -94,11 +96,7 @@ Other Than the Author . . . . . . . . . . . . . . . . . . . . . .
 .
 .
 .
-.
-.
 
-31
-36
 37
 38
 40
@@ -142,8 +140,6 @@ Author Index
 
 6.4
 
-6.3.7 An Article in a Lexicon or Theological Dictionary . . . . . .
-6.3.8 A Paper Presented at a Professional Society . . . . . . . . .
 6.3.9 An Article in a Magazine . . . . . . . . . . . . . . . . . . . .
 6.3.10 An Electronic Journal Article . . . . . . . . . . . . . . . . . .
 Special Examples . . . . . . . . . . . . . . . . . . . . . . . . . . . .

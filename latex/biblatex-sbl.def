@@ -15,12 +15,36 @@
 % VERSION STRINGS
 % ------------------------------------------------------------------
 
-\def\sbl@abx@date{2017/01/15}
-\def\sbl@abx@version{0.8.1}
+\def\sbl@abx@date{2017//}
+\def\sbl@abx@version{0.8.1+}
 \def\sbl@abx@bbxid{\sbl@abx@date\space v\sbl@abx@version\space biblatex-sbl bibliography style}
 \def\sbl@abx@cbxid{\sbl@abx@date\space v\sbl@abx@version\space biblatex-sbl citation style}
 \def\sbl@abx@lbxid{\sbl@abx@date\space v\sbl@abx@version\space biblatex-sbl localization}
 \def\sbl@abx@defid{\sbl@abx@date\space v\sbl@abx@version\space biblatex-sbl definitions and macros}
+
+\def\printsblversion{\sbl@abx@version\space
+                     \expandafter\xprintsbldateiso\sbl@abx@date\relax}
+\def\printsbldate{\expandafter\xprintsbldateau\sbl@abx@date\relax}
+\def\xprintsbldateiso#1/#2/#3\relax{%
+  \ifboolexpr{
+    test {\ifblank{#2}}
+    or
+    test {\ifblank{#3}}
+  }
+    {#1}
+    {#1-#2-#3}}
+\def\xprintsbldateau#1/#2/#3\relax{%
+  \ifboolexpr{
+    test {\ifblank{#2}}
+    or
+    test {\ifblank{#3}}
+  }
+    {#1}
+    {#3
+     \ifcase#2 \or
+     January\or February\or March\or April\or May\or June\or July\or
+     August\or September\or October\or November\or December\fi\space
+     #1}}
 
 \ProvidesFile{biblatex-sbl.def}[\sbl@abx@defid]
 

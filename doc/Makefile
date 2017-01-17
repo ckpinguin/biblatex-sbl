@@ -29,11 +29,11 @@ TXTS=biblatex-sbl-ibid.txt \
 
 .PHONY: doc test clean
 
-doc: $(PDFS) $(DEPS)
+doc: $(PDFS)
 
 test: $(TXTS)
 
-%.bcf: %.tex
+%.bcf: %.tex $(DEPS)
 	@echo -n "Building $< (first pass) ... "
 	@$(LUALATEX) $< > /dev/null
 	@echo "Done."
@@ -75,6 +75,7 @@ sbl-paper.pdf: sbl-paper.bbl
 	@echo -n "Testing $(basename $<).tex ... "
 	@pdftotext $<
 	@$(CMP) $@ ../test/$(basename $@).ref.txt && /bin/echo -e $(TEST-PASS) || /bin/echo -e $(TEST-FAIL)
+	@$(CMP) $@ ../test/$(basename $@).ref.txt && git checkout $< || echo -n ""
 	@rm $@
 
 clean:

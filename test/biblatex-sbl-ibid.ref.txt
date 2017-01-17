@@ -1,6 +1,5 @@
 Biblatex-SBL ibidem and idem Test File
 David Purton
-15 January 2017
 This file tests the behaviour of the various options related to using ibidem and idem in
 Biblatex-SBL.
 

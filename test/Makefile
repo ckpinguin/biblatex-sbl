@@ -24,9 +24,9 @@ TXTS=standard-entries-minimal.txt \
 
 .PHONY: test clean
 
-test: $(TXTS) $(DEPS)
+test: $(TXTS)
 
-%.bcf: %.tex
+%.bcf: %.tex $(DEPS)
 	@echo -n "Building $< (first pass) ... "
 	@$(PDFLATEX) $< > /dev/null
 	@echo "Done."

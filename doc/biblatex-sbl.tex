@@ -1,7 +1,6 @@
 % imakeidx needs to be loaded before hyperref
 \RequirePackage{scrlfile}\AfterPackage{textcomp}{\RequirePackage{imakeidx}}
 \documentclass{ltxdockit}[2011/03/25]
-\usepackage[australian]{isodate}
 \usepackage{microtype}
 \usepackage{xcolor}
 \makeindex[title=Author Index,intoc,options=-q]
@@ -112,6 +111,7 @@
 
 \makeatletter
 \def\ltd@printarg@v<(#1)#2>{[(\prm{#1})\prm{#2}]\ltd@parseargs}
+\makeatother
 
 \titlepage{%
   title={\biblatexsbl},
@@ -119,9 +119,8 @@
   url={\biblatexsblhome},
   author={David Purton},
   email={dcpurton@marshwiggle.net},
-  revision={\sbl@abx@version~\sbl@abx@date},
-  date={\printdateTeX{\sbl@abx@date}}}
-\makeatother
+  revision={\printsblversion},
+  date={\printsbldate}}
 
 \hypersetup{%
   pdftitle={biblatex-sbl},
