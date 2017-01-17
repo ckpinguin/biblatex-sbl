@@ -74,7 +74,7 @@ sbl-paper.pdf: sbl-paper.bbl
 %.txt: %.pdf
 	@echo -n "Testing $(basename $<).tex ... "
 	@pdftotext $<
-	@$(CMP) $@ $(addprefix $(basename $@), .ref.txt) && /bin/echo -e $(TEST-PASS) || /bin/echo -e $(TEST-FAIL)
+	@$(CMP) $@ ../test/$(basename $@).ref.txt && /bin/echo -e $(TEST-PASS) || /bin/echo -e $(TEST-FAIL)
 	@rm $@
 
 clean:
