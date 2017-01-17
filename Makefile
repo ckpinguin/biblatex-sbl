@@ -37,7 +37,7 @@ BIBLATEX-SBL-COPYRIGHT = $(shell grep Copyright README.md)
 SBL-PAPER-DATE = $(shell grep Society.of.Bibilical.Literature.Paper.Style doc/sbl-paper.sty | awk -vRS=']' -vFS='[' '{print $$2}' | awk '{print $$1}')
 SBL-PAPER-COPYRIGHT = $(shell grep Copyright doc/sbl-paper.sty | sed -r 's/^.//')
 
-SBL-PAPER-DATE-CHECK = $(shell git log -1 --format=%cd --date=short doc/sbl-paper.tex)
+SBL-PAPER-DATE-CHECK = $(shell git log -1 --format=%cd --date=short doc/sbl-paper.sty)
 
 help:
 	@echo "Make options:"
