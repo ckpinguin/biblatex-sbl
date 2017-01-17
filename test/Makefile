@@ -1,46 +1,72 @@
 TEMP-EXTENSIONS=.pdf .txt .aux .bbl .bcf .bib .blg .idx .ilg .ind .log .out .run.xml
 PDFLATEX=pdflatex -interaction=batchmode
-LUALATEX=lualatex -interaction=batchmode
+XELATEX=xelatex -interaction=batchmode
 BIBER=biber -q -q
 CMP=cmp --silent
 
-TEST-PASS=' \e[1;32m[PASS]\e[0m'
-TEST-FAIL=' \e[1;31m[FAIL]\e[0m'
+TEST-PASS='\e[1;32m[PASS]\e[0m'
+TEST-FAIL='\e[1;31m[FAIL]\e[0m'
 
-PDFLATEX-TEST-FILES=standard-entries-minimal.txt \
-	standard-entries-full.txt \
-	sbl-entries-full.txt \
-	biblatex-examples.txt
+DEPS=../latex/biblatex-sbl.def \
+     ../latex/sbl.cbx \
+     ../latex/sbl.bbx \
+     ../latex/sbl.dbx \
+     ../latex/sbl-american.lbx \
+     ../latex/sbl-english.lbx
 
-LUALATEX-TEST-FILES=sblhs-tests.txt
+TXTS=standard-entries-minimal.txt \
+     standard-entries-full.txt \
+     sbl-entries-full.txt \
+     biblatex-examples.txt \
+     sblhs-tests.txt
+
+.PRECIOUS: %.bcf %.bbl %.pdf
 
 .PHONY: test clean
 
-test: $(PDFLATEX-TEST-FILES) $(LUALATEX-TEST-FILES)
+test: $(TXTS) $(DEPS)
 
-$(PDFLATEX-TEST-FILES):
-	@echo -n "Testing $(basename $@) ..."
-	@rm -f $(addprefix $(basename $@), $(TEMP-EXTENSIONS))
-	@$(PDFLATEX) $(basename $@) > /dev/null
-	@echo -n "."
-	@$(BIBER) $(basename $@)
-	@$(PDFLATEX) $(basename $@) > /dev/null
-	@echo -n "."
-	@$(PDFLATEX) $(basename $@) > /dev/null
-	@pdftotext $(addprefix $(basename $@), .pdf)
-	@$(CMP) $@ $(addprefix $(basename $@), .ref.txt) && /bin/echo -e $(TEST-PASS) || /bin/echo -e $(TEST-FAIL)
-	@rm $@
+%.bcf: %.tex
+	@echo -n "Building $< (first pass) ... "
+	@$(PDFLATEX) $< > /dev/null
+	@echo "Done."
 
-$(LUALATEX-TEST-FILES):
-	@echo -n "Testing $(basename $@) ..."
-	@rm -f $(addprefix $(basename $@), $(TEMP-EXTENSIONS))
-	@$(LUALATEX) $(basename $@) > /dev/null
-	@echo -n "."
-	@$(BIBER) $(basename $@)
-	@$(LUALATEX) $(basename $@) > /dev/null
-	@echo -n "."
-	@$(LUALATEX) $(basename $@) > /dev/null
-	@pdftotext $(addprefix $(basename $@), .pdf)
+sblhs-tests.bcf: sblhs-tests.tex ../doc/biblatex-sbl.bib
+	@echo -n "Building $< (first pass) ... "
+	@$(XELATEX) $< > /dev/null
+	@echo "Done."
+
+%.bbl: %.bcf
+	@echo -n "Running Biber on $< ... "
+	@$(BIBER) $<
+	@touch $@
+	@echo "Done."
+
+%.pdf: %.bbl
+	@echo -n "Building $(basename $<).tex (second pass) ... "
+	@$(PDFLATEX) $(basename $<).tex > /dev/null
+	@echo "Done."
+	@echo -n "Building $(basename $<).tex (third pass) ... "
+	@$(PDFLATEX) $(basename $<).tex > /dev/null
+	@touch $(basename $@).bcf
+	@touch $(basename $@).bbl
+	@touch $@
+	@echo "Done."
+
+sblhs-tests.pdf: sblhs-tests.bbl
+	@echo -n "Building $(basename $<).tex (second pass) ... "
+	@$(XELATEX) $(basename $<).tex > /dev/null
+	@echo "Done."
+	@echo -n "Building $(basename $<).tex (third pass) ... "
+	@$(XELATEX) $(basename $<).tex > /dev/null
+	@touch $(basename $@).bcf
+	@touch $(basename $@).bbl
+	@touch $@
+	@echo "Done."
+
+%.txt: %.pdf
+	@echo -n "Testing $(basename $<).tex ... "
+	@pdftotext $<
 	@$(CMP) $@ $(addprefix $(basename $@), .ref.txt) && /bin/echo -e $(TEST-PASS) || /bin/echo -e $(TEST-FAIL)
 	@rm $@
 
