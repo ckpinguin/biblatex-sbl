@@ -4,7 +4,7 @@ David Purton
 dcpurton@marshwiggle.net
 
 Version 0.8.1 2017/01/15
-16 January 2017
+15 January 2017
 
 Contents
 1 Introduction

@@ -2,6 +2,7 @@
 
 \PassOptionsToPackage{obeyspaces}{url}
 
+\usepackage[australian]{isodate}
 \usepackage{microtype}
 \usepackage{fontspec}
 \usepackage{xparse}
@@ -264,13 +265,14 @@
   ^^^^201c^^^^201d%
   ^^00}
 \lst@RestoreCatcodes
+
+\title{Biblatex-SBL Examples and Test File}
+\author{David Purton}
+\date{\printdateTeX{\sbl@abx@date}}
 \makeatother
 
 \begin{document}
 
-\title{Biblatex-SBL Examples and Test File}
-\author{David Purton}
-\date{16 January 2017}
 \maketitle
 
 \tableofcontents

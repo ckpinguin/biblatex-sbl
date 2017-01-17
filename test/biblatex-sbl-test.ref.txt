@@ -1,6 +1,6 @@
 Biblatex-SBL Examples and Test File
 David Purton
-16 January 2017
+15 January 2017
 
 Contents
 6 Notes and Bibliographies
