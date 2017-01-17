@@ -37,6 +37,8 @@ BIBLATEX-SBL-COPYRIGHT = $(shell grep Copyright README.md)
 SBL-PAPER-DATE = $(shell grep Society.of.Bibilical.Literature.Paper.Style doc/sbl-paper.sty | awk -vRS=']' -vFS='[' '{print $$2}' | awk '{print $$1}')
 SBL-PAPER-COPYRIGHT = $(shell grep Copyright doc/sbl-paper.sty | sed -r 's/^.//')
 
+SBL-PAPER-DATE-CHECK = $(shell git log -1 --format=%cd --date=short doc/sbl-paper.tex)
+
 help:
 	@echo "Make options:"
 	@echo "\tmake install:   Install the package into your local tex tree"
@@ -110,6 +112,7 @@ ctancheck:
 	@echo "\tLicense type: license type: LaTeX Public Project License (version 1.3)"
 	@echo "\nOther Checks:"
 	@echo "\tsbl-paper.sty date: $(SBL-PAPER-DATE)"
+	@echo "\tsbl-paper.sty last change: $(SBL-PAPER-DATE-CHECK)"
 	@echo "\tbiblatex-sbl copyright: $(BIBLATEX-SBL-COPYRIGHT)"
 	@echo "\tsbl-paper.sty copyright: $(SBL-PAPER-COPYRIGHT)"
 
