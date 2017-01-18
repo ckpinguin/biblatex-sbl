@@ -3,8 +3,7 @@ SBL Style Using biblatex
 David Purton
 dcpurton@marshwiggle.net
 
-Version 0.8.1+ 2017
-2017
+Version 0.8.1+ 2017-2017
 
 Contents
 1 Introduction
