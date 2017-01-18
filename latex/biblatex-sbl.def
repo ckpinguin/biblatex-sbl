@@ -876,7 +876,6 @@
   \noinherit{sorttitle}
   \noinherit{indextitle}
   \noinherit{indexsorttitle}
-  \noinherit{endyear}
 }
 
 \DeclareDataInheritance{book,collection,reference,lexicon,commentary,proceedings}
@@ -898,7 +897,6 @@
   \noinherit{sorttitle}
   \noinherit{indextitle}
   \noinherit{indexsorttitle}
-  \noinherit{endyear}
 }
 
 \DeclareDataInheritance{periodical}{article,suppperiodical}{%
