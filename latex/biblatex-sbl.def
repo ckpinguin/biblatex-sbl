@@ -316,7 +316,6 @@
   citetracker,
   punctfont,
   alldates=comp,
-  eprintdate=comp,
   dateabbrev=false,
   autocite=footnote,
   url,
