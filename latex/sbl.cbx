@@ -142,10 +142,7 @@
       or
       not test {\iffieldundef{pages}}
     }
-      {\ifbool{usevolpostnotedelim}
-         {\setunit{\volpostnotedelim}}
-         {\setunit{\postnotedelim}}%
-       \usebibmacro{postnote}}
+      {\usebibmacro{postnote}}
       {}}%
   \ifboolexpr{
     togl {relatedseen}

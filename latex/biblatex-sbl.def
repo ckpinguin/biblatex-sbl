@@ -84,6 +84,9 @@
             {\setunit{\addspace}%
              \printtext[parens]{\printfield{postnote}}}}}}%
   \renewbibmacro*{postnote}{%
+    \ifbool{usevolpostnotedelim}
+      {\setunit{\volpostnotedelim}}
+      {\setunit{\postnotedelim}}%
     \iffieldundef{postnote}
       {\printfield{pages}}
       {\iffieldpages{postnote}
@@ -111,6 +114,9 @@
          {\setunit{\addspace}%
           \printtext[parens]{\printfield{postnote}}}}}%
   \renewbibmacro*{postnote}{%
+    \ifbool{usevolpostnotedelim}
+      {\setunit{\volpostnotedelim}}
+      {\setunit{\postnotedelim}}%
     \iffieldundef{postnote}
       {\printfield{pages}}
       {\iffieldpages{postnote}
@@ -141,6 +147,9 @@
              \setunit*{\addspace}%
              \printtext[parens]{\printfield{postnote}}}}}}%
   \renewbibmacro*{postnote}{%
+    \ifbool{usevolpostnotedelim}
+      {\setunit{\volpostnotedelim}}
+      {\setunit{\postnotedelim}}%
     \iffieldundef{postnote}
       {\printfield{pages}}
       {\iffieldpages{postnote}
@@ -174,6 +183,9 @@
               {}%
             \printfield{postnote}}}}}%
   \renewbibmacro*{postnote}{%
+    \ifbool{usevolpostnotedelim}
+      {\setunit{\volpostnotedelim}}
+      {\setunit{\postnotedelim}}%
     \iffieldundef{postnote}
       {\printfield{pages}}
       {\iffieldpages{postnote}
@@ -2426,9 +2438,6 @@
     {\setunit{\addperiod}%
      \printfield{part}}%
   \iftoggle{blx@testpostnotedelim}{\usebibmacro{setpostnotedelim}}{}%
-  \ifbool{usevolpostnotedelim}
-    {\setunit{\volpostnotedelim}}
-    {\setunit{\postnotedelim}}%
   \usebibmacro{postnote}%
   \global\booltrue{suppresspostnote}}
 
