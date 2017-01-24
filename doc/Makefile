@@ -19,12 +19,12 @@ DEPS=../latex/biblatex-sbl.def \
 
 PDFS=biblatex-sbl-ibid.pdf \
      biblatex-sbl.pdf \
-     biblatex-sbl-test.pdf \
+     biblatex-sbl-examples.pdf \
      sbl-paper.pdf
 
 TXTS=biblatex-sbl-ibid.txt \
      biblatex-sbl.txt \
-     biblatex-sbl-test.txt \
+     biblatex-sbl-examples.txt \
      sbl-paper.txt
 
 .PRECIOUS: %.bcf %.bbl
@@ -83,7 +83,7 @@ sbl-paper.pdf: sbl-paper.bbl
 clean:
 	@echo -n "Cleaning doc temporary files ... "
 	@rm -f $(addprefix biblatex-sbl, $(TEMP-EXTENSIONS))
-	@rm -f $(addprefix biblatex-sbl-test, $(TEMP-EXTENSIONS))
+	@rm -f $(addprefix biblatex-sbl-examples, $(TEMP-EXTENSIONS))
 	@rm -f $(addprefix biblatex-sbl-ibid, $(TEMP-EXTENSIONS))
 	@rm -f $(addprefix sbl-paper, $(TEMP-EXTENSIONS))
 	@rm -f sbl-paper-aut.* sbl-paper-scr.*

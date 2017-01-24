@@ -8,7 +8,7 @@ All example notes and bibliography entries from the handbook are supported.
 
 * `biblatex-sbl.pdf`: Style usage and documentation summary.
 * `biblatex-sbl.bib`: Database entries for all example citations in the handbook.
-* `biblatex-sbl-test.pdf`: Example usage for all example citations in the handbook.
+* `biblatex-sbl-examples.pdf`: Example usage for all example citations in the handbook.
 * `biblatex-sbl-ibid.pdf`: Example usage of *ibidem* and *idem* settings.
 * `sbl-paper.sty`: A style file for papers matching the Student Supplement to the SBLHS.
 * `sbl-paper.tex`: An example paper using `sbl-paper.sty`.

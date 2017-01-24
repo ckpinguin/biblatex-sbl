@@ -58,7 +58,7 @@ Author Index
 provides support to biblatex and LaTeX for citations, bibliography, and a
 list of abbreviations in the style recommended by the Society of Biblical Literature (SBL).
 The style conforms to the second edition of the SBLHS.
-The style supports all examples given in the handbook (see biblatex-sbl-test.pdf).
+The style supports all examples given in the handbook (see biblatex-sbl-examples.pdf).
 Shorthand citations and a list of abbreviations containing journals, series, and shorthands
 are handled automatically. Repeated authors in the bibliography are replaced by a horizontal
 line. Ibidem is supported, but not enabled by default, as is indexing of names. Only note
@@ -515,7 +515,7 @@ ANRW
 
 The ANRW entrysubtype is particularly for citing ANRW as outlined in §6.4.8
 of the SBLHS. In this case, the entry will appear in the bibliography. See
-biblatex-sbl-test.pdf for full details of the required database entry.
+biblatex-sbl-examples.pdf for full details of the required database entry.
 
 chronicle
 
@@ -558,15 +558,15 @@ RIMA
 
 The citation for RIMA (SBLHS, 97) is treated like a series with a number
 when cited in full, but as a shorthand with a volume when cited in short
-form. See biblatex-sbl-test.pdf for full details.
+form. See biblatex-sbl-examples.pdf for full details.
 
 10
 
 suppbook Supplemental material in a @book. Use this for an introduction, preface or foreword written
 
 by someone other than the author (SBLHS §6.2.14). The type field is used to specify the
-type of supplementary material. See §6.2.14 of biblatex-sbl-test.pdf. If no type is given,
-then this behaves like an @inbook.
+type of supplementary material. See §6.2.14 of biblatex-sbl-examples.pdf. If no type is
+given, then this behaves like an @inbook.
 booklet
 classictext
 
@@ -642,8 +642,8 @@ long form as described above under fullbibrefs.
 conferencepaper
 
 An unpublished paper presented at a professional society. Use the eventtitle, venue, and
-date fields to specify detail for the conference. See §6.3.8 of biblatex-sbl-test.pdf for
-and example.
+date fields to specify detail for the conference. See §6.3.8 of biblatex-sbl-examples.pdf
+for and example.
 
 lexicon A single-volume lexicon or theological dictionary. This is similar to a @book.
 mvlexicon
@@ -698,7 +698,7 @@ and revdtitle fields to specify the author/editor and title of the book being re
 Note that review articles are treated like articles and should use the @article entry type.
 seminarpaper An SBL seminar paper. This is similar to an @incollection except that in is suppressed
 
-byfore the booktitle/maintitle. See §6.4.11 of biblatex-sbl-test for an example.
+byfore the booktitle/maintitle. See §6.4.11 of biblatex-sbl-examples.pdf for an example.
 series A multi-volume series. This is similar to a @mvbook except that an upright shaped font is
 
 used for the title field and the option field is set to {useauthor=false, useditor=false}
@@ -736,7 +736,7 @@ is the same as for
 
 field (date)
 The date a text edition published online with no print counterpart or an article in an online
-database is released. See §6.4.1 and §6.4.13 of biblatex-sbl-test.pdf.
+database is released. See §6.4.1 and §6.4.13 of biblatex-sbl-examples.pdf.
 
 eprintday
 
