@@ -4,11 +4,6 @@
 
 \InitializeCitationStyle{\numgdef{\cbx@resetcount}{\cbx@resetcount+1}}
 
-\DeclareFieldFormat{bibhyperlink}{%
-  \bibhyperlink{\iffootnote{f}{t}:\cbx@resetcount:\thefield{entrykey}}{#1}}
-\DeclareFieldFormat{bibhypertarget}{%
-  \bibhypertarget{\iffootnote{f}{t}:\cbx@resetcount:\thefield{entrykey}}{#1}}
-
 \newcommand*{\cbx@resetcount}{0}
 \renewcommand*{\iffinalcitedelim}{%
   \ifnumequal{\value{textcitecount}}{\value{textcitetotal}-1}}
