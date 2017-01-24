@@ -46,37 +46,37 @@ Other Than the Author . . . . . . . . . . . . . . . . . . . . . .
 3
 3
 4
+4
 5
 5
 6
 7
+7
 8
-9
+8
+8
 9
 10
 10
 11
+11
+12
 12
 13
 13
 14
+14
 15
 16
-17
-17
+18
 18
 19
 20
-21
+20
+22
+22
 24
-24
-25
-26
-27
-29
-30
-31
-36
+28
 
 .
 .
@@ -97,46 +97,46 @@ Other Than the Author . . . . . . . . . . . . . . . . . . . . . .
 .
 .
 
+28
+29
+30
+30
 37
-38
 40
-40
+43
+44
+45
+46
+47
 48
+49
+51
 52
-55
-56
-58
-59
-60
-61
-63
-67
-67
-68
-68
-69
+52
+53
+53
 
 7 Other Examples
 7.1 BDAG, BDB, BDF . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 7.2 HALOT, TLOT . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 7.3 SBLHS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-70
-70
-72
-74
+54
+54
+56
+57
 
 Abbreviations
 
-75
+58
 
 References
 
-77
+60
 
 Author Index
 
-81
+64
 
 6.4
 
@@ -188,13 +188,6 @@ the Fourth Gospel and the Johannine Epistles (New York: Crossroad, 1992), 127.
 
 Talbert, Charles H. Reading John: A Literary and Theological Commentary on the Fourth
 Gospel and the Johannine Epistles. New York: Crossroad, 1992.
-Reference Implementation
-
-15. Charles H. Talbert, Reading John: A Literary and Theological Commentary on
-the Fourth Gospel and the Johannine Epistles (New York: Crossroad, 1992), 127.
-19. Talbert, Reading John, 22.
-Talbert, Charles H. Reading John: A Literary and Theological Commentary on the Fourth
-Gospel and the Johannine Epistles. New York: Crossroad, 1992.
 6.2.2
 
 A Book by Two or Three Authors
@@ -212,24 +205,17 @@ Biblatex Output
 
 4. James M. Robinson and Helmut Koester, Trajectories through Early Christianity
 (Philadelphia: Fortress, 1971), 237.
-
-3
-
-\autocite[23]{robinson+koester:1971}
+\autocite[23]{robinson+koester:1971}
 
 12. Robinson and Koester, Trajectories through Early Christianity, 23.
 \printbibliography
 
 Robinson, James M., and Helmut Koester. Trajectories through Early Christianity.
 Philadelphia: Fortress, 1971.
-Reference Implementation
 
-4. James M. Robinson and Helmut Koester, Trajectories through Early Christianity
-(Philadelphia: Fortress, 1971), 237.
-12. Robinson and Koester, Trajectories through Early Christianity, 23.
-Robinson, James M., and Helmut Koester. Trajectories through Early Christianity.
-Philadelphia: Fortress, 1971.
-6.2.3
+3
+
+6.2.3
 
 A Book by More than Three Authors
 
@@ -254,17 +240,7 @@ Hendrickson, 1993), 53.
 
 Scott, Bernard Brandon, Margaret Dean, Kristen Sparks, and Frances LaZar. Reading
 New Testament Greek. Peabody, MA: Hendrickson, 1993.
-Reference Implementation
-
-7. Bernard Brandon Scott et al., Reading New Testament Greek (Peabody, MA:
-Hendrickson, 1993), 53.
-9. Scott et al., Reading New Testament Greek, 42.
-Scott, Bernard Brandon, Margaret Dean, Kristen Sparks, and Frances LaZar. Reading
-New Testament Greek. Peabody, MA: Hendrickson, 1993.
-
-4
-
-6.2.4
+6.2.4
 
 A Translated Volume
 
@@ -292,15 +268,10 @@ and Historical-Critical Methodology, trans. Peter Heinegg (Peabody, MA: Hendrick
 
 Egger, Wilhelm. How to Read the New Testament: An Introduction to Linguistic and
 Historical-Critical Methodology. Translated by Peter Heinegg. Peabody, MA: Hendrickson, 1996.
-Reference Implementation
 
-14. Wilhelm Egger, How to Read the New Testament: An Introduction to Linguistic
-and Historical-Critical Methodology, trans. Peter Heinegg (Peabody, MA: Hendrickson,
-1996), 28.
-18. Egger, How to Read, 291.
-Egger, Wilhelm. How to Read the New Testament: An Introduction to Linguistic and
-Historical-Critical Methodology. Translated by Peter Heinegg. Peabody, MA: Hendrickson, 1996.
-6.2.5
+4
+
+6.2.5
 
 The Full History of a Translated Volume
 
@@ -316,10 +287,7 @@ date = {1883}
 author = {Wellhausen, Julius},
 title = {Prolegomena to the History of Israel},
 translator = {Black, J. Sutherland and Enzies, A.},
-
-5
-
-withtranslator = {Smith, W. Robertson},
+withtranslator = {Smith, W. Robertson},
 withtranslatortype = {withpreface},
 location = {Edinburgh},
 publisher = {Black},
@@ -349,28 +317,17 @@ Wellhausen, Julius. Prolegomena to the History of Ancient Israel. New York: Meri
 Books, 1957. Reprint of Prolegomena to the History of Israel. Translated by J. Sutherland Black and A. Enzies, with preface by W. Robertson Smith. Edinburgh: Black,
 1885. Translation of Prolegomena zur Geschichte Israels. 2nd ed. Berlin: Reimer,
 1883.
-Reference Implementation
-
-3. Julius Wellhausen, Prolegomena to the History of Ancient Israel (New York: Meridian Books, 1957), 296; repr. of Prolegomena to the History of Israel, trans. J. Sutherland
-Black and A. Enzies, with preface by W. Robertson Smith (Edinburgh: Black, 1885);
-trans. of Prolegomena zur Geschichte Israels, 2nd ed. (Berlin: Reimer, 1883).
-Julius Wellhausen,1 Prolegomena to the History of Ancient Israel. New York: Meridian
-Books, 1957. Reprint of Prolegomena to the History of Israel. Translated by J. Sutherland Black and A. Enzies, with preface by W. Robertson Smith. Edinburgh: Black,
-1885. Translation of Prolegomena zur Geschichte Israels. 2nd ed. Berlin: Reimer,
-1883.
 6.2.6
 
 A Book with One Editor
 
 @book{tigay:1985,
 editor = {Tigay, Jeffrey H.},
-title = {Empirical Models for Biblical Criticism},
 
-1. Should be “Wellhausen, Julius.”?
+5
 
-6
-
-shorttitle = {Empiracle Models},
+title = {Empirical Models for Biblical Criticism},
+shorttitle = {Empiracle Models},
 location = {Philadelphia},
 publisher = {University of Pennsylvania Press},
 date = {1985}
@@ -385,12 +342,6 @@ Biblatex Output
 9. Tigay, Empiracle Models, 38.
 \printbibliography
 
-Tigay, Jeffrey H., ed. Empirical Models for Biblical Criticism. Philadelphia: University
-of Pennsylvania Press, 1985.
-Reference Implementation
-
-5. Jeffrey H. Tigay, ed., Empirical Models for Biblical Criticism (Philadelphia: University of Pennsylvania Press, 1985), 35.
-9. Tigay, Empirical Models, 38.
 Tigay, Jeffrey H., ed. Empirical Models for Biblical Criticism. Philadelphia: University
 of Pennsylvania Press, 1985.
 6.2.7
@@ -422,27 +373,16 @@ Biblical Hebrew and Related Languages, RBS 42 (Atlanta: Society of Biblical Lite
 Kaltner, John, and Steven L. McKenzie, eds. Beyond Babel: A Handbook for Biblical
 Hebrew and Related Languages. RBS 42. Atlanta: Society of Biblical Literature,
 2002.
-7
-
-\printbiblist{abbreviations}
+\printbiblist{abbreviations}
 
 RBS
 
 Resources for Biblical Study
 
-Reference Implementation
+6
 
-44. John Kaltner and Steven L. McKenzie, eds., Beyond Babel: A Handbook for
-Biblical Hebrew and Related Languages, RBS 42 (Atlanta: Society of Biblical Literature,
-2002), xii.
-47. Kaltner and McKenzie,2 viii.
-Kaltner, John, and Steven L. McKenzie, eds. Beyond Babel: A Handbook for Biblical
-Hebrew and Related Languages. RBS 42. Atlanta: Society of Biblical Literature,
-2002.
-RBS
-6.2.8
+6.2.8
 
-Resources for Biblical Study
 A Book with Four or More Editors
 
 @book{oates+etal:2001,
@@ -473,22 +413,6 @@ Oakville, CT: American Society of Papyrologists, 2001.
 \printbiblist{abbreviations}
 
 BASPSup
-
-Bulletin of the American Society of Papyrologists, Supplements
-
-Reference Implementation
-
-4. John F. Oates et al., eds., Checklist of Editions of Greek and Latin Papyri, Ostraca,
-and Tablets, 5th ed., BASPSup 9 (Oakville, CT: American Society of Papyrologists,
-2001), 10.
-2. Should include “Beyond Babel,” ?
-
-8
-
-Oates, John F., William H. Willis, Roger S. Bagnall, and Klaas A. Worp, eds. Checklist
-of Editions of Greek and Latin Papyri, Ostraca, and Tablets. 5th ed. BASPSup 9.
-Oakville, CT: American Society of Papyrologists, 2001.
-BASPSup
 6.2.9
 
 Bulletin of the American Society of Papyrologists, Supplements
@@ -511,11 +435,10 @@ Biblatex Output
 \printbibliography
 
 Schillebeeckx, Edward. The Schillebeeckx Reader. Edited by Robert J. Schreiter. Edinburgh: T&T Clark, 1986.
-Reference Implementation
 
-45. Edward Schillebeeckx, The Schillebeeckx Reader, ed. Robert J. Schreiter (Edinburgh: T&T Clark, 1986), 20.
-Schillebeeckx, Edward. The Schillebeeckx Reader. Edited by Robert J. Schreiter. Edinburgh: T&T Clark, 1986.
-6.2.10 A Book with Author, Editor, and Translator
+7
+
+6.2.10 A Book with Author, Editor, and Translator
 @book{blass+debrunner:1982,
 author = {Blass, Friedrich and Debrunner, Albert},
 title = {Grammatica del greco del Nuovo Testamento},
@@ -530,16 +453,8 @@ Biblatex Output
 \autocite[40]{blass+debrunner:1982}
 
 3. Friedrich Blass and Albert Debrunner, Grammatica del greco del Nuovo Testamento, ed. Friedrich Rehkopf, trans. Giordana Pisi (Brescia: Paideia, 1982), 40.
+\printbibliography
 
-9
-
-\printbibliography
-
-Blass, Friedrich, and Albert Debrunner. Grammatica del greco del Nuovo Testamento.
-Edited by Friedrich Rehkopf. Translated by Giordana Pisi. Brescia: Paideia, 1982.
-Reference Implementation
-
-3. Friedrich Blass and Albert Debrunner, Grammatica del greco del Nuovo Testamento, ed. Friedrich Rehkopf, trans. Giordana Pisi (Brescia: Paideia, 1982), 40.
 Blass, Friedrich, and Albert Debrunner. Grammatica del greco del Nuovo Testamento.
 Edited by Friedrich Rehkopf. Translated by Giordana Pisi. Brescia: Paideia, 1982.
 6.2.11 A Title in a Modern Work Citing a Nonroman Alphabet
@@ -564,14 +479,6 @@ JBL
 
 Journal of Biblical Literature
 
-Reference Implementation
-
-34. Stuart A. Irvine, “Idols [ktbwnm]: A Note on Hosea 13:2a,” JBL 133 (2014):
-509–17.
-JBL
-
-Journal of Biblical Literature
-
 6.2.12 An Article in and Edited Volume
 @incollection{attridge:1986,
 author = {Attridge, Harold W.},
@@ -580,13 +487,14 @@ pages = {311-343},
 booktitle = {Early Judaism and Its Modern Interpreters},
 editor = {Kraft, Robert A. and Nickelsburg, George W. E.},
 location = {Philadelphia and Atlanta},
-publisher = {Fortress and Scholars Press},
+
+8
+
+publisher = {Fortress and Scholars Press},
 date = {1986}
 }
 
-10
-
-Biblatex Output
+Biblatex Output
 \autocite{attridge:1986}
 
 3. Harold W. Attridge, “Jewish Historiography,” in Early Judaism and Its Modern
@@ -599,15 +507,6 @@ Atlanta: Scholars Press, 1986), 311–43.
 
 Attridge, Harold W. “Jewish Historiography.” Pages 311–43 in Early Judaism and Its
 Modern Interpreters. Edited by Robert A. Kraft and George W. E. Nickelsburg.
-Philadelphia: Fortress; Atlanta: Scholars Press, 1986.
-Reference Implementation
-
-3. Harold W. Attridge, “Jewish Historiography,” in Early Judaism and Its Modern
-Interpreters, ed. Robert A. Kraft and George W. E. Nickelsburg (Philadelphia: Fortress;
-Atlanta: Scholars Press, 1986), 311–43.
-6. Attridge, “Jewish Historiography,” 314–17.
-Attridge, Harold A. “Jewish Historiography.” Pages 311–43 in Early Judaism and
-Its Modern Interpreters. Edited by Robert A. Kraft and George W. E. Nickelsburg.
 Philadelphia: Fortress; Atlanta: Scholars Press, 1986.
 6.2.13 An Article in a Festschrift
 @incollection{vanseters:1995,
@@ -633,25 +532,15 @@ für Otto Kaiser zum 70. Geburtstag, ed. Ingo Kottsieper et al. (Göttingen: Van
 \autocite[222]{vanseters:1995}
 
 17. Van Seters, “Theology of the Yahwist,” 222.
-
-11
-
-\printbibliography
+\printbibliography
 
 Van Seters, John. “The Theology of the Yahwist: A Preliminary Sketch.” Pages 219–28
 in “Wer ist wie du, Herr, unter den Göttern?”: Studien zur Theologie und Religionsgeschichte Israels für Otto Kaiser zum 70. Geburtstag. Edited by Ingo Kottsieper
 et al. Göttingen: Vandenhoeck & Ruprecht, 1995.
-Reference Implementation
 
-8. John Van Seters, “The Theology of the Yahwist: A Preliminary Sketch,” in “Wer
-ist wie du, Herr, unter den Göttern?”: Studien zur Theologie und Religionsgeschichte Israels
-für Otto Kaiser zum 70. Geburtstag, ed. Ingo Kottsieper et al. (Göttingen: Vandenhoeck
-& Ruprecht, 1995), 219–28.
-17. Van Seters, “Theology of the Yahwist,” 222.
-Van Seters, John. “The Theology of the Yahwist: A Preliminary Sketch.” Pages 219–28
-in “Wer ist wie du, Herr, unter den Göttern?”: Studien zur Theologie und Religionsgeschichte Israels für Otto Kaiser zum 70. Geburtstag. Edited by Ingo Kottsieper et
-al. Göttingen: Vandenhoeck & Ruprecht, 1995.
-6.2.14 An Introduction, Preface, or Foreword Written by Someone Other
+9
+
+6.2.14 An Introduction, Preface, or Foreword Written by Someone Other
 Than the Author
 @suppbook{boers:1996,
 author = {Boers, Hendrikus},
@@ -666,10 +555,10 @@ date = {1996}
 }
 
 Biblatex Output
-\autocite[xi-xii]{boers:1996}
+\autocite[xi-xxi]{boers:1996}
 
 2. Hendrikus Boers, introduction to How to Read the New Testament: An Introduction to Linguistic and Historical-Critical Methodology, by Wilhelm Egger, trans. Peter
-Heinegg (Peabody, MA: Hendrickson, 1996), xi–xii.
+Heinegg (Peabody, MA: Hendrickson, 1996), xi–xxi.
 \autocite[xi-xx]{boers:1996}
 
 6. Boers, introduction, xi–xx.
@@ -678,17 +567,6 @@ Heinegg (Peabody, MA: Hendrickson, 1996), xi–xii.
 Boers, Hendrikus. Introduction to How to Read the New Testament: An Introduction to
 Linguistic and Historical-Critical Methodology, by Wilhelm Egger. Translated by
 Peter Heinegg. Peabody, MA: Hendrickson, 1996.
-
-12
-
-Reference Implementation
-
-2. Hendrikus Boers, introduction to How to Read the New Testament: An Introduction to Linguistic and Historical-Critical Methodology, by Wilhelm Egger, trans. Peter
-Heinegg (Peabody; MA: Hendrickson, 1996), xi–xxi.
-6. Boers, introduction, xi–xx.
-Boers, Hendrikus. Introduction to How to Read the New Testament: An Introduction to
-Linguistic and Historical-Critical Methodology, by Wilhelm Egger. Translated by
-Peter Heinegg. Peabody; MA: Hendrickson, 1996.
 6.2.15 Multiple Publishers for a Single Book
 @book{gerhardsson:1961,
 author = {Gerhardsson, Birger},
@@ -713,17 +591,9 @@ Munksgaard, 1961.
 ASNU
 
 Acta Seminarii Neotestamentici Upsaliensis
+10
 
-Reference Implementation
-
-Birger Gerhardsson,3 Memory and Manuscript: Oral Tradition and Written Transmission
-in Rabbinic Judaism and Early Christianity. ASNU 22. Lund: Gleerup; Copenhagen:
-Munksgaard, 1961.
-ASNU
-
-Acta Seminarii Neotestamentici Upsaliensis
-
-6.2.16 A Revised Edition
+6.2.16 A Revised Edition
 @book{pritchard:1969,
 editor = {Pritchard, James B.},
 title = {Ancient Near Eastern Texts Relating to the Old Testament},
@@ -733,23 +603,13 @@ publisher = {Princeton University Press},
 date = {1969}
 }
 
-3. Should be “Gerhardsson, Birger.”?
-
-13
-
-Biblatex Output
+Biblatex Output
 \autocite[xxi]{pritchard:1969}
 
 87. James B. Pritchard, ed., Ancient Near Eastern Texts Relating to the Old Testament,
 3rd ed. (Princeton: Princeton University Press, 1969), xxi.
 \printbibliography
 
-Pritchard, James B., ed. Ancient Near Eastern Texts Relating to the Old Testament. 3rd ed.
-Princeton: Princeton University Press, 1969.
-Reference Implementation
-
-87. James B. Pritchard, ed., Ancient Near Eastern Texts Relating to the Old Testament,
-3rd ed. (Princeton: Princeton University Press, 1969), xxi.
 Pritchard, James B., ed. Ancient Near Eastern Texts Relating to the Old Testament. 3rd ed.
 Princeton: Princeton University Press, 1969.
 @book{blenkinsopp:1996,
@@ -770,12 +630,6 @@ Westminster John Knox, 1996), 81.
 
 Blenkinsopp, Joseph. A History of Prophecy in Israel. Rev. and enl. ed. Louisville:
 Westminster John Knox, 1996.
-Reference Implementation
-
-56. Joseph Blenkinsopp, A History of Prophecy in Israel, rev. and enl. ed. (Louisville:
-Westminster John Knox, 1996), 81.
-Blenkinsopp, Joseph. A History of Prophecy in Israel. Rev. and enl. ed. Louisville:
-Westminster John Knox, 1996.
 6.2.17 A Recent Reprint Title
 @book{vanseters:1997,
 author = {Van Seters, John},
@@ -786,13 +640,12 @@ origpublisher = {Yale University Press},
 origdate = {1983},
 location = {Winona Lake, IN},
 publisher = {Eisenbrauns},
-
-14
-
-date = {1997}
+date = {1997}
 }
 
-Biblatex Output
+11
+
+Biblatex Output
 \autocite[35]{vanseters:1997}
 
 5. John Van Seters, In Search of History: Histeriography in the Ancient World and
@@ -801,14 +654,6 @@ Lake, IN: Eisenbrauns, 1997), 35.
 \printbibliography
 
 Van Seters, John. In Search of History: Histeriography in the Ancient World and the
-Origins of Biblical History. New Haven: Yale University Press, 1983. Repr., Winona
-Lake, IN: Eisenbrauns, 1997.
-Reference Implementation
-
-5. John Van Seters, In Search of History: Historiography in the Ancient World and
-the Origins of Biblical History (New Haven: Yale University Press, 1983; repr., Winona
-Lake, IN: Eisenbrauns, 1997), 35.
-Van Seters, John. In Search of History: Historiography in the Ancient World and the
 Origins of Biblical History. New Haven: Yale University Press, 1983. Repr., Winona
 Lake, IN: Eisenbrauns, 1997.
 6.2.18 A Reprint Title in the Public Domain
@@ -834,17 +679,6 @@ Strachan (1927; repr., Peabody, MA: Hendrickson, 1995), 55.
 Deissmann, Gustav Adolf. Light from the Ancient East: The New Testament Illustrated
 by Recently Discovered Texts of the Graeco-Roman World. Translated by Lionel R. M.
 Strachan. 1927. Repr., Peabody, MA: Hendrickson, 1995.
-
-15
-
-Reference Implementation
-
-5. Gustav Adolf Deissmann, Light from the Ancient East: The New Testament
-Illustrated by Recently Discovered Texts of the Graeco-Roman World (trans. Lionel R. M.
-Strachan;4 1927; repr., Peabody, MA: Hendrickson, 1995), 55.
-Deissmann, Gustav Adolf. Light from the Ancient East: The New Testament Illustrated
-by Recently Discovered Texts of the Graeco-Roman World. Translated by Lionel R. M.
-Strachan. 1927. Repr., Peabody, MA: Hendrickson, 1995.
 6.2.19 A Forthcoming Book
 @book{harrison+welborn:forthcoming,
 editor = {Harrison, James R. and Welborn, L. L.},
@@ -857,7 +691,9 @@ publisher = {SBL Press},
 pubstate = {forthcoming}
 }
 
-Biblatex Output
+12
+
+Biblatex Output
 \autocite{harrison+welborn:forthcoming}
 
 9. James R. Harrison and L. L. Welborn, eds., The First Urban Churches 2: Roman
@@ -875,23 +711,7 @@ WGRWSup
 
 Writings from the Greco-Roman World Supplement Series
 
-Reference Implementation
-
-9. James R. Harrison and L. L. Welborn, eds., The First Urban Churches 2: Roman
-Corinth, WGRWSup (Atlanta: SBL Press, forthcoming).
-12. Harrison and Welborn, Roman Corinth, 201.
-Harrison, James R.5 and L. L. Welborn, eds. The First Urban Churches 2: Roman Corinth.
-WGRWSup. Atlanta: SBL Press, forthcoming.
-WGRWSup
-
-Writings from the Greco-Roman World Supplement Series
-
-4. Should be “, trans. Lionel R. M. Strachan (”?
-5. Should be “Harrison, James R.,”
-
-16
-
-6.2.20 A Multivolume Work
+6.2.20 A Multivolume Work
 @mvbook{harnack:1896-1905,
 author = {Harnack, Adolf},
 title = {History of Dogma},
@@ -915,13 +735,6 @@ Brown, 1896–1905).
 
 Harnack, Adolf. History of Dogma. Translated from the 3rd German ed. by Neil
 Buchanan. 7 vols. Boston: Little, Brown, 1896–1905.
-Reference Implementation
-
-5. Adolf Harnack, History of Dogma, trans. Neil Buchanan, 7 vols. (Boston: Little,
-Brown).
-9. Harnack, History of Dogma, 2:126.
-Harnack, Adolf. History of Dogma. Translated from the 3rd German ed. by Neil
-Buchanan. 7 vols. Boston: Little, Brown, 1896–1905.
 6.2.21 A Titled Volume in a Multivolume, Edited Work
 @collection{winter+clarke:1993,
 editor = {Winter, Bruce W. and Clarke, Andrew D.},
@@ -932,7 +745,10 @@ maintitle = {The Book of Acts in Its First Century Setting},
 maineditor = {Winter, Bruce W.},
 location = {Grand Rapids},
 publisher = {Eerdmans},
-date = {1993}
+
+13
+
+date = {1993}
 }
 
 Biblatex Output
@@ -941,22 +757,11 @@ Biblatex Output
 5. Bruce W. Winter and Andrew D. Clarke, eds., The Book of Acts in Its Ancient
 Literary Setting, vol. 1 of The Book of Acts in Its First Century Setting, ed. Bruce W.
 Winter (Grand Rapids: Eerdmans, 1993), 25.
-17
-
-\autocite[25]{winter+clarke:1993}
+\autocite[25]{winter+clarke:1993}
 
 16. Winter and Clarke, Book of Acts, 25.
 \printbibliography
 
-Winter, Bruce W., and Andrew D. Clarke, eds. The Book of Acts in Its Ancient Literary
-Setting. Vol. 1 of The Book of Acts in Its First Century Setting. Edited by Bruce W.
-Winter. Grand Rapids: Eerdmans, 1993.
-Reference Implementation
-
-5. Bruce W. Winter and Andrew D. Clarke, eds., The Book of Acts in Its Ancient
-Literary Setting, vol. 1 of The Book of Acts in Its First Century Setting, ed. Bruce W.
-Winter (Grand Rapids: Eerdmans, 1993), 25.
-16. Winter and Clarke, Book of Acts, 25.
 Winter, Bruce W., and Andrew D. Clarke, eds. The Book of Acts in Its Ancient Literary
 Setting. Vol. 1 of The Book of Acts in Its First Century Setting. Edited by Bruce W.
 Winter. Grand Rapids: Eerdmans, 1993.
@@ -989,17 +794,9 @@ Mason, Steve. “Josephus on Canon and Scriptures.” Pages 217–35 in vol. 1, 
 Hebrew Bible/Old Testament: The History of Its Interpretation. Edited by Magne
 Sæbø. Göttingen: Vandenhoeck & Ruprecht, 1996.
 
-18
+14
 
-Reference Implementation
-
-24. Steve Mason, “Josephus on Canon and Scriptures,” in Hebrew Bible/Old Testament: The History of Its Interpretation, ed. Magne Saebø (Göttingen: Vandenhoeck &
-Ruprecht, 1996), 1.1:217–335.6
-28. Mason, “Josephus on Canon and Scriptures,” 224.
-Mason, Steve. “Josephus on Canon and Scriptures.” Pages 217–35 in vol. 1, part 1 of
-Hebrew Bible/Old Testament: The History of Its Interpretation. Edited by Magne
-Saebø. Göttingen: Vandenhoeck & Ruprecht, 1996.
-6.2.23 A Chapter within a Titled Volume in a Multivolume Work
+6.2.23 A Chapter within a Titled Volume in a Multivolume Work
 @incollection{peterson:1993,
 author = {Peterson, David},
 title = {The Motif of Fulfilment and the Purpose of Luke-Acts},
@@ -1031,21 +828,6 @@ Peterson, David. “The Motif of Fulfilment and the Purpose of Luke-Acts.” Pag
 in The Book of Acts in Its Ancient Literary Setting. Edited by Bruce W. Winter and
 Andrew D. Clarke. Vol. 1 of The Book of Acts in Its First Century Setting. Edited by
 Bruce W. Winter. Grand Rapids: Eerdmans, 1993.
-Reference Implementation
-
-66. David Peterson, “The Motif of Fulfilment and the Purpose of Luke-Acts,” in The
-Book of Acts in Its Ancient Literary Setting, ed. Bruce W. Winter and Andrew D. Clarke,
-vol. 1 of The Book of Acts in Its First Century Setting, ed. Bruce W. Winter (Grand Rapids:
-Eerdmans, 1993), 83–104.
-78. Peterson, “Motif of Fulfilment,” 92.
-6. Should be “1.1:217–35.”?
-
-19
-
-David Peterson,7 “The Motif of Fulfilment and the Purpose of Luke-Acts.” Pages 83–104
-in The Book of Acts in Its Ancient Literary Setting. Edited by Bruce W. Winter and
-Andrew D. Clarke. Vol. 1 of The Book of Acts in Its First Century Setting. Edited by
-Bruce W. Winter. Grand Rapids: Eerdmans, 1993.
 6.2.24 A Work in a Series
 @book{hofius:1989,
 author = {Hofius, Otfried},
@@ -1065,20 +847,13 @@ Biblatex Output
 \autocite[124]{hofius:1989}
 
 14. Hofius, Paulusstudien, 124.
-\printbibliography
+15
+
+\printbibliography
 
 Hofius, Otfried. Paulusstudien. WUNT 51. Tübingen: Mohr Siebeck, 1989.
 \printbiblist{abbreviations}
 
-WUNT
-
-Wissenschaftliche Untersuchungen zum Neuen Testament
-
-Reference Implementation
-
-12. Otfried Hofius, Paulusstudien, WUNT 51 (Tübingen: Mohr Siebeck, 1989), 122.
-14. Hofius, Paulusstudien, 124.
-Hofius, Otfried. Paulusstudien. WUNT 51. Tübingen: Mohr Siebeck, 1989.
 WUNT
 
 Wissenschaftliche Untersuchungen zum Neuen Testament
@@ -1096,11 +871,7 @@ publisher = {Allenson},
 date = {1967}
 }
 
-7. Should be “Peterson, David.”?
-
-20
-
-Biblatex Output
+Biblatex Output
 \autocite[123-127]{jeremias:1967}
 
 23. Joachim Jeremias, The Prayers of Jesus, SBT 2/6 (Naperville, IL: Allenson, 1967),
@@ -1113,16 +884,6 @@ date = {1967}
 Jeremias, Joachim. The Prayers of Jesus. SBT 2/6. Naperville, IL: Allenson, 1967.
 \printbiblist{abbreviations}
 
-SBT
-
-Studies in Biblical Theology
-
-Reference Implementation
-
-23. Joachim Jeremias, The Prayers of Jesus, SBT 2/6 (Naperville, IL: Allenson, 1967),
-123–27.
-32. Jeremias, Prayers, 126.
-Jeremias, Joachim. The Prayers of Jesus. SBT 2/6. Naperville, IL: Allenson, 1967.
 SBT
 
 Studies in Biblical Theology
@@ -1147,7 +908,9 @@ Biblatex Output
 14. Henning Graf Reventlow, From the Old Testament to Origen, vol. 1 of History
 of Biblical Interpretation, trans. Leo G. Perdue (Atlanta: Society of Biblical Literature,
 2009), Nook edition, ch. 1.3.
-\autocite[ch.~1.3]{reventlow:2009}
+16
+
+\autocite[ch.~1.3]{reventlow:2009}
 
 18. Reventlow, From the Old Testament to Origen, ch. 1.3.
 \printbibliography
@@ -1155,18 +918,6 @@ of Biblical Interpretation, trans. Leo G. Perdue (Atlanta: Society of Biblical L
 Reventlow, Henning Graf. From the Old Testament to Origen. Vol. 1 of History of Biblical
 Interpretation. Translated by Leo G. Perdue. Atlanta: Society of Biblical Literature,
 2009. Nook edition.
-
-21
-
-Reference Implementation
-
-14. Henning Graf Reventlow, From the Old Testament to Origen. Vol. 18 of History
-of Biblical Interpretation, trans. Leo G. Perdue (Atlanta: Society of Biblical Literature,
-2009), Nook edition, ch. 1.3.
-18. Reventlow, From the Old Testament to Origen, ch. 1.3.
-Reventlow, Henning Graf. From the Old Testament to Origen. Volume9 1 of History of
-Biblical Interpretation. Translated by Leo G. Perdue. Atlanta: Society of Biblical
-Literature, 2009. Nook edition.
 @book{wright:2014,
 author = {Wright, Jacob L.},
 title = {David, King of Israel, and Caleb in Biblical Memory},
@@ -1190,13 +941,6 @@ Cambridge University Press, 2014), Kindle edition, ch. 3, “Introducing David.�
 
 Wright, Jacob L. David, King of Israel, and Caleb in Biblical Memory. Cambridge:
 Cambridge University Press, 2014. Kindle edition.
-Reference Implementation
-
-3. Jacob L. Wright, David, King of Israel, and Caleb in Biblical Memory (Cambridge:
-Cambridge University Press, 2014), Kindle edition, ch. 3, “Introducing David.”
-21. Wright, David, King of Israel, ch. 5, “Evidence from Qumran.”
-Jacob L. Wright, David, King of Israel, and Caleb in Biblical Memory. Cambridge:
-Cambridge University Press, 2014. Kindle edition.
 @book{killebrew+steiner:2014,
 editor = {Killebrew, Ann E. and Steiner, Margreet},
 title = {The Oxford Handbook of the Archaeology of the Levant: c.~8000--332
@@ -1208,12 +952,7 @@ date = {2014},
 doi = {10.1093/oxfordhb/9780199212972.001.0001}
 }
 
-8. Should be “, vol. 1”?
-9. Should be “Vol.” as elsewhere?
-
-22
-
-Biblatex Output
+Biblatex Output
 \autocite{killebrew+steiner:2014}
 
 53. Ann E. Killebrew and Margreet Steiner, eds., The Oxford Handbook of the
@@ -1222,18 +961,12 @@ doi:10.1093/oxfordhb/9780199212972.001.0001.
 \autocite{killebrew+steiner:2014}
 
 55. Killebrew and Steiner, Archaeology of the Levant.
-\printbibliography
+
+17
+
+\printbibliography
 
 Killebrew, Ann E., and Margreet Steiner, eds. The Oxford Handbook of the Archaeology
-of the Levant: c. 8000–332 BCE. Oxford: Oxford University Press, 2014. doi:10.1093/
-oxfordhb/9780199212972.001.0001.
-Reference Implementation
-
-53. Ann E. Killebrew and Margreet Steiner, eds., The Oxford Handbook of the
-Archaeology of the Levant: c. 8000–332 BCE (Oxford: Oxford University Press, 2014),
-doi:10.1093/oxfordhb/9780199212972.001.0001.
-55. Killebrew and Steiner, Archaeology of the Levant.
-Killebrew, Ann E.10 and Margreet Steiner, eds. The Oxford Handbook of the Archaeology
 of the Levant: c. 8000–332 BCE. Oxford: Oxford University Press, 2014. doi:10.1093/
 oxfordhb/9780199212972.001.0001.
 @book{kaufman:1974,
@@ -1267,22 +1000,6 @@ AS
 
 Assyriological Studies
 
-10. Should be “Killebrew, Ann E.,”?
-
-23
-
-Reference Implementation
-
-29. Stephen Kaufman. The Akkadian Inﬂuences on Aramaic, AS 19 (Chicago: The
-Oriental Institute of the University of Chicago, 1974), http://oi.uchicago.edu/pdf/as19
-.pdf.
-32. Kaufman, Akkadian Inﬂuences on Aramaic, 123.
-Kaufman, Stephen. The Akkadian Inﬂuences on Aramaic. AS 19. Chicago: The Oriental
-Institute of the University of Chicago, 1974. http://oi.uchicago.edu/pdf/as19.pdf.
-AS
-
-Assyriological Studies
-
 6.3 General Examples: Journal Articles, Reviews, and Dissertations
 6.3.1
 
@@ -1303,7 +1020,9 @@ Biblatex Output
 \autocite{leyerle:1993}
 
 7. Blake Leyerle, “John Chrysostom on the Gaze,” JECS 1 (1993): 159–74.
-\autocite[161]{leyerle:1993}
+18
+
+\autocite[161]{leyerle:1993}
 
 23. Leyerle, “Chrysostom,” 161.
 \printbibliography
@@ -1312,22 +1031,9 @@ Leyerle, Blake. “John Chrysostom on the Gaze.” JECS 1 (1993): 159–74.
 \printbiblist{abbreviations}
 
 JECS
+6.3.2
 
 Journal of Early Christian Studies
-
-Reference Implementation
-
-7. Blake Leyerle, “John Chrysostom on the Gaze,” JECS 1 (1993): 159–74.
-23. Leyerle, “John Chrysostom,” 161.
-Leyerle, Blake. “John Chrysostom on the Gaze.” JECS 1 (1993): 159–74.
-JECS
-
-Journal of Early Christian Studies
-
-24
-
-6.3.2
-
 A Journal Article with Multiple Page Locations and Volumes
 
 @article{wildberger:1965,
@@ -1350,15 +1056,6 @@ Biblatex Output
 Wildberger, Hans. “Das Abbild Gottes: Gen 1:26–30.” TZ 21 (1965): 245–59, 481–501.
 \printbiblist{abbreviations}
 
-TZ
-
-Theologische Zeitschrift
-
-Reference Implementation
-
-21. Hans Wildberger, “Das Abbild Gottes: Gen 1:26–30,” TZ 21 (1965): 245–59,
-481–501.
-Wildberger, Hans. “Das Abbild Gottes: Gen 1:26–30.” TZ 21 (1965): 245–59, 481–501.
 TZ
 
 Theologische Zeitschrift
@@ -1386,19 +1083,10 @@ Wellhausen, Julius. “Die Composition des Hexateuchs.” JDT 21 (1876): 392–4
 JDT
 
 Jahrbuch für deutsche Theologie
+19
 
-25
+6.3.3
 
-Reference Implementation
-
-24. Julius Wellhausen, “Die Composition des Hexateuchs,” JDT 21 (1876): 392–450;
-22 (1877): 407–79.
-Wellhausen, Julius. “Die Composition des Hexateuchs.” JDT 21 (1876): 392–450; 22
-(1877): 407–79.
-JDT
-6.3.3
-
-Jahrbuch für deutsche Theologie
 A Journal Article Republished in a Collected Volume
 
 @article{freedman:1977,
@@ -1426,16 +1114,6 @@ JBL
 
 Journal of Biblical Literature
 
-Reference Implementation
-
-20. David Noel Freedman, “Pottery, Poetry, and Prophecy: An Essay on Biblical
-Poetry,” JBL 96 (1977): 20.11
-Freedman, David Noel. “Pottery, Poetry, and Prophecy: An Essay on Biblical Poetry.”
-JBL 96 (1977): 5–26.
-JBL
-
-Journal of Biblical Literature
-
 @incollection{freedman:1980,
 author = {Freedman, David Noel},
 title = {Pottery, Poetry, and Prophecy: An Essay on Biblical Poetry},
@@ -1446,11 +1124,7 @@ date = {1980},
 pages = {1-22}
 }
 
-11. Should be “5–26” (full page reference) as elsewhere?
-
-26
-
-Biblatex Output
+Biblatex Output
 \autocite[14]{freedman:1980}
 
 20. David Noel Freedman, “Pottery, Poetry, and Prophecy: An Essay on Biblical
@@ -1458,14 +1132,6 @@ Poetry,” in Pottery, Poetry, and Prophecy: Studies in Early Hebrew Poetry (Win
 IN: Eisenbrauns, 1980), 1–22.
 \printbibliography
 
-Freedman, David Noel. “Pottery, Poetry, and Prophecy: An Essay on Biblical Poetry.”
-Pages 1–22 in Pottery, Poetry, and Prophecy: Studies in Early Hebrew Poetry. Winona
-Lake, IN: Eisenbrauns, 1980.
-Reference Implementation
-
-20. David Noel Freedman, “Pottery, Poetry, and Prophecy: An Essay on Biblical
-Poetry,” in Pottery, Poetry, and Prophecy: Studies in Early Hebrew Poetry (Winona Lake,
-IN: Eisenbrauns, 1980), 14.12
 Freedman, David Noel. “Pottery, Poetry, and Prophecy: An Essay on Biblical Poetry.”
 Pages 1–22 in Pottery, Poetry, and Prophecy: Studies in Early Hebrew Poetry. Winona
 Lake, IN: Eisenbrauns, 1980.
@@ -1477,7 +1143,10 @@ A Book Review
 author = {Teeple, Howard M.},
 revdauthor = {Robert, André and Feuillet, André},
 revdtitle = {Introduction to the New Testament},
-journaltitle = {Journal of Bible and Religion},
+
+20
+
+journaltitle = {Journal of Bible and Religion},
 shortjournal = {JBR},
 volume = {34},
 date = {1966},
@@ -1503,22 +1172,6 @@ JBR
 
 Journal of Bible and Religion
 
-12. Should be “1–22” (full page reference) as elsewhere?
-
-27
-
-Reference Implementation
-
-8. Howard M. Teeple, review of Introduction to the New Testament, by André Robert
-and André Feuillet, JBR 34 (1966): 368–70.
-21. Teeple, review of Introduction to the New Testament (by Robert and Feuillet),
-369.
-Teeple, Howard M. Review of Introduction to the New Testament, by André Robert and
-André Feuillet. JBR 34 (1966): 368–70.
-JBR
-
-Journal of Bible and Religion
-
 @review{pelikan:1992,
 author = {Pelikan, Jaroslav},
 title = {The Things That You're Liable to Read in the Bible},
@@ -1540,14 +1193,6 @@ Books, 20 December 1992, 3.
 Pelikan, Jaroslav. “The Things That You’re Liable to Read in the Bible,” review of The
 Anchor Bible Dictionary, ed. David Noel Freedman. New York Times Review of Books,
 20 December 1992, 3.
-Reference Implementation
-
-9. Jaroslav Pelikan, “The Things That You’re Liable to Read in the Bible,” review
-of The Anchor Bible Dictionary, ed. David Noel Freedman. New York Times Review of
-Books, 20 December 1992, 3.
-Pelikan, Jaroslav. “The Things That You’re Liable to Read in the Bible,” review of The
-Anchor Bible Dictionary, ed. David Noel Freedman. New York Times Review of Books,
-20 December 1992, 3.
 @article{petersen:1988,
 author = {Petersen, David L.},
 title = {Hebrew Bible Textbooks: A Review Article},
@@ -1558,7 +1203,7 @@ date = {1988},
 pages = {1-18}
 }
 
-28
+21
 
 Biblatex Output
 \autocite{petersen:1988}
@@ -1573,16 +1218,6 @@ pages = {1-18}
 Petersen, David L. “Hebrew Bible Textbooks: A Review Article.” CRBR 1 (1988): 1–18.
 \printbiblist{abbreviations}
 
-CRBR
-
-Critical Review of Books in Religion
-
-Reference Implementation
-
-7. David Petersen, “Hebrew Bible Textbooks: A Review Article,” CRBR 1 (1988):
-1–18.
-14. Petersen, “Hebrew Bible Textbooks,” 8.
-Petersen, David. “Hebrew Bible Textbooks: A Review Article.” CRBR 1 (1988): 1–18.
 CRBR
 6.3.5
 
@@ -1608,16 +1243,7 @@ Biblatex Output
 \printbibliography
 
 Klosinski, Lee E. “Meals in Mark.” PhD diss., The Claremont Graduate School, 1988.
-Reference Implementation
-
-21. Lee E. Klosinski, “Meals in Mark” (PhD diss., The Claremont Graduate School,
-1988), 22–44.
-26. Klosinski, “Meals in Mark,” 23.
-Klosinski, Lee. E. “Meals in Mark.” PhD diss., The Claremont Graduate School, 1988.
-
-29
-
-6.3.6
+6.3.6
 
 An Article in an Encyclopaedia or a Dictionary
 
@@ -1633,7 +1259,10 @@ date = {1962},
 shorthand = {IDB}
 }
 @inreference{stendahl:1962,
-author = {Stendahl, Krister},
+
+22
+
+author = {Stendahl, Krister},
 title = {Biblical Theology, Contemporary},
 shorttitle = {Biblical Theology},
 volume = {1},
@@ -1665,19 +1294,7 @@ IDB
 The Interpreter’s Dictionary of the Bible. Edited by George A. Buttrick.
 4 vols. New York: Abingdon, 1962
 
-Reference Implementation
-
-33. Krister Stendahl, “Biblical Theology, Contemporary,” IDB 1:418–32.
-36. Stendahl, “Biblical Theology,” 1:419.
-Stendahl, Krister. “Biblical Theology, Contemporary.” IDB 1:418–32.
-IDB
-
-The Interpreter’s Dictionary of the Bible. Edited by George A. Buttrick.
-4 vols. New York: Abingdon, 1962
-
-30
-
-6.3.6.2 An Article in a Single-Volume Encyclopaedia or Dictionary
+6.3.6.2 An Article in a Single-Volume Encyclopaedia or Dictionary
 @reference{DOTP,
 editor = {Alexander, T. Desmond and Baker, David W.},
 title = {Dictionary of the Old Testament: Pentateuch},
@@ -1700,7 +1317,9 @@ Biblatex Output
 \autocite{olson:2003}
 
 33. Dennis T. Olson, “Numbers, Book of,” DOTP, 611–18.
-\autocite[612]{olson:2003}
+23
+
+\autocite[612]{olson:2003}
 
 36. Olson, “Numbers,” 612.
 \printbibliography
@@ -1731,10 +1350,7 @@ shorthand = {NIDNTT}
 @inlexicon{dahn+liefeld:see+vision+eye,
 author = {Dahn, Karl and Liefeld, Walter L.},
 title = {See, Vision, Eye},
-
-31
-
-volume = {3},
+volume = {3},
 pages = {511-521},
 xref = {NIDNTT}
 }
@@ -1754,16 +1370,6 @@ NIDNTT
 New International Dictionary of New Testament Theology. Edited by
 Colin Brown. 4 vols. Grand Rapids: Zondervan, 1975–1985
 
-Reference Implementation
-
-3. Karl Dahn and Walter L. Liefeld, “See, Vision, Eye,” NIDNTT 3:511–21.
-Brown, Colin, ed. New International Dictionary of New Testament Theology. 4 vols.
-Grand Rapids: Zondervan, 1975–1985.
-NIDNTT
-
-New International Dictionary of New Testament Theology. Edited by Colin
-Brown. 4 vols. Grand Rapids: Zondervan, 1975–1985
-
 @mvlexicon{TDNT,
 editor = {Kittel, Gerhard and Friedrich, Gerhard},
 title = {Theological Dictionary of the New Testament},
@@ -1771,7 +1377,10 @@ shorttitle = {TDNT},
 translator = {Bromiley, Geoffrey W.},
 volumes = {10},
 location = {Grand Rapids},
-publisher = {Eerdmans},
+
+24
+
+publisher = {Eerdmans},
 date = {1964/1976},
 shorthand = {TDNT}
 }
@@ -1790,27 +1399,12 @@ Biblatex Output
 \autocite[83]{beyer:diakoneo+diakonia+ktl}
 
 25. Beyer, TDNT 2:83.
-
-32
-
-\printbibliography
+\printbibliography
 
 Kittel, Gerhard, and Gerhard Friedrich, eds. Theological Dictionary of the New Testament.
 Translated by Geoffrey W. Bromiley. 10 vols. Grand Rapids: Eerdmans, 1964–1976.
 \printbiblist{abbreviations}
 
-TDNT
-
-Theological Dictionary of the New Testament. Edited by Gerhard Kittel
-and Gerhard Friedrich. Translated by Geoffrey W. Bromiley. 10 vols.
-Grand Rapids: Eerdmans, 1964–1976
-
-Reference Implementation
-
-6. Hermann W. Beyer, “διακονέω, διακονία, κτλ,” TDNT 2:81–93.
-25. Beyer, TDNT 2:83.
-Kittel, Gerhard, and Gerhard Friedrich, eds. Theological Dictionary of the New Testament.
-Translated by Geoffrey W. Bromiley. 10 vols. Grand Rapids: Eerdmans, 1964–1976.
 TDNT
 
 Theological Dictionary of the New Testament. Edited by Gerhard Kittel
@@ -1841,24 +1435,14 @@ Biblatex Output
 \autocite{spicq:atakteo+ataktos+ataktos}
 
 7. Ceslas Spicq, “ἀτακτέω, ἄτακτος, ἀτάκτως,” TLNT 1:223–24.
-\printbibliography
+25
+
+\printbibliography
 
 Spicq, Ceslas. Theological Lexicon of the New Testament. Translated and edited by
 James D. Ernest. 3 vols. Peabody, MA: Hendrickson, 1994.
 \printbiblist{abbreviations}
 
-TLNT
-
-Theological Lexicon of the New Testament. Ceslas Spicq. Translated and
-edited by James D. Ernest. 3 vols. Peabody, MA: Hendrickson, 1994
-
-33
-
-Reference Implementation
-
-7. Ceslas Spicq, “ἀτακτέω, ἄτακτος, ἀτάκτως,” TLNT 1:223–24.
-Spicq, Ceslas. Theological Lexicon of the New Testament. Translated and edited by
-James D. Ernest. 3 vols. Peabody, MA: Hendrickson, 1994.
 TLNT
 
 Theological Lexicon of the New Testament. Ceslas Spicq. Translated and
@@ -1902,19 +1486,7 @@ TLNT
 Theological Lexicon of the New Testament. Ceslas Spicq. Translated and
 edited by James D. Ernest. 3 vols. Peabody, MA: Hendrickson, 1994
 
-Reference Implementation
-
-143. Ceslas Spicq, “ἀμοιβή,” TLNT 1:95–96.
-147. Spicq, TLNT 1:95.
-Spicq, Ceslas. Theological Lexicon of the New Testament. Translated and edited by
-James D. Ernest. 3 vols. Peabody, MA: Hendrickson, 1994.
-TLNT
-
-Theological Lexicon of the New Testament. Ceslas Spicq. Translated and
-edited by James D. Ernest. 3 vols. Peabody, MA: Hendrickson, 1994
-34
-
-@mvlexicon{TDNT,
+@mvlexicon{TDNT,
 editor = {Kittel, Gerhard and Friedrich, Gerhard},
 title = {Theological Dictionary of the New Testament},
 shorttitle = {TDNT},
@@ -1923,7 +1495,10 @@ volumes = {10},
 location = {Grand Rapids},
 publisher = {Eerdmans},
 date = {1964/1976},
-shorthand = {TDNT}
+
+26
+
+shorthand = {TDNT}
 }
 @inlexicon{beyer:diakoneo,
 author = {Beyer, Hermann W.},
@@ -1949,17 +1524,6 @@ Theological Dictionary of the New Testament. Edited by Gerhard Kittel
 and Gerhard Friedrich. Translated by Geoffrey W. Bromiley. 10 vols.
 Grand Rapids: Eerdmans, 1964–1976
 
-Reference Implementation
-
-23. Hermann W. Beyer, “διακονέω,” TDNT 2:81–87.
-Kittel, Gerhard, and Gerhard Friedrich, eds. Theological Dictionary of the New Testament.
-Translated by Geoffrey W. Bromiley. 10 vols. Grand Rapids: Eerdmans, 1964–1976.
-TDNT
-
-Theological Dictionary of the New Testament. Edited by Gerhard Kittel
-and Gerhard Friedrich. Translated by Geoffrey W. Bromiley. 10 vols.
-Grand Rapids: Eerdmans, 1964–1976
-
 @mvlexicon{NIDNTT,
 editor = {Brown, Colin},
 title = {New International Dictionary of New Testament Theology},
@@ -1970,10 +1534,7 @@ publisher = {Zondervan},
 date = {1975/1985},
 shorthand = {NIDNTT}
 }
-
-35
-
-@inlexicon{dahn:horao,
+@inlexicon{dahn:horao,
 author = {Dahn, Karl},
 title = {\textgreek{ὁράω}},
 volume = {3},
@@ -1992,25 +1553,16 @@ Biblatex Output
 
 Brown, Colin, ed. New International Dictionary of New Testament Theology. 4 vols.
 Grand Rapids: Zondervan, 1975–1985.
-\printbiblist{abbreviations}
+27
 
-NIDNTT
+\printbiblist{abbreviations}
 
-New International Dictionary of New Testament Theology. Edited by
-Colin Brown. 4 vols. Grand Rapids: Zondervan, 1975–1985
-
-Reference Implementation
-
-26. Karl Dahn, “ὁράω,” NIDNTT 3:511–18.
-29. Dahn, NIDNTT 3:511.
-Brown, Colin, ed. New International Dictionary of New Testament Theology. 4 vols.
-Grand Rapids: Zondervan, 1975–1985.
 NIDNTT
 
 6.3.8
 
-New International Dictionary of New Testament Theology. Edited by Colin
-Brown. 4 vols. Grand Rapids: Zondervan, 1975–1978
+New International Dictionary of New Testament Theology. Edited by
+Colin Brown. 4 vols. Grand Rapids: Zondervan, 1975–1985
 
 A Paper Presented at a Professional Society
 
@@ -2029,9 +1581,7 @@ venue = {Worcester, MA},
 eventdate = {1994-03-25}
 }
 
-36
-
-Biblatex Output
+Biblatex Output
 \autocite[13-17]{niditch:1994}
 
 31. Susan Niditch, “Oral Culture and Written Documents” (paper presented at the
@@ -2046,18 +1596,6 @@ Niditch, Susan. “Oral Culture and Written Documents.” Paper presented at the
 Meeting of the New England Region of the SBL. Worcester, MA, 25 March 1994.
 \printbiblist{abbreviations}
 
-SBL
-
-Society of Biblical Literature
-
-Reference Implementation
-
-31. Susan Niditch, “Oral Culture and Written Documents” (paper presented at the
-Annual Meeting of the New England Region of the SBL, Worcester, MA, 25 March
-1994), 13–17.
-35. Niditch, “Oral Culture,” 14.
-Niditch, Susan. “Oral Culture and Written Documents.” Paper presented at the Annual
-Meeting of the New England Region of the SBL. Worcester, MA, 25 March 1994.
 SBL
 6.3.9
 
@@ -2075,7 +1613,9 @@ date = {1998},
 pages = {23-33, 36-37, 72-74}
 }
 
-Biblatex Output
+28
+
+Biblatex Output
 \autocite{saldarini:1998}
 
 8. Anthony J. Saldarini, “Babatha’s Story,” BAR 24.2 (1998): 23–33, 36–37, 72–74.
@@ -2087,16 +1627,6 @@ Biblatex Output
 Saldarini, Anthony J. “Babatha’s Story.” BAR 24.2 (1998): 23–33, 36–37, 72–74.
 \printbiblist{abbreviations}
 
-BAR
-
-Biblical Archaeology Review
-37
-
-Reference Implementation
-
-8.Anthony J. Saldarini, “Babatha’s Story,” BAR 24.2 (1998): 28–33, 36–37, 72–74.
-27. Saldarini, “Babatha’s Story,” 28.
-Saldarini, Anthony J. “Babatha’s Story.” BAR 24.2 (1998): 28–33, 36–37, 72–74.
 BAR
 
 Biblical Archaeology Review
@@ -2132,32 +1662,20 @@ VC
 
 Vigiliae Christianae
 
-Reference Implementation
-
-43. Carl P. E. Springer, “Of Roosters and Repetitio: Ambrose’s Aeterne rerum
-conditor,” VC 68 (2014): 155–77, doi:10.1163/15700720-12341158.
-45. Springer, “Of Roosters and Repetitio,” 158.
-Springer, Carl P. E. “Of Roosters and Repetitio: Ambrose’s Aeterne rerum conditor.”
-VC 68 (2014): 155–77. doi:10.1163/15700720-12341158.
-VC
-
-Vigiliae Christianae
-
 @article{truehart:1996,
 author = {Truehart, Charles},
 title = {Welcome to the Next Church},
 shorttitle = {Next Church},
 url = {http://www.theatlantic.com/atlantic/issues/96aug/nxtchrch/nxtchrch.htm},
 journaltitle = {Atlantic Monthly},
-
-38
-
-volume = {278},
+volume = {278},
 date = {1996-08},
 pages = {37-58}
 }
 
-Biblatex Output
+29
+
+Biblatex Output
 \autocite{truehart:1996}
 
 8. Charles Truehart, “Welcome to the Next Church,” Atlantic Monthly 278 (August
@@ -2170,15 +1688,6 @@ Biblatex Output
 
 Truehart, Charles. “Welcome to the Next Church.” Atlantic Monthly 278 (August 1996):
 37–58. http://www.theatlantic.com/atlantic/issues/96aug/nxtchrch/nxtchrch.htm.
-Reference Implementation
-
-8. Charles Truehart, “Welcome to the Next Church,” Atlantic Monthly 278 (August
-1996): 37–58, http://www.theatlantic.com/past/docs/issues/96aug/nxtchrch/nxtchrch
-.htm.
-12. Truehart, “Next Church,” 37.
-Truehart, Charles. “Welcome to the Next Church.” Atlantic Monthly 278 (August 1996):
-37–58. http://www.theatlantic.com/past/docs/issues/96aug/nxtchrch/nxtchrch
-.htm.
 @article{kirk:2007,
 author = {Kirk, Alan},
 title = {Karl Polanyi, Marshall Sahlins, and the Study of Ancient Social
@@ -2202,28 +1711,13 @@ Relations,” JBL 126 (2007): 182–91, doi:10.2307/27638428, http://www.jstor.o
 \autocite[186]{kirk:2007}
 
 35. Kirk, “Karl Polanyi,” 186.
-
-39
-
-\printbibliography
+\printbibliography
 
 Kirk, Alan. “Karl Polanyi, Marshall Sahlins, and the Study of Ancient Social Relations.”
 JBL 126 (2007): 182–91. doi:10.2307 / 27638428. http : / / www.jstor.org / stable /
 27638428.
 \printbiblist{abbreviations}
 
-JBL
-
-Journal of Biblical Literature
-
-Reference Implementation
-
-31. Alan Kirk, “Karl Polanyi, Marshall Sahlins, and the Study of Ancient Social
-Relations,” JBL 126 (2007): 182–91, doi:10.2307/27638428, http://www.jstor.org/stable/
-27638428.
-35. Kirk, “Karl Polanyi,” 186.
-Alan Kirk.13 “Karl Polanyi, Marshall Sahlins, and the Study of Ancient Social Relations,” JBL 126 (2007): 182–91. doi:10.2307/27638428. http://www.jstor.org/stable/
-27638428.
 JBL
 
 Journal of Biblical Literature
@@ -2235,7 +1729,10 @@ Texts from the Ancient Near East
 
 6.4.1.1 Citing COS
 @mvcollection{COS,
-editor = {Hallo, William W.},
+
+30
+
+editor = {Hallo, William W.},
 title = {The Context of Scripture},
 shorttitle = {COS},
 volumes = {3},
@@ -2258,12 +1755,7 @@ shorthand = {COS},
 xref = {COS},
 options = {skipbiblist}
 }
-
-13. Should be “Kirk, Alan.”?
-
-40
-
-@ancienttext{greathymnaten,
+@ancienttext{greathymnaten,
 entrysubtype = {COS},
 title = {The Great Hymn to the Aten},
 shorttitle = {Great Hymn to the Aten},
@@ -2293,18 +1785,9 @@ COS
 The Context of Scripture. Edited by William W. Hallo. 3 vols. Leiden:
 Brill, 1997–2002
 
-Reference Implementation
+31
 
-7. “The Great Hymn to the Aten,” trans. Miriam Lichtheim (COS 1.26:44–46).
-11. “Great Hymn to the Aten,” COS 1.26:44–46.
-Hallo, William W., ed. Canonical Compositions from the Biblical World. Vol. 1 of The
-Context of Scripture. Leiden: Brill, 1997.
-COS
-
-The Context of Scripture. Edited by William W. Hallo. 3 vols. Leiden:
-Brill, 1997–2002
-
-6.4.1.2 Citing Other Texts
+6.4.1.2 Citing Other Texts
 @collection{ANET,
 editor = {Pritchard, James B.},
 title = {Ancient Near Eastern Texts Relating to the Old Testament},
@@ -2318,10 +1801,7 @@ shorthand = {ANET}
 @ancienttext{suppiluliumas,
 title = {Suppiluliumas and the Egyptian Queen},
 translator = {Goetz, Albrecht},
-
-41
-
-related = {ANET},
+related = {ANET},
 }
 
 Biblatex Output
@@ -2334,16 +1814,6 @@ Pritchard, James B., ed. Ancient Near Eastern Texts Relating to the Old Testamen
 Princeton: Princeton University Press, 1969.
 \printbiblist{abbreviations}
 
-ANET
-
-Ancient Near Eastern Texts Relating to the Old Testament. Edited by
-James B. Pritchard. 3rd ed. Princeton: Princeton University Press, 1969
-
-Reference Implementation
-
-16. “Suppiluliumas and the Egyptian Queen,” trans. Albrecht Goetze (ANET, 319).
-Pritchard, James B., ed. Ancient Near Eastern Texts Relating to the Old Testament. 3rd ed.
-Princeton: Princeton University Press, 1969.
 ANET
 
 Ancient Near Eastern Texts Relating to the Old Testament. Edited by
@@ -2367,19 +1837,14 @@ Biblatex Output
 
 5. “Erra and Ishum” (Stephanie Dalley, Myths from Mesopotamia [Oxford: Oxford
 University Press, 1991], 282–315).
-\printbibliography
 
-Dalley, Stephanie. Myths from Mesopotamia. Oxford: Oxford University Press, 1991.
-Reference Implementation
+32
 
-5. “Erra and Ishum” (Stephanie Dalley, Myths from Mesopotamia [Oxford: Oxford
-University Press, 1991], 282–315).
+\printbibliography
+
 Dalley, Stephanie. Myths from Mesopotamia. Oxford: Oxford University Press, 1991.
 @book{foster:1993,
-
-42
-
-author = {Foster, Benjamin},
+author = {Foster, Benjamin},
 title = {Before the Muses: An Anthology of Akkadian Literature},
 shorttitle = {Muses},
 volume = {1},
@@ -2403,12 +1868,6 @@ Literature [Bethesda, MD: CDL, 1993], 1:771–805).
 
 Foster, Benjamin. Before the Muses: An Anthology of Akkadian Literature. Vol. 1.
 Bethesda, MD: CDL, 1993.
-Reference Implementation
-
-5. “Erra and Ishum” (Benjamin Foster, Before the Muses: An Anthology of Akkadian
-Literature [Bethesda, MD: CDL, 1993], 1:771–805).
-Foster, Benjamin. Before the Muses: An Anthology of Akkadian Literature. Vol. 1.
-Bethesda, MD: CDL, 1993.
 @mvbook{AEL,
 author = {Lichtheim, Miriam},
 title = {Ancient Egyptian Literature},
@@ -2429,12 +1888,12 @@ location = {Berkeley},
 publisher = {University of California Press},
 date = {1976},
 shorthand = {AEL},
-
-43
-
-ref = {AEL},
+ref = {AEL},
 options = {skipbiblist}
-}
+
+33
+
+}
 @ancienttext{doomedprince,
 title = {The Doomed Prince},
 pages = {200-203},
@@ -2460,16 +1919,6 @@ AEL
 
 Ancient Egyptian Literature. Miriam Lichtheim. 3 vols. Berkeley: University of California Press, 1971–1980
 
-Reference Implementation
-
-34. “The Doomed Prince” (Miriam Lichtheim, Ancient Egyptian Literature [Berkeley:
-University of California Press, 1976], 2:200–203).14
-36. “The Doomed Prince” (AEL 2:200–203).15
-Lichtheim, Miriam. Ancient Egyptian Literature. Vol 2. Berkeley: University of California Press, 1976.
-AEL
-
-Ancient Egyptian Literature. Miriam Lichtheim. 3 vols. Berkeley: University of California Press, 1971–1980
-
 @book{hoffner:1990,
 author = {Hoffner, Jr., Harry A.},
 title = {Hittite Myths},
@@ -2482,13 +1931,7 @@ publisher = {Scholars Press},
 date = {1990}
 }
 @ancienttext{disappearanceofsungod,
-
-14. Should be “200–3”?
-15. Should be “200–3”?
-
-44
-
-title = {The Disappearance of the Sun God},
+title = {The Disappearance of the Sun God},
 related = {hoffner:1990}
 }
 
@@ -2501,18 +1944,11 @@ Myths, ed. Gary M. Beckman, WAW 2 [Atlanta: Scholars Press, 1990], 26).
 
 Hoffner, Harry A., Jr. Hittite Myths. Edited by Gary M. Beckman. WAW 2. Atlanta:
 Scholars Press, 1990.
-\printbiblist{abbreviations}
 
-WAW
+34
 
-Writings from the Ancient World
+\printbiblist{abbreviations}
 
-Reference Implementation
-
-12. “The Disappearance of the Sun God,” §3 (A I 11–17) (Harry A. Hoffner Jr., Hittite
-Myths [ed. Gary M. Beckman; WAW 2;16 Atlanta: Scholars Press, 1990], 26).
-Hoffner, Harry A., Jr. Hittite Myths. Edited by Gary M. Beckman. WAW 2. Atlanta:
-Scholars Press, 1990.
 WAW
 
 Writings from the Ancient World
@@ -2539,11 +1975,7 @@ related = {RIMA},
 relatedoptions = {skipbiblistshorthand,shorthand=short}
 }
 
-16. Editor, series, and number should be outside of parentheses?
-
-45
-
-Biblatex Output
+Biblatex Output
 (\autocite[obv.\ lines 10--17)]{ashurinscription}
 
 32. Ashur Inscription, obv. lines 10–17 (Albert Kirk Grayson, Assyrian Rulers of
@@ -2558,18 +1990,6 @@ Grayson, Albert Kirk. Assyrian Rulers of the Early First Millennium BC (1114–8
 RIMA 2. Toronto: University of Toronto Press, 1991.
 \printbiblist{abbreviations}
 
-RIMA
-
-The Royal Inscriptions of Mesopotamia, Assyrian Periods
-
-Reference Implementation
-
-32. Ashur Inscription, obv. lines 10–17 (Albert Kirk Grayson, Assyrian Rulers of
-the Early First Millennium BC [1114–859 BC], RIMA 2 [Toronto: University of Toronto
-Press, 1991], 143–44).
-34. Ashur Inscription, obv. lines 10–17 (RIMA 2:143–44).
-Grayson, Albert Kirk. Assyrian Rulers of the Early First Millennium BC (1114–859 BC).
-RIMA 2. Toronto: University of Toronto Press, 1991.
 RIMA
 
 The Royal Inscriptions of Mesopotamia, Assyrian Periods
@@ -2585,7 +2005,10 @@ location = {Locust Valley, NY},
 publisher = {Augustin},
 date = {1975},
 shorthand = {ABC}
-}
+
+35
+
+}
 @ancienttext{esarhaddonchronicle,
 entrysubtype = {chronicle},
 title = {Esarhaddon Chronicle},
@@ -2598,10 +2021,7 @@ Biblatex Output
 
 33. Esarhaddon Chronicle, lines 3–4 (Albert Kirk Grayson, Assyrian and Babylonian
 Chronicles, TCS 5 [Locust Valley, NY: Augustin, 1975], 125).
-
-46
-
-\autocite[(lines 3--4)125]{esarhaddonchronicle}
+\autocite[(lines 3--4)125]{esarhaddonchronicle}
 
 34. Esarhaddon Chronicle, lines 3–4 (ABC, 125).
 \printbibliography
@@ -2613,22 +2033,6 @@ Augustin, 1975.
 ABC
 
 Assyrian and Babylonian Chronicles. Albert Kirk Grayson. TCS 5. Locust
-Valley, NY: Augustin, 1975
-
-TCS
-
-Texts from Cuneiform Sources
-
-Reference Implementation
-
-33. Esarhaddon Chronicle, lines 3–4 (Albert Kirk Grayson, Assyrian and Babylonian
-Chronicles, TCS [Locust Valley, NY: Augustin, 1975], 125).
-33. Esarhaddon Chronicle, lines 3–4 (ABC, 125).
-Grayson, Albert Kirk. Assyrian and Babylonian Chronicles. TCS. Locust Valley, NY:
-Augustin, 1975.
-ABC
-
-Assyrian and Babylonian Chronicles. Albert K. Grayson. TCS 5. Locust
 Valley, NY: Augustin, 1975
 
 TCS
@@ -2662,19 +2066,12 @@ ARM
 
 Archives royales de Mari
 
-47
-
-Reference Implementation
-
-45. ARM 1.3.
-Dossin, Georges. Lettres. ARM 1. 1946. Repr., Paris: Geuthner, 1967.
-ARM
-
-Archives royales de Mari
-
 @book{ARMT1,
 author = {Dossin, Georges},
-title = {Correspondance de Ššami-Addu et de ses fils},
+
+36
+
+title = {Correspondance de Ššami-Addu et de ses fils},
 series = {Archives royales de Mari, transcrite et traduite},
 shortseries = {ARMT},
 number = {1},
@@ -2695,14 +2092,6 @@ Dossin, Georges. Correspondance de Šamši-Addu et de ses fils. ARMT 1. Paris: I
 \printbiblist{abbreviations}
 
 ARMT
-
-Archives royales de Mari, transcrite et traduite
-
-Reference Implementation
-
-45. ARMT 1.3.
-Georges Dossin,17 Correspondance de Šamši-Addu et de ses fils. ARMT 1. Paris: Imprimerei nationale, 1950.
-ARMT
 6.4.2
 
 Archives royales de Mari, transcrite et traduite
@@ -2718,12 +2107,7 @@ location = {Cambridge},
 publisher = {Harvard University Press},
 date = {1926/1965}
 }
-
-17. Should be “Dossin, Georges.”?
-
-48
-
-@classictext{josephus:ant,
+@classictext{josephus:ant,
 author = {Josephus},
 title = {Ant\adddot},
 xref = {josephus}
@@ -2740,18 +2124,11 @@ Biblatex Output
 
 Josephus. Translated by Henry St. J. Thackeray et al. 10 vols. LCL. Cambridge: Harvard
 University Press, 1926–1965.
-\printbiblist{abbreviations}
 
-LCL
+37
 
-Loeb Classical Library
+\printbiblist{abbreviations}
 
-Reference Implementation
-
-(Josephus, Ant. 2.233–235)
-1. Josephus, Ant. 2.233–235.
-Josephus. Translated by Henry St. J. Thackeray et al. 10 vols. LCL. Cambridge: Harvard
-University Press, 1926–1965.
 LCL
 
 Loeb Classical Library
@@ -2781,19 +2158,8 @@ Biblatex Output
 
 Tacitus. The Histories and The Annals. Translated by Clifford H. Moore and John
 Jackson. 4 vols. LCL. Cambridge: Harvard University Press, 1937.
-49
+\printbiblist{abbreviations}
 
-\printbiblist{abbreviations}
-
-LCL
-
-Loeb Classical Library
-
-Reference Implementation
-
-4. Tacitus, Ann. 15.18–19.
-Tacitus. The Histories and The Annals. Translated by Clifford H. Moore and John
-Jackson. 4 vols. LCL. Cambridge: Harvard University Press, 1937.
 LCL
 
 Loeb Classical Library
@@ -2817,7 +2183,9 @@ shortseries = {LCL},
 xref = {josephus}
 }
 
-Biblatex Output
+38
+
+Biblatex Output
 \parencite[2.233-235]{josephus:ant:thackery}
 
 (Josephus, Ant. 2.233–235 [Thackeray, LCL])
@@ -2834,19 +2202,7 @@ LCL
 
 Loeb Classical Library
 
-Reference Implementation
-
-(Josephus, Ant. 2.233–235 [Thackeray, LCL])
-5. Josephus, Ant. 2.233–235 (Thackeray, LCL).
-Josephus. Translated by Henry St. J. Thackeray et al. 10 vols. LCL. Cambridge: Harvard
-University Press, 1926–1965.
-LCL
-
-Loeb Classical Library
-
-50
-
-@mvbook{tacitus,
+@mvbook{tacitus,
 author = {Tacitus},
 title = {The Histories and The Annals},
 translator = {Clifford H. Moore and John Jackson},
@@ -2880,15 +2236,6 @@ LCL
 
 Loeb Classical Library
 
-Reference Implementation
-
-6. Tacitus, Ann. 15.18–19 (Jackson, LCL).
-Tacitus. The Histories and The Annals. Translated by Clifford H. Moore and John
-Jackson. 4 vols. LCL. Cambridge: Harvard University Press, 1937.
-LCL
-
-Loeb Classical Library
-
 @mvbook{josephus,
 title = {Josephus},
 translator = {Thackeray, Henry St.\@ J. and others},
@@ -2896,16 +2243,16 @@ volumes = {10},
 series = {Loeb Classical Library},
 shortseries = {LCL},
 location = {Cambridge},
-publisher = {Harvard University Press},
+
+39
+
+publisher = {Harvard University Press},
 date = {1926/1965}
 }
 @book{josephus:ant1-19,
 author = {Josephus, Flavius},
 shortauthor = {Josephus},
-
-51
-
-title = {The Jewish Antiquities, Books 1--19},
+title = {The Jewish Antiquities, Books 1--19},
 shorttitle = {Ant\adddot},
 translator =
 
@@ -2934,15 +2281,6 @@ LCL
 
 Loeb Classical Library
 
-Reference Implementation
-
-14. Flavius Josephus, The Jewish Antiquities, Books 1–19, trans. Henry St. J. Thackeray et al., LCL (Cambridge: Harvard University Press, 1930–1965).
-Josephus. Translated by Henry St. J. Thackeray et al. 10 vols. LCL. Cambridge: Harvard
-University Press, 1926–1965.
-LCL
-
-Loeb Classical Library
-
 6.4.3
 
 Papyri, Ostraca, and Epigraphica
@@ -2964,7 +2302,8 @@ Biblatex Output
 \autocite[59003]{p.cair.zen.}
 
 22. P.Cair.Zen. 59003.
-52
+
+40
 
 \printbiblist{abbreviations}
 
@@ -2973,10 +2312,6 @@ P.Cair.Zen.
 Zenon Papyri, Catalogue général des antiquités égyptiennes du Musée du
 Caire. Edited by C. C. Edgar. Cairo
 
-Reference Implementation
-
-(P.Cair.Zen. 59003)
-22. P.Cair.Zen. 59003.
 @book{hunt+edgar:1932,
 author = {Hunt, Arthur S. and Edgar, Campbell C.},
 title = {Select Papyri},
@@ -3020,17 +2355,7 @@ P.Cair.Zen.
 Zenon Papyri, Catalogue général des antiquités égyptiennes du Musée du
 Caire. Edited by C. C. Edgar. Cairo
 
-Reference Implementation
-
-22. P.Cair.Zen. 59003 (Arthur S. Hunt and Campbell C. Edgar, Select Papyri, LCL
-[Cambridge: Harvard University Press, 1932], 1:96).
-22. P.Cair.Zen. 59003 (Hunt and Edgar §31).
-LCL
-
-Loeb Classical Library
-53
-
-6.4.3.2 Epigraphica
+6.4.3.2 Epigraphica
 6.4.3.3 Greek Magical Papyri
 @ancienttext{PGM,
 editor = {Preisendaz, Karl},
@@ -3038,7 +2363,10 @@ title = {Papyri Graecae Magicae: Die griechischen Zauberpapyri},
 shorttitle = {PGM},
 edition = {2},
 location = {Stuttgart},
-publisher = {Teubner},
+
+41
+
+publisher = {Teubner},
 date = {1973/1974},
 shorthand = {PGM},
 options = {skipbib}
@@ -3057,15 +2385,6 @@ PGM
 
 Papyri Graecae Magicae: Die griechischen Zauberpapyri. Edited by Karl
 Preisendaz. 2nd ed. Stuttgart: Teubner, 1973–1974
-
-Reference Implementation
-
-(PGM III. 1–164)
-22. PGM III. 1–164.
-PGM
-
-Papyri Graecae Magicae: Die griechischen Zauberpapyri. Edited by Karl
-Preisendanz. 2nd ed. Stuttgart: Teubner, 1973–1974
 
 @book{betz:1996,
 author = {Betz, Hans Dieter},
@@ -3086,10 +2405,7 @@ publisher = {Teubner},
 date = {1973/1974},
 shorthand = {PGM},
 related = {betz:1996},
-
-54
-
-relatedoptions = {usefullcite=false,useshorttitle=false}
+relatedoptions = {usefullcite=false,useshorttitle=false}
 }
 
 Biblatex Output
@@ -3107,17 +2423,10 @@ PGM
 Papyri Graecae Magicae: Die griechischen Zauberpapyri. Edited by Karl
 Preisendaz. 2nd ed. Stuttgart: Teubner, 1973–1974
 
-Reference Implementation
+42
 
-22. PGM III. 1–164 (Betz).
-Betz, Hans Dieter. The Greek Magical Papyri in Translation, Including the Demotic Spells.
-2nd ed. Chicago: University of Chicago Press, 1996.
-PGM
+6.4.4
 
-6.4.4
-
-Papyri Graecae Magicae: Die griechischen Zauberpapyri. Edited by Karl
-Preisendanz. 2nd ed. Stuttgart: Teubner, 1973–1974
 Ancient Epistles and Homilies
 
 @classictext{heraclitus:epistle1,
@@ -3132,10 +2441,6 @@ Biblatex Output
 \autocite[10]{heraclitus:epistle1}
 
 34. Heraclitus, Epistle 1, 10.
-Reference Implementation
-
-(Heraclitus, Epistle 1, 10)
-34. Heraclitus, Epistle 1, 10.
 @book{malherbe:1977,
 editor = {Malherbe, Abraham J.},
 title = {The Cynic Epistles: A Study Edition},
@@ -3146,10 +2451,7 @@ location = {Atlanta},
 publisher = {Scholars Press},
 date = {1977}
 }
-
-55
-
-@classictext{heraclitus:epistle1:worley,
+@classictext{heraclitus:epistle1:worley,
 author = {Heraclitus},
 title = {Epistle 1},
 translator = {Worley, David},
@@ -3179,19 +2481,9 @@ Press, 1977.
 SBS
 
 Stuttgarter Bibelstudien
+43
 
-Reference Implementation
-
-36. Heraclitus, Epistle 1, 10 (Worley).
-Heraclitus. Epistle 1. Translated by David Worley. Page 187 in The Cynic Epistles: A
-Study Edition. Edited by Abraham J. Malherbe. SBS 12. Atlanta: Scholars Press,
-1977.
-Malherbe, Abraham J., ed. The Cynic Epistles: A Study Edition. SBS 12. Atlanta: Scholars
-Press, 1977.
-SBS
-6.4.5
-
-Stuttgarter Bibelstudien
+6.4.5
 
 ANF and NPNF, First and Second Series
 
@@ -3204,10 +2496,7 @@ location = {Peabody, MA},
 publisher = {Hendrickson},
 date = {1994},
 shorthand = {ANF},
-
-56
-
-options = {useeditor=false,skipbiblist},
+options = {useeditor=false,skipbiblist},
 sortkey = {Ante-Nicene Fathers},
 xref = {ANF:abbreviation}
 }
@@ -3238,15 +2527,6 @@ ANF
 
 The Ante-Nicene Fathers
 
-Reference Implementation
-
-14. The Clementine Homilies 1.3 (ANF 8:223).
-The Ante-Nicene Fathers. Edited by Alexander Roberts and James Donaldson. 1885–1887.
-10 vols.18 Repr., Peabody, MA: Hendrickson, 1994.
-ANF
-
-Ante-Nicene Fathers
-
 @mvcollection{NPNF1,
 crossref = {NPNF1:abbreviation},
 editor = {Schaff, Philip},
@@ -3259,14 +2539,12 @@ shorthand = {NPNF\textsuperscript{1}},
 options = {useeditor=false,skipbiblist},
 sortkey = {Nicene and Post-Nicene Fathers, Series 1},
 xref = {NPNF1:abbreviation}
-}
+
+44
+
+}
 @mvcollection{NPNF1:abbreviation,
-
-18. Should be “10 vols. 1885–1887.”?
-
-57
-
-title = {The Nicene and Post-Nicene Fathers, \mkbibemph{Series~1}},
+title = {The Nicene and Post-Nicene Fathers, \mkbibemph{Series~1}},
 shorttitle = {NPNF\textsuperscript{1}},
 shorthand = {NPNF\textsuperscript{1}},
 options = {skipbib}
@@ -3297,16 +2575,6 @@ NPNF1
 
 The Nicene and Post-Nicene Fathers, Series 1
 
-Reference Implementation
-
-44. Augustine, Letters of St. Augustin 28.3.5 (NPNF1 1:252).
-Augustine. The Letters of St. Augustin. In vol. 1 of The Nicene and Post-Nicene Fathers,
-Series 1. Edited by Philip Schaff. 1886–1889. 14 vols.19 Repr., Peabody, MA:
-Hendrickson, 1994.
-NPNF1
-
-The Nicene and Post-Nicene Fathers, Series 1
-
 6.4.6
 
 J.-P. Migne’s Patrologia Latina and Patrologia Graeca
@@ -3320,19 +2588,17 @@ date = {1844/1864},
 shorthand = {PL}
 }
 @series{PG,
-
-19. Should be “14 vols. 1886–1889.”?
-
-58
-
-title = {Patrologia Graeca},
+title = {Patrologia Graeca},
 editor = {Migne, J.-P.},
 volumes = {162},
 location = {Paris},
 date = {1857/1886},
 shorthand = {PG}
 }
-@classictext{gregory:orationestheologicae,
+
+45
+
+@classictext{gregory:orationestheologicae,
 entrysubtype = {churchfather},
 author = {{Gregory of Nazianzus}},
 title = {Orationes theologicae},
@@ -3359,21 +2625,6 @@ PL
 
 Patrologia Latina. Edited by J.-P. Migne. 217 vols. Paris, 1844–1864
 
-Reference Implementation
-
-6. Gregory of Nazianzus, Orationes theologicae 4 (PG 36:12c).
-Patrologia Graeca. Edited by J.-P. Migne. 162 vols. Paris, 1857–1886.
-Patrologia Latina. Edited by J.-P. Migne. 217 vols. Paris, 1844–1864.
-PG
-
-Patrologia Graeca. Edited by Jacques-Paul Migne. 162 vols. Paris,
-1857–1886
-
-PL
-
-Patrologia Latina. Edited by Jacques-Paul Migne. 217 vols. Paris,
-1844–1864
-
 6.4.7
 
 Strack-Billerbeck, Kommentar zum Neuen Testament
@@ -3388,9 +2639,7 @@ date = {1922/1961},
 shorthand = {Str-B}
 }
 
-59
-
-Biblatex Output
+Biblatex Output
 \autocite[See the discussion of \textgreek{ἐκρατοῦντο} in][2:271]{Str-B}
 
 3. See the discussion of ἐκρατοῦντο in Str-B 2:271.
@@ -3404,18 +2653,9 @@ Str-B
 
 Strack, Hermann L., and Paul Billerbeck. Kommentar zum Neuen Testament aus Talmud und Midrasch. 6 vols. Munich: Beck, 1922–1961
 
-Reference Implementation
+46
 
-3. See the discussion of ἐκρατοῦντο in Str-B 2:271.
-Strack, Hermann L., and Paul Billerbeck. Kommentar zum Neuen Testament aus Talmud
-und Midrasch. 6 vols. Munich: Beck, 1922–1961.
-Strack, Hermann Leberecht20 and Paul Billerbeck. Kommentar zum
-Neuen Testament aus Talmud und Midrasch. 6 vols. Munich: Beck,
-1922–1961
-
-Str-B
-
-6.4.8
+6.4.8
 
 Aufstieg und Niedergang der römischen Welt (ANRW)
 
@@ -3447,11 +2687,7 @@ relatedoptions = {skipbib},
 options = {skipbib=false}
 }
 
-20. Should be “Strack, Hermann L.,”?
-
-60
-
-Biblatex Output
+Biblatex Output
 \autocite{anderson:pepaideumenos}
 
 76. Graham Anderson, “The pepaideumenos in Action: Sophists and Their Outlook
@@ -3475,24 +2711,10 @@ Aufstieg und Niedergang der römischen Welt: Geschichte und Kultur Roms
 im Spiegel der neueren Forschung. Part 2, Principat. Edited by Hildegard
 Temporini and Wolfgang Haase. Berlin: de Gruyter, 1972–
 
-Reference Implementation
+47
 
-76. Graham Anderson, “The pepaideumenos in Action: Sophists and Their Outlook
-in the Early Empire,” ANRW 33.1:80–208.
-79. Anderson, “Pepaideumenos,” ANRW 33.1:86.
-Anderson, Graham. “The pepaideumenos in Action: Sophists and Their Outlook in the
-Early Empire.” ANRW 33.1:80–208. Part 2, Principat, 33.1. Edited by H. Temporini
-and W. Haase. New York: de Gruyter, 1989.
-Temporini, Hildegard, and Wolfgang Haase, eds. Aufstieg und Niedergang der romischen
-Welt: Geschichte und Kultur Roms im Spiegel der neueren Forschung. Part 2, Principat.
-Berlin: de Gruyter, 1972–.
-ANRW
+6.4.9
 
-6.4.9
-
-Aufstieg und Niedergang der römischen Welt: Geschichte und Kultur Roms
-im Spiegel der neueren Forschung. Part 2, Principat. Edited by Hildegard
-Temporini and Wolfgang Haase. Berlin: de Gruyter, 1972–
 Bible Commentaries
 
 @commentary{hooker:1991,
@@ -3506,9 +2728,7 @@ publisher = {Hendrickson},
 date = {1991}
 }
 
-61
-
-Biblatex Output
+Biblatex Output
 \autocite[223]{hooker:1991}
 
 6. Morna Hooker, The Gospel according to Saint Mark, BNTC 2 (Peabody, MA:
@@ -3518,15 +2738,6 @@ Hendrickson, 1991), 223.
 Hooker, Morna. The Gospel according to Saint Mark. BNTC 2. Peabody, MA: Hendrickson, 1991.
 \printbiblist{abbreviations}
 
-BNTC
-
-Black’s New Testament Commentaries
-
-Reference Implementation
-
-8. Morna Hooker, The Gospel according to Saint Mark, BNTC 2 (Peabody, MA:
-Hendrickson, 1991), 223.
-Hooker, Morna. The Gospel according to Saint Mark. BNTC 2. Peabody, MA: Hendrickson, 1991.
 BNTC
 
 Black’s New Testament Commentaries
@@ -3558,19 +2769,9 @@ ed. Harold W. Attridge et al. (San Francisco: HarperSanFrancisco, 2006), 1096–
 
 Petersen, David L. “Ezekiel.” Pages 1096–167 in The HarperCollins Study Bible Fully Revised and Updated: New Revised Standard Version, with the Apocryphal/Deuterocanonical Books. Edited by Harold W. Attridge et al. San Francisco: HarperSanFrancisco,
 2006.
+48
 
-62
-
-Reference Implementation
-
-3. David L. Petersen, “Ezekiel,” in The HarperCollins Study Bible Fully Revised and
-Updated: New Revised Standard Version, with the Apocryphal/Deuterocanonical Books,
-ed. Harold W. Attridge et al. (San Francisco: HarperSanFrancisco, 2006), 1096.21
-5. Petersen, “Ezekiel,” 1096.
-Petersen, David L. “Ezekiel.” Pages 1096–116722 in The HarperCollins Study Bible
-Fully Revised and Updated, New Revised Standard Version, with the Apocryphal/
-Deuterocanonical Books. Edited by Harold W. Attridge et al. San Francisco: HarperSanFrancisco, 2006.
-6.4.9.2 Single-Volume Commentaries on the Entire Bible
+6.4.9.2 Single-Volume Commentaries on the Entire Bible
 @incommentary{partain:1995,
 author = {Partain, Jack G.},
 title = {Numbers},
@@ -3594,23 +2795,10 @@ Mills et al. (Macon, GA: Mercer University Press, 1995), 175–79.
 
 Partain, Jack G. “Numbers.” Pages 175–79 in Mercer Commentary on the Bible. Edited
 by Watson E. Mills et al. Macon, GA: Mercer University Press, 1995.
-Reference Implementation
-
-5. Jack G. Partain, “Numbers,” in Mercer Commentary on the Bible, ed. Watson E.
-Mills et al. (Macon, GA: Mercer University Press, 1995), 175–79.
-8. Partain, “Numbers,” 175.
-Partain, Jack G. “Numbers.” Pages 175–79 in Mercer Commentary on the Bible. Edited
-by Watson E. Mills et al. Macon, GA: Mercer University Press, 1995.
 6.4.10 Multivolume Commentaries
 6.4.10.1 Multivolume Commentaries on a Single Biblical Book by One Author
 @mvcommentary{dahood:1965-1970,
-
-21. Should be “1096–167.”?
-22. Should be “1096–167”
-
-63
-
-author = {Dahood, Mitchell},
+author = {Dahood, Mitchell},
 title = {Psalms},
 volumes = {3},
 series = {Anchor Bible},
@@ -3632,19 +2820,10 @@ Biblatex Output
 \printbibliography
 
 Dahood, Mitchell. Psalms. 3 vols. AB 16–17A. Garden City, NY: Doubleday, 1965–1970.
-\printbiblist{abbreviations}
+49
 
-AB
+\printbiblist{abbreviations}
 
-Anchor Bible
-
-Reference Implementation
-
-4. Mitchell Dahood, Psalms, 3 vols., AB 16–17A (Garden City, N.Y.:23 Doubleday,
-1965–1970), 3:127.
-7. Dahood, Psalms, 2:121.
-Dahood, Mitchell. Psalms. 3 vols. AB 16–17A. Garden City, N.Y.:24 Doubleday,
-1965–1970.
 AB
 
 Anchor Bible
@@ -3664,13 +2843,7 @@ date = {1965}
 }
 @commentary{dahood:1968,
 author = {Dahood, Mitchell},
-
-23. Should be “NY:”?
-24. Should be “NY:”?
-
-64
-
-title = {Psalms II: 51--100},
+title = {Psalms II: 51--100},
 shorttitle = {Psalms II: 51--100},
 volume = {2},
 maintitle = {Psalms},
@@ -3704,24 +2877,7 @@ AB
 
 Anchor Bible
 
-Reference Implementation
-
-78. Mitchell Dahood, Psalms I: 1–50, AB 16 (Garden City, NY: Doubleday, 1965), 44.
-79. Dahood, Psalms I: 1–50, 78.
-82. Mitchell Dahood, Psalms II: 51–100, AB 17 (Garden City, NY: Doubleday, 1968),
-347.
-86. Dahood, Psalms II: 51–100, 351.
-Dahood, Mitchell. Psalms I: 1–50. Vol. 1 of Psalms. AB 16. Garden City, NY: Doubleday,
-1965.
-. Psalms II: 51–100. Vol. 2 of Psalms. AB 17. Garden City, N.Y.:25 Doubleday,
-1968.
-AB
-
-Anchor Bible
-
-25. Should be “NY:”?
-
-65
+50
 
 6.4.10.2 Multivolume Commentaries for the Entire Bible by Multiple Authors
 @mvcommentary{NIB,
@@ -3768,24 +2924,6 @@ NIB
 The New Interpreter’s Bible. Edited by Leander E. Keck. 12 vols. Nashville:
 Abingdon, 1994–2004
 
-Reference Implementation
-
-1. Patrick D. Miller, NIB 6:577.
-Miller, Patrick D. “The Book of Jeremiah: Introduction, Commentary, and Reﬂections.”
-Pages 553–926 in Introduction to Prophetic Literature, Isaiah, Jeremiah, Baruch,
-Letter of Jeremiah, Lamentations, Ezekiel. Vol. 6 of New Interpreter’s Bible. Edited
-by Leander E. Keck.26 Nashville: Abingdon, 2001.
-26. Should include “12 vols.”?
-
-66
-
-Miller, Patrick D. “The Book of Jeremiah: Introduction, Commentary, and Reﬂections.”
-NIB 6:553–926.
-NIB
-
-The New Interpreter’s Bible. Edited by Leander E. Keck. 12 vols. Nashville:
-Abingdon, 1994–2004
-
 6.4.11 SBL Seminar Papers
 @seminarpaper{crenshaw:2001,
 author = {Crenshaw, James L.},
@@ -3793,7 +2931,10 @@ title = {Theodicy in the Book of the Twelve},
 booktitle = {Society of Biblical Literature 2001 Seminar Papers},
 series = {Society of Biblical Literature Seminar Papers},
 shortseries = {SBLSP},
-number = {40},
+
+51
+
+number = {40},
 location = {Atlanta},
 publisher = {Society of Biblical Literature},
 date = {2001},
@@ -3817,27 +2958,10 @@ SBLSP
 
 Society of Biblical Literature Seminar Papers
 
-Reference Implementation
-
-33. James L. Crenshaw, “Theodicy in the Book of the Twelve,” Society of Biblical
-Literature 2001 Seminar Papers, SBLSPS27 40 (Atlanta: Society of Biblical Literature,
-2001), 1–18.
-Crenshaw, James L. “Theodicy in the Book of the Twelve.” Pages 1–18 in Society of
-Biblical Literature 2001 Seminar Papers. SBLSPS28 40. Atlanta: Society of Biblical
-Literature, 2001.
-SBLSP
-
-Society of Biblical Literature Seminar Papers
-
 6.4.12 A CD-ROM Reference (with a Corresponding Print Edition)
 Books on CD-ROM should be cited according to the print edition. It is not necessary
 to indicate the medium in the citation.
-27. Should be “SBLSP”?
-28. Should be “SBLSP”?
-
-67
-
-6.4.13 Text Editions Published Online with No Print Counterpart
+6.4.13 Text Editions Published Online with No Print Counterpart
 @online{wilhelm:2013,
 editor = {Wilhelm, Gernot},
 title = {Der Vertrag Šuppiluliumas I. von Ḫatti mit Šattiwazza von Mitrani
@@ -3863,15 +2987,9 @@ von Mitrani (CTH 51.I),” released 24 February 2013, doi:hethiter/: CTH 51.I (I
 Wilhelm, Gernot, ed. “Der Vertrag Šuppiluliumas I. von Ḫatti mit Šattiwazza von
 Mitrani (CTH 51.I).” Released 24 February 2013. doi:hethiter/: CTH 51.I (INTR
 2013-02-24).
-Reference Implementation
+52
 
-2. Gernot Wilhelm, ed., “Der Vertrag Šuppiluliumas I. von Ḫatti mit Šattiwazza
-von Mitrani (CTH 51.I),” released 24 February 2013, doi:hethiter.net/: CTH 51.I (INTR
-2013-02-24).
-4. Wilhelm, “Der Vertrag Šuppiluliumas I.”
-Gernot Wilhelm, ed. “Der Vertrag Šuppiluliumas I. von Ḫatti mit Šattiwazza von
-Mitrani (CTH 51.I).”29 doi:hethiter.net/: CTH 51.I (INTR 2013-02-24).
-6.4.14 Online Database
+6.4.14 Online Database
 @online{cobb:figurines,
 author = {{Cobb Institute of Archaeology}},
 title = {The Figurines of Maresha, the Persian Era},
@@ -3885,18 +3003,8 @@ Biblatex Output
 
 37. Cobb Institute of Archaeology, “The Figurines of Maresha, the Persian Era,”
 DigMaster, http://www.cobb.msstate.edu/dignew/Maresha/index.html.
-29. Should this include “Released 24 February 2013.”?
+\printbibliography
 
-68
-
-\printbibliography
-
-Cobb Institute of Archaeology. “The Figurines of Maresha, the Persian Era.” DigMaster.
-http://www.cobb.msstate.edu/dignew/Maresha/index.html.
-Reference Implementation
-
-37. Cobb Institute of Archaeology. “The Figurines of Maresha, the Persian Era,”
-DigMaster, http://www.cobb.msstate.edu/dignew/Maresha/index.html.
 Cobb Institute of Archaeology. “The Figurines of Maresha, the Persian Era.” DigMaster.
 http://www.cobb.msstate.edu/dignew/Maresha/index.html.
 @online{caraher:2013,
@@ -3923,41 +3031,23 @@ Open Context, released 5 November 2013, http://opencontext.org/projects/3F6DCD13
 Caraher, William R., ed. “Pyla-Koutsopetria Archaeological Project: (Overview).” Open
 Context. Released 5 November 2013. http://opencontext.org/projects/3F6DCD13
 -A476-488E-ED10-47D25513FCB2. doi:10.6078/M7B56GNS.
-Reference Implementation
-
-15. William R. Caraher, ed., “Pyla-Koutsopetria Archaeological Project: (Overview),”
-Open Context, released 5 November 2013, http://opencontext.org/projects/3F6DCD13
--A476-488E-ED10-47D25513FCB2, doi:10.6078/M7B56GNS.
-17. Caraher, “Pyla-Koutsopetria Archaeological Project.”
-William R. Caraher, ed.30 “Pyla-Koutsopetria Archaeological Project: (Overview).”
-Open Context. Released 5 November 2013. http://opencontext.org/projects/
-3F6DCD13-A476-488E-ED10-47D25513FCB2. doi:10.6078/M7B56GNS.
 6.4.15 Websites and Blogs
 @online{100cuneiform,
 title = {The One Hundred Most Important Cuneiform Objects},
-
-30. Should be “Caraher, William R., ed.?”
-
-69
-
-eprint = {http://cdli.ox.ac.uk/wiki/doku.php?id=the_one_hundred_most_
+eprint = {http://cdli.ox.ac.uk/wiki/doku.php?id=the_one_hundred_most_
 important_cuneiform_objects},
 eprinttype = {cdli:wiki}
 }
 
-Biblatex Output
+53
+
+Biblatex Output
 \autocite{100cuneiform}
 
 10. “The One Hundred Most Important Cuneiform Objects,” cdli:wiki, http://cdli.ox
 .ac.uk/wiki/doku.php?id=the_one_hundred_most_important_cuneiform_objects.
 \printbibliography
 
-“The One Hundred Most Important Cuneiform Objects.” cdli:wiki. http://cdli.ox.ac.uk/
-wiki/doku.php?id=the_one_hundred_most_important_cuneiform_objects.
-Reference Implementation
-
-10. “The One Hundred Most Important Cuneiform Objects,” cdli:wiki, http://cdli.ox
-.ac.uk/wiki/doku.php?id=the_one_hundred_most_important_cuneiform_objects.
 “The One Hundred Most Important Cuneiform Objects.” cdli:wiki. http://cdli.ox.ac.uk/
 wiki/doku.php?id=the_one_hundred_most_important_cuneiform_objects.
 @online{goodacre:2014,
@@ -3973,10 +3063,6 @@ Biblatex Output
 
 3. Mark Goodacre, “Jesus’ Wife Fragment: Another Round-Up,” NT Blog, 9 May
 2014, http://ntweblog.blogspot.com.
-Reference Implementation
-
-3. Mark Goodacre, “Jesus’ Wife Fragment: Another Round-Up,” NT Blog, 9 May
-2014, http://ntweblog.blogspot.com.
 
 7 Other Examples
 7.1 BDAG, BDB, BDF
@@ -3988,10 +3074,7 @@ Literature.},
 edition = {3},
 location = {Chicago},
 publisher = {University of Chicago Press},
-
-70
-
-date = {2000},
+date = {2000},
 shorthand = {BDAG}
 }
 
@@ -4003,15 +3086,10 @@ Biblatex Output
 
 Danker, Frederick W., Walter Bauer, William F. Arndt, and F. Wilbur Gingrich. GreekEnglish Lexicon of the New Testament and Other Early Christian Literature. 3rd ed.
 Chicago: University of Chicago Press, 2000.
-\printbiblist{abbreviations}
 
-BDAG
+54
 
-Danker, Frederick W., Walter Bauer, William F. Arndt, and F. Wilbur
-Gingrich. Greek-English Lexicon of the New Testament and Other Early
-Christian Literature. 3rd ed. Chicago: University of Chicago Press, 2000
-
-Reference Implementation
+\printbiblist{abbreviations}
 
 BDAG
 
@@ -4050,15 +3128,6 @@ BDB
 Brown, Francis, S. R. Driver, and Charles A. Briggs. A Hebrew and
 English Lexicon of the Old Testament
 
-71
-
-Reference Implementation
-
-BDB
-
-Brown, Francis, S. R. Driver, and Charles A. Briggs. A Hebrew and
-Aramaic Lexicon of the Old Testament
-
 @book{BDF,
 author = {Blass, Friedrich and Debrunner, Albert and Funk, Robert W.},
 title = {A Greek Grammar of the New Testament and Other Early Christian
@@ -4078,14 +3147,9 @@ Biblatex Output
 Blass, Friedrich, Albert Debrunner, and Robert W. Funk. A Greek Grammar of the New
 Testament and Other Early Christian Literature. Chicago: University of Chicago
 Press, 1961.
-\printbiblist{abbreviations}
+55
 
-BDF
-
-Blass, Friedrich, Albert Debrunner, and Robert W. Funk. A Greek Grammar of the New Testament and Other Early Christian Literature. Chicago:
-University of Chicago Press, 1961
-
-Reference Implementation
+\printbiblist{abbreviations}
 
 BDF
 
@@ -4110,9 +3174,7 @@ Biblatex Output
 \autocite[2:223]{HALOT}
 
 4. HALOT 2:223.
-72
-
-\printbibliography
+\printbibliography
 
 Koehler, Ludwig, Walter Baumgartner, and Johann J. Stamm. The Hebrew and Aramaic
 Lexicon of the Old Testament. Translated and edited under the supervision of
@@ -4125,15 +3187,6 @@ The Hebrew and Aramaic Lexicon of the Old Testament. Ludwig Koehler,
 Walter Baumgartner, and Johann J. Stamm. Translated and edited under
 the supervision of Mervyn E. J. Richardson. 4 vols. Leiden: Brill, 1994–
 1999
-
-Reference Implementation
-
-HALOT
-
-The Hebrew and Aramaic Lexicon of the Old Testament. Ludwig Koehler,
-Walter Baumgartner, and Johann J. Stamm. Translated and edited under
-the supervision of Mervyn E. J. Richardson. 4 vols. Leiden: Brill,
-1994–1999
 
 @mvlexicon{TLOT,
 title = {Theological Lexicon of the Old Testament},
@@ -4153,7 +3206,9 @@ Biblatex Output
 \autocite[1:24]{TLOT}
 
 5. TLOT 1:24.
-\printbibliography
+56
+
+\printbibliography
 
 Jenni, Ernst, ed., with assistance from Claus Westermann. Theological Lexicon of the
 Old Testament. Translated by Mark E. Biddle. 3 vols. Peabody, MA: Hendrickson,
@@ -4166,17 +3221,7 @@ Theological Lexicon of the Old Testament. Edited by Ernst Jenni, with
 assistance from Claus Westermann. Translated by Mark E. Biddle. 3 vols.
 Peabody, MA: Hendrickson, 1997
 
-Reference Implementation
-
-TLOT
-
-Theological Lexicon of the Old Testament. Edited by Ernst Jenni, with
-assistance from Claus Westermann. Translated by Mark E. Biddle. 3 vols.
-Peabody, MA: Hendrickson, 1997
-
-73
-
-7.3 SBLHS
+7.3 SBLHS
 @manual{SBLHS,
 title = {SBL Handbook of Style: For Biblical Studies and Related Disciplines},
 shorttitle = {SBLHS},
@@ -4201,14 +3246,7 @@ SBLHS
 Society of Biblical Literature Handbook of Style. 2nd ed. Atlanta, GA:
 SBL Press, 2014
 
-Reference Implementation
-
-SBLHS
-
-Society of Biblical Literature Handbook of Style. 2nd ed. Atlanta, GA:
-SBL Press, 2014
-
-74
+57
 
 Abbreviations
 AB
@@ -4287,7 +3325,7 @@ Abingdon, 1994–2004
 New International Dictionary of New Testament Theology. Edited by Colin
 Brown. 4 vols. Grand Rapids: Zondervan, 1975–1985
 The Nicene and Post-Nicene Fathers, Series 1
-75
+58
 
 P.Cair.Zen.
 PG
@@ -4341,7 +3379,7 @@ Writings from the Ancient World
 Writings from the Greco-Roman World Supplement Series
 Wissenschaftliche Untersuchungen zum Neuen Testament
 
-76
+59
 
 References
 Anderson, Graham. “The pepaideumenos in Action: Sophists and Their Outlook in
@@ -4388,7 +3426,7 @@ by Recently Discovered Texts of the Graeco-Roman World. Translated by Lionel R. 
 Strachan. 1927. Repr., Peabody, MA: Hendrickson, 1995.
 Dossin, Georges. Correspondance de Šamši-Addu et de ses fils. ARMT 1. Paris: Imprimerei
 nationale, 1950.
-77
+60
 
 . Lettres. ARM 1. 1946. Repr., Paris: Geuthner, 1967.
 Egger, Wilhelm. How to Read the New Testament: An Introduction to Linguistic and
@@ -4439,7 +3477,7 @@ Killebrew, Ann E., and Margreet Steiner, eds. The Oxford Handbook of the Archaeo
 of the Levant: c. 8000–332 BCE. Oxford: Oxford University Press, 2014. doi:10.1093/
 oxfordhb/9780199212972.001.0001.
 
-78
+61
 
 Kirk, Alan. “Karl Polanyi, Marshall Sahlins, and the Study of Ancient Social Relations.”
 JBL 126 (2007): 182–91. doi:10.2307/27638428. http://www.jstor.org/stable/27638428.
@@ -4489,7 +3527,7 @@ Interpretation. Translated by Leo G. Perdue. Atlanta: Society of Biblical Litera
 Robinson, James M., and Helmut Koester. Trajectories through Early Christianity.
 Philadelphia: Fortress, 1971.
 Saldarini, Anthony J. “Babatha’s Story.” BAR 24.2 (1998): 23–33, 36–37, 72–74.
-79
+62
 
 Schillebeeckx, Edward. The Schillebeeckx Reader. Edited by Robert J. Schreiter. Edinburgh: T&T Clark, 1986.
 Scott, Bernard Brandon, Margaret Dean, Kristen Sparks, and Frances LaZar. Reading
@@ -4538,92 +3576,92 @@ Setting. Vol. 1 of The Book of Acts in Its First Century Setting. Edited by Bruc
 Winter. Grand Rapids: Eerdmans, 1993.
 Wright, Jacob L. David, King of Israel, and Caleb in Biblical Memory. Cambridge: Cambridge University Press, 2014. Kindle edition.
 
-80
+63
 
 Author Index
-Anderson, Graham, 61
-Attridge, Harold W., 11
-Augustine, 58
+Anderson, Graham, 47
+Attridge, Harold W., 9
+Augustine, 45
 
-Liefeld, Walter L., 32
-Mason, Steve, 18
-McKenzie, Steven L., 7
-Miller, Patrick D., 66
+Liefeld, Walter L., 24
+Mason, Steve, 14
+McKenzie, Steven L., 6
+Miller, Patrick D., 51
 
-Beyer, Hermann W., 32, 35
-Blass, Friedrich, 9
-Blenkinsopp, Joseph, 14
-Boers, Hendrikus, 12
+Beyer, Hermann W., 25, 27
+Blass, Friedrich, 8
+Blenkinsopp, Joseph, 11
+Boers, Hendrikus, 10
 
-Niditch, Susan, 37
-Oates, John F., 8
-Olson, Dennis T., 31
+Niditch, Susan, 28
+Oates, John F., 7
+Olson, Dennis T., 23, 24
 
-Caraher, William R., 69
-Clarke, Andrew D., 17, 18
-Crenshaw, James L., 67
+Caraher, William R., 53
+Clarke, Andrew D., 14
+Crenshaw, James L., 52
 
-Partain, Jack G., 63
-Pelikan, Jaroslav, 28
-Petersen, David L., 29, 62
-Peterson, David, 19
-Pritchard, James B., 14
+Partain, Jack G., 49
+Pelikan, Jaroslav, 21
+Petersen, David L., 22, 48
+Peterson, David, 15
+Pritchard, James B., 11
 
-Dahn, Karl, 32, 36
-Dahood, Mitchell, 64, 65
-Debrunner, Albert, 9
-Deissmann, Gustav Adolf, 15
+Dahn, Karl, 24, 27
+Dahood, Mitchell, 49, 50
+Debrunner, Albert, 8
+Deissmann, Gustav Adolf, 12
 
-Reventlow, Henning Graf, 21
-Robinson, James M., 3, 4
+Reventlow, Henning Graf, 16, 17
+Robinson, James M., 3
 
-Egger, Wilhelm, 5
-Freedman, David Noel, 26, 27
+Egger, Wilhelm, 4
+Freedman, David Noel, 20
 
-Saldarini, Anthony J., 37
-Schillebeeckx, Edward, 9
+Saldarini, Anthony J., 29
+Schillebeeckx, Edward, 7
 Scott, Bernard Brandon, 4
-Spicq, Ceslas, 33, 34
-Springer, Carl P. E., 38
-Steiner, Margreet, 23
-Stendahl, Krister, 30
+Spicq, Ceslas, 25, 26
+Springer, Carl P. E., 29
+Steiner, Margreet, 17
+Stendahl, Krister, 23
 
-Goodacre, Mark, 70
-Gregory of Nazianzus, 59
-Harnack, Adolf, 17
-Harrison, James R., 16
-Heraclitus, 55, 56
-Hofius, Otfried, 20
-Hooker, Morna, 62
+Goodacre, Mark, 54
+Gregory of Nazianzus, 46
+Harnack, Adolf, 13
+Harrison, James R., 13
+Heraclitus, 43
+Hofius, Otfried, 15
+Hooker, Morna, 48
 
-Tacitus, 49, 51
+Tacitus, 38, 39
 Talbert, Charles H., 3
-Teeple, Howard M., 27
-Tigay, Jeffrey H., 7
-Truehart, Charles, 39
+Teeple, Howard M., 21
+Tigay, Jeffrey H., 6
+Truehart, Charles, 30
 
-Irvine, Stuart A., 10
-Jeremias, Joachim, 21
-Josephus, 49, 50, 52
+Irvine, Stuart A., 8
+Jeremias, Joachim, 16
+Josephus, 37, 39, 40
 
-Van Seters, John, 11, 15
+Van Seters, John, 9, 12
 
-Kaltner, John, 7
-Kaufman, Stephen, 23
-Killebrew, Ann E., 23
-Kirk, Alan, 39
-Klosinski, Lee E., 29
-Koester, Helmut, 3, 4
+Kaltner, John, 6
+Kaufman, Stephen, 18
+Killebrew, Ann E., 17
+Kirk, Alan, 30
+Klosinski, Lee E., 22
+Koester, Helmut, 3
 
-Welborn, L. L., 16
-Wellhausen, Julius, 6, 25
-Wildberger, Hans, 25
-Wilhelm, Gernot, 68
-Winter, Bruce W., 17, 18
-Wright, Jacob L., 22
+Welborn, L. L., 13
+Wellhausen, Julius, 5, 19
+Wildberger, Hans, 19
+Wilhelm, Gernot, 52
+Winter, Bruce W., 14
+Wright, Jacob L., 17
 
-Leyerle, Blake, 24
+Leyerle, Blake, 18, 19
 
-81
+64
 
 
