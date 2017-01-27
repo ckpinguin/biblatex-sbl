@@ -89,8 +89,9 @@
        \usebibmacro{volume+part+postnote}}} 
     {\ifciteseen
        {}
-       {\newunit
-        \printfield{pages}}}}
+       {\usebibmacro{setpostnotedelim}%
+        \setunit{\postnotedelim}%
+        \usebibmacro{pages}}}}
 
 \newbibmacro*{bibentrycite}{%
   \citereset

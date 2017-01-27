@@ -48,7 +48,7 @@
 % CITEPAGES OPTION
 % ------------------------------------------------------------------
 
-\DeclareRangeChars{~,;-+/:}
+%\DeclareRangeChars{~,;-+/:}
 
 \NumCheckSetup{\def\mkbibparens#1{#1}}
 
@@ -79,7 +79,7 @@
          {}
          {\printfield{postnote}%
           \global\booltrue{suppresspostnote}}}
-      {\printfield{pages}%
+      {\printfield[postnote]{pages}%
        \ifboolexpr{
          test {\iffieldundef{postnote}}
          or
@@ -95,7 +95,7 @@
       {\setunit{\volpostnotedelim}}
       {\setunit{\postnotedelim}}%
     \iffieldundef{postnote}
-      {\usebibmacro{citetotalone}{\printfield{pages}}{}}
+      {\usebibmacro{citetotalone}{\printfield[postnote]{pages}}{}}
       {\ifboolexpr{
         test {\iffieldpages{postnote}}
         or
@@ -104,7 +104,7 @@
          {\printfield{postnote}}
          {\iffieldundef{pages}
             {\printfield{postnote}}
-            {\printfield{pages}%
+            {\printfield[postnote]{pages}%
              \setunit{\addspace}%
              \printtext[parens]{\printfield{postnote}}}}}}}
 
@@ -115,7 +115,7 @@
          {}
          {\printfield{postnote}%
           \global\booltrue{suppresspostnote}}}
-      {\printfield{pages}%
+      {\printfield[postnote]{pages}%
        \ifboolexpr{
          test {\iffieldundef{postnote}}
          or
@@ -129,16 +129,16 @@
       {\setunit{\volpostnotedelim}}
       {\setunit{\postnotedelim}}%
     \iffieldundef{postnote}
-      {\printfield{pages}}
+      {\printfield[postnote]{pages}}
       {\iffieldpages{postnote}
-         {\usebibmacro{citetotalone}{\printfield{postnote}}{}}
+         {\usebibmacro{citetotalone}{\printfield[postnote]{postnote}}{}}
          {\ifboolexpr{
             test {\iffieldpages{postnote}}
             or
             not test {\usebibmacro{citetotalone}}
           }
             {\printfield{postnote}}
-            {\printfield{pages}%
+            {\printfield[postnote]{pages}%
              \setunit*{\addspace}%
              \printtext[parens]{\printfield{postnote}}}}}}}
 
@@ -154,10 +154,10 @@
          or
          bool {bbx@inset}
        }
-         {\printfield{pages}}
+         {\printfield[postnote]{pages}}
          {\iffieldpages{postnote}
             {\printfield{postnote}}
-            {\printfield{pages}%
+            {\printfield[postnote]{pages}%
              \setunit*{\addspace}%
              \printtext[parens]{\printfield{postnote}}}}}}%
   \renewbibmacro*{postnote}{%
@@ -165,7 +165,7 @@
       {\setunit{\volpostnotedelim}}
       {\setunit{\postnotedelim}}%
     \iffieldundef{postnote}
-      {\usebibmacro{citetotalone}{\printfield{pages}}{}}
+      {\usebibmacro{citetotalone}{\printfield[postnote]{pages}}{}}
       {\iffieldpages{postnote}
          {\printfield{postnote}}
          {\ifboolexpr{
@@ -174,7 +174,7 @@
             not test {\usebibmacro{citetotalone}}
           }
             {\printfield{postnote}}
-            {\printfield{pages}%
+            {\printfield[postnote]{pages}%
              \setunit*{\addspace}%
              \printtext[parens]{\printfield{postnote}}}}}}}
 
@@ -185,7 +185,7 @@
          {}
          {\printfield{postnote}%
           \global\booltrue{suppresspostnote}}}
-      {\printfield{pages}%
+      {\printfield[postnote]{pages}%
        \ifboolexpr{
          test {\iffieldundef{postnote}}
          or
@@ -204,7 +204,7 @@
       {\setunit{\volpostnotedelim}}
       {\setunit{\postnotedelim}}%
     \iffieldundef{postnote}
-      {\usebibmacro{citetotalone}{\printfield{pages}}{}}
+      {\usebibmacro{citetotalone}{\printfield[postnote]{pages}}{}}
       {\iffieldpages{postnote}
          {\printfield{postnote}}
          {\ifboolexpr{
@@ -213,7 +213,7 @@
             not test {\usebibmacro{citetotalone}}
           }
             {\printfield{postnote}}
-            {\printfield{pages}%
+            {\printfield[postnote]{pages}%
              \setunit*{\addspace}%
              \printtext[parens]{%
                \iffieldpages{postnote}
@@ -221,6 +221,40 @@
                   \setunit{\addspace}}
                  {}%
                \printfield{postnote}}}}}}}
+
+\renewrobustcmd*{\mkvolcitenote}[2]{%
+  \ifboolexpr{
+    (
+      test {\iffieldequalstr{pagination}{none}}
+      or
+      test {\iffieldundef{pagination}}
+    )
+    and
+    test {\ifpages{#2}}
+  }
+    {\printtext{#1}%
+     \volcitedelim
+     \printtext{#2}}
+    {\printtext[volcitevolume]{#1}%
+     \newunit
+     \printtext[volcitepages]{#2}}}
+
+\renewrobustcmd*{\blx@imc@mkpageprefix}[1][pagination]{%
+  \begingroup
+  \ifstrequal{#1}{pagination}
+    {\def\blx@tempa{\blx@mkpageprefix@i}}
+    {\def\blx@tempa{\blx@mkpageprefix{page}}}%
+  \iffieldundef{#1}
+    {}
+    {\iffieldequalstr{#1}{none}
+       {\def\blx@tempa{\blx@mkpageprefix@i}}
+       {\iffieldbibstring{#1}
+          {\edef\blx@tempa{\blx@mkpageprefix{\thefield{#1}}}}
+          {\blx@warning@entry{%
+             Unknown pagination type '\strfield{#1}'}}}}%
+  \@ifnextchar[%]
+    {\blx@tempa}
+    {\blx@tempa[\@firstofone]}}
 
 % ------------------------------------------------------------------
 % IDEM MACROS
@@ -468,12 +502,20 @@
        {}
        {\addspace\mkbibparens{\thefield{eprintclass}}}}}
 \renewcommand*{\volcitedelim}{\addcolon}
-\DeclareFieldFormat{volcitevolume}{#1}
-\DeclareFieldFormat{volcitepages}{\mkcomprange{#1}}
+\DeclareFieldFormat{volcitevolume}{\bibstring{volume}\ppspace#1}
+\DeclareFieldFormat{volcitepages}{\mkcomprange[{\mkpageprefix[pagination]}]{#1}}
 \DeclareFieldFormat{part}{#1}
 \DeclareFieldFormat{pt}{\bibstring{part}~#1}
-\DeclareFieldFormat{postnote}{\mkcomprange{#1}}
-\DeclareFieldFormat{multipostnote}{#1}
+\DeclareFieldFormat{postnote}{%
+  \iffieldequalstr{pagination}{section}
+    {\def\ppspace{}}
+    {}%
+  \mkcomprange[\mkpageprefix]{#1}}
+\DeclareFieldFormat{multipostnote}{%
+  \iffieldequalstr{pagination}{section}
+    {\def\ppspace{}}
+    {}%
+  \mkcomprange[\mkpageprefix]{#1}}
 \DeclareFieldFormat{byauthor}{\bibstring{byauthor} #1}
 \DeclareFieldFormat{revdtitle}{\biblstring{reviewof} \mkbibemph{#1}}
 \DeclareFieldFormat{revdshorttitle}{\biblstring{reviewof} \mkbibemph{#1}}
@@ -490,9 +532,9 @@
 \DeclareFieldFormat{isbn}{ISBN\addcolon\space #1}
 \DeclareFieldFormat{isrn}{ISRN\addcolon\space #1}
 \DeclareFieldFormat{issn}{ISSN\addcolon\space #1}
-\DeclareFieldFormat{pages}{\mkcomprange{#1}}
-\DeclareFieldFormat{pagepages}{\mkcomprange[\mkpageprefix]{#1}}
-\DeclareFieldFormat{pagesin}{\mkcomprange[\mkpageprefix]{#1} \usebibmacro{in}}
+\DeclareFieldFormat{pages}{\mkcomprange[{\mkpageprefix[bookpagination]}]{#1}}
+\DeclareFieldFormat{pagesin}{\mkcomprange[{\mkpageprefix[bookpagination]}]{#1}
+                             \usebibmacro{in}}
 \DeclareFieldFormat{chapter}{\bibsstring{chapter}~#1}
 \DeclareFieldFormat{chapterin}{\bibsstring{chapter}~#1 \usebibmacro{in}}
 \DeclareFieldFormat{volume}{#1}
@@ -991,50 +1033,105 @@
     {#2}}
 
 \ExplSyntaxOn
-\cs_new_protected:Nn \sbl_ifinstringt:nnn {
-   \tl_if_in:nnT {#2}{#1}{#3}}
-\cs_generate_variant:Nn \sbl_ifinstringt:nnn { non }
-\cs_new_eq:NN \IfInStringT \sbl_ifinstringt:non
+\cs_new_protected:Nn \sbl_ifinstringtf:nnnn {
+  \tl_if_in:nnTF {#2}{#1}{#3}{#4}}
+\cs_generate_variant:Nn \sbl_ifinstringtf:nnnn { nonn }
+\cs_new_eq:NN \IfInStringTF \sbl_ifinstringtf:nonn
 \ExplSyntaxOff
+
+\newbibmacro*{ifdotcolonsection}[3]{%
+  \ifboolexpr{
+    test {\IfInStringTF{.}{#1}}
+    or
+    test {\IfInStringTF{:}{#1}}
+    or
+    test {\IfInStringTF{§}{#1}}
+    or
+    test {\IfInStringTF{\S}{#1}}
+    or
+    test {\IfInStringTF{\textsection}{#1}}
+  }
+    {#2}
+    {#3}}
+
+\def\ifvolpostnoteblank#1#2{%
+  \ifblank{#2}
+    {\@firstoftwo}
+    {\@secondoftwo}}
+
+\def\ifvolpostnotepages#1#2{%
+  \ifpages{#2}
+    {\@firstoftwo}
+    {\@secondoftwo}}
+
+\newbibmacro*{setvolpostnotedelim}{%
+  \ifboolexpr{
+    (
+      test {\iffieldequalstr{pagination}{none}}
+      or
+      test {\iffieldundef{pagination}}
+    )
+    and
+    test {\expandafter\ifvolpostnotepages\abx@field@postnote}
+  }
+    {\renewcommand*{\postnotedelim}{\addspace}}
+    {}}
 
 \newbibmacro*{setpostnotedelim}{%
   \iftoggle{cbx:involcite}
-    {\renewcommand*{\postnotedelim}{\addspace}}
-    {}%
-  \iffieldundef{postnote}
-    {}
-    {\IfInStringT{.}{\abx@field@postnote}
-       {\renewcommand*{\postnotedelim}{\addspace}}%
-     \IfInStringT{:}{\abx@field@postnote}
-       {\renewcommand*{\postnotedelim}{\addspace}}%
-     \IfInStringT{§}{\abx@field@postnote}
-       {\renewcommand*{\postnotedelim}{\addspace}}%
-     \IfInStringT{\textsection}{\abx@field@postnote}
-       {\renewcommand*{\postnotedelim}{\addspace}}}}
-
-\newbibmacro*{setaltpostnotedelim}{%
-  \iffieldundef{altpostnote}
-    {}
-    {\IfInStringT{.}{\abx@field@altpostnote}
-       {\renewcommand*{\postnotedelim}{\addspace}}%
-     \IfInStringT{:}{\abx@field@altpostnote}
-       {\renewcommand*{\postnotedelim}{\addspace}}%
-     \IfInStringT{§}{\abx@field@altpostnote}
-       {\renewcommand*{\postnotedelim}{\addspace}}%
-     \IfInStringT{\textsection}{\abx@field@altpostnote}
-       {\renewcommand*{\postnotedelim}{\addspace}}}}
+    {\usebibmacro{setvolpostnotedelim}}
+    {\iffieldundef{postnote}
+       {\usebibmacro{setpagesdelim}}
+       {\ifboolexpr{
+          test {\usebibmacro{ifdotcolonsection}{\abx@field@postnote}}
+          or
+          (
+            test {\iffieldequalstr{pagination}{section}}
+            and
+            test {\iffieldpages{postnote}}
+          )
+        }
+          {\ifboolexpr{
+             not test {\iffieldundef{pagination}}
+             and
+             not test {\iffieldequalstr{pagination}{section}}
+           }
+             {\clearfield{pagination}}
+             {}%
+           \renewcommand*{\postnotedelim}{\addspace}}
+          {\usebibmacro{setpagesdelim}}}}}
 
 \newbibmacro*{setpagesdelim}{%
   \iffieldundef{pages}
     {}
-    {\IfInStringT{.}{\abx@field@pages}
-       {\setunit{\addspace}}%
-     \IfInStringT{:}{\abx@field@pages}
-       {\setunit{\addspace}}%
-     \IfInStringT{§}{\abx@field@pages}
-       {\setunit{\addspace}}%
-     \IfInStringT{\textsection}{\abx@field@pages}
-       {\setunit{\addspace}}}}
+    {\usebibmacro{ifdotcolonsection}{\abx@field@pages}
+       {\renewcommand*{\postnotedelim}{\addspace}}{}%
+     \ifboolexpr{
+       test {\iffieldequalstr{pagination}{section}}
+       and
+       test {\iffieldpages{pages}}
+     }
+       {\renewcommand*{\postnotedelim}{\addspace}}
+       {}}}
+
+\newbibmacro*{setaltpostnotedelim}{%
+  \iffieldundef{altpostnote}
+    {}
+    {\usebibmacro{ifdotcolonsection}{\abx@field@altpostnote}
+       {\renewcommand*{\postnotedelim}{\addspace}}{}}}
+
+\newbibmacro*{setpagesunit}{%
+  \iffieldundef{pages}
+    {}
+    {\usebibmacro{ifdotcolonsection}{\abx@field@pages}
+       {\setunit{\addspace}}{}%
+     \ifboolexpr{
+       test {\iffieldequalstr{pagination}{section}}
+       and
+       test {\iffieldpages{pages}}
+     }
+       {\setunit{\addspace}}
+       {}}}
 
 % ------------------------------------------------------------------
 % JOINING WORD MACROS
@@ -1293,7 +1390,7 @@
     and
     test {\iffieldundef{date}}
   }
-    {\usebibmacro{setpagesdelim}}
+    {\usebibmacro{setpagesunit}}
     {}}
 
 \renewbibmacro*{issue+date}{%
@@ -2165,7 +2262,7 @@
        {}
        {\printfield[pagesin]{pages}%
         \setunit*{\addspace}}}
-    {\printfield[pagepages]{pages}%
+    {\printfield{pages}%
      \newunit}}
 
 \newbibmacro*{chapterin}{%
@@ -2200,7 +2297,7 @@
         }
           {\printfield[pagesin]{pages}%
            \setunit*{\addspace}}
-          {\printfield[pagepages]{pages}%
+          {\printfield{pages}%
            \newunit}}
        {\usebibmacro{chapterin}}}}
 
@@ -2485,9 +2582,13 @@
 \cs_new:Npn \_biblatexsbl_splitpostnote:n #1 { \savepostnotes #1++ }
 \cs_generate_variant:Nn \_biblatexsbl_splitpostnote:n { o }
 \cs_new_eq:NN \splitpostnote  \_biblatexsbl_splitpostnote:o
+\cs_new:Npn \_biblatexsbl_volsavepostnotelast:n #1
+  { \gdef\volpostnote{{\volvol}{#1}} }
+\cs_generate_variant:Nn \_biblatexsbl_volsavepostnotelast:n { o }
+\cs_new_eq:NN \volsavepostnotelast \_biblatexsbl_volsavepostnotelast:o
 \ExplSyntaxOff
 
-\newrobustcmd*{\volsplitpostnote}[2]{%
+\def\volsplitpostnote#1#2{%
   \gdef\volvol{#1}%
   \gdef\abx@field@volpostnote{#2}%
   \iffieldundef{volpostnote}
@@ -2507,9 +2608,11 @@
     {\setuppostnotes
      \iftoggle{cbx:involcite}
        {\ifdefined\postnotelast
-          \def\abx@field@postnote{{\volvol}{\postnotelast}}%
+          \volsavepostnotelast{\postnotelast}%
+          \restorefield{postnote}{\volpostnote}%
         \else
-          \def\abx@field@postnote{{\volvol}{}}%
+          \def\volpostnote{{\volvol}{}}%
+          \restorefield{postnote}{\volpostnote}%
         \fi}
        {\restorefield{postnote}{\postnotelast}}%
      \restorefield{altpostnote}{\postnotefirst}}%
