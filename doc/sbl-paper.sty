@@ -13,7 +13,7 @@
 %The Current Maintainer of this work is David Purton.
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{sbl-paper}
-  [2017/01/17 Society of Bibilical Literature Paper Style]
+  [2017/02/24 Society of Bibilical Literature Paper Style]
 
 
 % xetex/luatex engine test set up
@@ -105,8 +105,8 @@
     \let\luatextextgreek\textgreek
     \let\luatextextenglish\textenglish
     \AtBeginDocument{%
-      \renewcommand{\textgreek}[1]{\bgroup\luatextextgreek{#1}\egroup}
-      \renewcommand{\textenglish}[1]{\bgroup\setLTR\luatextextenglish{#1}\egroup}
+      \renewcommand{\textgreek}[1]{\bgroup\textdir TLT\luatextextgreek{#1}\egroup}
+      \renewcommand{\textenglish}[1]{\bgroup\textdir TLT\luatextextenglish{#1}\egroup}
     }
   \fi
 \fi
