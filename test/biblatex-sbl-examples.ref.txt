@@ -1888,7 +1888,7 @@ location = {Berkeley},
 publisher = {University of California Press},
 date = {1976},
 shorthand = {AEL},
-ref = {AEL},
+xref = {AEL},
 options = {skipbiblist}
 
 33
