@@ -5,9 +5,9 @@ Blake Leyerle, “John Chrysostom on the Gaze,” JECS 1 (1993): 159–74
 Blake Leyerle, “John Chrysostom on the Gaze,” JECS 1 (1993): 159–74 (note)
 
 1.2 Subsequent citations: pagination undefined
-Leyerle, “Chrysostom,” 159–74
+Leyerle, “Chrysostom”
 Leyerle, “Chrysostom,” 161
-Leyerle, “Chrysostom,” 159–74 (note)
+Leyerle, “Chrysostom,” note
 
 1.3 First citation: pagination = page
 Blake Leyerle, “John Chrysostom on the Gaze,” JECS, vol. 1 (1993), pp. 159–74
@@ -15,9 +15,9 @@ Blake Leyerle, “John Chrysostom on the Gaze,” JECS, vol. 1 (1993), pp. 159�
 Blake Leyerle, “John Chrysostom on the Gaze,” JECS, vol. 1 (1993), pp. 159–74 (note)
 
 1.4 Subsequent citations: pagination page
-Leyerle, “Chrysostom,” pp. 159–74
+Leyerle, “Chrysostom”
 Leyerle, “Chrysostom,” p. 161
-Leyerle, “Chrysostom,” pp. 159–74 (note)
+Leyerle, “Chrysostom,” note
 
 1.5 First citation: pagination undefined
 Julius Wellhausen, “Die Composition des Hexateuchs,” JDT 21 (1876): 392–450; 22 (1877): 407–479
@@ -25,9 +25,9 @@ Julius Wellhausen, “Die Composition des Hexateuchs,” JDT 21 (1876): 392–45
 Julius Wellhausen, “Die Composition des Hexateuchs,” JDT 21 (1876): 392–450; 22 (1877): 407–479 (note)
 
 1.6 Subsequent citations: pagination undefined
-Wellhausen, “Die Composition des Hexateuchs,” 21 (1876): 392–450; 22 (1877): 407–479
+Wellhausen, “Die Composition des Hexateuchs”
 Wellhausen, “Die Composition des Hexateuchs,” 161
-Wellhausen, “Die Composition des Hexateuchs,” 21 (1876): 392–450; 22 (1877): 407–479 (note)
+Wellhausen, “Die Composition des Hexateuchs,” note
 
 1.7 First citation: pagination = page
 Julius Wellhausen, “Die Composition des Hexateuchs,” JDT, vol. 21 (1876), pp. 392–450; vol. 22 (1877),
@@ -38,9 +38,9 @@ Julius Wellhausen, “Die Composition des Hexateuchs,” JDT, vol. 21 (1876), pp
 pp. 407–479 (note)
 
 1.8 Subsequent citations: pagination page
-Wellhausen, “Die Composition des Hexateuchs,” vol. 21 (1876), pp. 392–450; vol. 22 (1877), pp. 407–479
+Wellhausen, “Die Composition des Hexateuchs”
 Wellhausen, “Die Composition des Hexateuchs,” p. 161
-Wellhausen, “Die Composition des Hexateuchs,” vol. 21 (1876), pp. 392–450; vol. 22 (1877), pp. 407–479 (note)
+Wellhausen, “Die Composition des Hexateuchs,” note
 
 2 book
 2.1 First citation: pagination undefined
@@ -447,9 +447,9 @@ David Noel Freedman, “Pottery, Poetry, and Prophecy: An Essay on Biblical Poet
 Prophecy: Studies in Early Hebrew Poetry (Winona Lake, IN: Eisenbrauns, 1980), 1–22 (note)
 
 6.2 Subsequent citations: pagination undefined
-Freedman, “Pottery, Poetry, and Prophecy,” 1–22
+Freedman, “Pottery, Poetry, and Prophecy”
 Freedman, “Pottery, Poetry, and Prophecy,” 14
-Freedman, “Pottery, Poetry, and Prophecy,” 1–22 (note)
+Freedman, “Pottery, Poetry, and Prophecy,” note
 
 6.3 First citation: pagination = page
 David Noel Freedman, “Pottery, Poetry, and Prophecy: An Essay on Biblical Poetry,” in Pottery, Poetry, and
@@ -460,9 +460,9 @@ David Noel Freedman, “Pottery, Poetry, and Prophecy: An Essay on Biblical Poet
 Prophecy: Studies in Early Hebrew Poetry (Winona Lake, IN: Eisenbrauns, 1980), pp. 1–22 (note)
 
 6.4 Subsequent citations: pagination = page
-Freedman, “Pottery, Poetry, and Prophecy,” pp. 1–22
+Freedman, “Pottery, Poetry, and Prophecy”
 Freedman, “Pottery, Poetry, and Prophecy,” p. 14
-Freedman, “Pottery, Poetry, and Prophecy,” pp. 1–22 (note)
+Freedman, “Pottery, Poetry, and Prophecy,” note
 
 7 incommentary
 7.1 First citation: pagination undefined
@@ -471,9 +471,9 @@ Patrick D. Miller, NIB 6:577
 Patrick D. Miller, NIB 6:553–926 (note)
 
 7.2 Subsequent citations: pagination undefined
-Miller, NIB 6:553–926
+Miller, NIB 6
 Miller, NIB 6:577
-Miller, NIB 6:553–926 (note)
+Miller, NIB 6, note
 
 7.3 First citation: pagination = page
 Patrick D. Miller, NIB, vol. 6, pp. 553–926
@@ -481,9 +481,9 @@ Patrick D. Miller, NIB, vol. 6, p. 577
 Patrick D. Miller, NIB, vol. 6, pp. 553–926 (note)
 
 7.4 Subsequent citations: pagination = page
-Miller, NIB, vol. 6, pp. 553–926
+Miller, NIB, vol. 6
 Miller, NIB, vol. 6, p. 577
-Miller, NIB, vol. 6, pp. 553–926 (note)
+Miller, NIB, vol. 6, note
 
 8 inlexicon
 8.1 First citation: pagination undefined
@@ -492,9 +492,9 @@ Karl Dahn and Walter L. Liefeld, “See, Vision, Eye,” NIDNTT 3:511–21
 Karl Dahn and Walter L. Liefeld, “See, Vision, Eye,” NIDNTT 3:511–21 (note)
 
 8.2 Subsequent citations: pagination undefined
-Dahn and Liefeld, NIDNTT 3:511–21
+Dahn and Liefeld, NIDNTT 3
 Dahn and Liefeld, NIDNTT 3:577
-Dahn and Liefeld, NIDNTT 3:511–21 (note)
+Dahn and Liefeld, NIDNTT 3, note
 
 8.3 First citation: pagination = page
 Karl Dahn and Walter L. Liefeld, “See, Vision, Eye,” NIDNTT, vol. 3, pp. 511–21
@@ -502,9 +502,9 @@ Karl Dahn and Walter L. Liefeld, “See, Vision, Eye,” NIDNTT, vol. 3, pp. 511
 Karl Dahn and Walter L. Liefeld, “See, Vision, Eye,” NIDNTT, vol. 3, pp. 511–21 (note)
 
 8.4 Subsequent citations: pagination = page
-Dahn and Liefeld, NIDNTT, vol. 3, pp. 511–21
+Dahn and Liefeld, NIDNTT, vol. 3
 Dahn and Liefeld, NIDNTT, vol. 3, p. 577
-Dahn and Liefeld, NIDNTT, vol. 3, pp. 511–21 (note)
+Dahn and Liefeld, NIDNTT, vol. 3, note
 
 9 inreference
 9.1 First citation: pagination undefined
@@ -513,9 +513,9 @@ Dennis T. Olson, “Numbers, Book of,” DOTP, 611–18
 Dennis T. Olson, “Numbers, Book of,” DOTP, 611–18 (note)
 
 9.2 Subsequent citations: pagination undefined
-Olson, “Numbers,” 611–18
+Olson, “Numbers”
 Olson, “Numbers,” 577
-Olson, “Numbers,” 611–18 (note)
+Olson, “Numbers,” note
 
 9.3 First citation: pagination = page
 Dennis T. Olson, “Numbers, Book of,” DOTP, pp. 611–18
@@ -523,9 +523,9 @@ Dennis T. Olson, “Numbers, Book of,” DOTP, pp. 611–18
 Dennis T. Olson, “Numbers, Book of,” DOTP, pp. 611–18 (note)
 
 9.4 Subsequent citations: pagination = page
-Olson, “Numbers,” pp. 611–18
+Olson, “Numbers”
 Olson, “Numbers,” p. 577
-Olson, “Numbers,” pp. 611–18 (note)
+Olson, “Numbers,” note
 
 9.5 First citation: pagination undefined
 Krister Stendahl, “Biblical Theology, Contemporary,” IDB 1:418–32
@@ -533,9 +533,9 @@ Krister Stendahl, “Biblical Theology, Contemporary,” IDB 1:418–32
 Krister Stendahl, “Biblical Theology, Contemporary,” IDB 1:418–32 (note)
 
 9.6 Subsequent citations: pagination undefined
-Stendahl, “Biblical Theology,” 1:418–32
+Stendahl, “Biblical Theology,” 1
 Stendahl, “Biblical Theology,” 1:577
-Stendahl, “Biblical Theology,” 1:418–32 (note)
+Stendahl, “Biblical Theology,” 1, note
 
 9.7 First citation: pagination = page
 Krister Stendahl, “Biblical Theology, Contemporary,” IDB, vol. 1, pp. 418–32
@@ -543,9 +543,9 @@ Krister Stendahl, “Biblical Theology, Contemporary,” IDB, vol. 1, pp. 418–
 Krister Stendahl, “Biblical Theology, Contemporary,” IDB, vol. 1, pp. 418–32 (note)
 
 9.8 Subsequent citations: pagination = page
-Stendahl, “Biblical Theology,” vol. 1, pp. 418–32
+Stendahl, “Biblical Theology,” vol. 1
 Stendahl, “Biblical Theology,” vol. 1, p. 577
-Stendahl, “Biblical Theology,” vol. 1, pp. 418–32 (note)
+Stendahl, “Biblical Theology,” vol. 1, note
 
 10 ancienttext
 10.1 First citation: pagination undefined
@@ -554,9 +554,9 @@ Stendahl, “Biblical Theology,” vol. 1, pp. 418–32 (note)
 “The Great Hymn to the Aten,” trans. Miriam Lichtheim (COS 1.26:44–46 [note])
 
 10.2 Subsequent citations: pagination undefined
-“Great Hymn to the Aten,” COS 1.26:44–46
+“Great Hymn to the Aten,” COS 1.26
 “Great Hymn to the Aten,” COS 1.26:44
-“Great Hymn to the Aten,” COS 1.26:44–46 (note)
+“Great Hymn to the Aten,” COS 1.26, note
 
 10.3 First citation: pagination = page
 “The Great Hymn to the Aten,” trans. Miriam Lichtheim (COS, vol. 1, part 26, pp. 44–46)
@@ -564,9 +564,9 @@ Stendahl, “Biblical Theology,” vol. 1, pp. 418–32 (note)
 “The Great Hymn to the Aten,” trans. Miriam Lichtheim (COS, vol. 1, part 26, pp. 44–46 [note])
 
 10.4 Subsequent citations: pagination = page
-“Great Hymn to the Aten,” COS, vol. 1, part 26, pp. 44–46
+“Great Hymn to the Aten,” COS, vol. 1, part 26
 “Great Hymn to the Aten,” COS, vol. 1, part 26, p. 44
-“Great Hymn to the Aten,” COS, vol. 1, part 26, pp. 44–46 (note)
+“Great Hymn to the Aten,” COS, vol. 1, part 26, note
 
 10.5 First citation: pagination undefined
 “The Doomed Prince” (Miriam Lichtheim, Ancient Egyptian Literature [Berkeley: University of California
@@ -577,9 +577,9 @@ Press, 1976], 2:200–3)
 Press, 1976], 2:200–3 [note])
 
 10.6 Subsequent citations: pagination undefined
-“The Doomed Prince” (AEL 2:200–3)
+“The Doomed Prince” (AEL 2)
 “The Doomed Prince” (AEL 2:577)
-“The Doomed Prince” (AEL 2:200–3 [note])
+“The Doomed Prince” (AEL 2, note)
 
 10.7 First citation: pagination = page
 “The Doomed Prince” (Miriam Lichtheim, Ancient Egyptian Literature [Berkeley: University of California
@@ -590,9 +590,9 @@ Press, 1976], vol. 2, pp. 200–3)
 Press, 1976], vol. 2, pp. 200–3 [note])
 
 10.8 Subsequent citations: pagination = page
-“The Doomed Prince” (AEL, vol. 2, pp. 200–3)
+“The Doomed Prince” (AEL, vol. 2)
 “The Doomed Prince” (AEL, vol. 2, p. 200)
-“The Doomed Prince” (AEL, vol. 2, pp. 200–3 [note])
+“The Doomed Prince” (AEL, vol. 2, note)
 
 10.9 First citation: pagination undefined
 Ashur Inscription (Albert Kirk Grayson, Assyrian Rulers of the Early First Millennium BC [1114–859 BC],
@@ -603,9 +603,9 @@ Ashur Inscription, obv. lines 10–17 (Albert Kirk Grayson, Assyrian Rulers of t
 [1114–859 BC], RIMA 2 [Toronto: University of Toronto Press, 1991], 143–44 [note])
 
 10.10 Subsequent citations: pagination undefined
-Ashur Inscription (RIMA 2:143–44)
+Ashur Inscription (RIMA 2)
 Ashur Inscription, obv. lines 10 (RIMA 2:143)
-Ashur Inscription, obv. lines 10–17 (RIMA 2:143–44 [note])
+Ashur Inscription, obv. lines 10–17 (RIMA 2, note)
 
 10.11 First citation: pagination = page
 Ashur Inscription (Albert Kirk Grayson, Assyrian Rulers of the Early First Millennium BC [1114–859 BC],
@@ -616,9 +616,9 @@ Ashur Inscription, obv. lines 10–17 (Albert Kirk Grayson, Assyrian Rulers of t
 [1114–859 BC], RIMA 2 [Toronto: University of Toronto Press, 1991], pp. 143–44 [note])
 
 10.12 Subsequent citations: pagination = page
-Ashur Inscription (RIMA, vol. 2, pp. 143–44)
+Ashur Inscription (RIMA, vol. 2)
 Ashur Inscription, obv. lines 10 (RIMA, vol. 2, p. 143)
-Ashur Inscription, obv. lines 10–17 (RIMA, vol. 2, pp. 143–44 [note])
+Ashur Inscription, obv. lines 10–17 (RIMA, vol. 2, note)
 
 10.13 First citation: pagination undefined
 P.Cair.Zen. (Arthur S. Hunt and Campbell C. Edgar, Select Papyri, LCL [Cambridge: Harvard University
@@ -746,7 +746,7 @@ Augustine, Letters of St. Augustin (NPNF1 1, note)
 11.6 Subsequent citations: pagination undefined
 Augustine, Letters of St. Augustin (NPNF1 1)
 Augustine, Letters of St. Augustin (NPNF1 1:10)
-Augustine, Letters of St. Augustin (NPNF1 1:note)
+Augustine, Letters of St. Augustin (NPNF1 1, note)
 
 11.7
 
@@ -939,9 +939,9 @@ Graham Anderson, “The pepaideumenos in Action: Sophists and Their Outlook in t
 33.1:80–208 (note)
 
 11.14 Subsequent citations: pagination undefined
-Anderson, “Pepaideumenos,” ANRW 33.1:80–208
+Anderson, “Pepaideumenos,” ANRW 33.1
 Anderson, “Pepaideumenos,” ANRW 33.1:86
-Anderson, “Pepaideumenos,” ANRW 33.1:80–208 (note)
+Anderson, “Pepaideumenos,” ANRW 33.1, note
 
 11.15 First citation: pagination = page
 Graham Anderson, “The pepaideumenos in Action: Sophists and Their Outlook in the Early Empire,” ANRW,
@@ -952,9 +952,9 @@ Graham Anderson, “The pepaideumenos in Action: Sophists and Their Outlook in t
 vol. 33, part 1, pp. 80–208 (note)
 
 11.16 Subsequent citations: pagination = page
-Anderson, “Pepaideumenos,” ANRW, vol. 33, part 1, pp. 80–208
+Anderson, “Pepaideumenos,” ANRW, vol. 33, part 1
 Anderson, “Pepaideumenos,” ANRW, vol. 33, part 1, p. 86
-Anderson, “Pepaideumenos,” ANRW, vol. 33, part 1, pp. 80–208 (note)
+Anderson, “Pepaideumenos,” ANRW, vol. 33, part 1, note
 
 Abbreviations
 AEL

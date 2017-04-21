@@ -50,8 +50,10 @@
 
 \NumCheckSetup{\def\mkbibparens#1{#1}}
 
-\renewbibmacro*{postnote}{}
+\renewbibmacro*{postnote}{%
+  \printfield{postnote}}
 \newbibmacro*{pages}{}
+\providebibmacro*{pages}{}
 
 \DeclareBibliographyOption[string]{citepages}[permit]{%
   \ifcsdef{cbx@opt@citepages@#1}
@@ -59,16 +61,6 @@
     {\PackageError{biblatex}
        {Invalid option 'citepages=#1'}
        {Valid values are 'sbl', 'permit', 'omit', 'separate'.}}}
-
-\providebibmacro*{postnote}{}
-\providebibmacro*{pages}{}
-
-\newbibmacro*{citetotalone}[2]{%
-  \ifnum\c@citetotal>\@ne
-    #2%
-  \else
-    #1%
-  \fi}
 
 \def\cbx@opt@citepages@sbl{%
   \renewbibmacro*{pages}{%
@@ -81,27 +73,13 @@
        \ifboolexpr{
          test {\iffieldundef{postnote}}
          or
+         test {\iffieldpages{postnote}}
+         or
          bool {bbx@inset}
        }
          {}
-         {\iffieldpages{postnote}
-            {}
-            {\setunit{\addspace}%
-             \printtext[parens]{\printfield{postnote}}}}}}%
-  \renewbibmacro*{postnote}{%
-    \iffieldundef{postnote}
-      {\usebibmacro{citetotalone}{\printfield[postnote]{pages}}{}}
-      {\ifboolexpr{
-        test {\iffieldpages{postnote}}
-        or
-        not test {\usebibmacro{citetotalone}}
-       }
-         {\printfield{postnote}}
-         {\iffieldundef{pages}
-            {\printfield{postnote}}
-            {\printfield[postnote]{pages}%
-             \setunit{\addspace}%
-             \printtext[parens]{\printfield{postnote}}}}}}}
+         {\setunit{\addspace}%
+          \printtext[parens]{\printfield{postnote}}}}}}
 
 \def\cbx@opt@citepages@permit{%
   \renewbibmacro*{pages}{%
@@ -118,21 +96,7 @@
        }
          {}
          {\setunit{\addspace}%
-          \printtext[parens]{\printfield{postnote}}}}}%
-  \renewbibmacro*{postnote}{%
-    \iffieldundef{postnote}
-      {\printfield[postnote]{pages}}
-      {\iffieldpages{postnote}
-         {\usebibmacro{citetotalone}{\printfield[postnote]{postnote}}{}}
-         {\ifboolexpr{
-            test {\iffieldpages{postnote}}
-            or
-            not test {\usebibmacro{citetotalone}}
-          }
-            {\printfield{postnote}}
-            {\printfield[postnote]{pages}%
-             \setunit*{\addspace}%
-             \printtext[parens]{\printfield{postnote}}}}}}}
+          \printtext[parens]{\printfield{postnote}}}}}}
 
 \def\cbx@opt@citepages@omit{%
   \renewbibmacro*{pages}{%
@@ -151,26 +115,12 @@
             {\printfield{postnote}}
             {\printfield[postnote]{pages}%
              \setunit*{\addspace}%
-             \printtext[parens]{\printfield{postnote}}}}}}%
-  \renewbibmacro*{postnote}{%
-    \iffieldundef{postnote}
-      {\usebibmacro{citetotalone}{\printfield[postnote]{pages}}{}}
-      {\iffieldpages{postnote}
-         {\printfield{postnote}}
-         {\ifboolexpr{
-            test {\iffieldpages{postnote}}
-            or
-            not test {\usebibmacro{citetotalone}}
-          }
-            {\printfield{postnote}}
-            {\printfield[postnote]{pages}%
-             \setunit*{\addspace}%
              \printtext[parens]{\printfield{postnote}}}}}}}
 
 \def\cbx@opt@citepages@separate{%
   \renewbibmacro*{pages}{%
     \iffieldundef{pages}
-      {\ifool{bx@inset}
+      {\ifbool{bbx@inset}
          {}
          {\printfield{postnote}%
           \global\booltrue{suppresspostnote}}}
@@ -182,31 +132,12 @@
        }
          {}
          {\setunit{\addspace}%
-           \printtext[parens]{%
+          \printtext[parens]{%
             \iffieldpages{postnote}
               {\bibstring{thiscite}%
                \setunit{\addspace}}
               {}%
-            \printfield{postnote}}}}}%
-  \renewbibmacro*{postnote}{%
-    \iffieldundef{postnote}
-      {\usebibmacro{citetotalone}{\printfield[postnote]{pages}}{}}
-      {\iffieldpages{postnote}
-         {\printfield{postnote}}
-         {\ifboolexpr{
-            test {\iffieldpages{postnote}}
-            or
-            not test {\usebibmacro{citetotalone}}
-          }
-            {\printfield{postnote}}
-            {\printfield[postnote]{pages}%
-             \setunit*{\addspace}%
-             \printtext[parens]{%
-               \iffieldpages{postnote}
-                 {\bibstring{thiscite}%
-                  \setunit{\addspace}}
-                 {}%
-               \printfield{postnote}}}}}}}
+            \printfield{postnote}}}}}}
 
 \renewrobustcmd*{\mkvolcitenote}[2]{%
   \ifboolexpr{

@@ -229,7 +229,7 @@ Biblatex Output
 
 3. Harold W. Attridge, “Jewish Historiography,” in Early Judaism and Its Modern Interpreters, ed. Robert A. Kraft and
 George W. E. Nickelsburg (Philadelphia: Fortress; Atlanta: Scholars Press, 1986), 311–43.
-\autocite{attridge:1986}
+\autocite[311-343]{attridge:1986}
 
 6. Attridge, “Jewish Historiography,” 311–43.
 \printbibliography
@@ -1192,7 +1192,7 @@ Biblatex Output
 \autocite{greathymnaten}
 
 7. “The Great Hymn to the Aten,” trans. Miriam Lichtheim (COS 1.26:44–46).
-\autocite{greathymnaten}
+\autocite[44-46]{greathymnaten}
 
 11. “Great Hymn to the Aten,” COS 1.26:44–46.
 \printbibliography
@@ -1320,11 +1320,11 @@ WAW
 Writings from the Ancient World
 
 Biblatex Output
-(\autocite[obv.\ lines 10--17)]{ashurinscription}
+\autocite[(obv.\ lines 10--17)]{ashurinscription}
 
 32. Ashur Inscription, obv. lines 10–17 (Albert Kirk Grayson, Assyrian Rulers of the Early First Millennium BC
 [1114–859 BC], RIMA 2 [Toronto: University of Toronto Press, 1991], 143–44).
-(\autocite[obv.\ lines 10--17)]{ashurinscription}
+\autocite[(obv.\ lines 10--17)143-144]{ashurinscription}
 
 34. Ashur Inscription, obv. lines 10–17 (RIMA 2:143–44).
 \printbibliography

@@ -339,8 +339,6 @@ the first time an entry is cited.
 
   \begin{snugshade}
     \samplecite{1}[159]{leyerle:1993}
-    \samplecite{2}[159]{leyerle:1993}
-    \samplecite{3}{leyerle:1993}
   \end{snugshade}
 
   If \bibfield{postnote} is not a page range, then it is printed in
@@ -348,7 +346,6 @@ the first time an entry is cited.
 
   \begin{snugshade}
     \samplecite{1}[a note]{irvine:2014}
-    \samplecite{2}[a note]{irvine:2014}
   \end{snugshade}
 
   The one exception to this is the \bibtype{incommentary} entry type which
@@ -362,27 +359,16 @@ the first time an entry is cited.
 
   \begin{snugshade}
     \samplecite{1}[245]{wildberger:1965}
-    \samplecite{2}[245]{wildberger:1965}
-  \end{snugshade}
-
-  If \bibfield{postnote} is not a page range, then \bibfield{pages} is printed
-  for subsequent citations, and the \bibfield{postnote} is printed in
-  parentheses. e.g.,
-
-  \begin{snugshade}
-    \samplecite{3}[a note]{wildberger:1965}
   \end{snugshade}
 
 \item[omit] The \bibfield{pages} field is not printed unless
-  \bibfield{postnote} is empty or not a page range. e.g.,
+  \bibfield{postnote} is empty or not a page range (in which case behaviour
+  matches \opt{citepages=sbl}). e.g.,
 
   \makeatletter\cbx@opt@citepages@omit\makeatother
 
   \begin{snugshade}
     \samplecite{1}[5]{freedman:1977}
-    \samplecite{2}[5]{freedman:1977}
-    \samplecite{3}{freedman:1977}
-    \samplecite{4}[a note]{freedman:1977}
   \end{snugshade}
 
 \item[separate] The \bibfield{postnote} is printed in parentheses after the
@@ -393,15 +379,10 @@ the first time an entry is cited.
 
   \begin{snugshade}
     \samplecite{1}[1]{petersen:1988}
-    \samplecite{2}[1]{petersen:1988}
   \end{snugshade}
 
   If \bibfield{postnote} is not a page range, then \sty{firstcite} is not
-  used. e.g.,
-
-  \begin{snugshade}
-    \samplecite{3}[a note]{leyerle:1993}
-  \end{snugshade}
+  used and the behaviour matches \opt{citepages=sbl}.
 
   \makeatletter\cbx@opt@citepages@sbl\makeatother
 
@@ -620,8 +601,8 @@ Suppresses parentheses around \emph{COS} and the \bibfield{postnote} for
 subsequent citations. e.g.,
 
 \begin{snugshade}
-  \samplecite{1}{greathymnaten}
-  \samplecite*{2}{greathymnaten}
+  \samplecite{1}[44]{greathymnaten}
+  \samplecite*{2}[44]{greathymnaten}
 \end{snugshade}
 
 \item[inscription]
