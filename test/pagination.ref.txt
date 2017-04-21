@@ -1,0 +1,1112 @@
+1 article
+1.1 First citation: pagination undefined
+Blake Leyerle, “John Chrysostom on the Gaze,” JECS 1 (1993): 159–74
+Blake Leyerle, “John Chrysostom on the Gaze,” JECS 1 (1993): 159–74
+Blake Leyerle, “John Chrysostom on the Gaze,” JECS 1 (1993): 159–74 (note)
+
+1.2 Subsequent citations: pagination undefined
+Leyerle, “Chrysostom,” 159–74
+Leyerle, “Chrysostom,” 161
+Leyerle, “Chrysostom,” 159–74 (note)
+
+1.3 First citation: pagination = page
+Blake Leyerle, “John Chrysostom on the Gaze,” JECS, vol. 1 (1993), pp. 159–74
+Blake Leyerle, “John Chrysostom on the Gaze,” JECS, vol. 1 (1993), pp. 159–74
+Blake Leyerle, “John Chrysostom on the Gaze,” JECS, vol. 1 (1993), pp. 159–74 (note)
+
+1.4 Subsequent citations: pagination page
+Leyerle, “Chrysostom,” pp. 159–74
+Leyerle, “Chrysostom,” p. 161
+Leyerle, “Chrysostom,” pp. 159–74 (note)
+
+1.5 First citation: pagination undefined
+Julius Wellhausen, “Die Composition des Hexateuchs,” JDT 21 (1876): 392–450; 22 (1877): 407–479
+Julius Wellhausen, “Die Composition des Hexateuchs,” JDT 21 (1876): 392–450; 22 (1877): 407–479
+Julius Wellhausen, “Die Composition des Hexateuchs,” JDT 21 (1876): 392–450; 22 (1877): 407–479 (note)
+
+1.6 Subsequent citations: pagination undefined
+Wellhausen, “Die Composition des Hexateuchs,” 21 (1876): 392–450; 22 (1877): 407–479
+Wellhausen, “Die Composition des Hexateuchs,” 161
+Wellhausen, “Die Composition des Hexateuchs,” 21 (1876): 392–450; 22 (1877): 407–479 (note)
+
+1.7 First citation: pagination = page
+Julius Wellhausen, “Die Composition des Hexateuchs,” JDT, vol. 21 (1876), pp. 392–450; vol. 22 (1877),
+pp. 407–479
+Julius Wellhausen, “Die Composition des Hexateuchs,” JDT, vol. 21 (1876), pp. 392–450; vol. 22 (1877),
+pp. 407–479
+Julius Wellhausen, “Die Composition des Hexateuchs,” JDT, vol. 21 (1876), pp. 392–450; vol. 22 (1877),
+pp. 407–479 (note)
+
+1.8 Subsequent citations: pagination page
+Wellhausen, “Die Composition des Hexateuchs,” vol. 21 (1876), pp. 392–450; vol. 22 (1877), pp. 407–479
+Wellhausen, “Die Composition des Hexateuchs,” p. 161
+Wellhausen, “Die Composition des Hexateuchs,” vol. 21 (1876), pp. 392–450; vol. 22 (1877), pp. 407–479 (note)
+
+2 book
+2.1 First citation: pagination undefined
+Charles H. Talbert, Reading John: A Literary and Theological Commentary on the Fourth Gospel and the
+Johannine Epistles (New York: Crossroad, 1992)
+Charles H. Talbert, Reading John: A Literary and Theological Commentary on the Fourth Gospel and the
+Johannine Epistles (New York: Crossroad, 1992), 4
+Charles H. Talbert, Reading John: A Literary and Theological Commentary on the Fourth Gospel and the
+Johannine Epistles (New York: Crossroad, 1992), note
+
+2.2 Subsequent citations: pagination undefined
+Talbert, Reading John
+Talbert, Reading John, 4
+Talbert, Reading John, note
+
+2.3 First citation: pagination = page
+Charles H. Talbert, Reading John: A Literary and Theological Commentary on the Fourth Gospel and the
+Johannine Epistles (New York: Crossroad, 1992)
+Charles H. Talbert, Reading John: A Literary and Theological Commentary on the Fourth Gospel and the
+Johannine Epistles (New York: Crossroad, 1992), p. 4
+Charles H. Talbert, Reading John: A Literary and Theological Commentary on the Fourth Gospel and the
+Johannine Epistles (New York: Crossroad, 1992), note
+
+2.4 Subsequent citations: pagination page
+Talbert, Reading John
+Talbert, Reading John, p. 4
+Talbert, Reading John, note
+
+3 book with shorthand
+3.1 First citation: pagination undefined
+BDAG
+BDAG, 4
+BDAG, note
+
+3.2 Subsequent citations: pagination undefined
+BDAG
+BDAG, 4
+BDAG, note
+
+3.3 First citation: pagination = page
+BDAG
+BDAG, p. 4
+BDAG, note
+
+3.4 Subsequent citations: pagination page
+BDAG
+BDAG, p. 4
+BDAG, note
+
+3.5 First citation: pagination undefined
+BDF
+BDF §4
+BDF, note
+
+3.6 Subsequent citations: pagination undefined
+BDF
+BDF §4
+BDF, note
+
+3.7 First citation: pagination = section
+BDF
+BDF §4
+BDF, note
+
+3.8 Subsequent citations: pagination section
+BDF
+BDF §4
+BDF, note
+
+4 mvbook
+4.1 First citation: pagination undefined
+Adolf
+Adolf
+Adolf
+Adolf
+Adolf
+Adolf
+Adolf
+
+Harnack,
+Harnack,
+Harnack,
+Harnack,
+Harnack,
+Harnack,
+Harnack,
+
+4.2
+
+Subsequent citations: pagination undefined
+
+Harnack,
+Harnack,
+Harnack,
+Harnack,
+Harnack,
+Harnack,
+Harnack,
+
+4.3
+
+History
+History
+History
+History
+History
+History
+History
+
+5.1
+
+Dogma,
+Dogma,
+Dogma,
+Dogma,
+Dogma,
+Dogma,
+Dogma,
+
+Dogma
+Dogma,
+Dogma,
+Dogma,
+Dogma,
+Dogma,
+Dogma,
+
+trans.
+trans.
+trans.
+trans.
+trans.
+trans.
+trans.
+
+Neil
+Neil
+Neil
+Neil
+Neil
+Neil
+Neil
+
+Buchanan,
+Buchanan,
+Buchanan,
+Buchanan,
+Buchanan,
+Buchanan,
+Buchanan,
+
+7
+7
+7
+7
+7
+7
+7
+
+vols.
+vols.
+vols.
+vols.
+vols.
+vols.
+vols.
+
+(Boston:
+(Boston:
+(Boston:
+(Boston:
+(Boston:
+(Boston:
+(Boston:
+
+Little,
+Little,
+Little,
+Little,
+Little,
+Little,
+Little,
+
+Brown,
+Brown,
+Brown,
+Brown,
+Brown,
+Brown,
+Brown,
+
+1896–1905)
+1896–1905),
+1896–1905),
+1896–1905),
+1896–1905),
+1896–1905),
+1896–1905),
+
+Little,
+Little,
+Little,
+Little,
+
+Brown,
+Brown,
+Brown,
+Brown,
+
+1896–1905)
+1896–1905), 2:126
+1896–1905), p. 126
+1896–1905), vol. 2,
+
+2:126
+126
+2:126
+2
+2, note
+note
+
+2:126
+126
+2:126
+2
+2, note
+note
+
+History
+History
+History
+History
+
+of
+of
+of
+of
+
+Dogma,
+Dogma,
+Dogma,
+Dogma,
+
+trans.
+trans.
+trans.
+trans.
+
+Neil
+Neil
+Neil
+Neil
+
+Buchanan,
+Buchanan,
+Buchanan,
+Buchanan,
+
+7
+7
+7
+7
+
+vols.
+vols.
+vols.
+vols.
+
+(Boston:
+(Boston:
+(Boston:
+(Boston:
+
+History of Dogma, trans. Neil Buchanan, 7 vols. (Boston: Little, Brown, 1896–1905), vol. 2
+History of Dogma, trans. Neil Buchanan, 7 vols. (Boston: Little, Brown, 1896–1905), vol. 2,
+History of Dogma, trans. Neil Buchanan, 7 vols. (Boston: Little, Brown, 1896–1905), note
+
+Subsequent citations: pagination = page
+
+Harnack,
+Harnack,
+Harnack,
+Harnack,
+Harnack,
+Harnack,
+Harnack,
+
+5
+
+of
+of
+of
+of
+of
+of
+of
+
+of
+of
+of
+of
+of
+of
+of
+
+First citation: pagination = page
+
+Adolf Harnack,
+Adolf Harnack,
+Adolf Harnack,
+Adolf Harnack,
+p. 126
+Adolf Harnack,
+Adolf Harnack,
+note
+Adolf Harnack,
+
+4.4
+
+History
+History
+History
+History
+History
+History
+History
+
+History
+History
+History
+History
+History
+History
+History
+
+of
+of
+of
+of
+of
+of
+of
+
+Dogma
+Dogma,
+Dogma,
+Dogma,
+Dogma,
+Dogma,
+Dogma,
+
+2:126
+p. 126
+vol. 2, p. 126
+vol. 2
+vol. 2, note
+note
+
+mvlexicon with shorthand
+First citation: pagination undefined
+
+HALOT
+HALOT 3:4
+HALOT, 4
+HALOT 3:4
+HALOT 3, note
+HALOT 3
+HALOT, note
+
+5.2 Subsequent citations: pagination undefined
+HALOT
+HALOT 3:4
+HALOT, 4
+HALOT 3:4
+HALOT 3
+HALOT 3, note
+HALOT, note
+
+5.3 First citation: pagination = page
+HALOT
+HALOT 3:4
+HALOT, p. 4
+HALOT, vol. 3, p. 4
+HALOT, vol. 3, note
+HALOT, vol. 3
+HALOT, note
+
+5.4 Subsequent citations: pagination = page
+HALOT
+HALOT 3:4
+HALOT, p. 4
+HALOT, vol. 3, p. 4
+HALOT, vol. 3
+HALOT, vol. 3, note
+HALOT, note
+
+6 incollection
+6.1 First citation: pagination undefined
+David Noel Freedman, “Pottery, Poetry, and Prophecy: An Essay on Biblical Poetry,” in Pottery, Poetry, and
+Prophecy: Studies in Early Hebrew Poetry (Winona Lake, IN: Eisenbrauns, 1980), 1–22
+David Noel Freedman, “Pottery, Poetry, and Prophecy: An Essay on Biblical Poetry,” in Pottery, Poetry, and
+Prophecy: Studies in Early Hebrew Poetry (Winona Lake, IN: Eisenbrauns, 1980), 1–22
+David Noel Freedman, “Pottery, Poetry, and Prophecy: An Essay on Biblical Poetry,” in Pottery, Poetry, and
+Prophecy: Studies in Early Hebrew Poetry (Winona Lake, IN: Eisenbrauns, 1980), 1–22 (note)
+
+6.2 Subsequent citations: pagination undefined
+Freedman, “Pottery, Poetry, and Prophecy,” 1–22
+Freedman, “Pottery, Poetry, and Prophecy,” 14
+Freedman, “Pottery, Poetry, and Prophecy,” 1–22 (note)
+
+6.3 First citation: pagination = page
+David Noel Freedman, “Pottery, Poetry, and Prophecy: An Essay on Biblical Poetry,” in Pottery, Poetry, and
+Prophecy: Studies in Early Hebrew Poetry (Winona Lake, IN: Eisenbrauns, 1980), pp. 1–22
+David Noel Freedman, “Pottery, Poetry, and Prophecy: An Essay on Biblical Poetry,” in Pottery, Poetry, and
+Prophecy: Studies in Early Hebrew Poetry (Winona Lake, IN: Eisenbrauns, 1980), pp. 1–22
+David Noel Freedman, “Pottery, Poetry, and Prophecy: An Essay on Biblical Poetry,” in Pottery, Poetry, and
+Prophecy: Studies in Early Hebrew Poetry (Winona Lake, IN: Eisenbrauns, 1980), pp. 1–22 (note)
+
+6.4 Subsequent citations: pagination = page
+Freedman, “Pottery, Poetry, and Prophecy,” pp. 1–22
+Freedman, “Pottery, Poetry, and Prophecy,” p. 14
+Freedman, “Pottery, Poetry, and Prophecy,” pp. 1–22 (note)
+
+7 incommentary
+7.1 First citation: pagination undefined
+Patrick D. Miller, NIB 6:553–926
+Patrick D. Miller, NIB 6:577
+Patrick D. Miller, NIB 6:553–926 (note)
+
+7.2 Subsequent citations: pagination undefined
+Miller, NIB 6:553–926
+Miller, NIB 6:577
+Miller, NIB 6:553–926 (note)
+
+7.3 First citation: pagination = page
+Patrick D. Miller, NIB, vol. 6, pp. 553–926
+Patrick D. Miller, NIB, vol. 6, p. 577
+Patrick D. Miller, NIB, vol. 6, pp. 553–926 (note)
+
+7.4 Subsequent citations: pagination = page
+Miller, NIB, vol. 6, pp. 553–926
+Miller, NIB, vol. 6, p. 577
+Miller, NIB, vol. 6, pp. 553–926 (note)
+
+8 inlexicon
+8.1 First citation: pagination undefined
+Karl Dahn and Walter L. Liefeld, “See, Vision, Eye,” NIDNTT 3:511–21
+Karl Dahn and Walter L. Liefeld, “See, Vision, Eye,” NIDNTT 3:511–21
+Karl Dahn and Walter L. Liefeld, “See, Vision, Eye,” NIDNTT 3:511–21 (note)
+
+8.2 Subsequent citations: pagination undefined
+Dahn and Liefeld, NIDNTT 3:511–21
+Dahn and Liefeld, NIDNTT 3:577
+Dahn and Liefeld, NIDNTT 3:511–21 (note)
+
+8.3 First citation: pagination = page
+Karl Dahn and Walter L. Liefeld, “See, Vision, Eye,” NIDNTT, vol. 3, pp. 511–21
+Karl Dahn and Walter L. Liefeld, “See, Vision, Eye,” NIDNTT, vol. 3, pp. 511–21
+Karl Dahn and Walter L. Liefeld, “See, Vision, Eye,” NIDNTT, vol. 3, pp. 511–21 (note)
+
+8.4 Subsequent citations: pagination = page
+Dahn and Liefeld, NIDNTT, vol. 3, pp. 511–21
+Dahn and Liefeld, NIDNTT, vol. 3, p. 577
+Dahn and Liefeld, NIDNTT, vol. 3, pp. 511–21 (note)
+
+9 inreference
+9.1 First citation: pagination undefined
+Dennis T. Olson, “Numbers, Book of,” DOTP, 611–18
+Dennis T. Olson, “Numbers, Book of,” DOTP, 611–18
+Dennis T. Olson, “Numbers, Book of,” DOTP, 611–18 (note)
+
+9.2 Subsequent citations: pagination undefined
+Olson, “Numbers,” 611–18
+Olson, “Numbers,” 577
+Olson, “Numbers,” 611–18 (note)
+
+9.3 First citation: pagination = page
+Dennis T. Olson, “Numbers, Book of,” DOTP, pp. 611–18
+Dennis T. Olson, “Numbers, Book of,” DOTP, pp. 611–18
+Dennis T. Olson, “Numbers, Book of,” DOTP, pp. 611–18 (note)
+
+9.4 Subsequent citations: pagination = page
+Olson, “Numbers,” pp. 611–18
+Olson, “Numbers,” p. 577
+Olson, “Numbers,” pp. 611–18 (note)
+
+9.5 First citation: pagination undefined
+Krister Stendahl, “Biblical Theology, Contemporary,” IDB 1:418–32
+Krister Stendahl, “Biblical Theology, Contemporary,” IDB 1:418–32
+Krister Stendahl, “Biblical Theology, Contemporary,” IDB 1:418–32 (note)
+
+9.6 Subsequent citations: pagination undefined
+Stendahl, “Biblical Theology,” 1:418–32
+Stendahl, “Biblical Theology,” 1:577
+Stendahl, “Biblical Theology,” 1:418–32 (note)
+
+9.7 First citation: pagination = page
+Krister Stendahl, “Biblical Theology, Contemporary,” IDB, vol. 1, pp. 418–32
+Krister Stendahl, “Biblical Theology, Contemporary,” IDB, vol. 1, pp. 418–32
+Krister Stendahl, “Biblical Theology, Contemporary,” IDB, vol. 1, pp. 418–32 (note)
+
+9.8 Subsequent citations: pagination = page
+Stendahl, “Biblical Theology,” vol. 1, pp. 418–32
+Stendahl, “Biblical Theology,” vol. 1, p. 577
+Stendahl, “Biblical Theology,” vol. 1, pp. 418–32 (note)
+
+10 ancienttext
+10.1 First citation: pagination undefined
+“The Great Hymn to the Aten,” trans. Miriam Lichtheim (COS 1.26:44–46)
+“The Great Hymn to the Aten,” trans. Miriam Lichtheim (COS 1.26:44–46)
+“The Great Hymn to the Aten,” trans. Miriam Lichtheim (COS 1.26:44–46 [note])
+
+10.2 Subsequent citations: pagination undefined
+“Great Hymn to the Aten,” COS 1.26:44–46
+“Great Hymn to the Aten,” COS 1.26:44
+“Great Hymn to the Aten,” COS 1.26:44–46 (note)
+
+10.3 First citation: pagination = page
+“The Great Hymn to the Aten,” trans. Miriam Lichtheim (COS, vol. 1, part 26, pp. 44–46)
+“The Great Hymn to the Aten,” trans. Miriam Lichtheim (COS, vol. 1, part 26, pp. 44–46)
+“The Great Hymn to the Aten,” trans. Miriam Lichtheim (COS, vol. 1, part 26, pp. 44–46 [note])
+
+10.4 Subsequent citations: pagination = page
+“Great Hymn to the Aten,” COS, vol. 1, part 26, pp. 44–46
+“Great Hymn to the Aten,” COS, vol. 1, part 26, p. 44
+“Great Hymn to the Aten,” COS, vol. 1, part 26, pp. 44–46 (note)
+
+10.5 First citation: pagination undefined
+“The Doomed Prince” (Miriam Lichtheim, Ancient Egyptian Literature [Berkeley: University of California
+Press, 1976], 2:200–3)
+“The Doomed Prince” (Miriam Lichtheim, Ancient Egyptian Literature [Berkeley: University of California
+Press, 1976], 2:200–3)
+“The Doomed Prince” (Miriam Lichtheim, Ancient Egyptian Literature [Berkeley: University of California
+Press, 1976], 2:200–3 [note])
+
+10.6 Subsequent citations: pagination undefined
+“The Doomed Prince” (AEL 2:200–3)
+“The Doomed Prince” (AEL 2:577)
+“The Doomed Prince” (AEL 2:200–3 [note])
+
+10.7 First citation: pagination = page
+“The Doomed Prince” (Miriam Lichtheim, Ancient Egyptian Literature [Berkeley: University of California
+Press, 1976], vol. 2, pp. 200–3)
+“The Doomed Prince” (Miriam Lichtheim, Ancient Egyptian Literature [Berkeley: University of California
+Press, 1976], vol. 2, pp. 200–3)
+“The Doomed Prince” (Miriam Lichtheim, Ancient Egyptian Literature [Berkeley: University of California
+Press, 1976], vol. 2, pp. 200–3 [note])
+
+10.8 Subsequent citations: pagination = page
+“The Doomed Prince” (AEL, vol. 2, pp. 200–3)
+“The Doomed Prince” (AEL, vol. 2, p. 200)
+“The Doomed Prince” (AEL, vol. 2, pp. 200–3 [note])
+
+10.9 First citation: pagination undefined
+Ashur Inscription (Albert Kirk Grayson, Assyrian Rulers of the Early First Millennium BC [1114–859 BC],
+RIMA 2 [Toronto: University of Toronto Press, 1991], 143–44)
+Ashur Inscription, obv. lines 10 (Albert Kirk Grayson, Assyrian Rulers of the Early First Millennium BC
+[1114–859 BC], RIMA 2 [Toronto: University of Toronto Press, 1991], 143–44)
+Ashur Inscription, obv. lines 10–17 (Albert Kirk Grayson, Assyrian Rulers of the Early First Millennium BC
+[1114–859 BC], RIMA 2 [Toronto: University of Toronto Press, 1991], 143–44 [note])
+
+10.10 Subsequent citations: pagination undefined
+Ashur Inscription (RIMA 2:143–44)
+Ashur Inscription, obv. lines 10 (RIMA 2:143)
+Ashur Inscription, obv. lines 10–17 (RIMA 2:143–44 [note])
+
+10.11 First citation: pagination = page
+Ashur Inscription (Albert Kirk Grayson, Assyrian Rulers of the Early First Millennium BC [1114–859 BC],
+RIMA 2 [Toronto: University of Toronto Press, 1991], pp. 143–44)
+Ashur Inscription, obv. lines 10 (Albert Kirk Grayson, Assyrian Rulers of the Early First Millennium BC
+[1114–859 BC], RIMA 2 [Toronto: University of Toronto Press, 1991], pp. 143–44)
+Ashur Inscription, obv. lines 10–17 (Albert Kirk Grayson, Assyrian Rulers of the Early First Millennium BC
+[1114–859 BC], RIMA 2 [Toronto: University of Toronto Press, 1991], pp. 143–44 [note])
+
+10.12 Subsequent citations: pagination = page
+Ashur Inscription (RIMA, vol. 2, pp. 143–44)
+Ashur Inscription, obv. lines 10 (RIMA, vol. 2, p. 143)
+Ashur Inscription, obv. lines 10–17 (RIMA, vol. 2, pp. 143–44 [note])
+
+10.13 First citation: pagination undefined
+P.Cair.Zen. (Arthur S. Hunt and Campbell C. Edgar, Select Papyri, LCL [Cambridge: Harvard University
+Press, 1932])
+P.Cair.Zen. 59003 (Arthur S. Hunt and Campbell C. Edgar, Select Papyri, LCL [Cambridge: Harvard
+University Press, 1932], 1:96)
+
+P.Cair.Zen. 59003 (Arthur S. Hunt
+University Press, 1932], 96)
+P.Cair.Zen. 59003 (Arthur S. Hunt
+University Press, 1932], 1:96)
+P.Cair.Zen. 59003 (Arthur S. Hunt
+University Press, 1932], 1, note)
+P.Cair.Zen. 59003 (Arthur S. Hunt
+University Press, 1932], 1)
+P.Cair.Zen. 59003 (Arthur S. Hunt
+University Press, 1932], note)
+
+10.14
+
+and Campbell C. Edgar, Select Papyri, LCL [Cambridge: Harvard
+and Campbell C. Edgar, Select Papyri, LCL [Cambridge: Harvard
+and Campbell C. Edgar, Select Papyri, LCL [Cambridge: Harvard
+and Campbell C. Edgar, Select Papyri, LCL [Cambridge: Harvard
+
+Subsequent citations: pagination undefined
+
+P.Cair.Zen.
+P.Cair.Zen.
+P.Cair.Zen.
+P.Cair.Zen.
+P.Cair.Zen.
+P.Cair.Zen.
+P.Cair.Zen.
+
+10.15
+
+and Campbell C. Edgar, Select Papyri, LCL [Cambridge: Harvard
+
+(Hunt and Edgar)
+59003 (Hunt and Edgar 1:96)
+59003 (Hunt and Edgar, 96)
+59003 (Hunt and Edgar 1:96)
+59003 (Hunt and Edgar 1, note)
+59003 (Hunt and Edgar 1)
+59003 (Hunt and Edgar, note)
+
+First citation: pagination = page
+
+P.Cair.Zen. (Arthur S. Hunt and Campbell C. Edgar, Select
+Press, 1932])
+P.Cair.Zen. 59003 (Arthur S. Hunt and Campbell C. Edgar,
+University Press, 1932], 1:96)
+P.Cair.Zen. 59003 (Arthur S. Hunt and Campbell C. Edgar,
+University Press, 1932], p. 96)
+P.Cair.Zen. 59003 (Arthur S. Hunt and Campbell C. Edgar,
+University Press, 1932], vol. 1, p. 96)
+P.Cair.Zen. 59003 (Arthur S. Hunt and Campbell C. Edgar,
+University Press, 1932], vol. 1, note)
+P.Cair.Zen. 59003 (Arthur S. Hunt and Campbell C. Edgar,
+University Press, 1932], vol. 1)
+P.Cair.Zen. 59003 (Arthur S. Hunt and Campbell C. Edgar,
+University Press, 1932], note)
+
+10.16
+
+Papyri, LCL [Cambridge: Harvard University
+Select Papyri, LCL [Cambridge: Harvard
+Select Papyri, LCL [Cambridge: Harvard
+Select Papyri, LCL [Cambridge: Harvard
+Select Papyri, LCL [Cambridge: Harvard
+Select Papyri, LCL [Cambridge: Harvard
+Select Papyri, LCL [Cambridge: Harvard
+
+Subsequent citations: pagination = page
+
+P.Cair.Zen.
+P.Cair.Zen.
+P.Cair.Zen.
+P.Cair.Zen.
+P.Cair.Zen.
+P.Cair.Zen.
+P.Cair.Zen.
+
+(Hunt and Edgar)
+59003 (Hunt and Edgar 1:96)
+59003 (Hunt and Edgar, p. 96)
+59003 (Hunt and Edgar, vol. 1, p. 96)
+59003 (Hunt and Edgar, vol. 1, note)
+59003 (Hunt and Edgar, vol. 1)
+59003 (Hunt and Edgar, note)
+
+11 classictext
+11.1
+
+First citation: pagination undefined
+
+Heraclitus, Epistle 1
+Heraclitus, Epistle 1, 577
+Heraclitus, Epistle 1, note
+
+11.2
+
+Subsequent citations: pagination undefined
+
+Heraclitus, Epistle 1
+Heraclitus, Epistle 1, 577
+Heraclitus, Epistle 1, note
+
+11.3 First citation: pagination = line
+Heraclitus, Epistle 1
+Heraclitus, Epistle 1, l. 10
+Heraclitus, Epistle 1, note
+
+11.4 Subsequent citations: pagination = line
+Heraclitus, Epistle 1
+Heraclitus, Epistle 1, l. 10
+Heraclitus, Epistle 1, note
+
+11.5 First citation: pagination undefined
+Augustine, Letters of St. Augustin (NPNF1 1)
+Augustine, Letters of St. Augustin (NPNF1 1:10)
+Augustine, Letters of St. Augustin (NPNF1 1, note)
+
+11.6 Subsequent citations: pagination undefined
+Augustine, Letters of St. Augustin (NPNF1 1)
+Augustine, Letters of St. Augustin (NPNF1 1:10)
+Augustine, Letters of St. Augustin (NPNF1 1:note)
+
+11.7
+
+First citation: pagination = page
+
+Augustine, Letters of St. Augustin (NPNF1 , vol. 1)
+Augustine, Letters of St. Augustin (NPNF1 , vol. 1, p. 10)
+Augustine, Letters of St. Augustin (NPNF1 , vol. 1, note)
+
+11.8
+
+Subsequent citations: pagination = page
+
+Augustine, Letters of St. Augustin (NPNF1 , vol. 1)
+Augustine, Letters of St. Augustin (NPNF1 , vol. 1, p. 10)
+Augustine, Letters of St. Augustin (NPNF1 , vol. 1, note)
+
+11.9
+The
+The
+The
+The
+The
+The
+The
+
+First citation: pagination undefined
+
+Clementine
+Clementine
+Clementine
+Clementine
+Clementine
+Clementine
+Clementine
+
+Homilies
+Homilies
+Homilies
+Homilies
+Homilies
+Homilies
+Homilies
+
+1.3
+1.3
+1.3
+1.3
+1.3
+1.3
+1.3
+
+(ANF)
+(ANF 8:223)
+(ANF, 223)
+(ANF 8:223)
+(ANF 8, note)
+(ANF 8)
+(ANF, note)
+
+11.10 Subsequent citations: pagination undefined
+The
+The
+The
+The
+The
+The
+The
+
+Clementine
+Clementine
+Clementine
+Clementine
+Clementine
+Clementine
+Clementine
+
+Homilies
+Homilies
+Homilies
+Homilies
+Homilies
+Homilies
+Homilies
+
+1.3
+1.3
+1.3
+1.3
+1.3
+1.3
+1.3
+
+(ANF)
+(ANF 8:223)
+(ANF, 223)
+(ANF 8:223)
+(ANF 8)
+(ANF 8, note)
+(ANF, note)
+
+11.11 First citation: pagination = page
+The
+The
+The
+The
+The
+The
+The
+
+Clementine
+Clementine
+Clementine
+Clementine
+Clementine
+Clementine
+Clementine
+
+Homilies
+Homilies
+Homilies
+Homilies
+Homilies
+Homilies
+Homilies
+
+1.3
+1.3
+1.3
+1.3
+1.3
+1.3
+1.3
+
+(ANF)
+(ANF 8:223)
+(ANF, p. 223)
+(ANF, vol. 8, p. 223)
+(ANF, vol. 8, note)
+(ANF, vol. 8)
+(ANF, note)
+
+11.12 Subsequent citations: pagination = page
+The
+The
+The
+The
+The
+The
+The
+
+Clementine
+Clementine
+Clementine
+Clementine
+Clementine
+Clementine
+Clementine
+
+Homilies
+Homilies
+Homilies
+Homilies
+Homilies
+Homilies
+Homilies
+
+1.3
+1.3
+1.3
+1.3
+1.3
+1.3
+1.3
+
+(ANF)
+(ANF 8:223)
+(ANF, p. 223)
+(ANF, vol. 8, p. 223)
+(ANF, vol. 8)
+(ANF, vol. 8, note)
+(ANF, note)
+
+11.13 First citation: pagination undefined
+Graham Anderson, “The pepaideumenos in Action: Sophists and Their Outlook in the Early Empire,” ANRW
+33.1:80–208
+Graham Anderson, “The pepaideumenos in Action: Sophists and Their Outlook in the Early Empire,” ANRW
+33.1:80–208
+Graham Anderson, “The pepaideumenos in Action: Sophists and Their Outlook in the Early Empire,” ANRW
+33.1:80–208 (note)
+
+11.14 Subsequent citations: pagination undefined
+Anderson, “Pepaideumenos,” ANRW 33.1:80–208
+Anderson, “Pepaideumenos,” ANRW 33.1:86
+Anderson, “Pepaideumenos,” ANRW 33.1:80–208 (note)
+
+11.15 First citation: pagination = page
+Graham Anderson, “The pepaideumenos in Action: Sophists and Their Outlook in the Early Empire,” ANRW,
+vol. 33, part 1, pp. 80–208
+Graham Anderson, “The pepaideumenos in Action: Sophists and Their Outlook in the Early Empire,” ANRW,
+vol. 33, part 1, pp. 80–208
+Graham Anderson, “The pepaideumenos in Action: Sophists and Their Outlook in the Early Empire,” ANRW,
+vol. 33, part 1, pp. 80–208 (note)
+
+11.16 Subsequent citations: pagination = page
+Anderson, “Pepaideumenos,” ANRW, vol. 33, part 1, pp. 80–208
+Anderson, “Pepaideumenos,” ANRW, vol. 33, part 1, p. 86
+Anderson, “Pepaideumenos,” ANRW, vol. 33, part 1, pp. 80–208 (note)
+
+Abbreviations
+AEL
+
+Ancient Egyptian Literature. Miriam Lichtheim. 3 vols. Berkeley: University of California Press,
+1971–1980
+
+ANF
+
+The Ante-Nicene Fathers
+
+ANRW
+
+Aufstieg und Niedergang der römischen Welt: Geschichte und Kultur Roms im Spiegel der
+neueren Forschung. Part 2, Principat. Edited by Hildegard Temporini and Wolfgang Haase.
+Berlin: de Gruyter, 1972–
+
+BDAG
+
+Danker, Frederick W., Walter Bauer, William F. Arndt, and F. Wilbur Gingrich. Greek-English
+Lexicon of the New Testament and Other Early Christian Literature. 3rd ed. Chicago: University
+of Chicago Press, 2000
+
+BDF
+
+Blass, Friedrich, Albert Debrunner, and Robert W. Funk. A Greek Grammar of the New
+Testament and Other Early Christian Literature. Chicago: University of Chicago Press, 1961
+
+COS
+
+The Context of Scripture. Edited by William W. Hallo. 3 vols. Leiden: Brill, 1997–2002
+
+DOTP
+
+Dictionary of the Old Testament: Pentateuch. Edited by T. Desmond Alexander and
+David W. Baker. Downers Grove, IL: InterVarsity, 2003
+
+HALOT
+
+The Hebrew and Aramaic Lexicon of the Old Testament. Ludwig Koehler, Walter Baumgartner,
+and Johann J. Stamm. Translated and edited under the supervision of Mervyn E. J. Richardson.
+4 vols. Leiden: Brill, 1994–1999
+
+IDB
+
+The Interpreter’s Dictionary of the Bible. Edited by George A. Buttrick. 4 vols. New York:
+Abingdon, 1962
+
+JDT
+
+Jahrbuch für deutsche Theologie
+
+JECS
+
+Journal of Early Christian Studies
+
+LCL
+
+Loeb Classical Library
+
+NIB
+
+The New Interpreter’s Bible. Edited by Leander E. Keck. 12 vols. Nashville: Abingdon,
+1994–2004
+
+NIDNTT
+
+New International Dictionary of New Testament Theology. Edited by Colin Brown. 4 vols.
+Grand Rapids: Zondervan, 1975–1985
+
+NPNF1
+
+The Nicene and Post-Nicene Fathers, Series 1
+
+P.Cair.Zen. Zenon Papyri, Catalogue général des antiquités égyptiennes du Musée du Caire. Edited by
+C. C. Edgar. Cairo
+RIMA
+
+The Royal Inscriptions of Mesopotamia, Assyrian Periods
+
+SBS
+
+Stuttgarter Bibelstudien
+
+References
+Anderson, Graham. “The pepaideumenos in Action: Sophists and Their Outlook in the Early Empire.” ANRW
+33.1:80–208. Part 2, Principat, 33.1. Edited by Hildegard Temporini and Wolfgang Haase. New York: de
+Gruyter, 1989.
+. “The pepaideumenos in Action: Sophists and Their Outlook in the Early Empire.” ANRW vol. 33,
+part 1, pp. 80–208. Part 2, Principat, vol. 33, part 1. Edited by Hildegard Temporini and Wolfgang Haase.
+New York: de Gruyter, 1989.
+The Ante-Nicene Fathers. Edited by Alexander Roberts and James Donaldson. 10 vols. 1885–1887. Repr.,
+Peabody, MA: Hendrickson, 1994.
+The Ante-Nicene Fathers. Edited by Alexander Roberts and James Donaldson. 10 vols. 1885–1887. Repr.,
+Peabody, MA: Hendrickson, 1994.
+Augustine. The Letters of St. Augustin. In vol. 1 of The Nicene and Post-Nicene Fathers, Series 1. Edited by
+Philip Schaff. 14 vols. 1886–1889. Repr., Peabody, MA: Hendrickson, 1994.
+. The Letters of St. Augustin. In vol. 1 of The Nicene and Post-Nicene Fathers, Series 1. Edited by
+Philip Schaff. 14 vols. 1886–1889. Repr., Peabody, MA: Hendrickson, 1994.
+Blass, Friedrich, Albert Debrunner, and Robert W. Funk. A Greek Grammar of the New Testament and Other
+Early Christian Literature. Chicago: University of Chicago Press, 1961.
+. A Greek Grammar of the New Testament and Other Early Christian Literature. Chicago: University
+of Chicago Press, 1961.
+Brown, Colin, ed. New International Dictionary of New Testament Theology. 4 vols. Grand Rapids:
+Zondervan, 1975–1985.
+Danker, Frederick W., Walter Bauer, William F. Arndt, and F. Wilbur Gingrich. Greek-English Lexicon of the
+New Testament and Other Early Christian Literature. 3rd ed. Chicago: University of Chicago Press, 2000.
+. Greek-English Lexicon of the New Testament and Other Early Christian Literature. 3rd ed. Chicago:
+University of Chicago Press, 2000.
+Freedman, David Noel. “Pottery, Poetry, and Prophecy: An Essay on Biblical Poetry.” Pages 1–22 in Pottery,
+Poetry, and Prophecy: Studies in Early Hebrew Poetry. Winona Lake, IN: Eisenbrauns, 1980.
+. “Pottery, Poetry, and Prophecy: An Essay on Biblical Poetry.” Pages 1–22 in Pottery, Poetry, and
+Prophecy: Studies in Early Hebrew Poetry. Winona Lake, IN: Eisenbrauns, 1980.
+Grayson, Albert Kirk. Assyrian Rulers of the Early First Millennium BC (1114–859 BC). RIMA 2. Toronto:
+University of Toronto Press, 1991.
+. Assyrian Rulers of the Early First Millennium BC (1114–859 BC). RIMA 2. Toronto: University of
+Toronto Press, 1991.
+Hallo, William W., ed. Canonical Compositions from the Biblical World. Vol. 1 of The Context of Scripture.
+Leiden: Brill, 1997.
+, ed. Canonical Compositions from the Biblical World. Vol. 1 of The Context of Scripture. Leiden: Brill,
+1997.
+Harnack, Adolf. History of Dogma. Translated from the 3rd German ed. by Neil Buchanan. 7 vols. Boston:
+Little, Brown, 1896–1905.
+. History of Dogma. Translated from the 3rd German ed. by Neil Buchanan. 7 vols. Boston: Little,
+Brown, 1896–1905.
+Heraclitus. Epistle 1. Translated by David Worley. Page 187 in The Cynic Epistles: A Study Edition. Edited
+by Abraham J. Malherbe. SBS 12. Atlanta: Scholars Press, 1977.
+Hunt, Arthur S., and Campbell C. Edgar. Select Papyri. LCL. Cambridge: Harvard University Press, 1932.
+
+. Select Papyri. LCL. Cambridge: Harvard University Press, 1932.
+Koehler, Ludwig, Walter Baumgartner, and Johann J. Stamm. The Hebrew and Aramaic Lexicon of the Old
+Testament. Translated and edited under the supervision of Mervyn E. J. Richardson. 4 vols. Leiden: Brill,
+1994–1999.
+. The Hebrew and Aramaic Lexicon of the Old Testament. Translated and edited under the supervision
+of Mervyn E. J. Richardson. 4 vols. Leiden: Brill, 1994–1999.
+Leyerle, Blake. “John Chrysostom on the Gaze.” JECS 1 (1993): 159–74.
+. “John Chrysostom on the Gaze.” JECS, vol. 1 (1993), pp. 159–74.
+Lichtheim, Miriam. Ancient Egyptian Literature. Vol. 2. Berkeley: University of California Press, 1976.
+. Ancient Egyptian Literature. Vol. 2. Berkeley: University of California Press, 1976.
+Miller, Patrick D. “The Book of Jeremiah: Introduction, Commentary, and Reflections.” NIB 6:553–926.
+. “The Book of Jeremiah: Introduction, Commentary, and Reflections.” NIB, vol. 6, pp. 553–926.
+Olson, Dennis T. “Numbers, Book of.” Pages 611–18 in Dictionary of the Old Testament: Pentateuch. Edited
+by T. Desmond Alexander and David W. Baker. Downers Grove, IL: InterVarsity, 2003.
+. “Numbers, Book of.” Pages 611–18 in Dictionary of the Old Testament: Pentateuch. Edited by
+T. Desmond Alexander and David W. Baker. Downers Grove, IL: InterVarsity, 2003.
+Stendahl, Krister. “Biblical Theology, Contemporary.” IDB 1:418–32.
+. “Biblical Theology, Contemporary.” IDB, vol. 1, pp. 418–32.
+Talbert, Charles H. Reading John: A Literary and Theological Commentary on the Fourth Gospel and the
+Johannine Epistles. New York: Crossroad, 1992.
+. Reading John: A Literary and Theological Commentary on the Fourth Gospel and the Johannine
+Epistles. New York: Crossroad, 1992.
+Wellhausen, Julius. “Die Composition des Hexateuchs.” JDT 21 (1876): 392–450; 22 (1877): 407–479.
+. “Die Composition des Hexateuchs.” JDT, vol. 21 (1876), pp. 392–450; vol. 22 (1877), pp. 407–479.
+
+

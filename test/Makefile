@@ -20,7 +20,8 @@ TXTS=standard-entries-minimal.txt \
      standard-entries-full.txt \
      sbl-entries-full.txt \
      biblatex-examples.txt \
-     sblhs-tests.txt
+     sblhs-tests.txt \
+     pagination.txt
 
 .PRECIOUS: %.bcf %.bbl %.pdf
 
@@ -33,7 +34,12 @@ test: $(TXTS)
 	@$(PDFLATEX) $< > /dev/null
 	@echo "Done."
 
-sblhs-tests.bcf: sblhs-tests.tex ../doc/biblatex-sbl.bib
+sblhs-tests.bcf: sblhs-tests.tex $(DEPS) ../doc/biblatex-sbl.bib
+	@echo -n "Building $< (first pass) ... "
+	@$(XELATEX) $< > /dev/null
+	@echo "Done."
+
+pagination.bcf: pagination.tex $(DEPS) ../doc/biblatex-sbl.bib
 	@echo -n "Building $< (first pass) ... "
 	@$(XELATEX) $< > /dev/null
 	@echo "Done."
@@ -66,6 +72,17 @@ sblhs-tests.pdf: sblhs-tests.bbl
 	@touch $@
 	@echo "Done."
 
+pagination.pdf: pagination.bbl
+	@echo -n "Building $(basename $<).tex (second pass) ... "
+	@$(XELATEX) $(basename $<).tex > /dev/null
+	@echo "Done."
+	@echo -n "Building $(basename $<).tex (third pass) ... "
+	@$(XELATEX) $(basename $<).tex > /dev/null
+	@touch $(basename $@).bcf
+	@touch $(basename $@).bbl
+	@touch $@
+	@echo "Done."
+
 %.txt: %.pdf
 	@echo -n "Testing $(basename $<).tex ... "
 	@pdftotext $<
@@ -79,4 +96,5 @@ clean:
 	@rm -f $(addprefix sbl-entries-full, $(TEMP-EXTENSIONS))
 	@rm -f $(addprefix biblatex-examples, $(TEMP-EXTENSIONS))
 	@rm -f $(addprefix sblhs-tests, $(TEMP-EXTENSIONS))
+	@rm -f $(addprefix pagination, $(TEMP-EXTENSIONS))
 	@echo "Done."

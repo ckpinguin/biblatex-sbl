@@ -48,8 +48,6 @@
 % CITEPAGES OPTION
 % ------------------------------------------------------------------
 
-%\DeclareRangeChars{~,;-+/:}
-
 \NumCheckSetup{\def\mkbibparens#1{#1}}
 
 \renewbibmacro*{postnote}{}
@@ -91,9 +89,6 @@
             {\setunit{\addspace}%
              \printtext[parens]{\printfield{postnote}}}}}}%
   \renewbibmacro*{postnote}{%
-    \ifbool{usevolpostnotedelim}
-      {\setunit{\volpostnotedelim}}
-      {\setunit{\postnotedelim}}%
     \iffieldundef{postnote}
       {\usebibmacro{citetotalone}{\printfield[postnote]{pages}}{}}
       {\ifboolexpr{
@@ -125,9 +120,6 @@
          {\setunit{\addspace}%
           \printtext[parens]{\printfield{postnote}}}}}%
   \renewbibmacro*{postnote}{%
-    \ifbool{usevolpostnotedelim}
-      {\setunit{\volpostnotedelim}}
-      {\setunit{\postnotedelim}}%
     \iffieldundef{postnote}
       {\printfield[postnote]{pages}}
       {\iffieldpages{postnote}
@@ -161,9 +153,6 @@
              \setunit*{\addspace}%
              \printtext[parens]{\printfield{postnote}}}}}}%
   \renewbibmacro*{postnote}{%
-    \ifbool{usevolpostnotedelim}
-      {\setunit{\volpostnotedelim}}
-      {\setunit{\postnotedelim}}%
     \iffieldundef{postnote}
       {\usebibmacro{citetotalone}{\printfield[postnote]{pages}}{}}
       {\iffieldpages{postnote}
@@ -200,9 +189,6 @@
               {}%
             \printfield{postnote}}}}}%
   \renewbibmacro*{postnote}{%
-    \ifbool{usevolpostnotedelim}
-      {\setunit{\volpostnotedelim}}
-      {\setunit{\postnotedelim}}%
     \iffieldundef{postnote}
       {\usebibmacro{citetotalone}{\printfield[postnote]{pages}}{}}
       {\iffieldpages{postnote}
@@ -224,19 +210,15 @@
 
 \renewrobustcmd*{\mkvolcitenote}[2]{%
   \ifboolexpr{
-    (
-      test {\iffieldequalstr{pagination}{none}}
-      or
-      test {\iffieldundef{pagination}}
-    )
-    and
-    test {\ifpages{#2}}
+    test {\iffieldequalstr{pagination}{none}}
+    or
+    test {\iffieldundef{pagination}}
   }
     {\printtext{#1}%
-     \volcitedelim
+     \setunit*{\printdelim[volpostnote]{postnotedelim}}%
      \printtext{#2}}
     {\printtext[volcitevolume]{#1}%
-     \newunit
+     \setunit*{\printdelim{postnotedelim}}%
      \printtext[volcitepages]{#2}}}
 
 \renewrobustcmd*{\blx@imc@mkpageprefix}[1][pagination]{%
@@ -255,6 +237,15 @@
   \@ifnextchar[%]
     {\blx@tempa}
     {\blx@tempa[\@firstofone]}}
+
+\newbibmacro*{ifpaginationnone}[2]{%
+  \ifboolexpr{
+    test {\iffieldequalstr{pagination}{none}}
+    or
+    test {\iffieldundef{pagination}}
+  }
+    {#1}
+    {#2}}
 
 % ------------------------------------------------------------------
 % IDEM MACROS
@@ -301,6 +292,7 @@
 \newtoggle{blx@useshorttitle}
 \newtoggle{blx@accessdate}
 \def\blx@shorthand{}
+\def\blx@pagination{}
 
 \DeclareTypeOption{skipbiblistseries}[true]{%
   \settoggle{blx@skipbiblistseries}{#1}}
@@ -354,6 +346,13 @@
 \DeclareEntryOption[string]{shorthand}[true]{%
   \def\blx@shorthand{#1}}
 
+\DeclareBibliographyOption[string]{pagination}[none]{%
+  \def\blx@pagination{#1}}
+\DeclareTypeOption[string]{pagination}[none]{%
+  \def\blx@pagination{#1}}
+\DeclareEntryOption[string]{pagination}[none]{%
+  \def\blx@pagination{#1}}
+
 % ------------------------------------------------------------------
 % STYLE OPTIONS
 % ------------------------------------------------------------------
@@ -406,7 +405,8 @@
   useseries,
   accessdate=false,
   shorthand=true,
-  dashed=true
+  dashed=true,
+  pagination=none
 }
 
 \ExecuteBibliographyOptions[classictext,ancienttext]{%
@@ -441,10 +441,20 @@
 \DeclareLanguageMapping{german}{sbl-german}
 \DeclareLanguageMapping{spanish}{sbl-spanish}
 
-\renewcommand*{\subtitlepunct}{\addcolon\space}
 \newcommand*{\namedashpunct}{\adddot\space}
-\newcommand*{\lexiconfinalnamedelim}{\addcomma\space}
+\renewcommand*{\newunitpunct}{\addcomma\space}
+\renewcommand*{\subtitlepunct}{\addcolon\space}
+
 \renewcommand*{\relateddelim}{\addsemicolon\space}
+\renewcommand*{\volcitedelim}{\addcolon}
+\newcommand*{\shorthandvoldelim}{\addspace}
+\newcommand*{\parenvoldelim}{\addcolon\space}
+\newcommand*{\altpostnotedelim}{\addspace}
+
+\DeclareDelimFormat[default]{postnotedelim}{\postnotedelim}
+\DeclareDelimFormat[shorthandvol]{postnotedelim}{\shorthandvoldelim}
+\DeclareDelimFormat[parenvol]{postnotedelim}{\parenvoldelim}
+\DeclareDelimFormat[volpostnote]{postnotedelim}{\volcitedelim}
 
 \setcounter{mincompwidth}{10}
 
@@ -501,8 +511,9 @@
      \iffieldundef{eprintclass}
        {}
        {\addspace\mkbibparens{\thefield{eprintclass}}}}}
-\renewcommand*{\volcitedelim}{\addcolon}
-\DeclareFieldFormat{volcitevolume}{\bibstring{volume}\ppspace#1}
+
+\def\volcitevolformat{volcitevolume}
+\DeclareFieldFormat{volcitevolume}{\bibsstring{volume}\ppspace#1}
 \DeclareFieldFormat{volcitepages}{\mkcomprange[{\mkpageprefix[pagination]}]{#1}}
 \DeclareFieldFormat{part}{#1}
 \DeclareFieldFormat{pt}{\bibstring{part}~#1}
@@ -671,9 +682,6 @@
 \DeclareLabeldate{%
   \field{eprintdate}
 }
-
-\renewcommand*{\newunitpunct}{\addcomma\space}
-\newcommand*{\volpostnotedelim}{\addcolon}
 
 \providecommand*{\mkibid}[1]{#1}
 
@@ -921,6 +929,9 @@
       \step[fieldsource=relatedoptions, match=\regexp{(.*)}]
       \step[fieldset=relatedoptions, fieldvalue={skipbib=false,skipbiblist=false,}]
       \step[fieldset=relatedoptions, fieldvalue={$1}, append]
+      \step[fieldsource=pagination, final]
+      \step[fieldsource=pagination, match=\regexp{(.*)}]
+      \step[fieldset=relatedoptions, fieldvalue={,pagination=$1}, append]
     }
     \map[overwrite]{
       \step[fieldsource=shortseries, final]
@@ -1040,6 +1051,7 @@
 \ExplSyntaxOff
 
 \newbibmacro*{ifdotcolonsection}[3]{%
+  \restorefield{temp}{#1}%
   \ifboolexpr{
     test {\IfInStringTF{.}{#1}}
     or
@@ -1049,89 +1061,99 @@
     or
     test {\IfInStringTF{\S}{#1}}
     or
-    test {\IfInStringTF{\textsection}{#1}}
+    (
+      test {\iffieldequalstr{pagination}{section}}
+      and
+      test {\iffieldpages{temp}}
+    )
   }
     {#2}
     {#3}}
 
-\def\ifvolpostnoteblank#1#2{%
-  \ifblank{#2}
-    {\@firstoftwo}
-    {\@secondoftwo}}
+\newbibmacro*{setpagesunit:article}{%
+  \ifciteseen
+    {\setunit{\printdelim{postnotedelim}}}
+    {\iffieldundef{pages}
+       {\iffieldundef{volume}
+          {\setunit{\printdelim{postnotedelim}}}
+          {\usebibmacro{ifpaginationnone}
+             {\setunit{\printdelim[parenvol]{postnotedelim}}}
+             {\setunit{\printdelim{postnotedelim}}}}}
+       {\usebibmacro{ifdotcolonsection}{\abx@field@pages}
+          {\setunit{\printdelim[shorthandvol]{postnotedelim}}}
+          {\iffieldundef{volume}
+             {\setunit{\printdelim{postnotedelim}}}
+             {\usebibmacro{ifpaginationnone}
+                {\setunit{\printdelim[parenvol]{postnotedelim}}}
+                {\setunit{\printdelim{postnotedelim}}}}}}}}
 
-\def\ifvolpostnotepages#1#2{%
-  \ifpages{#2}
-    {\@firstoftwo}
-    {\@secondoftwo}}
+\newbibmacro*{setpagesunit:periodical}{%
+  \ifciteseen
+    {\setunit{\printdelim{postnotedelim}}}
+    {\iffieldundef{volume}
+       {\setunit{\printdelim{postnotedelim}}}
+       {\usebibmacro{ifpaginationnone}
+          {\setunit{\printdelim[parenvol]{postnotedelim}}}
+          {\setunit{\printdelim{postnotedelim}}}}}}
 
-\newbibmacro*{setvolpostnotedelim}{%
-  \ifboolexpr{
-    (
-      test {\iffieldequalstr{pagination}{none}}
-      or
-      test {\iffieldundef{pagination}}
-    )
-    and
-    test {\expandafter\ifvolpostnotepages\abx@field@postnote}
-  }
-    {\renewcommand*{\postnotedelim}{\addspace}}
-    {}}
+\newbibmacro*{setpagesunit}{%
+  \iffieldundef{pages}
+    {\iffieldundef{postnote}
+       {\newunit}
+       {\iftoggle{cbx:involcite}
+          {\usebibmacro{setvolpagesunit}}
+          {\usebibmacro{ifdotcolonsection}{\abx@field@postnote}
+             {\setunit{\printdelim[shorthandvol]{postnotedelim}}}
+             {\newunit}}}}
+    {\usebibmacro{ifdotcolonsection}{\abx@field@pages}
+       {\setunit{\printdelim[shorthandvol]{postnotedelim}}}
+       {\newunit}}}
+
+\newbibmacro*{setvolpagesunit}{%
+  \usebibmacro{ifpaginationnone}
+    {\setunit{\printdelim[shorthandvol]{postnotedelim}}%
+     \gdef\volcitevolformat{volume}}
+    {\newunit}}
 
 \newbibmacro*{setpostnotedelim}{%
-  \iftoggle{cbx:involcite}
-    {\usebibmacro{setvolpostnotedelim}}
-    {\iffieldundef{postnote}
-       {\usebibmacro{setpagesdelim}}
-       {\ifboolexpr{
-          test {\usebibmacro{ifdotcolonsection}{\abx@field@postnote}}
-          or
-          (
-            test {\iffieldequalstr{pagination}{section}}
-            and
-            test {\iffieldpages{postnote}}
-          )
-        }
-          {\ifboolexpr{
-             not test {\iffieldundef{pagination}}
-             and
-             not test {\iffieldequalstr{pagination}{section}}
-           }
-             {\clearfield{pagination}}
-             {}%
-           \renewcommand*{\postnotedelim}{\addspace}}
-          {\usebibmacro{setpagesdelim}}}}}
-
-\newbibmacro*{setpagesdelim}{%
-  \iffieldundef{pages}
+  \ifboolexpr{
+    test {\iffieldundef{postnote}}
+    or
+    not togl {cbx:shorthandprinted}
+  }
     {}
-    {\usebibmacro{ifdotcolonsection}{\abx@field@pages}
-       {\renewcommand*{\postnotedelim}{\addspace}}{}%
-     \ifboolexpr{
-       test {\iffieldequalstr{pagination}{section}}
-       and
-       test {\iffieldpages{pages}}
-     }
-       {\renewcommand*{\postnotedelim}{\addspace}}
-       {}}}
+    {\iftoggle{cbx:involcite}
+       {\usebibmacro{ifpaginationnone}
+          {\gdef\postnotecontext{shorthandvol}}
+          {}}
+       {\usebibmacro{ifdotcolonsection}{\abx@field@postnote}
+          {\gdef\postnotecontext{shorthandvol}}
+          {}}}}
 
+\newbibmacro*{setvoldelim}{%
+  \iftoggle{cbx:shorthandprinted}
+    {\usebibmacro{ifpaginationnone}
+       {\gdef\volcontext{shorthandvol}}
+       {}}
+    {}}
+
+\newbibmacro*{setvolpostnotedelim}{%
+  \usebibmacro{ifpaginationnone}
+    {\gdef\postnotecontext{volpostnote}}
+    {}}
+
+\newbibmacro*{setvolpagespostnotedelim}{%
+  \usebibmacro{ifpaginationnone}
+    {\gdef\postnotecontext{volpostnote}%
+     \gdef\volcitevolformat{volume}}
+    {}}
+
+% TODO: delete? or modify to match setpostnotedelim?
 \newbibmacro*{setaltpostnotedelim}{%
   \iffieldundef{altpostnote}
     {}
     {\usebibmacro{ifdotcolonsection}{\abx@field@altpostnote}
        {\renewcommand*{\postnotedelim}{\addspace}}{}}}
-
-\newbibmacro*{setpagesunit}{%
-  \iffieldundef{pages}
-    {}
-    {\usebibmacro{ifdotcolonsection}{\abx@field@pages}
-       {\setunit{\addspace}}{}%
-     \ifboolexpr{
-       test {\iffieldequalstr{pagination}{section}}
-       and
-       test {\iffieldpages{pages}}
-     }
-       {\setunit{\addspace}}
-       {}}}
 
 % ------------------------------------------------------------------
 % JOINING WORD MACROS
@@ -1189,6 +1211,7 @@
     {#2}}
   
 \newbibmacro*{shorthand}{%
+  \global\toggletrue{cbx:shorthandprinted}%
   \iffieldsequal{shorthand}{shorttitle}
     {\printtext{\mkbibemph{\printtext{%
        \bibhyperlink{\strfield{shorthand}}{\thefield{shorthand}}}}}}
@@ -1336,6 +1359,7 @@
      \printfield{revdtitleaddon}}}
 
 \newbibmacro*{xrefshortmaintitle+xrefshortbooktitle}{%
+  \global\toggletrue{cbx:shorthandprinted}%
   \iffieldundef{xref}
     {\usebibmacro{shortmaintitle+shortbooktitle}}
     {\entrydata{\thefield{xref}}{%
@@ -1350,7 +1374,8 @@
     {\entrydata{\thefield{xref}}{%
        \iffieldundef{shorttitle}
          {\usebibmacro{shorttitle}}
-         {\printtext[shorttitle]{%
+         {\global\toggletrue{cbx:shorthandprinted}%
+          \printtext[shorttitle]{%
             \bibhyperlink{\strfield{shorthand}}{\thefield{shorttitle}}}}}}}
 
 \newbibmacro*{shortjournal}{%
@@ -1359,7 +1384,7 @@
     {\printtext[shortjournal]{%
        \bibhyperlink{\strfield{shortjournal}}{\thefield{shortjournal}}}}}
 
-\newbibmacro*{shortjournal+issue}{%
+\newbibmacro*{shortjournal+issue+pages}{%
   \usebibmacro{shortjournal}%
   \setunit{\addspace}%
   \usebibmacro{series+volume+number+eid}%
@@ -1379,19 +1404,14 @@
      \newunit}
     {\setunit{\addspace}}%
   \usebibmacro{issue+date}%
-  \ifboolexpr{
-    test {
-      \ifboolexpr{
-        not test {\iffieldundef{journaltitle}}
-        and
-        not test {\iffieldundef{shortjournal}}}}
-    and
-    test {\iffieldundef{volume}}
-    and
-    test {\iffieldundef{date}}
-  }
-    {\usebibmacro{setpagesunit}}
-    {}}
+  \ifentrytype{periodical}
+    {\usebibmacro{setpagesunit:periodical}}
+    {\usebibmacro{setpagesunit:article}}%
+  \usebibmacro{ifpaginationnone}
+    {\usebibmacro{pages}}
+    {\def\abx@str{abx@sstr}%
+     \usebibmacro{pages}%
+     \ifbibliography{\def\abx@str{abx@lstr}}{}}}
 
 \renewbibmacro*{issue+date}{%
   \ifboolexpr{
@@ -1422,8 +1442,7 @@
             {\usebibmacro{date}}
             {\printfield{issue}%
              \setunit*{\addspace}%
-             \usebibmacro{date}}}%
-        \setunit{\addcolon\space}}}}
+             \usebibmacro{date}}}}}}
 
 \newbibmacro*{series+volume+number+eid}{%
   \iffieldundef{series}
@@ -1431,11 +1450,19 @@
     {\newunit
      \printfield{series}%
      \newunit}%
-  \printfield{volume}%
-  \setunit*{\addperiod}%
-  \printfield{number}%
+  \usebibmacro{volume+number}%
   \setunit{\addcomma\space}%
   \printfield{eid}}
+
+\newbibmacro*{volume+number}{%
+  \usebibmacro{ifpaginationnone}
+    {\printfield{volume}%
+     \setunit*{\addperiod}%
+     \printfield{number}}
+    {\setunit*{\addcomma\space}%
+     \printfield[volcitevolume]{volume}%
+     \setunit*{\addcomma\space}%
+     \printfield[no]{number}}}
 
 \newbibmacro{inissuetitle}{%
   \iffieldundef{issuetitle}
@@ -2228,14 +2255,6 @@
 % CHAPTER, PAGES, VOLUME, PART MACROS
 % ------------------------------------------------------------------
 
-\newbibmacro*{volume}{%
-  \iffieldundef{volume}
-    {}
-    {\setunit{\addspace}%
-     \global\booltrue{usevolpostnotedelim}%
-     \printfield{volume}%
-     \newunit}}
-
 \newbibmacro*{ifbooktitleormaintitle}[2]{%
   \ifboolexpr{
     not test {\iffieldundef{booktitle}}
@@ -2349,36 +2368,32 @@
            \setunit*{\addspace}}}}
     {}}
 
-\newbibmacro*{volume+pages}{%
-  \iffieldundef{volume}
-    {}
-    {\setunit{\addspace}%
-     \printfield{volume}%
-     \setunit*{\addperiod}%
-     \printfield{part}%
-     \setunit{\volpostnotedelim}%
-     \global\booltrue{usevolpostnotedelim}}
-  \usebibmacro{pages}}
-
 \newbibmacro*{volume+part+pages}{%
   \usebibmacro{ifusevolumeandpart}
     {}
-    {\printfield{volume}%
-     \setunit*{\addperiod}%
-     \printfield{part}%
-     \setunit{\volpostnotedelim}%
-     \global\booltrue{usevolpostnotedelim}}%
+    {\usebibmacro{volume+part}%
+     \usebibmacro{ifpaginationnone}
+       {\setunit{\printdelim[volpostnote]{postnotedelim}}}
+       {\setunit{\printdelim{postnotedelim}}}}%
   \usebibmacro{pages}}
 
+\newbibmacro*{volume+part+pages:short}{%
+  \def\abx@str{abx@sstr}%
+  \usebibmacro{volume+part}%
+  \usebibmacro{ifpaginationnone}
+    {\setunit{\printdelim[volpostnote]{postnotedelim}}}
+    {\setunit{\printdelim{postnotedelim}}}%
+  \usebibmacro{pages}%
+  \ifbibliography{\def\abx@str{abx@lstr}}{}}
+
 \newbibmacro*{volume+part}{%
-  \iffieldundef{volume}
-    {}
-    {\iftoggle{blx@usevolume}
-       {}
-       {\printfield{volume}%
-        \setunit{\addperiod}%
-        \printfield{part}%
-        \global\booltrue{usevolpostnotedelim}}}}
+  \usebibmacro{ifpaginationnone}
+    {\printfield{volume}%
+     \setunit*{\addperiod}%
+     \printfield{part}}
+    {\printfield[volcitevolume]{volume}%
+     \setunit*{\addcomma\space}%
+     \printfield[pt]{part}}}
 
 \renewbibmacro*{urldate}{%
   \iftoggle{blx@accessdate}
@@ -2486,6 +2501,7 @@
 
 \renewbibmacro*{related:default}[1]{%
   \entrydata*{#1}{%
+    \restorefield{pagination}{\blx@pagination}%
     \usedriver
       {\ifnameundef{savedauthor}
          {\ifnameundef{savededitor}
@@ -2512,6 +2528,7 @@
 
 \newbibmacro*{related:reprint}[1]{%
   \entrydata*{#1}{%
+    \restorefield{pagination}{\blx@pagination}%
     \usedriver
       {\renewbibmacro*{related:init}{}%
        \ifbibliography
@@ -2524,40 +2541,78 @@
          {cite:\thefield{entrytype}}}}}
 
 \newbibmacro*{related:ancienttext}[1]{%
-  \global\togglefalse{blx@testpostnotedelim}%
+  \global\togglefalse{cbx:relatedshorthand}%
+  \global\togglefalse{cbx:shorthandprinted}%
   \togglefalse{blx@citeindex}%
   \ifciteseen{\let\ifciteseen\@firstoftwo}{}%
   \entrydata*{#1}{%
+    \restorefield{pagination}{\blx@pagination}%
     \usebibmacro{ifuseshorthand}
-      {\usebibmacro{cite:shorthand}%
-       \usebibmacro{volume}%
-       \setunit{\addperiod}%
-       \printfield{part}%
-       \global\toggletrue{blx@testpostnotedelim}}
+      {\usebibmacro{shorthand}%
+       \iffieldequalstr{entrysubtype}{RIMA}
+         {\restorefield{volume}{\abx@field@number}}
+         {}%
+       \iffieldundef{volume}
+         {}
+         {\usebibmacro{setvoldelim}%
+          \setunit{\printdelim[\volcontext]{postnotedelim}}%
+          \usebibmacro{volume+part}%
+          \global\toggletrue{cbx:volprinted}}}
       {\usedriver{}{cite:\thefield{entrytype}}%
+       \usebibmacro{ifusevolumeandpart}
+         {}
+         {\global\toggletrue{cbx:volprinted}}%
        \ifboolexpr{
          test {\ifciteseen}
          and
          not togl {blx@useshorttitle}
        }
-         {\global\toggletrue{blx@testpostnotedelim}}
+         {\global\toggletrue{cbx:shorthandprinted}}
          {}}}}
 
 % ------------------------------------------------------------------
 % ANCIENT AND CLASSIC TEXT MACROS
 % ------------------------------------------------------------------
 
-\newtoggle{blx@testpostnotedelim}
-
 \newbibmacro*{volume+part+postnote}{%
-  \usebibmacro{volume}%
-  \iffieldundef{part}
-    {}
-    {\setunit{\addperiod}%
-     \printfield{part}}%
-  \iftoggle{blx@testpostnotedelim}{\usebibmacro{setpostnotedelim}}{}%
-  \usebibmacro{postnote}%
+  \iffieldundef{volume}
+    {\usebibmacro{setpostnotedelim}}
+    {\usebibmacro{setvoldelim}%
+     \setunit{\printdelim[\volcontext]{postnotedelim}}%
+     \usebibmacro{volume+part}%
+     \usebibmacro{setvolpostnotedelim}}%
+  \setunit{\printdelim[\postnotecontext]{postnotedelim}}%
+  \ifboolexpr{
+    test {\ifciteseen}
+    or
+    test {\iffieldundef{pages}}
+  }
+    {\usebibmacro{postnote}}
+    {\usebibmacro{pages}}%
   \global\booltrue{suppresspostnote}}
+
+\newbibmacro*{related+volume+part+postnote}{%
+  \usebibmacro{related:init}%
+  \usebibmacro{related}%
+  \iffieldundef{volume}
+    {\iftoggle{cbx:volprinted}
+       {\usebibmacro{volume+part}%
+        \usebibmacro{setvolpostnotedelim}}
+       {\usebibmacro{setpostnotedelim}}}
+    {\usebibmacro{setvoldelim}%
+     \setunit{\printdelim[\volcontext]{postnotedelim}}%
+     \usebibmacro{volume+part}%
+     \usebibmacro{setvolpostnotedelim}}%
+  \setunit{\printdelim[\postnotecontext]{postnotedelim}}%
+  \ifboolexpr{
+    test {\ifciteseen}
+    or
+    test {\iffieldundef{pages}}
+  }
+    {\usebibmacro{postnote}}
+    {\usebibmacro{pages}}%
+  \global\booltrue{suppresspostnote}%
+  \global\toggletrue{relatedseen}}
 
 \newbibmacro*{classic:translator+series}{%
   \ifnameundef{translator}

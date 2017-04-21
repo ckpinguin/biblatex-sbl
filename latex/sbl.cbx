@@ -9,20 +9,25 @@
   \ifnumequal{\value{textcitecount}}{\value{textcitetotal}-1}}
 
 \newbool{suppresspostnote}
-\newbool{usevolpostnotedelim}
 
 \newtoggle{cbx:loccit}
 \newtoggle{usingibid}
 \newtoggle{relatedseen}
 \newtoggle{inentrytype}
 \newtoggle{cbx:involcite}
+\newtoggle{cbx:relatedshorthand}
+\newtoggle{cbx:shorthandprinted}
+\newtoggle{cbx:volprinted}
 
 \newbibmacro*{cite}{%
+  \gdef\postnotecontext{default}%
+  \gdef\volcontext{default}%
+  \gdef\volcitevolformat{volume}%
   \boolfalse{suppresspostnote}%
-  \boolfalse{usevolpostnotedelim}%
   \global\togglefalse{usingibid}%
   \global\togglefalse{inentrytype}%
-  \global\toggletrue{blx@testpostnotedelim}%
+  \global\togglefalse{cbx:shorthandprinted}%
+  \global\togglefalse{cbx:volprinted}%
   \ifciteseen
     {\global\toggletrue{relatedseen}}
     {\global\togglefalse{relatedseen}}%
@@ -83,14 +88,10 @@
      \setunit{\postnotedelim}%
      \printfield{altpostnote}%
      \setunit{\addspace}%
-     \printtext[parens]{%
-       \usebibmacro{related:init}%
-       \usebibmacro{related}%
-       \usebibmacro{volume+part+postnote}}} 
+     \printtext[parens]{\usebibmacro{related+volume+part+postnote}}}
     {\ifciteseen
-       {}
-       {\usebibmacro{setpostnotedelim}%
-        \setunit{\postnotedelim}%
+       {\usebibmacro{setpostnotedelim}}
+       {\usebibmacro{setpagesunit}%
         \usebibmacro{pages}}}}
 
 \newbibmacro*{bibentrycite}{%
@@ -136,13 +137,11 @@
     \let\blx@citeargs\blx@volmciteargs}}
 
 \newbibmacro*{cite:postnote}{%
-  \iffieldundef{shorthand}
-    {}
-    {\iftoggle{usingibid}
-       {}
-       {\usebibmacro{ifneedsetpostnotedelim}
-          {\usebibmacro{setpostnotedelim}}
-          {}}}%
+  \ifdefined\postnotecontext
+    \setunit{\printdelim[\postnotecontext]{postnotedelim}}%
+  \else
+    \newunit
+  \fi
   \ifbool{suppresspostnote}{}{%
     \ifboolexpr{%
       not test {\iffieldundef{postnote}}
@@ -364,20 +363,15 @@
          }}
   }
     {\newunit
-     \usebibmacro{related:init}%
-     \usebibmacro{related}%
-     \usebibmacro{volume+part+postnote}}
+     \usebibmacro{related+volume+part+postnote}}
     {\setunit{\addspace}%
-     \printtext[parens]{%
-       \usebibmacro{related:init}%
-       \usebibmacro{related}%
-       \usebibmacro{volume+part+postnote}}}%
-  \global\toggletrue{relatedseen}
+     \printtext[parens]{\usebibmacro{related+volume+part+postnote}}}%
   \usebibmacro{finentry}}
 
 \DeclareBibliographyDriver{cite:classictext}{%
   \usebibmacro{citeindex}%
   \togglefalse{blx@citeindex}%
+  \toggletrue{cbx:shorthandprinted}%
   \usebibmacro{begentry}%
   \iftoggle{blx@usefullcite}
     {}
@@ -389,12 +383,9 @@
     {\setunit{\addspace}%
      \printfield{altpostnote}%
      \setunit{\addspace}%
-     \printtext[parens]{%
-       \usebibmacro{related:init}%
-       \usebibmacro{related}%
-       \usebibmacro{volume+part+postnote}}%
-     \global\toggletrue{relatedseen}}
-    {\usebibmacro{volume+part+postnote}%
+     \printtext[parens]{\usebibmacro{related+volume+part+postnote}}}
+    {\clearfield{pages}%
+     \usebibmacro{volume+part+postnote}%
      \usebibmacro{classic:translator+series}}%
   \usebibmacro{finentry}}
 
@@ -422,8 +413,7 @@
      \newunit
      \printfield{note}%
      \newunit
-     \usebibmacro{shortjournal+issue}%
-     \usebibmacro{pages}%
+     \usebibmacro{shortjournal+issue+pages}%
      \newunit
      \printfield{addendum}%
      \newunit
@@ -443,8 +433,10 @@
   \newunit
   \usebibmacro{title}%
   \ifciteseen
-    {\newunit
-     \usebibmacro{volume+part}}
+    {\iftoggle{blx@usevolume}
+       {}
+       {\newunit
+        \usebibmacro{volume+part}}}
     {\usebibmacro{byauthor/byeditor+others/bytranslator+others}%
      \newunit
      \usebibmacro{chapter+pagesin}%
@@ -578,6 +570,7 @@
     {\usedriver{}{cite:incollection}}
     {\usebibmacro{citeindex}%
      \usebibmacro{begentry}%
+     \togglefalse{blx@usevolume}%
      \iftoggle{blx@usefullcite}
        {}
        {\let\ifciteseen\@firstoftwo}%
@@ -587,18 +580,14 @@
      \newunit
      \ifciteseen
        {\usebibmacro{xrefshortmaintitle}%
-        \iffieldundef{volume}
-          {}
-          {\setunit{\addspace}%
-           \printfield{volume}%
-           \setunit*{\addperiod}%
-           \printfield{part}%
-           \global\booltrue{usevolpostnotedelim}}}
+        \usebibmacro{setvolpagesunit}%
+        \usebibmacro{volume+part}%
+        \usebibmacro{setvolpagespostnotedelim}}
        {\printfield{note}%
         \newunit
         \usebibmacro{xrefshortmaintitle}%
-        \newunit
-        \usebibmacro{volume+pages}%
+        \usebibmacro{setvolpagesunit}%
+        \usebibmacro{volume+part+pages:short}%
         \newunit
         \printfield{addendum}}%
      \usebibmacro{finentry}}}
@@ -660,6 +649,7 @@
 \DeclareBibliographyDriver{cite:inlexicon}{%
   \usebibmacro{citeindex}%
   \usebibmacro{begentry}%
+  \togglefalse{blx@usevolume}%
   \iftoggle{blx@usefullcite}
     {}
     {\let\ifciteseen\@firstoftwo}%
@@ -667,20 +657,16 @@
   \newunit
   \ifciteseen
     {\usebibmacro{xrefshortmaintitle+xrefshortbooktitle}%
-     \iffieldundef{volume}
-       {}
-       {\setunit{\addspace}%
-        \printfield{volume}%
-        \setunit*{\addperiod}%
-        \printfield{part}%
-        \global\booltrue{usevolpostnotedelim}}}
+     \usebibmacro{setvolpagesunit}%
+     \usebibmacro{volume+part}%
+     \usebibmacro{setvolpagespostnotedelim}}
     {\usebibmacro{title}%
      \newunit
      \printfield{note}%
      \newunit
      \usebibmacro{xrefshortmaintitle+xrefshortbooktitle}%
-     \newunit
-     \usebibmacro{volume+pages}%
+     \usebibmacro{setvolpagesunit}%
+     \usebibmacro{volume+part+pages:short}%
      \newunit
      \printfield{addendum}}%
   \usebibmacro{finentry}}
@@ -688,6 +674,7 @@
 \DeclareBibliographyDriver{cite:inreference}{%
   \usebibmacro{citeindex}%
   \usebibmacro{begentry}%
+  \togglefalse{blx@usevolume}%
   \iftoggle{blx@usefullcite}
     {}
     {\let\ifciteseen\@firstoftwo}%
@@ -696,20 +683,13 @@
   \newunit
   \usebibmacro{title}%
   \ifciteseen
-    {\newunit
-     \iffieldundef{volume}
-       {}
-       {\newunit
-        \global\booltrue{usevolpostnotedelim}%
-        \printfield{volume}%
-        \setunit*{\addperiod}%
-        \printfield{part}}}
+    {\usebibmacro{volume+part+postnote}}
     {\newunit
      \printfield{note}%
      \newunit
      \usebibmacro{xrefshortmaintitle+xrefshortbooktitle}%
      \newunit
-     \usebibmacro{volume+pages}%
+     \usebibmacro{volume+part+postnote}%
      \newunit
      \printfield{addendum}}%
   \usebibmacro{finentry}}
@@ -747,8 +727,7 @@
      \newunit
      \printfield{note}%
      \newunit
-     \usebibmacro{shortjournal+issue}%
-     \usebibmacro{pages}%
+     \usebibmacro{shortjournal+issue+pages}%
      \newunit
      \printfield{addendum}%
      \newunit
@@ -862,8 +841,7 @@
      \newunit
      \printfield{note}%
      \newunit
-     \usebibmacro{shortjournal+issue}%
-     \usebibmacro{pages}%
+     \usebibmacro{shortjournal+issue+pages}%
      \newunit
      \printfield{addendum}%
      \newunit
