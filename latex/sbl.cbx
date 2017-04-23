@@ -2,36 +2,33 @@
 
 \ProvidesFile{sbl.cbx}[\sbl@abx@cbxid]
 
-\InitializeCitationStyle{\numgdef{\cbx@resetcount}{\cbx@resetcount+1}}
-
-\newcommand*{\cbx@resetcount}{0}
-\renewcommand*{\iffinalcitedelim}{%
-  \ifnumequal{\value{textcitecount}}{\value{textcitetotal}-1}}
-
-\newbool{suppresspostnote}
-
+\newtoggle{cbx:suppresspostnote}
 \newtoggle{cbx:loccit}
-\newtoggle{usingibid}
-\newtoggle{relatedseen}
-\newtoggle{inentrytype}
+\newtoggle{cbx:usingibid}
+\newtoggle{cbx:relatedseen}
+\newtoggle{cbx:inentrytype}
 \newtoggle{cbx:involcite}
 \newtoggle{cbx:relatedshorthand}
 \newtoggle{cbx:shorthandprinted}
 \newtoggle{cbx:volprinted}
 
-\newbibmacro*{cite}{%
+\AtEveryCitekey{%
   \gdef\postnotecontext{default}%
   \gdef\volcontext{default}%
   \gdef\volcitevolformat{volume}%
-  \boolfalse{suppresspostnote}%
-  \global\togglefalse{usingibid}%
-  \global\togglefalse{inentrytype}%
+  \global\togglefalse{cbx:suppresspostnote}%
+  \global\togglefalse{cbx:usingibid}%
+  \global\togglefalse{cbx:inentrytype}%
   \global\togglefalse{cbx:shorthandprinted}%
-  \global\togglefalse{cbx:volprinted}%
+  \global\togglefalse{cbx:volprinted}}
+
+\newbibmacro*{cite}{%
   \ifciteseen
-    {\global\toggletrue{relatedseen}}
-    {\global\togglefalse{relatedseen}}%
-  \ifciteseen{}{\iffieldundef{pages}{}{\booltrue{suppresspostnote}}}%
+    {\global\toggletrue{cbx:relatedseen}}
+    {\global\togglefalse{cbx:relatedseen}%
+     \iffieldundef{pages}
+       {}
+       {\global\toggletrue{cbx:suppresspostnote}}}%
   \iffieldundef{shorthand}
     {\ifciteseen{}{\bibhypertarget{\strfield{entrykey}}{}}}
     {}%
@@ -66,15 +63,15 @@
 
 \newbibmacro*{cite:ibid}{%
   \usebibmacro{citeindex}%
-  \global\toggletrue{usingibid}%
+  \global\toggletrue{cbx:usingibid}%
   \printtext[bibhyperlink]{\bibstring[\mkibid]{ibidem}}%
   \ifloccit
-    {\global\booltrue{suppresspostnote}}
+    {\global\toggletrue{cbx:suppresspostnote}}
     {}}
 
 \newbibmacro*{cite:shorthand}{%
   \togglefalse{blx@citeindex}%
-  \global\toggletrue{relatedseen}%
+  \global\toggletrue{cbx:relatedseen}%
   \usebibmacro{shorthand}%
   \iffieldequalstr{entrysubtype}{RIMA}
     {\restorefield{volume}{\abx@field@number}}
@@ -97,7 +94,7 @@
 
 \newbibmacro*{bibentrycite}{%
   \citereset
-  \global\togglefalse{relatedseen}%
+  \global\togglefalse{cbx:relatedseen}%
   \toggletrue{blx@bibliography}%
   \def\abx@str{abx@lstr}%
   \renewcommand*{\revsdnamedelim}{\addcomma}%
@@ -137,43 +134,17 @@
     \global\undef\blx@hook@mcite@before
     \let\blx@citeargs\blx@volmciteargs}}
 
-\newbibmacro*{cite:postnote}{%
-  \ifdefined\postnotecontext
-    \setunit{\printdelim[\postnotecontext]{postnotedelim}}%
-  \else
-    \newunit
-  \fi
-  \ifbool{suppresspostnote}{}{%
-    \ifboolexpr{%
-      not test {\iffieldundef{postnote}}
-      or
-      not test {\iffieldundef{pages}}
-    }
-      {\usebibmacro{postnote}}
-      {}}%
-  \ifboolexpr{
-    togl {relatedseen}
-    or
-    not togl {bbx:related}
-    or
-    test {\iffieldundef{related}}
-  }
-    {}
-    {\setunit{\relateddelim}%
-     \usebibmacro{related:init}%
-     \usebibmacro{related}}}
-
 \DeclareCiteCommand{\smartcite}[\iffootnote\mkbibparens\mkbibfootnote]
   {\usebibmacro{prenote}}
   {\usebibmacro{cite}}
   {\multicitedelim}
-  {\usebibmacro{cite:postnote}}
+  {\usebibmacro{postnote}}
 
 \DeclareCiteCommand{\cite}
   {\usebibmacro{prenote}}
   {\usebibmacro{cite}}
   {\multicitedelim}
-  {\usebibmacro{cite:postnote}}
+  {\usebibmacro{postnote}}
 
 \DeclareCiteCommand{\bibentrycite}
   {}
@@ -191,19 +162,19 @@
   {\usebibmacro{prenote}}
   {\usebibmacro{cite}}
   {\multicitedelim}
-  {\usebibmacro{cite:postnote}}
+  {\usebibmacro{postnote}}
 
 \DeclareCiteCommand{\footcite}[\mkbibfootnote]
   {\usebibmacro{prenote}}
   {\usebibmacro{cite}}
   {\multicitedelim}
-  {\usebibmacro{cite:postnote}}
+  {\usebibmacro{postnote}}
 
 \DeclareCiteCommand{\footcitetext}[\mkbibfootnotetext]
   {\usebibmacro{prenote}}
   {\usebibmacro{cite}}
   {\multicitedelim}
-  {\usebibmacro{cite:postnote}}
+  {\usebibmacro{postnote}}
 
 \DeclareCiteCommand{\fullcite}
   {\usebibmacro{prenote}}
@@ -211,7 +182,7 @@
    \let\ifciteseen\@secondoftwo
    \usebibmacro{cite}}
   {\multicitedelim}
-  {\usebibmacro{cite:postnote}}
+  {\usebibmacro{postnote}}
 
 \DeclareCiteCommand{\footfullcite}[\mkbibfootnote]
   {\usebibmacro{prenote}}
@@ -219,7 +190,7 @@
    \let\ifciteseen\@secondoftwo
    \usebibmacro{cite}}
   {\multicitedelim}
-  {\usebibmacro{cite:postnote}}
+  {\usebibmacro{postnote}}
 
 \DeclareCiteCommand{\citeseries}
   {}
@@ -238,6 +209,13 @@
   {\usebibmacro{shorthand}}
   {}
   {}
+
+% textcite commands taken from default biblatex styles
+\InitializeCitationStyle{\numgdef{\cbx@resetcount}{\cbx@resetcount+1}}
+
+\newcommand*{\cbx@resetcount}{0}
+\renewcommand*{\iffinalcitedelim}{%
+  \ifnumequal{\value{textcitecount}}{\value{textcitetotal}-1}}
 
 \newbibmacro*{textcite}{%
   \ifnameundef{labelname}
@@ -339,7 +317,7 @@
   \newunit\newblock
   \printfield{postnote}%
   \finentry
-  \global\booltrue{suppresspostnote}}
+  \global\toggletrue{cbx:suppresspostnote}}
 
 \DeclareBibliographyDriver{cite:ancienttext}{%
   \usebibmacro{citeindex}%
@@ -495,7 +473,7 @@
        {\usebibmacro{title}}
        {\printfield{type}}}
     {\iffieldundef{type}
-       {\toggletrue{inentrytype}%
+       {\toggletrue{cbx:inentrytype}%
         \usebibmacro{title}%
         \setunit{\addspace}%
         \usebibmacro{in}}
@@ -596,7 +574,7 @@
 \DeclareBibliographyDriver{cite:incollection}{%
   \ifentrytype{seminarpaper}
     {}
-    {\toggletrue{inentrytype}}%
+    {\toggletrue{cbx:inentrytype}}%
   \usebibmacro{citeindex}%
   \usebibmacro{begentry}%
   \iftoggle{blx@usefullcite}

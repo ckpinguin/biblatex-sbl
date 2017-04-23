@@ -51,7 +51,31 @@
 \NumCheckSetup{\def\mkbibparens#1{#1}}
 
 \renewbibmacro*{postnote}{%
-  \printfield{postnote}}
+  \ifdefined\postnotecontext
+    \setunit{\printdelim[\postnotecontext]{postnotedelim}}%
+  \else
+    \newunit
+  \fi
+  \iftoggle{cbx:suppresspostnote}{}{%
+    \ifboolexpr{%
+      not test {\iffieldundef{postnote}}
+      or
+      not test {\iffieldundef{pages}}
+    }
+      {\printfield{postnote}}
+      {}}%
+  \ifboolexpr{
+    togl {cbx:relatedseen}
+    or
+    not togl {bbx:related}
+    or
+    test {\iffieldundef{related}}
+  }
+    {}
+    {\setunit{\relateddelim}%
+     \usebibmacro{related:init}%
+     \usebibmacro{related}}}
+
 \newbibmacro*{pages}{}
 \providebibmacro*{pages}{}
 
@@ -68,7 +92,7 @@
       {\ifbool{bbx@inset}
          {}
          {\printfield{postnote}%
-          \global\booltrue{suppresspostnote}}}
+          \global\toggletrue{cbx:suppresspostnote}}}
       {\printfield[postnote]{pages}%
        \ifboolexpr{
          test {\iffieldundef{postnote}}
@@ -87,7 +111,7 @@
       {\ifbool{bbx@inset}
          {}
          {\printfield{postnote}%
-          \global\booltrue{suppresspostnote}}}
+          \global\toggletrue{cbx:suppresspostnote}}}
       {\printfield[postnote]{pages}%
        \ifboolexpr{
          test {\iffieldundef{postnote}}
@@ -104,7 +128,7 @@
       {\ifbool{bbx@inset}
          {}
          {\printfield{postnote}%
-          \global\booltrue{suppresspostnote}}}
+          \global\toggletrue{cbx:suppresspostnote}}}
       {\ifboolexpr{
          test {\iffieldundef{postnote}}
          or
@@ -123,7 +147,7 @@
       {\ifbool{bbx@inset}
          {}
          {\printfield{postnote}%
-          \global\booltrue{suppresspostnote}}}
+          \global\toggletrue{cbx:suppresspostnote}}}
       {\printfield[postnote]{pages}%
        \ifboolexpr{
          test {\iffieldundef{postnote}}
@@ -2050,7 +2074,7 @@
           \newunit
           \usebibmacro{related:init}%
           \usebibmacro{related}%
-          \global\toggletrue{relatedseen}}
+          \global\toggletrue{cbx:relatedseen}}
          {}}}}
 
 \newcounter{currentpublisher}
@@ -2198,7 +2222,7 @@
 \newbibmacro*{ifneedstitlein}[2]{%
   \usebibmacro{ifbooktitleormaintitle}
     {\ifboolexpr{
-       togl {inentrytype}
+       togl {cbx:inentrytype}
        or
        not test {\usebibmacro{ifusevolumeandpart}}
     }
@@ -2518,9 +2542,9 @@
     or
     test {\iffieldundef{pages}}
   }
-    {\usebibmacro{postnote}}
+    {\printfield{postnote}}
     {\usebibmacro{pages}}%
-  \global\booltrue{suppresspostnote}}
+  \global\toggletrue{cbx:suppresspostnote}}
 
 \newbibmacro*{related+volume+part+postnote}{%
   \usebibmacro{related:init}%
@@ -2540,10 +2564,10 @@
     or
     test {\iffieldundef{pages}}
   }
-    {\usebibmacro{postnote}}
+    {\printfield{postnote}}
     {\usebibmacro{pages}}%
-  \global\booltrue{suppresspostnote}%
-  \global\toggletrue{relatedseen}}
+  \global\toggletrue{cbx:suppresspostnote}%
+  \global\toggletrue{cbx:relatedseen}}
 
 \newbibmacro*{classic:translator+series}{%
   \ifnameundef{translator}

@@ -18,8 +18,8 @@
 }
 
 \AtEveryBibitem{%
-  \global\togglefalse{relatedseen}%
-  \global\togglefalse{inentrytype}}%
+  \global\togglefalse{cbx:relatedseen}%
+  \global\togglefalse{cbx:inentrytype}}%
 
 \DeclareBibliographyDriver{set}{%
   \booltrue{bbx@inset}%
@@ -92,7 +92,7 @@
   \usebibmacro{doi+eprint+url}%
   \newunit
   \ifboolexpr{
-    togl {relatedseen}
+    togl {cbx:relatedseen}
     or
     not togl {bbx:related}
   }
@@ -154,7 +154,7 @@
   \usebibmacro{doi+eprint+url}%
   \newunit
   \ifboolexpr{
-    togl {relatedseen}
+    togl {cbx:relatedseen}
     or
     not togl {bbx:related}
   }
@@ -170,7 +170,7 @@
   \usebibmacro{author/editor+others/translator+others}%
   \newunit
   \iffieldundef{type}
-    {\toggletrue{inentrytype}%
+    {\toggletrue{cbx:inentrytype}%
      \usebibmacro{title}%
      \setunit{\addspace}%
      \usebibmacro{in}}
@@ -206,7 +206,7 @@
   \newunit
   \usebibmacro{doi+eprint+url}%
   \ifboolexpr{
-    togl {relatedseen}
+    togl {cbx:relatedseen}
     or
     not togl {bbx:related}
   }
@@ -255,7 +255,7 @@
   \usebibmacro{doi+eprint+url}%
   \newunit
   \ifboolexpr{
-    togl {relatedseen}
+    togl {cbx:relatedseen}
     or
     not togl {bbx:related}
   }
@@ -266,7 +266,7 @@
 }
 
 \DeclareBibliographyDriver{incollection}{%
-  \toggletrue{inentrytype}%
+  \toggletrue{cbx:inentrytype}%
   \usebibmacro{bibindex}%
   \usebibmacro{begentry}%
   \usebibmacro{author/editor+others/translator+others}%
@@ -315,7 +315,7 @@
   \newunit
   \usebibmacro{doi+eprint+url}%
   \ifboolexpr{
-    togl {relatedseen}
+    togl {cbx:relatedseen}
     or
     not togl {bbx:related}
   }
@@ -369,7 +369,7 @@
   \usebibmacro{doi+eprint+url}%
   \newunit
   \ifboolexpr{
-    togl {relatedseen}
+    togl {cbx:relatedseen}
     or
     not togl {bbx:related}
   }
@@ -413,7 +413,7 @@
   \usebibmacro{doi+eprint+url}%
   \newunit
   \ifboolexpr{
-    togl {relatedseen}
+    togl {cbx:relatedseen}
     or
     not togl {bbx:related}
   }
@@ -447,7 +447,7 @@
   \usebibmacro{doi+eprint+url}%
   \newunit
   \ifboolexpr{
-    togl {relatedseen}
+    togl {cbx:relatedseen}
     or
     not togl {bbx:related}
   }
@@ -480,7 +480,7 @@
   \usebibmacro{doi+eprint+url}%
   \newunit
   \ifboolexpr{
-    togl {relatedseen}
+    togl {cbx:relatedseen}
     or
     not togl {bbx:related}
   }
@@ -510,7 +510,7 @@
   \usebibmacro{doi+eprint+url}%
   \newunit
   \ifboolexpr{
-    togl {relatedseen}
+    togl {cbx:relatedseen}
     or
     not togl {bbx:related}
   }
@@ -539,7 +539,7 @@
   \usebibmacro{doi+eprint+url}%
   \newunit
   \ifboolexpr{
-    togl {relatedseen}
+    togl {cbx:relatedseen}
     or
     not togl {bbx:related}
   }
@@ -575,7 +575,7 @@
   \usebibmacro{doi+eprint+url}%
   \newunit
   \ifboolexpr{
-    togl {relatedseen}
+    togl {cbx:relatedseen}
     or
     not togl {bbx:related}
   }
