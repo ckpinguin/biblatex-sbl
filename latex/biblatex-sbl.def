@@ -322,10 +322,15 @@
           \@thefnmark.\@\space
           \footnotelayout
           ##1}}
-       {\renewcommand\@makefntext[1]{%
-          \parindent 1em%
-          \@thefnmark.\@\space
-          ##1}}}
+       {\@ifclassloaded{memoir}
+          {\footmarkstyle{\hskip\footparindent ##1.\@\space}%
+           \setlength{\footmarkwidth}{0in}%
+           \setlength{\footmarksep}{0in}%
+           \setlength{\footparindent}{0.5in}}
+          {\renewcommand\@makefntext[1]{%
+             \parindent 1em%
+             \@thefnmark.\@\space
+             ##1}}}}
     {\let\@makefntext\orig@makefntext}}
 
 \DeclareBibliographyOption{ibidpage}[true]{%
