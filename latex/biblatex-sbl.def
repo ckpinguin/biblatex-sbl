@@ -324,9 +324,8 @@
           ##1}}
        {\@ifclassloaded{memoir}
           {\footmarkstyle{\hskip\footparindent ##1.\@\space}%
-           \setlength{\footmarkwidth}{0in}%
-           \setlength{\footmarksep}{0in}%
-           \setlength{\footparindent}{0.5in}}
+           \setlength{\footmarkwidth}{0pt}%
+           \setlength{\footmarksep}{0pt}}
           {\renewcommand\@makefntext[1]{%
              \parindent 1em%
              \@thefnmark.\@\space
