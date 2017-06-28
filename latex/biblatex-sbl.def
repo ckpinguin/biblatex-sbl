@@ -72,7 +72,7 @@
     test {\iffieldundef{related}}
   }
     {}
-    {\setunit{\relateddelim}%
+    {\usebibmacro{setunitrelateddelim}%
      \usebibmacro{related:init}%
      \usebibmacro{related}}}
 
@@ -2451,6 +2451,11 @@
 \csundef{abx@macro@related:origpubin}
 \csundef{abx@macro@related:reprintfrom}
 
+\newbibmacro*{setunitrelateddelim}{%
+  \ifcsundef{relateddelim\strfield{relatedtype}}
+    {\setunit{\relateddelim}}
+    {\setunit{\csuse{relateddelim\strfield{relatedtype}}}}}
+
 \renewbibmacro*{begrelated}{%
   \global\booltrue{bbx@inset}}
 
@@ -2482,7 +2487,7 @@
       {\ifbibliography
          {\thefield{entrytype}}
          {cite:\thefield{entrytype}}}%
-    \setunit{\relateddelim}%
+    \usebibmacro{setunitrelateddelim}%
     \usebibmacro{related}}}
 
 \newbibmacro*{related:reprint}[1]{%
