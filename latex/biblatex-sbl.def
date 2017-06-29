@@ -403,6 +403,8 @@
 \newcommand*{\namedashpunct}{\adddot\space}
 \renewcommand*{\newunitpunct}{\addcomma\space}
 \renewcommand*{\subtitlepunct}{\addcolon\space}
+\renewcommand*{\relatedpunct}{\addspace}
+\newcommand*{\relatedpunctreprint}{\addcomma\space}
 
 \renewcommand*{\relateddelim}{\addsemicolon\space}
 \renewcommand*{\volcitedelim}{\addcolon}
@@ -541,7 +543,17 @@
 \DeclareNameAlias{withmaineditor}{given-family}
 \DeclareNameAlias{withmaintranslator}{given-family}
 
-\DeclareFieldFormat{relatedstring:reprint}{#1\printunit{\addcomma\space}}
+\DeclareFieldFormat{relatedstring:default}{%
+  \ifboolexpr{%
+    test {\iffieldundef{relatedstring}}
+    or
+    test {\iffieldbibstring{relatedstring}}
+  }
+    {#1}
+    {\ifcapital
+       {\MakeCapital{#1}}
+       {#1}}%
+  \usebibmacro{printunitrelatedpunct}}
 
 \DeclareFieldFormat[incommentary,inreference,inlexicon,online,review,seminarpaper,conferencepaper]{title}{\mkbibquote{#1}}
 \DeclareFieldFormat[incommentary,inreference,inlexicon,online,review,seminarpaper,conferencepaper]{shorttitle}{\mkbibquote{#1}}
@@ -2455,6 +2467,20 @@
   \ifcsundef{relateddelim\strfield{relatedtype}}
     {\setunit{\relateddelim}}
     {\setunit{\csuse{relateddelim\strfield{relatedtype}}}}}
+
+% create a version of \printunit that expands its arguments
+% so we can use \csname inside it
+\ExplSyntaxOn
+\cs_new_protected:Nn \sbl_printunit:n {
+  \printunit{#1}}
+\cs_generate_variant:Nn \sbl_printunit:n { x }
+\cs_new_eq:NN \eprintunit \sbl_printunit:x
+\ExplSyntaxOff
+
+\newbibmacro*{printunitrelatedpunct}{%
+  \ifcsundef{relatedpunct\strfield{relatedtype}}
+    {\printunit{\relatedpunct}}
+    {\eprintunit{\csuse{relatedpunct\strfield{relatedtype}}}}}
 
 \renewbibmacro*{begrelated}{%
   \global\booltrue{bbx@inset}}
