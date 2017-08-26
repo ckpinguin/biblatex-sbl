@@ -4,7 +4,7 @@ XELATEX=xelatex -interaction=batchmode
 BIBER=biber -q -q
 CMP=cmp --silent
 
-export TEXINPUTS := ../latex/:
+export TEXINPUTS := ../latex/:$(TEXINPUTS):
 
 TEST-PASS='\e[1;32m[PASS]\e[0m'
 TEST-FAIL='\e[1;31m[FAIL]\e[0m'
