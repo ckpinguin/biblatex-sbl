@@ -984,15 +984,15 @@ url = {http://oi.uchicago.edu/pdf/as19.pdf}
 Biblatex Output
 \autocite{kaufman:1974}
 
-29. Stephen Kaufman, The Akkadian Inﬂuences on Aramaic, AS 19 (Chicago: The
+29. Stephen Kaufman, The Akkadian Influences on Aramaic, AS 19 (Chicago: The
 Oriental Institute of the University of Chicago, 1974), http://oi.uchicago.edu/pdf/as19
 .pdf.
 \autocite[123]{kaufman:1974}
 
-32. Kaufman, The Akkadian Inﬂuences on Aramaic, 123.
+32. Kaufman, The Akkadian Influences on Aramaic, 123.
 \printbibliography
 
-Kaufman, Stephen. The Akkadian Inﬂuences on Aramaic. AS 19. Chicago: The Oriental
+Kaufman, Stephen. The Akkadian Influences on Aramaic. AS 19. Chicago: The Oriental
 Institute of the University of Chicago, 1974. http://oi.uchicago.edu/pdf/as19.pdf.
 \printbiblist{abbreviations}
 
@@ -2908,12 +2908,12 @@ Biblatex Output
 1. Patrick D. Miller, NIB 6:577.
 \printbibliography
 
-Miller, Patrick D. “The Book of Jeremiah: Introduction, Commentary, and Reﬂections.”
+Miller, Patrick D. “The Book of Jeremiah: Introduction, Commentary, and Reflections.”
 NIB 6:553–926.
 \usepackage[style=sbl,fullbibrefs]{biblatex}
 \printbibliography
 
-Miller, Patrick D. “The Book of Jeremiah: Introduction, Commentary, and Reﬂections.”
+Miller, Patrick D. “The Book of Jeremiah: Introduction, Commentary, and Reflections.”
 Pages 553–926 in Introduction to Prophetic Literature, Isaiah, Jeremiah, Baruch, Letter
 of Jeremiah, Lamentations, Ezekiel. Vol. 6 of The New Interpreter’s Bible. Edited by
 Leander E. Keck. 12 vols. Nashville: Abingdon, 2001.
@@ -3471,7 +3471,7 @@ Josephus. Translated by Henry St. J. Thackeray et al. 10 vols. LCL. Cambridge: H
 University Press, 1926–1965.
 Kaltner, John, and Steven L. McKenzie, eds. Beyond Babel: A Handbook for Biblical
 Hebrew and Related Languages. RBS 42. Atlanta: Society of Biblical Literature, 2002.
-Kaufman, Stephen. The Akkadian Inﬂuences on Aramaic. AS 19. Chicago: The Oriental
+Kaufman, Stephen. The Akkadian Influences on Aramaic. AS 19. Chicago: The Oriental
 Institute of the University of Chicago, 1974. http://oi.uchicago.edu/pdf/as19.pdf.
 Killebrew, Ann E., and Margreet Steiner, eds. The Oxford Handbook of the Archaeology
 of the Levant: c. 8000–332 BCE. Oxford: Oxford University Press, 2014. doi:10.1093/
@@ -3494,7 +3494,7 @@ Press, 1977.
 Mason, Steve. “Josephus on Canon and Scriptures.” Pages 217–35 in vol. 1, part 1 of
 Hebrew Bible/Old Testament: The History of Its Interpretation. Edited by Magne Sæbø.
 Göttingen: Vandenhoeck & Ruprecht, 1996.
-Miller, Patrick D. “The Book of Jeremiah: Introduction, Commentary, and Reﬂections.”
+Miller, Patrick D. “The Book of Jeremiah: Introduction, Commentary, and Reflections.”
 NIB 6:553–926.
 Niditch, Susan. “Oral Culture and Written Documents.” Paper presented at the Annual
 Meeting of the New England Region of the SBL. Worcester, MA, 25 March 1994.
