@@ -148,15 +148,17 @@
   {\usebibmacro{postnote}}
 
 \DeclareCiteCommand{\bibentrycite}
-  {}
+  {\boolfalse{citetracker}%
+   \boolfalse{pagetracker}}
   {\usebibmacro{bibentrycite}}
   {\multicitedelim}
   {}
 
 \DeclareCiteCommand{\biblistcite}
-  {}
+  {\boolfalse{citetracker}%
+   \boolfalse{pagetracker}}
   {\usebibmacro{biblistcite}}
-  {}
+  {\multicitedelim}
   {}
 
 \DeclareCiteCommand{\parencite}[\mkbibparens]
@@ -194,21 +196,24 @@
   {\usebibmacro{postnote}}
 
 \DeclareCiteCommand{\citeseries}
-  {}
+  {\boolfalse{citetracker}%
+   \boolfalse{pagetracker}}
   {\usebibmacro{shortseries}}
-  {}
+  {\multicitedelim}
   {}
 
 \DeclareCiteCommand{\citejournal}
-  {}
+  {\boolfalse{citetracker}%
+   \boolfalse{pagetracker}}
   {\usebibmacro{shortjournal}}
-  {}
+  {\multicitedelim}
   {}
 
 \DeclareCiteCommand{\citeshorthand}
-  {}
+  {\boolfalse{citetracker}%
+   \boolfalse{pagetracker}}
   {\usebibmacro{shorthand}}
-  {}
+  {\multicitedelim}
   {}
 
 % textcite commands taken from default biblatex styles
