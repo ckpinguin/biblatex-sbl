@@ -19,7 +19,10 @@
 
 \AtEveryBibitem{%
   \global\togglefalse{cbx:relatedseen}%
-  \global\togglefalse{cbx:inentrytype}}%
+  \global\togglefalse{cbx:inentrytype}%
+  \iffieldundef{pagination}
+    {\restorefield{pagination}{\blx@pagination}}
+    {}}%
 
 \DeclareBibliographyDriver{set}{%
   \booltrue{bbx@inset}%

@@ -20,7 +20,10 @@
   \global\togglefalse{cbx:usingibid}%
   \global\togglefalse{cbx:inentrytype}%
   \global\togglefalse{cbx:shorthandprinted}%
-  \global\togglefalse{cbx:volprinted}}
+  \global\togglefalse{cbx:volprinted}%
+  \iffieldundef{pagination}
+    {\restorefield{pagination}{\blx@pagination}}
+    {}}
 
 \newbibmacro*{cite}{%
   \ifciteseen
