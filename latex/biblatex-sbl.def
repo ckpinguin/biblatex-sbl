@@ -829,6 +829,12 @@
 
 \DeclareSourcemap{
   \maps{
+    \map[overwrite]{
+      \step[fieldsource=related, final]
+      \step[fieldsource=relatedoptions, match=\regexp{(.*)}]
+      \step[fieldset=relatedoptions, fieldvalue={skipbib,}]
+      \step[fieldset=relatedoptions, fieldvalue={$1}, append]
+    }
     \map{
       \step[fieldsource=title, match=\regexp{(.*?):}, final]
       \step[fieldset=shorttitle, fieldvalue={$1}]
