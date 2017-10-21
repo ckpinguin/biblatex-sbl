@@ -2484,7 +2484,9 @@
                {\clearname{editor}}
                {}}}
          {\ifnamesequal{author}{savedauthor}
-            {\clearname{author}}
+            {\clearname{author}%
+             % make sure editor isn't printed before title
+             \renewbibmacro*{editor+others}{}}
             {}}%
        \renewbibmacro*{related:init}{%
          \ifnameundef{savedauthor}
