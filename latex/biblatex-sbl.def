@@ -19,7 +19,7 @@
 \def\sbl@abx@version{0.8.2+}
 \def\sbl@abx@bbxid{\sbl@abx@date\space v\sbl@abx@version\space biblatex-sbl bibliography style (DCP)}
 \def\sbl@abx@cbxid{\sbl@abx@date\space v\sbl@abx@version\space biblatex-sbl citation style (DCP)}
-\def\sbl@abx@lbxid{\sbl@abx@date\space v\sbl@abx@version\space biblatex-sbl localization}
+\def\sbl@abx@lbxid{\sbl@abx@date\space v\sbl@abx@version\space biblatex-sbl localization (DCP)}
 \def\sbl@abx@defid{\sbl@abx@date\space v\sbl@abx@version\space biblatex-sbl definitions and macros (DCP)}
 
 \def\printsblversion{\sbl@abx@version\space
