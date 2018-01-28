@@ -22,7 +22,12 @@
   \global\togglefalse{cbx:inentrytype}%
   \iffieldundef{pagination}
     {\restorefield{pagination}{\blx@pagination}}
-    {}}%
+    {}%
+  \ifdefempty{\blx@bookpagination}
+    {}
+    {\iffieldundef{bookpagination}
+       {\restorefield{bookpagination}{\blx@bookpagination}}
+       {}}}
 
 \DeclareBibliographyDriver{set}{%
   \booltrue{bbx@inset}%
@@ -225,11 +230,9 @@
 \DeclareBibliographyDriver{incommentary}{%
   \usebibmacro{bibindex}%
   \usebibmacro{begentry}%
-  \iffieldundef{volume}
-    {\usedriver{}{incollection}}
-    {\iftoggle{fullbibrefs}
-       {\usedriver{}{incollection}}
-       {\usedriver{}{incommentary:short}}}%
+  \usebibmacro{ifshortbibref}
+    {\usedriver{}{incommentary:short}}
+    {\usedriver{}{incollection}}%
   \usebibmacro{finentry}%
 }
 
@@ -341,11 +344,9 @@
 \DeclareBibliographyDriver{inreference}{%
   \usebibmacro{bibindex}%
   \usebibmacro{begentry}%
-  \iffieldundef{volume}
-    {\usedriver{}{incollection}}
-    {\iftoggle{fullbibrefs}
-       {\usedriver{}{incollection}}
-       {\usedriver{}{inreference:short}}}%
+  \usebibmacro{ifshortbibref}
+    {\usedriver{}{inreference:short}}
+    {\usedriver{}{incollection}}%
   \usebibmacro{finentry}%
 }
 

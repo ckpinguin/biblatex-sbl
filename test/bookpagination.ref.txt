@@ -1,0 +1,61 @@
+1
+
+incollection
+
+1.1
+
+First citation: bookpagination undefined
+
+Harold W. Attridge, “Jewish Historiography,” in Early Judaism and Its Modern Interpreters, ed.
+Robert A. Kraft and George W. E. Nickelsburg (Philadelphia: Fortress; Atlanta: Scholars Press, 1986), 311–43
+Harold W. Attridge, “Jewish Historiography,” in Early Judaism and Its Modern Interpreters, ed.
+Robert A. Kraft and George W. E. Nickelsburg (Philadelphia: Fortress; Atlanta: Scholars Press, 1986), 311–43
+Harold W. Attridge, “Jewish Historiography,” in Early Judaism and Its Modern Interpreters, ed.
+Robert A. Kraft and George W. E. Nickelsburg (Philadelphia: Fortress; Atlanta: Scholars Press, 1986), 311–43
+(note)
+
+1.2
+
+Subsequent citations: bookpagination undefined
+
+Attridge, “Jewish Historiography”
+Attridge, “Jewish Historiography,” 311
+Attridge, “Jewish Historiography,” note
+
+1.3
+
+First citation: bookpagination = page
+
+Harold W. Attridge, “Jewish Historiography,” in Early Judaism and Its
+Robert A. Kraft and George W. E. Nickelsburg (Philadelphia: Fortress;
+pp. 311–43
+Harold W. Attridge, “Jewish Historiography,” in Early Judaism and Its
+Robert A. Kraft and George W. E. Nickelsburg (Philadelphia: Fortress;
+pp. 311–43
+Harold W. Attridge, “Jewish Historiography,” in Early Judaism and Its
+Robert A. Kraft and George W. E. Nickelsburg (Philadelphia: Fortress;
+pp. 311–43 (note)
+
+1.4
+
+Modern Interpreters, ed.
+Atlanta: Scholars Press, 1986),
+Modern Interpreters, ed.
+Atlanta: Scholars Press, 1986),
+Modern Interpreters, ed.
+Atlanta: Scholars Press, 1986),
+
+Subsequent citations: bookpagination = page
+
+Attridge, “Jewish Historiography”
+Attridge, “Jewish Historiography,” 311
+Attridge, “Jewish Historiography,” note
+
+References
+Attridge, Harold W. “Jewish Historiography.” Pages 311–43 in Early Judaism and Its Modern Interpreters.
+Edited by Robert A. Kraft and George W. E. Nickelsburg. Philadelphia: Fortress; Atlanta: Scholars Press,
+1986.
+. “Jewish Historiography.” Pages 311–43 in Early Judaism and Its Modern Interpreters. Edited by
+Robert A. Kraft and George W. E. Nickelsburg. Philadelphia: Fortress; Atlanta: Scholars Press, 1986.
+
+

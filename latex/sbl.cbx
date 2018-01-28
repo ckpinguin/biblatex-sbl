@@ -23,7 +23,12 @@
   \global\togglefalse{cbx:volprinted}%
   \iffieldundef{pagination}
     {\restorefield{pagination}{\blx@pagination}}
-    {}}
+    {}%
+  \ifdefempty{\blx@bookpagination}
+    {}
+    {\iffieldundef{bookpagination}
+       {\restorefield{bookpagination}{\blx@bookpagination}}
+       {}}}
 
 \newbibmacro*{cite}{%
   \ifciteseen

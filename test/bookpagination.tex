@@ -1,0 +1,65 @@
+\documentclass[a4paper]{article}
+\usepackage[style=sbl]{biblatex}
+\usepackage[margin=1cm,left=2cm,right=2cm]{geometry}
+\pagestyle{empty}
+\frenchspacing
+\raggedright
+\usepackage{filecontents}
+\begin{filecontents}{\jobname.bib}
+@incollection{attridge:1986:a,
+  author = {Attridge, Harold W.},
+  title = {Jewish Historiography},
+  pages = {311-343},
+  booktitle = {Early Judaism and Its Modern Interpreters},
+  bookpagination = {page},
+  editor = {Kraft, Robert A. and Nickelsburg, George W. E.},
+  location = {Philadelphia and Atlanta},
+  publisher = {Fortress and Scholars Press},
+  date = {1986}
+}
+\end{filecontents}
+\addbibresource{\jobname.bib}
+\addbibresource{../doc/biblatex-sbl.bib}
+
+\begin{document}
+\section{incollection}
+
+\subsection{First citation: \texttt{bookpagination undefined}}
+
+\cite{attridge:1986}
+
+\citereset
+\cite[311]{attridge:1986}
+
+\citereset
+\cite[note]{attridge:1986}
+
+\subsection{Subsequent citations: \texttt{bookpagination undefined}}
+
+\cite{attridge:1986}
+
+\cite[311]{attridge:1986}
+
+\cite[note]{attridge:1986}
+
+\subsection{First citation: \texttt{bookpagination = page}}
+
+\cite{attridge:1986:a}
+
+\citereset
+\cite[311]{attridge:1986:a}
+
+\citereset
+\cite[note]{attridge:1986:a}
+
+\subsection{Subsequent citations: \texttt{bookpagination = page}}
+
+\cite{attridge:1986:a}
+
+\cite[311]{attridge:1986:a}
+
+\cite[note]{attridge:1986:a}
+
+\printbibliography
+
+\end{document}

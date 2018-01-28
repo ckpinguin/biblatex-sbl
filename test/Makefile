@@ -20,7 +20,8 @@ TXTS=standard-entries-minimal.txt \
      sbl-entries-full.txt \
      biblatex-examples.txt \
      sblhs-tests.txt \
-     pagination.txt
+     pagination.txt \
+     bookpagination.txt
 
 .PRECIOUS: %.bcf %.bbl %.pdf
 
@@ -64,4 +65,5 @@ clean:
 	@rm -f $(addprefix biblatex-examples, $(TEMP-EXTENSIONS))
 	@rm -f $(addprefix sblhs-tests, $(TEMP-EXTENSIONS))
 	@rm -f $(addprefix pagination, $(TEMP-EXTENSIONS))
+	@rm -f $(addprefix bookpagination, $(TEMP-EXTENSIONS))
 	@echo "Done."

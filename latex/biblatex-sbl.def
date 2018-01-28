@@ -93,7 +93,7 @@
          {}
          {\printfield{postnote}%
           \global\toggletrue{cbx:suppresspostnote}}}
-      {\printfield[postnote]{pages}%
+      {\printfield{pages}%
        \ifboolexpr{
          test {\iffieldundef{postnote}}
          or
@@ -112,7 +112,7 @@
          {}
          {\printfield{postnote}%
           \global\toggletrue{cbx:suppresspostnote}}}
-      {\printfield[postnote]{pages}%
+      {\printfield{pages}%
        \ifboolexpr{
          test {\iffieldundef{postnote}}
          or
@@ -134,10 +134,10 @@
          or
          bool {bbx@inset}
        }
-         {\printfield[postnote]{pages}}
+         {\printfield{pages}}
          {\iffieldpages{postnote}
             {\printfield{postnote}}
-            {\printfield[postnote]{pages}%
+            {\printfield{pages}%
              \setunit*{\addspace}%
              \printtext[parens]{\printfield{postnote}}}}}}}
 
@@ -148,7 +148,7 @@
          {}
          {\printfield{postnote}%
           \global\toggletrue{cbx:suppresspostnote}}}
-      {\printfield[postnote]{pages}%
+      {\printfield{pages}%
        \ifboolexpr{
          test {\iffieldundef{postnote}}
          or
@@ -248,6 +248,7 @@
 \newtoggle{blx@accessdate}
 \def\blx@shorthand{}
 \def\blx@pagination{}
+\def\blx@bookpagination{}
 
 \DeclareTypeOption{skipbiblistseries}[true]{%
   \settoggle{blx@skipbiblistseries}{#1}}
@@ -302,11 +303,45 @@
   \def\blx@shorthand{#1}}
 
 \DeclareBibliographyOption[string]{pagination}[none]{%
-  \def\blx@pagination{#1}}
+  \def\blx@pagination{#1}%
+  \ifboolexpr{
+    test {\ifdefempty{\blx@bookpagination}}
+    and
+    not test {\ifstrequal{#1}{none}}
+  }
+    {\def\blx@bookpagination{#1}}
+    {}}
 \DeclareTypeOption[string]{pagination}[none]{%
-  \def\blx@pagination{#1}}
+  \def\blx@pagination{#1}%
+  \ifboolexpr{
+    test {\ifdefempty{\blx@bookpagination}}
+    and
+    not test {\ifstrequal{#1}{none}}
+  }
+    {\def\blx@bookpagination{#1}}
+    {}}
 \DeclareEntryOption[string]{pagination}[none]{%
-  \def\blx@pagination{#1}}
+  \def\blx@pagination{#1}%
+  \ifboolexpr{
+    test {\ifdefempty{\blx@bookpagination}}
+    and
+    not test {\ifstrequal{#1}{none}}
+  }
+    {\def\blx@bookpagination{#1}}
+    {}}
+
+\DeclareBibliographyOption[string]{bookpagination}[sbl]{%
+  \ifstrequal{#1}{sbl}
+    {\def\blx@bookpagination{}}
+    {\def\blx@bookpagination{#1}}}
+\DeclareTypeOption[string]{bookpagination}[sbl]{%
+  \ifstrequal{#1}{sbl}
+    {\def\blx@bookpagination{}}
+    {\def\blx@bookpagination{#1}}}
+\DeclareEntryOption[string]{bookpagination}[sbl]{%
+  \ifstrequal{#1}{sbl}
+    {\def\blx@bookpagination{}}
+    {\def\blx@bookpagination{#1}}}
 
 % ------------------------------------------------------------------
 % STYLE OPTIONS
@@ -504,7 +539,25 @@
 \DeclareFieldFormat{isbn}{ISBN\addcolon\space #1}
 \DeclareFieldFormat{isrn}{ISRN\addcolon\space #1}
 \DeclareFieldFormat{issn}{ISSN\addcolon\space #1}
-\DeclareFieldFormat{pages}{\mkcomprange[{\mkpageprefix[bookpagination]}]{#1}}
+\DeclareFieldFormat{pages}{%
+  \iffieldequalstr{bookpagination}{section}
+    {\def\ppspace{}}
+    {}%
+  \ifboolexpr{
+    test {\usebibmacro{ifshortbibref}}
+    or
+    not test {\ifbibliography}
+  }
+    {\iffieldundef{bookpagination}
+       {\def\abx@field@bookpagination{none}}
+       {}}
+    {}%
+  \mkcomprange[{\mkpageprefix[bookpagination]}]{#1}}
+\DeclareFieldFormat[article,review]{pages}{%
+  \iffieldequalstr{pagination}{section}
+    {\def\ppspace{}}
+    {}%
+  \mkcomprange[\mkpageprefix]{#1}}
 \DeclareFieldFormat{pagesin}{\mkcomprange[{\mkpageprefix[bookpagination]}]{#1}
                              \usebibmacro{in}}
 \DeclareFieldFormat{chapter}{\bibsstring{chapter}~#1}
@@ -717,6 +770,13 @@
       {}}%
   \expandafter\g@addto@macro\expandafter\blx@includeentries\expandafter{\X}}
 
+\newbibmacro*{ifshortbibref}[2]{%
+  \iffieldundef{volume}
+    {#2}
+    {\iftoggle{fullbibrefs}
+       {#2}
+       {#1}}}
+
 % ------------------------------------------------------------------
 % LIST OF ABBREVIATIONS
 % ------------------------------------------------------------------
@@ -823,9 +883,6 @@
 % ------------------------------------------------------------------
 % SOURCE MAPS
 % ------------------------------------------------------------------
-%   - cut titles at colons to create short titles
-%   - copy titles to shorttitles if they are empty
-% ------------------------------------------------------------------
 
 \DeclareSourcemap{
   \maps{
@@ -870,6 +927,11 @@
       \step[fieldset=booktitleaddon, origfieldval]
     }
     \map{
+      \step[notfield=bookpagination, final]
+      \step[fieldsource=pagination, final]
+      \step[fieldset=bookpagination, origfieldval]
+    }
+    \map{
       \pertype{periodical}
       \step[fieldsource=title, final]
       \step[fieldset=journaltitle, origfieldval]
@@ -910,6 +972,14 @@
       \step[fieldsource=pagination, final]
       \step[fieldsource=pagination, match=\regexp{(.*)}]
       \step[fieldset=relatedoptions, fieldvalue={,pagination=$1}, append]
+    }
+    \map[overwrite]{
+      \pertype{ancienttext}
+      \pertype{classictext}
+      \step[fieldsource=related, final]
+      \step[fieldsource=bookpagination, final]
+      \step[fieldsource=bookpagination, match=\regexp{(.*)}]
+      \step[fieldset=relatedoptions, fieldvalue={,bookpagination=$1}, append]
     }
     \map[overwrite]{
       \step[fieldsource=shortseries, final]
