@@ -3,7 +3,7 @@ Fiction Films,” in Space and Beyond: The Frontier Theme in Science Fiction, ed
 Conn.: Greenwood, 2000), 55–65
 Westfahl, “The True Frontier,” 55
 Wolfgang A. Herrmann et al., “A carbocyclic carbene as an efficient catalyst ligand for C–C coupling
-reactions,” Angew. Chem. Int. Ed. 45.23 (2006): 3859–62; Özge Aksın et al., “Effect of immobilization on
+reactions,” Angew. Chem. Int. Ed. 45.23 (2006): 3859–62; Özge Aksın et al., “Effect of immobilization on
 catalytic characteristics of saturated Pd-N-heterocyclic carbenes in Mizoroki-Heck reactions,” J. Organomet.
 Chem. 691.13 (2006): 3027–36; Myeong S. Yoon et al., “Palladium pincer complexes with reduced bond angle
 strain: efficient catalysts for the Heck reaction,” Organometallics 25.10 (2006): 2409–11, note
@@ -13,16 +13,16 @@ Mizoroki-Heck reactions”; Yoon et al., “Palladium pincer complexes with redu
 Sheldon Glashow, “Partial Symmetries of Weak Interactions,” Nucl. Phys. 22 (1961): 579–88;
 Steven Weinberg, “A Model of Leptons,” Phys. Rev. Lett. 19 (1967): 1264–66; Abdus Salam, “Weak and
 Electromagnetic Interactions,” in Elementary particle theory: Relativistic groups and analyticity, Proceedings
-of the Eighth Nobel Symposium (Aspenäsgarden, Lerum, 19–25 May 1968), ed. Nils Svartholm (Stockholm:
+of the Eighth Nobel Symposium (Aspenäsgarden, Lerum, 19–25 May 1968), ed. Nils Svartholm (Stockholm:
 Almquist & Wiksell, 1968), 367–77, note
 Glashow, “Partial Symmetries of Weak Interactions”; Weinberg, “A Model of Leptons”; Salam, “Weak and
 Electromagnetic Interactions,” note
-Özge Aksın et al., “Effect of immobilization on catalytic characteristics of saturated Pd-N-heterocyclic
+Özge Aksın et al., “Effect of immobilization on catalytic characteristics of saturated Pd-N-heterocyclic
 carbenes in Mizoroki-Heck reactions,” J. Organomet. Chem. 691.13 (2006): 3027–36
 Aksın et al., “Effect of immobilization on catalytic characteristics of saturated Pd-N-heterocyclic carbenes in
 Mizoroki-Heck reactions,” 3027
 Arnold Angenendt, “In Honore Salvatoris – Vom Sinn und Unsinn der Patrozinienkunde,” Revue d’Histoire
-Ecclésiastique 97 (2002): 431–56, 791–823
+Ecclésiastique 97 (2002): 431–56, 791–823
 Angenendt, “In Honore Salvatoris,” 431
 John C. Baez and Aaron D. Lauda, “Higher-Dimensional Algebra V: 2-Groups,” version 3, Theory and
 Applications of Categories 12 (2004): 423–91, arXiv: math/0307200v3
@@ -43,10 +43,10 @@ Glashow, “Partial Symmetries of Weak Interactions,” 579
 Wolfgang A. Herrmann et al., “A carbocyclic carbene as an efficient catalyst ligand for C–C coupling
 reactions,” Angew. Chem. Int. Ed. 45.23 (2006): 3859–62
 Herrmann et al., “A carbocyclic carbene as an efficient catalyst ligand for C–C coupling reactions,” 3859
-M. A. Kastenholz and Philippe H. Hünenberger, “Computation of methodology-independent ionic solvation
+M. A. Kastenholz and Philippe H. Hünenberger, “Computation of methodology-independent ionic solvation
 free energies from molecular simulations: I. The electrostatic potential in molecular liquids,” J. Chem. Phys.
 124, 124106 (2006): note, doi:10.1063/1.2172593
-Kastenholz and Hünenberger, “Computation of methodology-independent ionic solvation free energies from
+Kastenholz and Hünenberger, “Computation of methodology-independent ionic solvation free energies from
 molecular simulations,” note
 Michael J. Hostetler et al., “Alkanethiolate gold cluster molecules with core diameters from 1.5 to 5.2 nm:
 Core and monolayer properties as a function of core size,” Langmuir 14.1 (1998): 17–30
@@ -62,13 +62,13 @@ Anthropologist, new ser., 93.1 (March 1991): 9–27
 Shore, “Twice-Born, Once Conceived,” 9
 Emma Sigfridsson and Ulf Ryde, “Comparison of methods for deriving atomic charges from the electrostatic
 potential and moments,” Journal of Computational Chemistry 19.4 (1998): 377–95,
-doi:10.1002/(SICI)1096-987X(199803)19:4h377::AID-JCC1i3.0.CO;2-P
+doi:10.1002/(SICI)1096-987X(199803)19:4<377::AID-JCC1>3.0.CO;2-P
 
 Sigfridsson and Ryde, “Comparison of methods for deriving atomic charges from the electrostatic potential
 and moments,” 377
-Herbert Spiegelberg, “‘Intention’ und ‘Intentionalität’ in der Scholastik, bei Brentano und Husserl,” Studia
+Herbert Spiegelberg, “‘Intention’ und ‘Intentionalität’ in der Scholastik, bei Brentano und Husserl,” Studia
 Philosophica 29 (1969): 189–216
-Spiegelberg, “Intention und Intentionalität,” 189
+Spiegelberg, “Intention und Intentionalität,” 189
 Otto Springer, “Mediaeval Pilgrim Routes from Scandinavia to Rome,” Mediaeval Studies 12 (1950): 92–122
 Springer, “Mediaeval Pilgrim Routes,” 92
 Steven Weinberg, “A Model of Leptons,” Phys. Rev. Lett. 19 (1967): 1264–66
@@ -91,14 +91,14 @@ Averroes, The Epistle on the Possibility of Conjunction with the Active Intellec
 Commentary of Moses Narboni, trans. and ed. Kalman P. Bland, Moreshet: Studies in Jewish History,
 Literature and Thought 7 (New York: Jewish Theological Seminary of America, 1982), 1
 Averroes, Possibility of Conjunction, 1
-Averroes, Des Averroës Abhandlung: “Über die Möglichkeit der Conjunktion” oder “Über den materiellen
+Averroes, Des Averroës Abhandlung: “Über die Möglichkeit der Conjunktion” oder “Über den materiellen
 Intellekt,” ed., trans., and annot. by Ludwig Hannes (Halle an der Saale: C. A. Kaemmerer, 1892), 1
-Averroes, Über die Möglichkeit der Conjunktion, 1
-Averroes, Drei Abhandlungen über die Conjunction des separaten Intellects mit dem Menschen: Von Averroes
-(Vater und Sohn), aus dem Arabischen übersetzt von Samuel Ibn Tibbon, trans. and ed. J. Hercz (Berlin:
+Averroes, Über die Möglichkeit der Conjunktion, 1
+Averroes, Drei Abhandlungen über die Conjunction des separaten Intellects mit dem Menschen: Von Averroes
+(Vater und Sohn), aus dem Arabischen übersetzt von Samuel Ibn Tibbon, trans. and ed. J. Hercz (Berlin:
 S. Hermann, 1869), 1
 Averroes, Drei Abhandlungen, 1
-Marcus Tullius Cicero, De natura deorum. Über das Wesen der Götter [in Latin and German], trans. and ed.
+Marcus Tullius Cicero, De natura deorum. Über das Wesen der Götter [in Latin and German], trans. and ed.
 Ursula Blank-Sangmeister, with an afterw. by Klaus Thraede (Stuttgart: Reclam, 1995), 1
 Cicero, De natura deorum, 1
 Samuel Taylor Coleridge, Biographia literaria, or Biographical sketches of my literary life and opinions, in The
@@ -113,27 +113,26 @@ Cotton et al., Advanced inorganic chemistry, 1
 Michael J. Gerhardt, The Federal Appointments Process: A Constitutional and Historical Analysis (Durham:
 Duke University Press, 2000), 1
 Gerhardt, Federal Appointments Process, 1
-Ray Gonzalez, The Ghost of John Wayne and Other Stories (Tucson: The University of Arizona Press, 2001),
-1
+Ray Gonzalez, The Ghost of John Wayne and Other Stories (Tucson: The University of Arizona Press, 2001), 1
 Gonzalez, Ghost of John Wayne, 1
 Christopher Hammond, The basics of crystallography and diffraction (Oxford: International Union of
 Crystallography; Oxford University Press, 1997), 1
 Hammond, Crystallography and diffraction, 1
-Homer, Die Ilias, trans. Wolfgang Schadewaldt, with an intro. by Joachim Latacz, 3rd ed. (Düsseldorf:
+Homer, Die Ilias, trans. Wolfgang Schadewaldt, with an intro. by Joachim Latacz, 3rd ed. (Düsseldorf:
 Artemis & Winkler, 2004), 1
 Homer, Ilias, 1
 Donald E. Knuth, Computers & Typesetting, 5 vols. (Reading, Mass.: Addison-Wesley, 1984–1986), C:1
 Knuth, Computers & Typesetting, C:1
 Donald E. Knuth, The TEX book, vol. A of Computers & Typesetting (Reading, Mass.: Addison-Wesley, 1984),
 1
-Knuth, TEXbook , 1
+Knuth, TEXbook, 1
 Donald E. Knuth, TEX: The Program, vol. B of Computers & Typesetting (Reading, Mass.: Addison-Wesley,
 1986), 1
+Knuth, TEX , 1
 
-Knuth, TEX , 1
-Donald E. Knuth, The METAFONTbook, vol. C of Computers & Typesetting (Reading, Mass.:
+Donald E. Knuth, The METAFONTbook, vol. C of Computers & Typesetting (Reading, Mass.:
 Addison-Wesley, 1986), 1
-Knuth, METAFONTbook , 1
+Knuth, METAFONTbook, 1
 Donald E. Knuth, METAFONT: The Program, vol. D of Computers & Typesetting (Reading, Mass.:
 Addison-Wesley, 1986), 1
 Knuth, METAFONT , 1
@@ -155,7 +154,7 @@ Kullback, Information Theory and Statistics, 1
 Solomon Kullback, Information Theory and Statistics (New York: Dover Publications, 1997), 1; orig. pub. in
 Information Theory and Statistics (New York: John Wiley & Sons, 1959)
 Kullback, Information Theory and Statistics, 1
-Bronislaw Malinowski, Argonauts of the Western Pacific: An account of native enterprise and adventure in the
+Bronisław Malinowski, Argonauts of the Western Pacific: An account of native enterprise and adventure in the
 Archipelagoes of Melanesian New Guinea, 8th ed. (London: Routledge and Kegan Paul, 1972), 1
 Malinowski, Argonauts, 1
 Monika Maron, Animal Triste, trans. Brigitte Goldstein (Lincoln: University of Nebraska Press, 2000), 1
@@ -168,13 +167,13 @@ Gordon E. Moore, “Cramming more components onto integrated circuits,” Procee
 (1998): 82–85; repr. from “Cramming more components onto integrated circuits,” Electronics 38.8 (1965):
 114–17
 Moore, “Cramming more components onto integrated circuits,” 82
-Friedrich Nietzsche, Sämtliche Werke: Kritische Studienausgabe, ed. Giorgio Colli and Mazzino Montinari,
-2nd ed., 15 vols. (München: Deutscher Taschenbuch-Verlag; Berlin: Walter de Gruyter, 1988), 2:1
-Nietzsche, Sämtliche Werke, 2:1
-Friedrich Nietzsche, Die Geburt der Tragödie. Unzeitgemäße Betrachtungen I–IV. Nachgelassene Schriften
-1870–1973, vol. 1 of Sämtliche Werke: Kritische Studienausgabe, ed. Giorgio Colli and Mazzino Montinari,
-2nd ed. (München: Deutscher Taschenbuch-Verlag; Berlin: Walter de Gruyter, 1988), 1
-Nietzsche, Sämtliche Werke I , 1
+Friedrich Nietzsche, Sämtliche Werke: Kritische Studienausgabe, ed. Giorgio Colli and Mazzino Montinari,
+2nd ed., 15 vols. (München: Deutscher Taschenbuch-Verlag; Berlin: Walter de Gruyter, 1988), 2:1
+Nietzsche, Sämtliche Werke, 2:1
+Friedrich Nietzsche, Die Geburt der Tragödie. Unzeitgemäße Betrachtungen I–IV. Nachgelassene Schriften
+1870–1973, vol. 1 of Sämtliche Werke: Kritische Studienausgabe, ed. Giorgio Colli and Mazzino Montinari,
+2nd ed. (München: Deutscher Taschenbuch-Verlag; Berlin: Walter de Gruyter, 1988), 1
+Nietzsche, Sämtliche Werke I , 1
 Martha Nussbaum, Aristotle’s “De Motu Animalium” (Princeton: Princeton University Press, 1978), 1
 Nussbaum, Aristotle’s “De Motu Animalium,” 1
 Pablo Piccato, City of Suspects: Crime in Mexico City, 1900–1931 (Durham: Duke University Press, 2001), 1
@@ -190,16 +189,16 @@ van Gennep, Rites de passage, 1
 Monika B. Vizedom and Gabrielle L. Caffee, trans., The Rites of Passage (University of Chicago Press, 1960),
 1; trans. of Arnold van Gennep, Les rites de passage (Paris: Nourry, 1909)
 Vizedom and Caffee, Rites of Passage, 1
-Luis Vázques de Parga, José Marı́a Lacarra, and Juan Urı́a Rı́u, Las Peregrinaciones a Santiago de
+Luis Vázques de Parga, José María Lacarra, and Juan Uría Ríu, Las Peregrinaciones a Santiago de
 Compostela, 3 vols., Ed. facs. de la realizada en 1948–49 (Pamplona: Iberdrola, 1993), 2:1
-Vázques de Parga, Lacarra, and Urı́a Rı́u, Peregrinaciones, 2:1
-
-Oscar Wilde, The Importance of Being Earnest: A Trivial Comedy for Serious People, English and American
+Vázques de Parga, Lacarra, and Uría Ríu, Peregrinaciones, 2:1
+Oscar Wilde, The Importance of Being Earnest: A Trivial Comedy for Serious People, English and American
 drama of the Nineteenth Century (Leonard Smithers and Company, 1899), 1, Google Books:
 4HIWAAAAYAAJ
-Wilde, The Importance of Being Earnest, 1
+
+Wilde, The Importance of Being Earnest, 1
 Nancy Worman, The Cast of Character: Style in Greek Literature (Austin: University of Texas Press, 2002), 1
-Worman, Cast of Character , 1
+Worman, Cast of Character, 1
 The New Encyclopædia Britannica, ed. Warren E. Preece, 15th ed., 32 vols. (Chicago, Ill.: Encyclopædia
 Britannica, 2003), 2:1
 Encyclopædia Britannica, 2:1
@@ -208,48 +207,48 @@ Gaonkar, Alternative Modernities, 1
 Dilip Parameshwar Gaonkar, “On Alternative Modernities,” in Alternative Modernities, ed.
 Dilip Parameshwar Gaonkar (Durham: Duke University Press, 2001), 1–23
 Gaonkar, “On Alternative Modernities,” 1
-Philipp Jaffé, ed., Regesta Pontificum Romanorum ab condita ecclesia ad annum post Christum natum
+Philipp Jaffé, ed., Regesta Pontificum Romanorum ab condita ecclesia ad annum post Christum natum
 mcxcviii, red. by Samuel Loewenfeld, Ferdinand Kaltenbrunner, and Paul Ewald, 2nd ed., 2 vols. (Leipzig,
 1885–1888), 2:1
-Jaffé, Regesta Pontificum Romanorum, 2:1
+Jaffé, Regesta Pontificum Romanorum, 2:1
 Gary Westfahl, ed., Space and Beyond: The Frontier Theme in Science Fiction (Westport, Conn.: Greenwood,
 2000), 1
-Westfahl, Space and Beyond , 1
+Westfahl, Space and Beyond, 1
 KpV, 1–163
 KpV, 1
 KU, 165–485
 KU, 165
-Friedrich Nietzsche, “Unzeitgemässe Betrachtungen. Zweites Stück: Vom Nutzen und Nachtheil der Historie
-für das Leben,” in Die Geburt der Tragödie. Unzeitgemäße Betrachtungen I–IV. Nachgelassene Schriften
-1870–1973, vol. 1 of Sämtliche Werke: Kritische Studienausgabe, ed. Giorgio Colli and Mazzino Montinari
-(München: Deutscher Taschenbuch-Verlag; Berlin: Walter de Gruyter, 1988), 243–334
+Friedrich Nietzsche, “Unzeitgemässe Betrachtungen. Zweites Stück: Vom Nutzen und Nachtheil der Historie
+für das Leben,” in Die Geburt der Tragödie. Unzeitgemäße Betrachtungen I–IV. Nachgelassene Schriften
+1870–1973, vol. 1 of Sämtliche Werke: Kritische Studienausgabe, ed. Giorgio Colli and Mazzino Montinari
+(München: Deutscher Taschenbuch-Verlag; Berlin: Walter de Gruyter, 1988), 243–334
 Nietzsche, “Vom Nutzen und Nachtheil der Historie,” 243
-Ahasver von Brandt and Erich Hoffmann, “Die nordischen Länder von der Mitte des 11. Jahrhunderts bis
-1448,” in Europa im Hoch- und Spätmittelalter, ed. Ferdinand Seibt, Handbuch der europäischen Geschichte 2
+Ahasver von Brandt and Erich Hoffmann, “Die nordischen Länder von der Mitte des 11. Jahrhunderts bis
+1448,” in Europa im Hoch- und Spätmittelalter, ed. Ferdinand Seibt, Handbuch der europäischen Geschichte 2
 (Stuttgart: Klett-Cotta, 1987), 884–917
-Brandt and Hoffmann, “Die nordischen Länder,” 884
-Arthur Hyman, “Aristotle’s Theory of the Intellect and its Interpretation by Averroes,” in Studies in
-Aristotle, ed. Dominic J. O’Meara, Studies in Philosophy and the History of Philosophy 9 (Washington, D.C.:
-The Catholic University of America Press, 1981), 161–91
+Brandt and Hoffmann, “Die nordischen Länder,” 884
+Arthur Hyman, “Aristotle’s Theory of the Intellect and its Interpretation by Averroes,” in Studies in Aristotle,
+ed. Dominic J. O’Meara, Studies in Philosophy and the History of Philosophy 9 (Washington, D.C.: The
+Catholic University of America Press, 1981), 161–91
 Hyman, “Aristotle’s Theory of the Intellect,” 161
 Shlomo Pines, “The Limitations of Human Knowledge According to Al-Farabi, ibn Bajja, and Maimonides,”
 in Studies in Medieval Jewish History and Literature, ed. Isadore Twersky (Cambridge, Mass.: Harvard
 University Press, 1979), 82–109
 Pines, “Limitations of Human Knowledge,” 82
-Paul Moraux, “Le De Anima dans la tradition grècque: Quelques aspects de l’interpretation du traité, de
-Theophraste à Themistius,” in Aristotle on Mind and the Senses, Proceedings of the Seventh Symposium
+Paul Moraux, “Le De Anima dans la tradition grècque: Quelques aspects de l’interpretation du traité, de
+Theophraste à Themistius,” in Aristotle on Mind and the Senses, Proceedings of the Seventh Symposium
 Aristotelicum (1975), ed. G. E. R. Lloyd and G. E. L. Owen (Cambridge: Cambridge University Press, 1979),
 281–324
-Moraux, “De Anima dans la tradition grècque,” 281
+Moraux, “De Anima dans la tradition grècque,” 281
 Abdus Salam, “Weak and Electromagnetic Interactions,” in Elementary particle theory: Relativistic groups
-and analyticity, Proceedings of the Eighth Nobel Symposium (Aspenäsgarden, Lerum, 19–25 May 1968), ed.
+and analyticity, Proceedings of the Eighth Nobel Symposium (Aspenäsgarden, Lerum, 19–25 May 1968), ed.
 Nils Svartholm (Stockholm: Almquist & Wiksell, 1968), 367–77
 Salam, “Weak and Electromagnetic Interactions,” 367
 The Chicago Manual of Style: The Essential Guide for Writers, Editors, and Publishers, 15th ed. (Chicago,
 Ill.: University of Chicago Press, 2003), 1
 Chicago Manual of Style, 1
-John C. Baez and Aaron D. Lauda, “Higher-Dimensional Algebra V: 2-Groups,” version 3, 27 October 2004,
-1, arXiv: math/0307200v3
+John C. Baez and Aaron D. Lauda, “Higher-Dimensional Algebra V: 2-Groups,” version 3, 27 October 2004, 1,
+arXiv: math/0307200v3
 Baez and Lauda, “Higher-Dimensional Algebra V,” 1
 “CTAN: The Comprehensive TeX Archive Network,” 2006, note, http://www.ctan.org
 “CTAN,” note
@@ -257,17 +256,17 @@ Nissan Itzhaki, “Some remarks on ’t Hooft’s S-matrix for black holes,” v
 hep-th/9603067
 Itzhaki, “Some remarks on ’t Hooft’s S-matrix for black holes,” 1
 Nicolas Markey, “Tame the BeaST: The B to X of BibTeX,” version 1.3, 16 October 2005, 1,
-http://mirror.ctan.org/info/bibtex/tamethebeast/ttb en.pdf
+http://mirror.ctan.org/info/bibtex/tamethebeast/ttb_en.pdf
 Markey, “Tame the BeaST,” 1
-
-Jan Wassenberg and Peter Sanders, “Faster Radix Sort via Virtual Memory and Write-Combining,” version 1,
+Jan Wassenberg and Peter Sanders, “Faster Radix Sort via Virtual Memory and Write-Combining,” version 1,
 17 August 2010, 1, arXiv: 1008.2849v1 [cs.DS]
 Wassenberg and Sanders, “Faster Radix Sort via Virtual Memory and Write-Combining,” 1
-José L. Almendro et al., Elektromagnetisches Signalhorn (EU-29702195U [FR, GB, DE], filed 1998), 1
+
+José L. Almendro et al., Elektromagnetisches Signalhorn (EU-29702195U [FR, GB, DE], filed 1998), 1
 Almendro et al., Elektromagnetisches Signalhorn, 1
-F. Kowalik and M. Isard, Estimateur d’un défaut de fonctionnement d’un modulateur en quadrature et étage
+F. Kowalik and M. Isard, Estimateur d’un défaut de fonctionnement d’un modulateur en quadrature et étage
 de modulation l’utilisant (French pat. req. 9500261, filed 11 January 1995), 1
-Kowalik and Isard, Estimateur d’un défaut de fonctionnement d’un modulateur en quadrature et étage de
+Kowalik and Isard, Estimateur d’un défaut de fonctionnement d’un modulateur en quadrature et étage de
 modulation l’utilisant, 1
 Xaver Laufenberg et al. (Robert Bosch GmbH, Daimler Chrysler AG, and Bayerische Motoren Werke AG),
 Elektrische Einrichtung und Betriebsverfahren (European pat. 1700367, filed 13 September 2006), 1
@@ -282,7 +281,7 @@ Operating System, research rep. RC-6947 (IBM, 1978), 1
 Chiu and Chow, A Hybrid Hierarchical Model of a Multiple Virtual Storage (MVS) Operating System, 1
 Jitendra Padhye, Victor Firoiu, and Don Towsley, A Stochastic Model of TCP Reno Congestion Avoidance
 and Control, tech. rep. 99-02 (Amherst, Mass.: University of Massachusetts, 1999), 1
-Padhye, Firoiu, and Towsley, A Stochastic Model of TCP Reno Congestion Avoidance and Control , 1
+Padhye, Firoiu, and Towsley, A Stochastic Model of TCP Reno Congestion Avoidance and Control, 1
 Ingrid de Geer, “Earl, Saint, Bishop, Skald – and Music: The Orkney Earldom of the Twelfth Century. A
 Musicological Study” (PhD diss., Uppsala: Uppsala Universitet, 1985), 1
 Geer, “Earl, Saint, Bishop, Skald – and Music,” 1
@@ -302,40 +301,40 @@ Kant, Immanuel. “Kritik der Urtheilskraft.” Pages 165–485 in Kritik der pr
 der Urtheilskraft. Vol. 5 of Kants Werke. Akademie Textausgabe. Berlin: Walter de Gruyter, 1968
 
 References
-Almendro, José L., Jacinto Martı́n, Alberto Sánchez, and Fernando Nozal. Elektromagnetisches Signalhorn.
+Almendro, José L., Jacinto Martín, Alberto Sánchez, and Fernando Nozal. Elektromagnetisches Signalhorn.
 EU-29702195U (France, United Kingdom, Germany), filed 1998.
 Angenendt, Arnold. “In Honore Salvatoris – Vom Sinn und Unsinn der Patrozinienkunde.” Revue d’Histoire
-Ecclésiastique 97 (2002): 431–56, 791–823.
+Ecclésiastique 97 (2002): 431–56, 791–823.
 Aristotle. De Anima. Edited by Robert Drew Hicks. Cambridge: Cambridge University Press, 1907.
 . Physics. Translated by P. H. Wicksteed and F. M. Cornford. New York: G. P. Putnam, 1929.
 . Poetics. Edited by D. W. Lucas. Clarendon Aristotle. Oxford: Clarendon Press, 1968.
 . The Rhetoric of Aristotle with a commentary by the late Edward Meredith Cope. Edited and
 commented by Edward Meredith Cope. 3 vols. Cambridge University Press, 1877.
 Augustine, Robert L. Heterogeneous catalysis for the synthetic chemist. New York: Marcel Dekker, 1995.
-Averroes. Drei Abhandlungen über die Conjunction des separaten Intellects mit dem Menschen: Von Averroes
-(Vater und Sohn), aus dem Arabischen übersetzt von Samuel Ibn Tibbon. Translated and edited by
+Averroes. Drei Abhandlungen über die Conjunction des separaten Intellects mit dem Menschen: Von Averroes
+(Vater und Sohn), aus dem Arabischen übersetzt von Samuel Ibn Tibbon. Translated and edited by
 J. Hercz. Berlin: S. Hermann, 1869.
 . The Epistle on the Possibility of Conjunction with the Active Intellect by Ibn Rushd with the
 Commentary of Moses Narboni. Translated and edited by Kalman P. Bland. Moreshet: Studies in Jewish
 History, Literature and Thought 7. New York: Jewish Theological Seminary of America, 1982.
-. Des Averroës Abhandlung: “Über die Möglichkeit der Conjunktion” oder “Über den materiellen
+. Des Averroës Abhandlung: “Über die Möglichkeit der Conjunktion” oder “Über den materiellen
 Intellekt.” Edited, translated, and annotated by Ludwig Hannes. Halle an der Saale: C. A. Kaemmerer,
 1892.
 Baez, John C., and Aaron D. Lauda. “Higher-Dimensional Algebra V: 2-Groups.” Version 3. 27 October 2004.
 arXiv: math/0307200v3.
-
-. “Higher-Dimensional Algebra V: 2-Groups.” Version 3. Theory and Applications of Categories 12
+. “Higher-Dimensional Algebra V: 2-Groups.” Version 3. Theory and Applications of Categories 12
 (2004): 423–91. arXiv: math/0307200v3.
-Bertram, Aaron, and Richard Wentworth. “Gromov invariants for holomorphic maps on Riemann surfaces.”
+
+Bertram, Aaron, and Richard Wentworth. “Gromov invariants for holomorphic maps on Riemann surfaces.”
 J. Amer. Math. Soc. 9.2 (1996): 529–71.
-Brandt, Ahasver von, and Erich Hoffmann. “Die nordischen Länder von der Mitte des 11. Jahrhunderts bis
-1448.” Pages 884–917 in Europa im Hoch- und Spätmittelalter. Edited by Ferdinand Seibt. Handbuch der
-europäischen Geschichte 2. Stuttgart: Klett-Cotta, 1987.
+Brandt, Ahasver von, and Erich Hoffmann. “Die nordischen Länder von der Mitte des 11. Jahrhunderts bis
+1448.” Pages 884–917 in Europa im Hoch- und Spätmittelalter. Edited by Ferdinand Seibt. Handbuch der
+europäischen Geschichte 2. Stuttgart: Klett-Cotta, 1987.
 The Chicago Manual of Style: The Essential Guide for Writers, Editors, and Publishers. 15th ed. Chicago, Ill.:
 University of Chicago Press, 2003.
 Chiu, Willy W., and We Min Chow. A Hybrid Hierarchical Model of a Multiple Virtual Storage (MVS)
 Operating System. Research report RC-6947. IBM, 1978.
-Cicero, Marcus Tullius. De natura deorum. Über das Wesen der Götter [in Latin and German]. Translated and
+Cicero, Marcus Tullius. De natura deorum. Über das Wesen der Götter [in Latin and German]. Translated and
 edited by Ursula Blank-Sangmeister. With an afterword by Klaus Thraede. Stuttgart: Reclam, 1995.
 Coleridge, Samuel Taylor. Biographia literaria, or Biographical sketches of my literary life and opinions.
 Vol. 7, part 2 of The collected works of Samuel Taylor Coleridge. Edited by Kathleen Coburn,
@@ -361,42 +360,41 @@ English Goethe Society. New series. 9 (1933): 46–67.
 Glashow, Sheldon. “Partial Symmetries of Weak Interactions.” Nucl. Phys. 22 (1961): 579–88;
 Weinberg, Steven. “A Model of Leptons.” Phys. Rev. Lett. 19 (1967): 1264–66; Salam, Abdus. “Weak and
 Electromagnetic Interactions.” Pages 367–77 in Elementary particle theory: Relativistic groups and
-analyticity. Proceedings of the Eighth Nobel Symposium (Aspenäsgarden, Lerum, 19–25 May 1968).
+analyticity. Proceedings of the Eighth Nobel Symposium (Aspenäsgarden, Lerum, 19–25 May 1968).
 Edited by Nils Svartholm. Stockholm: Almquist & Wiksell, 1968.
 Gonzalez, Ray. The Ghost of John Wayne and Other Stories. Tucson: The University of Arizona Press, 2001.
 Goossens, Michel, Frank Mittelbach, and Alexander Samarin. The LaTeX Companion. 1st ed. Reading, Mass.:
 Addison-Wesley, 1994.
 Hammond, Christopher. The basics of crystallography and diffraction. Oxford: International Union of
 Crystallography; Oxford University Press, 1997.
-Herrmann, Wolfgang A., Karl Öfele, Sabine K. Schneider, Eberhardt Herdtweck, and Stephan D. Hoffmann.
+Herrmann, Wolfgang A., Karl Öfele, Sabine K. Schneider, Eberhardt Herdtweck, and Stephan D. Hoffmann.
 “A carbocyclic carbene as an efficient catalyst ligand for C–C coupling reactions.” Angew. Chem. Int. Ed.
-45.23 (2006): 3859–62; Aksın, Özge, Hayati Türkmen, Levent Artok, Bekir Çetinkaya, Chaoying Ni,
-Orhan Büyükgüngör, and Erhan Özkal. “Effect of immobilization on catalytic characteristics of saturated
+45.23 (2006): 3859–62; Aksın, Özge, Hayati Türkmen, Levent Artok, Bekir Çetinkaya, Chaoying Ni,
+Orhan Büyükgüngör, and Erhan Özkal. “Effect of immobilization on catalytic characteristics of saturated
 Pd-N-heterocyclic carbenes in Mizoroki-Heck reactions.” J. Organomet. Chem. 691.13 (2006): 3027–36;
 Yoon, Myeong S., Dowook Ryu, Jeongryul Kim, and Kyo Han Ahn. “Palladium pincer complexes with
-reduced bond angle strain: efficient catalysts for the Heck reaction.” Organometallics 25.10 (2006):
-2409–11.
+reduced bond angle strain: efficient catalysts for the Heck reaction.” Organometallics 25.10 (2006): 2409–11.
 Homer. Die Ilias. Translated by Wolfgang Schadewaldt. With an introduction by Joachim Latacz. 3rd ed.
-Düsseldorf: Artemis & Winkler, 2004.
+Düsseldorf: Artemis & Winkler, 2004.
 Hostetler, Michael J., Julia E. Wingate, Chuan-Jian Zhong, Jay E. Harris, Richard W. Vachet,
 Michael R. Clark, J. David Londono, Stephen J. Green, Jennifer J. Stokes, George D. Wignall,
 Gary L. Glish, Marc D. Porter, Neal D. Evans, and Royce W. Murray. “Alkanethiolate gold cluster
 molecules with core diameters from 1.5 to 5.2 nm: Core and monolayer properties as a function of core
 size.” Langmuir 14.1 (1998): 17–30.
-
-Hyman, Arthur. “Aristotle’s Theory of the Intellect and its Interpretation by Averroes.” Pages 161–91 in
+Hyman, Arthur. “Aristotle’s Theory of the Intellect and its Interpretation by Averroes.” Pages 161–91 in
 Studies in Aristotle. Edited by Dominic J. O’Meara. Studies in Philosophy and the History of Philosophy
 9. Washington, D.C.: The Catholic University of America Press, 1981.
-Itzhaki, Nissan. “Some remarks on ’t Hooft’s S-matrix for black holes.” Version 1. 11 March 1996. arXiv:
+
+Itzhaki, Nissan. “Some remarks on ’t Hooft’s S-matrix for black holes.” Version 1. 11 March 1996. arXiv:
 hep-th/9603067.
-Jaffé, Philipp, ed. Regesta Pontificum Romanorum ab condita ecclesia ad annum post Christum natum
+Jaffé, Philipp, ed. Regesta Pontificum Romanorum ab condita ecclesia ad annum post Christum natum
 mcxcviii. Redacted by Samuel Loewenfeld, Ferdinand Kaltenbrunner, and Paul Ewald. 2nd ed. 2 vols.
 Leipzig, 1885–1888.
-Kant, Immanuel. “Kritik der praktischen Vernunft.” Pages 1–163 in Kritik der praktischen Vernunft. Kritik
-der Urtheilskraft. Vol. 5 of Kants Werke. Akademie Textausgabe. Berlin: Walter de Gruyter, 1968.
+Kant, Immanuel. “Kritik der praktischen Vernunft.” Pages 1–163 in Kritik der praktischen Vernunft. Kritik der
+Urtheilskraft. Vol. 5 of Kants Werke. Akademie Textausgabe. Berlin: Walter de Gruyter, 1968.
 . “Kritik der Urtheilskraft.” Pages 165–485 in Kritik der praktischen Vernunft. Kritik der Urtheilskraft.
 Vol. 5 of Kants Werke. Akademie Textausgabe. Berlin: Walter de Gruyter, 1968.
-Kastenholz, M. A., and Philippe H. Hünenberger. “Computation of methodology-independent ionic solvation
+Kastenholz, M. A., and Philippe H. Hünenberger. “Computation of methodology-independent ionic solvation
 free energies from molecular simulations: I. The electrostatic potential in molecular liquids.” J. Chem.
 Phys. 124, 124106 (2006). doi:10.1063/1.2172593.
 Knuth, Donald E. Computers & Typesetting. 5 vols. Reading, Mass.: Addison-Wesley, 1984–1986.
@@ -408,12 +406,13 @@ Computers & Typesetting. Reading, Mass.: Addison-Wesley, 1986. Computer Modern T
 Computers & Typesetting. Reading, Mass.: Addison-Wesley, 1986.
 . The TEX book. Vol. A of Computers & Typesetting. Reading, Mass.: Addison-Wesley, 1984.
 . TEX: The Program. Vol. B of Computers & Typesetting. Reading, Mass.: Addison-Wesley, 1986.
+
 . The METAFONTbook. Vol. C of Computers & Typesetting. Reading, Mass.: Addison-Wesley, 1986.
 . METAFONT: The Program. Vol. D of Computers & Typesetting. Reading, Mass.: Addison-Wesley,
 1986.
 . Computer Modern Typefaces. Vol. E of Computers & Typesetting. Reading, Mass.: Addison-Wesley,
 1986.
-Kowalik, F., and M. Isard. Estimateur d’un défaut de fonctionnement d’un modulateur en quadrature et étage
+Kowalik, F., and M. Isard. Estimateur d’un défaut de fonctionnement d’un modulateur en quadrature et étage
 de modulation l’utilisant. French patent request 9500261, filed 11 January 1995.
 Kullback, Solomon. Information Theory and Statistics. New York: John Wiley & Sons, 1959.
 . Information Theory and Statistics. John Wiley & Sons, 1959. Repr., New York: Dover Publications,
@@ -427,10 +426,10 @@ Werke AG). Elektrische Einrichtung und Betriebsverfahren. European patent 170036
 2006.
 Loh, Nin C. “High-Resolution Micromachined Interferometric Accelerometer.” Master’s thesis, Cambridge,
 Mass.: Massachusetts Institute of Technology, 1992.
-Malinowski, Bronislaw. Argonauts of the Western Pacific: An account of native enterprise and adventure in
+Malinowski, Bronisław. Argonauts of the Western Pacific: An account of native enterprise and adventure in
 the Archipelagoes of Melanesian New Guinea. 8th ed. London: Routledge and Kegan Paul, 1972.
 Markey, Nicolas. “Tame the BeaST: The B to X of BibTeX.” Version 1.3. 16 October 2005.
-http://mirror.ctan.org/info/bibtex/tamethebeast/ttb en.pdf.
+http://mirror.ctan.org/info/bibtex/tamethebeast/ttb_en.pdf.
 Maron, Monika. Animal Triste. Translated from the German by Brigitte Goldstein. Lincoln: University of
 Nebraska Press, 2000.
 Massa, Werner. Crystal structure determination. 2nd ed. Berlin: Spinger, 2004.
@@ -438,21 +437,21 @@ Matuz, Roger, ed. Contemporary Literary Criticism. Pages 204–8 in vol. 61. Det
 Moore, Gordon E. “Cramming more components onto integrated circuits.” Electronics 38.8 (1965): 114–17.
 . “Cramming more components onto integrated circuits.” Proceedings of the IEEE 86.1 (1998): 82–85.
 Reprinted from “Cramming more components onto integrated circuits.” Electronics 38.8 (1965): 114–17.
-Moraux, Paul. “Le De Anima dans la tradition grècque: Quelques aspects de l’interpretation du traité, de
-Theophraste à Themistius.” Pages 281–324 in Aristotle on Mind and the Senses. Proceedings of the
+Moraux, Paul. “Le De Anima dans la tradition grècque: Quelques aspects de l’interpretation du traité, de
+Theophraste à Themistius.” Pages 281–324 in Aristotle on Mind and the Senses. Proceedings of the
 Seventh Symposium Aristotelicum (1975). Edited by G. E. R. Lloyd and G. E. L. Owen. Cambridge:
 Cambridge University Press, 1979.
-
-Nietzsche, Friedrich. Sämtliche Werke: Kritische Studienausgabe. Edited by Giorgio Colli and
-Mazzino Montinari. 2nd ed. 15 vols. München: Deutscher Taschenbuch-Verlag; Berlin: Walter de Gruyter,
+Nietzsche, Friedrich. Sämtliche Werke: Kritische Studienausgabe. Edited by Giorgio Colli and
+Mazzino Montinari. 2nd ed. 15 vols. München: Deutscher Taschenbuch-Verlag; Berlin: Walter de Gruyter,
 1988.
-. Die Geburt der Tragödie. Unzeitgemäße Betrachtungen I–IV. Nachgelassene Schriften 1870–1973.
-Vol. 1 of Sämtliche Werke: Kritische Studienausgabe. Edited by Giorgio Colli and Mazzino Montinari.
-2nd ed. München: Deutscher Taschenbuch-Verlag; Berlin: Walter de Gruyter, 1988.
-. “Unzeitgemässe Betrachtungen. Zweites Stück: Vom Nutzen und Nachtheil der Historie für das
-Leben.” Pages 243–334 in Die Geburt der Tragödie. Unzeitgemäße Betrachtungen I–IV. Nachgelassene
-Schriften 1870–1973. Vol. 1 of Sämtliche Werke: Kritische Studienausgabe. Edited by Giorgio Colli and
-Mazzino Montinari. München: Deutscher Taschenbuch-Verlag; Berlin: Walter de Gruyter, 1988.
+
+. Die Geburt der Tragödie. Unzeitgemäße Betrachtungen I–IV. Nachgelassene Schriften 1870–1973.
+Vol. 1 of Sämtliche Werke: Kritische Studienausgabe. Edited by Giorgio Colli and Mazzino Montinari.
+2nd ed. München: Deutscher Taschenbuch-Verlag; Berlin: Walter de Gruyter, 1988.
+. “Unzeitgemässe Betrachtungen. Zweites Stück: Vom Nutzen und Nachtheil der Historie für das
+Leben.” Pages 243–334 in Die Geburt der Tragödie. Unzeitgemäße Betrachtungen I–IV. Nachgelassene
+Schriften 1870–1973. Vol. 1 of Sämtliche Werke: Kritische Studienausgabe. Edited by Giorgio Colli and
+Mazzino Montinari. München: Deutscher Taschenbuch-Verlag; Berlin: Walter de Gruyter, 1988.
 Nussbaum, Martha. Aristotle’s “De Motu Animalium.” Princeton: Princeton University Press, 1978.
 Padhye, Jitendra, Victor Firoiu, and Don Towsley. A Stochastic Model of TCP Reno Congestion Avoidance
 and Control. Technical report 99-02. Amherst, Mass.: University of Massachusetts, 1999.
@@ -468,10 +467,10 @@ Shore, Bradd. “Twice-Born, Once Conceived: Meaning Construction and Cultural C
 Anthropologist. New series. 93.1 (March 1991): 9–27.
 Sigfridsson, Emma, and Ulf Ryde. “Comparison of methods for deriving atomic charges from the electrostatic
 potential and moments.” Journal of Computational Chemistry 19.4 (1998): 377–95.
-doi:10.1002/(SICI)1096-987X(199803)19:4h377::AID-JCC1i3.0.CO;2-P.
+doi:10.1002/(SICI)1096-987X(199803)19:4<377::AID-JCC1>3.0.CO;2-P.
 Sorace, Ronald E., Victor S. Reinhardt, and Steven A. Vaughn (Hughes Aircraft Company). High-Speed
 Digital-to-RF Converter. U.S. patent 5668842, filed 16 September 1997.
-Spiegelberg, Herbert. “‘Intention’ und ‘Intentionalität’ in der Scholastik, bei Brentano und Husserl.” Studia
+Spiegelberg, Herbert. “‘Intention’ und ‘Intentionalität’ in der Scholastik, bei Brentano und Husserl.” Studia
 Philosophica 29 (1969): 189–216.
 Springer, Otto. “Mediaeval Pilgrim Routes from Scandinavia to Rome.” Mediaeval Studies 12 (1950): 92–122.
 Van Gennep, Arnold. Les rites de passage. Paris: Nourry, 1909.
@@ -479,7 +478,7 @@ Van Gennep, Arnold. Les rites de passage. Paris: Nourry, 1909.
 as The Rites of Passage (University of Chicago Press, 1960).
 . The Rites of Passage. Translated from the French by Monika B. Vizedom and Gabrielle L. Caffee.
 University of Chicago Press, 1960.
-Vázques de Parga, Luis, José Marı́a Lacarra, and Juan Urı́a Rı́u. Las Peregrinaciones a Santiago de
+Vázques de Parga, Luis, José María Lacarra, and Juan Uría Ríu. Las Peregrinaciones a Santiago de
 Compostela. 3 vols. Ed. facs. de la realizada en 1948–49. Pamplona: Iberdrola, 1993.
 Vizedom, Monika B., and Gabrielle L. Caffee, trans. The Rites of Passage. University of Chicago Press, 1960.
 Translation of Arnold van Gennep. Les rites de passage. Paris: Nourry, 1909.

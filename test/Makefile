@@ -1,6 +1,5 @@
 TEMP-EXTENSIONS=.pdf .txt .aux .bbl .bcf .bib .blg .idx .ilg .ind .log .out .run.xml
-PDFLATEX=pdflatex -interaction=batchmode
-XELATEX=xelatex -interaction=batchmode
+LUALATEX=lualatex -interaction=batchmode
 BIBER=biber -q -q
 CMP=cmp --silent
 
@@ -31,17 +30,7 @@ test: $(TXTS)
 
 %.bcf: %.tex $(DEPS)
 	@echo -n "Building $< (first pass) ... "
-	@$(PDFLATEX) $< > /dev/null
-	@echo "Done."
-
-sblhs-tests.bcf: sblhs-tests.tex $(DEPS) ../doc/biblatex-sbl.bib
-	@echo -n "Building $< (first pass) ... "
-	@$(XELATEX) $< > /dev/null
-	@echo "Done."
-
-pagination.bcf: pagination.tex $(DEPS) ../doc/biblatex-sbl.bib
-	@echo -n "Building $< (first pass) ... "
-	@$(XELATEX) $< > /dev/null
+	@$(LUALATEX) $< > /dev/null
 	@echo "Done."
 
 %.bbl: %.bcf
@@ -52,32 +41,10 @@ pagination.bcf: pagination.tex $(DEPS) ../doc/biblatex-sbl.bib
 
 %.pdf: %.bbl
 	@echo -n "Building $(basename $<).tex (second pass) ... "
-	@$(PDFLATEX) $(basename $<).tex > /dev/null
+	@$(LUALATEX) $(basename $<).tex > /dev/null
 	@echo "Done."
 	@echo -n "Building $(basename $<).tex (third pass) ... "
-	@$(PDFLATEX) $(basename $<).tex > /dev/null
-	@touch $(basename $@).bcf
-	@touch $(basename $@).bbl
-	@touch $@
-	@echo "Done."
-
-sblhs-tests.pdf: sblhs-tests.bbl
-	@echo -n "Building $(basename $<).tex (second pass) ... "
-	@$(XELATEX) $(basename $<).tex > /dev/null
-	@echo "Done."
-	@echo -n "Building $(basename $<).tex (third pass) ... "
-	@$(XELATEX) $(basename $<).tex > /dev/null
-	@touch $(basename $@).bcf
-	@touch $(basename $@).bbl
-	@touch $@
-	@echo "Done."
-
-pagination.pdf: pagination.bbl
-	@echo -n "Building $(basename $<).tex (second pass) ... "
-	@$(XELATEX) $(basename $<).tex > /dev/null
-	@echo "Done."
-	@echo -n "Building $(basename $<).tex (third pass) ... "
-	@$(XELATEX) $(basename $<).tex > /dev/null
+	@$(LUALATEX) $(basename $<).tex > /dev/null
 	@touch $(basename $@).bcf
 	@touch $(basename $@).bbl
 	@touch $@

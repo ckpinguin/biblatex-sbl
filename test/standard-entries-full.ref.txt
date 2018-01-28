@@ -60,12 +60,12 @@ Author, Title, 1
 
 suppbook
 
-Author, Title: SubTitle, TitleAddon [in French] in BookTitle: BookSubTitle, BookTitleAddon, by
-BookAuthor, chap. 1 in vol. 2, part 3 of MainTitle: MainSubtitle, MaintitleAddon, ed. Editor, ed. Editora, ed.
-Editorb, ed. Editorc, trans. Translator, with a comment. by Commentator, with annots. by Annotator, with
-an intro. by Introducer, with a forew. by Foreword, with an afterw. by Afterword, 4th ed., 5 vols., Series 6,
-Note (Location: Publisher, 2 January 2016, Pubstate), Addendum, 1–5, ISBN: 0321173856, EprintType,
-Eprint (EprintClass), accessed 3 February 2016, doi:10.1000/182, http://www.example.com
+Author, Title: SubTitle, TitleAddon [in French] in BookTitle: BookSubTitle, BookTitleAddon, by BookAuthor,
+chap. 1 in vol. 2, part 3 of MainTitle: MainSubtitle, MaintitleAddon, ed. Editor, ed. Editora, ed. Editorb, ed.
+Editorc, trans. Translator, with a comment. by Commentator, with annots. by Annotator, with an intro. by
+Introducer, with a forew. by Foreword, with an afterw. by Afterword, 4th ed., 5 vols., Series 6, Note (Location:
+Publisher, 2 January 2016, Pubstate), Addendum, 1–5, ISBN: 0321173856, EprintType, Eprint (EprintClass),
+accessed 3 February 2016, doi:10.1000/182, http://www.example.com
 Author, Title, 1
 
 7
@@ -307,10 +307,10 @@ Accessed 3 February 2016. doi:10.1000/182. http://www.example.com.
 . “Title: SubTitle.” TitleAddon [in French]. Note. Location: HowPublished, 2 January 2016, Pubstate.
 Addendum. Accessed 3 February 2016. http://www.example.com.
 . “Title: Subtitle.” TitleAddon [in French]. Translated from the German by Translator. With a
-commentary by Commentator. With annotations by Annotator. In “IssueTitle: IssueSubTitle.”
-Version 1.1. Note. JournalTitle. 2nd series. 1.2, 123456. Edited by Editor. Edited by EditorA. Edited by
-EditorB. Edited by EditorC (Spring 2 January 2016, Pubstate): 1–2. Addendum. ISSN: 0317-8471.
-EprintType. Eprint (EprintClass). Accessed 3 February 2016. doi:10.1000/182. http://www.example.com/.
+commentary by Commentator. With annotations by Annotator. In “IssueTitle: IssueSubTitle.” Version 1.1.
+Note. JournalTitle. 2nd series. 1.2, 123456. Edited by Editor. Edited by EditorA. Edited by EditorB.
+Edited by EditorC (Spring 2 January 2016, Pubstate): 1–2. Addendum. ISSN: 0317-8471. EprintType.
+Eprint (EprintClass). Accessed 3 February 2016. doi:10.1000/182. http://www.example.com/.
 . Title: SubTitle. TitleAddon [in French]. Chap. 7, pages 1–2 in vol. 1, part 4 of MainTitle:
 MainSubTitle. MainTitleAddon. Edited by Editor. Edited by Editora. Edited by Editorb. Edited by
 Editorc. Translated from the German by Translator. With a commentary by Commentator. With
@@ -319,10 +319,10 @@ afterword by Afterward. 2nd ed. 3 vols. Series 1. Note. Location: Publisher, 2 J
 Addendum. ISBN: 0321173856. EprintType. Eprint (EprintClass). Accessed 3 February 2016.
 doi:10.1000/182. http://www.example.com/.
 . “Title: Subtitle.” TitleAddon [in French]. Translated from the German by Translator. With a
-commentary by Commentator. With annotations by Annotator. In “IssueTitle: IssueSubTitle.”
-Version 1.1. Note. JournalTitle. 2. 1.2, 123456. Edited by Editor. Edited by EditorA. Edited by EditorB.
-Edited by EditorC (Spring 2 January 2016, Pubstate): 1–2. Addendum. ISSN: 0317-8471. EprintType.
-Eprint (EprintClass). Accessed 3 February 2016. doi:10.1000/182. http://www.example.com/.
+commentary by Commentator. With annotations by Annotator. In “IssueTitle: IssueSubTitle.” Version 1.1.
+Note. JournalTitle. 2. 1.2, 123456. Edited by Editor. Edited by EditorA. Edited by EditorB. Edited by
+EditorC (Spring 2 January 2016, Pubstate): 1–2. Addendum. ISSN: 0317-8471. EprintType. Eprint
+(EprintClass). Accessed 3 February 2016. doi:10.1000/182. http://www.example.com/.
 . “Title: SubTitle.” TitleAddon [in French]. Chap. 7, pages 1–5 in BookTitle: BookSubTitle.
 BookTitleAddon, by BookAuthor. Vol. 2, part 3 of MainTitle: MainSubtitle. MaintitleAddon. Edited by
 Editor. Edited by Editora. Edited by Editorb. Edited by Editorc. Translated from the German by
