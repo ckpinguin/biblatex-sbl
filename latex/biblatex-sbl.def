@@ -884,7 +884,7 @@
 % SOURCE MAPS
 % ------------------------------------------------------------------
 
-\DeclareSourcemap{
+\DeclareStyleSourcemap{
   \maps{
     \map[overwrite]{
       \step[fieldsource=related, final]
