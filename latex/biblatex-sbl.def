@@ -517,12 +517,12 @@
   \iffieldequalstr{pagination}{section}
     {\def\ppspace{}}
     {}%
-  \mkcomprange[\mkpageprefix]{#1}}
+  \mkcomprange[{\mkpageprefix[pagination]}]{#1}}
 \DeclareFieldFormat{multipostnote}{%
   \iffieldequalstr{pagination}{section}
     {\def\ppspace{}}
     {}%
-  \mkcomprange[\mkpageprefix]{#1}}
+  \mkcomprange[{\mkpageprefix[pagination]}]{#1}}
 \DeclareFieldFormat{byauthor}{\bibstring{byauthor} #1}
 \DeclareFieldFormat{revdtitle}{\biblstring{reviewof} \mkbibemph{#1}}
 \DeclareFieldFormat{revdshorttitle}{\biblstring{reviewof} \mkbibemph{#1}}
@@ -557,7 +557,7 @@
   \iffieldequalstr{pagination}{section}
     {\def\ppspace{}}
     {}%
-  \mkcomprange[\mkpageprefix]{#1}}
+  \mkcomprange[{\mkpageprefix[pagination]}]{#1}}
 \DeclareFieldFormat{pagesin}{\mkcomprange[{\mkpageprefix[bookpagination]}]{#1}
                              \usebibmacro{in}}
 \DeclareFieldFormat{chapter}{\bibsstring{chapter}~#1}
