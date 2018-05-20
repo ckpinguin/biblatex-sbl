@@ -1,5 +1,4 @@
 TEMP-EXTENSIONS=.pdf .txt .aux .bbl .bcf .blg .idx .ilg .ind .log .out .run.xml .toc
-XELATEX=xelatex -interaction=batchmode
 LUALATEX=lualatex -interaction=batchmode
 BIBER=biber -q -q
 CMP=cmp --silent
@@ -42,7 +41,7 @@ test: $(TXTS)
 
 sbl-paper.bcf: sbl-paper.tex $(DEPS) sbl-paper.sty sbl-paper-bibleref.ist
 	@echo -n "Building $< (first pass) ... "
-	@$(XELATEX) $< > /dev/null
+	@$(LUALATEX) $< > /dev/null
 	@echo "Done."
 
 %.bbl: %.bcf
@@ -57,17 +56,6 @@ sbl-paper.bcf: sbl-paper.tex $(DEPS) sbl-paper.sty sbl-paper-bibleref.ist
 	@echo "Done."
 	@echo -n "Building $(basename $<).tex (third pass) ... "
 	@$(LUALATEX) $(basename $<).tex > /dev/null
-	@touch $(basename $@).bcf
-	@touch $(basename $@).bbl
-	@touch $@
-	@echo "Done."
-
-sbl-paper.pdf: sbl-paper.bbl
-	@echo -n "Building $(basename $<).tex (second pass) ... "
-	@$(XELATEX) $(basename $<).tex > /dev/null
-	@echo "Done."
-	@echo -n "Building $(basename $<).tex (third pass) ... "
-	@$(XELATEX) $(basename $<).tex > /dev/null
 	@touch $(basename $@).bcf
 	@touch $(basename $@).bbl
 	@touch $@
