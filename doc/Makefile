@@ -12,8 +12,8 @@ DEPS=../latex/biblatex-sbl.def \
      ../latex/sbl.cbx \
      ../latex/sbl.bbx \
      ../latex/sbl.dbx \
-     ../latex/sbl-american.lbx \
-     ../latex/sbl-english.lbx \
+     ../latex/american-sbl.lbx \
+     ../latex/english-sbl.lbx \
      biblatex-sbl.bib
 
 PDFS=biblatex-sbl-ibid.pdf \
