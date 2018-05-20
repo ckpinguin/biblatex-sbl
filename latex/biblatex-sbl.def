@@ -1,11 +1,11 @@
 \RequireBibliographyStyle{standard}
 \RequireBiber[3]
 
-% BibLaTeX version 2017/11/05 v3.8a or greater required
-\@ifpackagelater{biblatex}{2017/11/05}
+% BibLaTeX version 2018/03/04 v3.11 or greater required
+\@ifpackagelater{biblatex}{2018/03/04}
   {}
   {\PackageError{biblatex-sbl}
-     {BibLaTeX v3.8a or greater is required}
+     {BibLaTeX v3.11 or greater is required}
      {You need to update your TeX distribution to use biblatex-sbl.}}
 
 % Require xparse
@@ -15,8 +15,8 @@
 % VERSION STRINGS
 % ------------------------------------------------------------------
 
-\def\sbl@abx@date{2017//}
-\def\sbl@abx@version{0.8.2+}
+\def\sbl@abx@date{2018//}
+\def\sbl@abx@version{0.9+}
 \def\sbl@abx@bbxid{\sbl@abx@date\space v\sbl@abx@version\space biblatex-sbl bibliography style (DCP)}
 \def\sbl@abx@cbxid{\sbl@abx@date\space v\sbl@abx@version\space biblatex-sbl citation style (DCP)}
 \def\sbl@abx@lbxid{\sbl@abx@date\space v\sbl@abx@version\space biblatex-sbl localization (DCP)}
@@ -206,20 +206,12 @@
 % IDEM MACROS
 % ------------------------------------------------------------------
 
-% only use idem within footnote
-\let\cbx@ifmpfncheck\blx@ifmpfncheck
-\patchcmd{\cbx@ifmpfncheck}{\tw@}{\@ne}{}{}
-\let\cbx@ifciteidem@constrict\blx@ifciteidem@constrict
-\patchcmd{\cbx@ifciteidem@constrict}{\blx@ifmpfncheck}{\cbx@ifmpfncheck}{}{}
-
-\def\blx@opt@idemtracker@constrict{%
-  \let\blx@imc@ifciteidem\cbx@ifciteidem@constrict
-  \let\blx@idemtracker\blx@idemtracker@constrict
-  \let\blx@idemreset\blx@idemreset@context
-  \booltrue{citetracker}}
-
 \newbibmacro*{ifidemused}{%
-  \ifciteidem
+  \ifboolexpr{
+    test {\ifciteidem}
+    and
+    not test {\iffirstonpage}
+  }
     {\bibstring[\mkibid]{idem\thefield{gender}}%
      \@firstoftwo}
     {\@secondoftwo}}
@@ -386,7 +378,9 @@
   related,
   minxrefs=1,
   isbn=false,
-  ibidtracker=false,
+  pagetracker,
+  idemtracker=constrict,
+  ibidtracker=constrict,
   ibidpage=false,
   maxbibnames=99,
   maxcitenames=3,
@@ -400,7 +394,8 @@
   accessdate=false,
   shorthand=true,
   dashed=true,
-  pagination=none
+  pagination=none,
+  language=american
 }
 
 \ExecuteBibliographyOptions[classictext,ancienttext]{%
@@ -429,11 +424,28 @@
 \NewBibliographyString{patentfiled}
 \NewBibliographyString{released}
 
-\DeclareLanguageMapping{english}{sbl-american}
-\DeclareLanguageMapping{american}{sbl-american}
-\DeclareLanguageMapping{british}{sbl-british}
-\DeclareLanguageMapping{german}{sbl-german}
-\DeclareLanguageMapping{spanish}{sbl-spanish}
+\DeclareLanguageMappingSuffix{-sbl}
+
+% Ensure right colon punctuation when reset
+\protected\def\blx@resetpunct{%
+  \DeclareCapitalPunctuation{.!?}%
+  \DeclarePunctuationPairs{dot}{}%
+  \DeclarePunctuationPairs{comma}{*!?}%
+  \DeclarePunctuationPairs{semicolon}{*!?}%
+  \DeclarePunctuationPairs{colon}{*}%
+  \DeclarePunctuationPairs{period}{}%
+  \DeclarePunctuationPairs{exclam}{*}%
+  \DeclarePunctuationPairs{question}{*}%
+  \DeclareQuotePunctuation{}%
+  \def\abx@dot{\ifdim\lastkern>\z@\unkern\fi.\spacefactor\blx@sf@dot}%
+  \def\abx@comma{\ifdim\lastkern>\z@\unkern\fi\abx@puncthook{,}}%
+  \def\abx@semicolon{\abx@puncthook{;}}%
+  \def\abx@colon{\abx@puncthook{:}}%
+  \def\abx@period{\ifdim\lastkern>\z@\unkern\fi\abx@puncthook{.}}%
+  \def\abx@exclam{\abx@puncthook{!}}%
+  \def\abx@question{\abx@puncthook{?}}%
+  \global\let\abx@puncthook\@firstofone
+  \global\let\blx@postpunct\@empty}
 
 \newcommand*{\namedashpunct}{\adddot\space}
 \renewcommand*{\newunitpunct}{\addcomma\space}
@@ -442,6 +454,7 @@
 \newcommand*{\relatedpunctreprint}{\addcomma\space}
 
 \renewcommand*{\relateddelim}{\addsemicolon\space}
+\renewcommand*{\begrelateddelim}{\addsemicolon\space}
 \renewcommand*{\volcitedelim}{\addcolon}
 \newcommand*{\shorthandvoldelim}{\addspace}
 \newcommand*{\parenvoldelim}{\addcolon\space}
@@ -2645,27 +2658,28 @@
   \global\toggletrue{cbx:suppresspostnote}}
 
 \newbibmacro*{related+volume+part+postnote}{%
+  \renewbibmacro*{endrelatedloop}{%
+    \iffieldundef{volume}
+      {\iftoggle{cbx:volprinted}
+         {\usebibmacro{volume+part}%
+          \usebibmacro{setvolpostnotedelim}}
+         {\usebibmacro{setpostnotedelim}}}
+      {\usebibmacro{setvoldelim}%
+       \setunit{\printdelim[\volcontext]{postnotedelim}}%
+       \usebibmacro{volume+part}%
+       \usebibmacro{setvolpostnotedelim}}%
+    \setunit{\printdelim[\postnotecontext]{postnotedelim}}%
+    \ifboolexpr{
+      test {\ifciteseen}
+      or
+      test {\iffieldundef{pages}}
+    }
+      {\printfield{postnote}}
+      {\usebibmacro{pages}}%
+    \global\toggletrue{cbx:suppresspostnote}%
+    \global\toggletrue{cbx:relatedseen}}%
   \usebibmacro{related:init}%
-  \usebibmacro{related}%
-  \iffieldundef{volume}
-    {\iftoggle{cbx:volprinted}
-       {\usebibmacro{volume+part}%
-        \usebibmacro{setvolpostnotedelim}}
-       {\usebibmacro{setpostnotedelim}}}
-    {\usebibmacro{setvoldelim}%
-     \setunit{\printdelim[\volcontext]{postnotedelim}}%
-     \usebibmacro{volume+part}%
-     \usebibmacro{setvolpostnotedelim}}%
-  \setunit{\printdelim[\postnotecontext]{postnotedelim}}%
-  \ifboolexpr{
-    test {\ifciteseen}
-    or
-    test {\iffieldundef{pages}}
-  }
-    {\printfield{postnote}}
-    {\usebibmacro{pages}}%
-  \global\toggletrue{cbx:suppresspostnote}%
-  \global\toggletrue{cbx:relatedseen}}
+  \usebibmacro{related}}
 
 \newbibmacro*{classic:translator+series}{%
   \ifnameundef{translator}

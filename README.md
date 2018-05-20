@@ -44,13 +44,13 @@ kpsewhich -var-value=TEXMFHOME
 
 The following packages are required:
 
-* `biblatex` (version 3.8a or higher) with the `biber` backend
+* `biblatex` (version 3.11 or higher) with the `biber` backend
 * `xparse`
 
 ## Licence
 
 ```
-Copyright 2015-2017 David Purton
+Copyright 2015-2018 David Purton
 
 This work may be distributed and/or modified under the
 conditions of the LaTeX Project Public License, either version 1.3

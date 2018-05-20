@@ -1,4 +1,6 @@
-\ProvidesFile{sbl-english.lbx}[\sbl@abx@lbxid]
+\ProvidesFile{english-sbl.lbx}[\sbl@abx@lbxid]
+
+\InheritBibliographyExtras{english}
 
 \DeclareBibliographyStrings{%
   inherit          = {english},
@@ -25,4 +27,8 @@
   beforecommonera  = {{BCE}{BCE}},
   annodomini       = {{AD}{AD}},
   beforechrist     = {{BC}{BC}}
+}
+
+\DeclareBibliographyExtras{%
+  \DeclarePunctuationPairs{colon}{*}%
 }

@@ -92,8 +92,9 @@
     {\usebibmacro{setaltpostnotedelim}%
      \setunit{\postnotedelim}%
      \printfield{altpostnote}%
-     \setunit{\addspace}%
-     \printtext[parens]{\usebibmacro{related+volume+part+postnote}}}
+     \DeclareFieldFormat{related}{\mkbibparens{##1}}%
+     \renewcommand*{\begrelateddelim}{\addspace}%
+     \usebibmacro{related+volume+part+postnote}}
     {\ifciteseen
        {\usebibmacro{setpostnotedelim}}
        {\usebibmacro{setpagesunit}%
@@ -113,6 +114,7 @@
   \DeclareNameAlias{translator}{sortname}%
   \renewcommand*{\newunitpunct}{\addperiod\space}%
   \renewcommand*{\relateddelim}{\addperiod\space}%
+  \renewcommand*{\begrelateddelim}{\addperiod\space}%
   \sloppy
   \printtext{\usedriver{}{\thefield{entrytype}}}}
 
@@ -355,10 +357,11 @@
             test {\iffieldequalstr{entrysubtype}{COS}}
          }}
   }
-    {\newunit
+    {\renewcommand*{\begrelateddelim}{\newunitpunct}%
      \usebibmacro{related+volume+part+postnote}}
-    {\setunit{\addspace}%
-     \printtext[parens]{\usebibmacro{related+volume+part+postnote}}}%
+    {\DeclareFieldFormat{related}{\mkbibparens{##1}}%
+     \renewcommand*{\begrelateddelim}{\addspace}%
+     \usebibmacro{related+volume+part+postnote}}%
   \usebibmacro{finentry}}
 
 \DeclareBibliographyDriver{cite:classictext}{%
@@ -375,7 +378,8 @@
   \iffieldequalstr{entrysubtype}{churchfather}
     {\setunit{\addspace}%
      \printfield{altpostnote}%
-     \setunit{\addspace}%
+     \DeclareFieldFormat{related}{\mkbibparens{##1}}%
+     \renewcommand*{\begrelateddelim}{\addspace}%
      \printtext[parens]{\usebibmacro{related+volume+part+postnote}}}
     {\clearfield{pages}%
      \usebibmacro{volume+part+postnote}%
