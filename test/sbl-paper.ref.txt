@@ -128,8 +128,8 @@ main text of the paper, should be single-spaced.
 word of the note.
 3. Mitchell Dahood, Psalms, 3 vols., AB 16–17A (Garden City, NY: Doubleday, 1965–1970).
 4. David Noel Freedman, “Pottery, Poetry, and Prophecy: An Essay on Biblical Poetry,” JBL 96 (1977): 5–26;
-David Noel Freedman, “Pottery, Poetry, and Prophecy: An Essay on Biblical Poetry,” in Pottery, Poetry, and
-Prophecy: Studies in Early Hebrew Poetry (Winona Lake, IN: Eisenbrauns, 1980), 1–22.
+idem, “Pottery, Poetry, and Prophecy: An Essay on Biblical Poetry,” in Pottery, Poetry, and Prophecy: Studies in Early
+Hebrew Poetry (Winona Lake, IN: Eisenbrauns, 1980), 1–22.
 
 3
 GREEK AND HEBREW
@@ -137,9 +137,8 @@ GREEK AND HEBREW
 Paragraph Greek:
 Ἐν ἀρχῇ ἦν ὁ λόγος, καὶ ὁ λόγος ἦν πρὸς τὸν θεόν, καὶ θεὸς ἦν ὁ λόγος. (John 1:1)
 Paragraph Hebrew:
-(Gen 1:1) .‫ֹלהים ֵאת ַה ָשּׁ ַמיִם וְ ֵאת ָה ָא ֶרץ‬
-ִ ‫אשׁית ָבּ ָרא ֱא‬
-ִ ‫ְבּ ֵר‬
+(Gen 1:1) .‫שַּמ ִים ְוֵאת ָהָא ֶרץ‬
+ׁ ָ ‫ְבּ ֵראִשׁית ָבּ ָרא ֱאֹלִהים ֵאת ַה‬
 Inline Greek (Ἐν ἀρχῇ), transliterated Greek (En archē), Hebrew (‫)בראשית‬, and transliterated
 Hebrew (bərēʾšı̂t ).
 

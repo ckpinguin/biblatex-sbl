@@ -3,7 +3,7 @@ SBL Style Using biblatex
 David Purton
 dcpurton@marshwiggle.net
 
-Version 0.8.2+ 2017-2017
+Version 0.9+ 2018-2018
 
 Contents
 1 Introduction
@@ -38,9 +38,13 @@ Entry Fields . . . . . . . .
 Type and Entry Options . .
 Reprints . . . . . . . . . .
 
-13
-17
+12
+16
 18
+
+5 Important Changes
+
+20
 
 Abbreviations
 
@@ -61,9 +65,10 @@ The style conforms to the second edition of the SBLHS.
 The style supports all examples given in the handbook (see biblatex-sbl-examples.pdf).
 Shorthand citations and a list of abbreviations containing journals, series, and shorthands
 are handled automatically. Repeated authors in the bibliography are replaced by a horizontal
-line. Ibidem is supported, but not enabled by default, as is indexing of names. Only note
-style citations, not Author-Date citations are supported. Primary sources can be cited in
-parentheses. biblatex-sbl is compatible with biblatex’s support for hyperref.
+line. Ibidem and idem is enabled by default. Indexing of names is supported, but not enabled
+by default. Only note style citations, not Author-Date citations are supported. Primary
+sources can be cited in parentheses. biblatex-sbl is compatible with biblatex’s support
+for hyperref.
 For anything not covered in this manual, please see the biblatex documentation. Bugs
 and feature requests can be submitted at https://github.com/dcpurton/biblatex-sbl/.
 Note: This package should be considered as beta software and its output carefully
@@ -71,9 +76,9 @@ checked when you use it.
 biblatex-sbl
 
 2 Requirements
-requires at least version 3.5 of biblatex and the xparse package. biber
-must be used. bibtex is not supported. For localization babel/polyglossia and csquotes
-are recommended.
+requires at least version 3.11 of biblatex and the xparse package. biber
+must be used. bibtex is not supported. For localization babel (not polyglossia) and
+csquotes are recommended.
 biblatex-sbl
 
 1
@@ -82,7 +87,7 @@ biblatex-sbl
 The following minimal example will set up biblatex-sbl to conform to the defaults of the
 SBLHS.
 \documentclass{article}
-\usepackage[style=sbl,backend=biber]{biblatex}
+\usepackage[style=sbl]{biblatex}
 \addbibresource{<bibfile.bib>}
 \begin{document}
 \printbiblist{abbreviations}
@@ -91,53 +96,28 @@ SBLHS.
 
 3.1 Localization
 By default biblatex-sbl uses American style punctuation and quotation marks. You can
-choose a different style by including the babel/polyglossia and csquotes packages in
-your document preamble. e.g.,
-\usepackage[german]{babel}
+choose a different style by including the babel and csquotes packages in your document
+preamble. polyglossia is not well supported by biblatex and its use is discouraged.
+\usepackage[ngerman]{babel}
 \usepackage{csquotes}
-\usepackage[style=sbl,backend=biber]{biblatex}
+\usepackage[style=sbl]{biblatex}
 
 Currently english (including variants such as british, australian, etc.), spanish, and
 german are supported.
-For Greek and especially Hebrew, you are probably better off with polyglossia and
-xelatex or lualatex. e.g.,
-\usepackage{fontspec}
-\usepackage{polyglossia}
-\usepackage[style=australian]{csquotes}
-\setdefaultlanguage[variant=australian]{english}
-\setotherlanguage[variant=ancient]{greek}
-\setotherlanguage{hebrew}
-\ifxetex
-\renewenvironment{hebrew}[1][]{%
-\par
-\raggedleft % add to right align paragraphs
-\begin{otherlanguage}[#1]{hebrew}}%
-{\end{otherlanguage}\par}
+For Greek and especially Hebrew, the set up is more complicated and you should use
+xelatex or lualatex. See sbl-paper.pdf for example Greek and Hebrew usage with babel.
+\usepackage[nil,bidi=default]{babel}
+\usepackage{csquotes}
+\babelprovide[import=en-US,main]{american}
+\babelprovide[import=he]{hebrew}
+\babelprovide[import=el]{polutonikogreek}
+\babelfont[american]{rm}[Ligatures=TeX]{Linux Libertine O}
+\babelfont[hebrew]{rm}[Ligatures=TeX,Contextuals=Alternate,Scale=1.2]{SBL BibLit}
+\babelfont[polutonikogreek]{rm}[Ligatures=TeX,Contextuals=Alternate]{SBL BibLit}
 
 2
 
-\else % luatex
-\let\luatexpardir\pardir % luabidi needs this
-\let\luatextextdir\textdir % luabidi needs this
-% text direction gets stuffed up without these workarounds
-\let\luatextextgreek\textgreek
-\let\luatextextenglish\textenglish
-\AtBeginDocument{%
-\renewcommand{\textgreek}[1]{%
-\bgroup\luatextextgreek{#1}\egroup}
-\renewcommand{\textenglish}[1]{%
-\bgroup\setLTR\luatextextenglish{#1}\egroup}}
-\fi
-% set up fonts
-\newfontfamily\greekfont{SBL BibLit}%
-[Script=Greek,Contextuals=Alternate]
-\newfontfamily\hebrewfont{SBL BibLit}%
-[Script=Hebrew,Contextuals=Alternate,Scale=1.2]
-\usepackage[style=sbl,backend=biber]{biblatex}
-% update language mapping (biblatex can't do it using polyglossia)
-\DeclareLanguageMapping{english}{sbl-english}
-
-3.2 Commands
+3.2 Commands
 The standard commands for biblatex-sbl generally follow those defined by biblatex.
 Included below are the most typical commands. For more commands and options, reference
 the biblatex manual.
@@ -157,10 +137,7 @@ To use only altpostnote surround the whole argument in parentheses. e.g.,
 \autocite[(III. 1-164)]{PGM:betz}
 
 1. PGM III. 1–164 (Betz).
-
-3
-
-\cite[hprenotei][(haltpostnotei)hpostnotei]{hkeyi}
+\cite[hprenotei][(haltpostnotei)hpostnotei]{hkeyi}
 
 works in the same way as \autocite except that the citation is placed directly into
 the text instead of in a footnote.
@@ -188,7 +165,10 @@ list of abbreviations if the hyperref package is loaded.
 
 These commands ignore the prenote and postnote fields, so can safely be used anywhere
 within a database entry.
-\printbiblist
+
+3
+
+\printbiblist
 
 This command prints a bibliography list. In biblatex-sbl all abbreviations (journals, series,
 and shorthands) can be printed using the following command:
@@ -205,9 +185,7 @@ defaults to the recommendations of the SBL, but it also supports many of
 the standard options from biblatex as well as a few custom ones outlined below.
 biblatex-sbl
 
-4
-
-accessdate=true, false
+accessdate=true, false
 
 default: false
 
@@ -232,7 +210,14 @@ e.g.,
 (2014): 509–17 (a note).
 The one exception to this is the @incommentary entry type which always
 sets citepages to omit (see below) when volume is defined.²
-permit
+1. See SBLHS §6.1.6, 84.
+2. See Student Supplement for the SBL Handbook of Style, Second Edition, compiled by Melanie Greer Nogalski
+et al., ed. Joel M. LeMon and Brennan W. Breed (Atlanta, GA: SBL Press, February 2015), §1.3.3.2, https :
+//www.sbl-site.org/assets/pdfs/pubs/SBLHSsupp2015-02.pdf.
+
+4
+
+permit
 
 The postnote is printed in parentheses after the pages field. e.g.,
 \autocite[245]{wildberger:1965}
@@ -255,14 +240,7 @@ the bibliography string thiscite. e.g.,
 
 1. David L. Petersen, “Hebrew Bible Textbooks: A Review Article,” CRBR
 1 (1988): 1–18 (esp. 1).
-1. See SBLHS §6.1.6, 84.
-2. See Student Supplement for the SBL Handbook of Style, Second Edition, compiled by Melanie Greer Nogalski
-et al., ed. Joel M. LeMon and Brennan W. Breed (Atlanta, GA: SBL Press, February 2015), §1.3.3.2, https :
-//www.sbl-site.org/assets/pdfs/pubs/SBLHSsupp2015-02.pdf.
-
-5
-
-If postnote is not a page range, then firstcite is not used and the behaviour
+If postnote is not a page range, then firstcite is not used and the behaviour
 matches citepages=sbl.
 dashed=true, false
 
@@ -292,14 +270,18 @@ Stendahl, Krister. “Biblical Theology, Contemporary.” Pages 418–32 in vol.
 of The Interpreter’s Dictionary of the Bible. Edited by George A. Buttrick.
 4 vols. New York: Abingdon, 1962.
 
-false
+3. Student Supplement for the SBLHS, 4–5.
+
+5
+
+false
 
 The bibliography entry is printed in a short form. e.g.,
 Stendahl, Krister. “Biblical Theology, Contemporary.” IDB 1:418–32.
 
 ibidtracker=true, false, context, strict, constrict
 
-default: false
+default: constrict
 
 This option controls the ibidem tracker. The possible choices are:
 true
@@ -323,11 +305,7 @@ references are suppressed. A reference is considered ambiguous if either the
 current citation (the one including the ibidem) or the previous citation (the
 one the ibidem refers to) consists of a list of references.
 
-3. Student Supplement for the SBLHS, 4–5.
-
-6
-
-constrict
+constrict
 
 This mode combines the features of context and strict. It also keeps track
 of footnote numbers and detects potentially ambiguous references in footnotes in a stricter way than the strict option. In addition to the conditions
@@ -345,7 +323,7 @@ prefer the wider interpretation of ibidem, set the package option ibidpage=true 
 ibidpage in the preamble. The default setting is ibidpage=false.
 idemtracker=true, false, context, strict, constrict
 
-default: false
+default: constrict
 
 This option controls the idem tracker. The possible choices are:
 true
@@ -367,7 +345,9 @@ This is an alias for true, provided only for consistency with the other trackers
 Since idem replacements do not get ambiguous in the same way as ibidem,
 the strict tracking mode does not apply to them.
 
-constrict
+6
+
+constrict
 
 This mode is similar to context with one additional condition: a reference
 in a footnote will only be considered as unambiguous if the current citation
@@ -375,7 +355,7 @@ and the previous citation are given in the same footnote.
 
 pagetracker=true, false
 
-default: false
+default: true
 
 This option controls whether ibidem and idem are used across page breaks or not.
 true
@@ -397,13 +377,11 @@ spread
 Enable the tracker in spread mode. In this mode, tracking works on a
 per-spread (double page) basis.
 
-7
+sblfootnotes=true, false
 
 spread
 
 if LaTeX is in
-
-sblfootnotes=true, false
 
 default: true
 
@@ -447,7 +425,9 @@ intro
 Print the full citation the first time the entry is cited followed by (henceforth
 cited as shorthand). Use the shorthand on subsequent citations.
 
-4 Database Guide
+7
+
+4 Database Guide
 4.1 Entry Types
 All standard entry types of biblatex are supported by biblatex-sbl. This section gives
 an overview of entry types that are most relevant, unique to, or treated in a custom way by
@@ -459,10 +439,7 @@ This is a custom type for biblatex-sbl. It is used for the special examples in S
 Unless options = {skipbib=false} is set explicitly, an @ancienttext entry will not appear
 in the bibliography. (Although, see ANRW entrysubtype below for an exception.) The
 related field is used to refer to the entry which should appear in the bibliography instead of
-
-8
-
-the @ancienttext entry. Options can be set on the related entry using the relatedoptions
+the @ancienttext entry. Options can be set on the related entry using the relatedoptions
 field.
 The entry pointed to by related along with the postnote is printed in parentheses after the
 altpostnote, editor, and translator fields if they are present. translator and editor
@@ -476,7 +453,10 @@ fields are omitted for subsequent citations. e.g.,
 Pritchard, James B., ed. Ancient Near Eastern Texts Relating to the Old Testament. 3rd ed.
 Princeton: Princeton University Press, 1969.
 If the entry contains options = {skipbib=false}, then the bibliography entry will be like
-@book. Any shorthand is also printed in the same way as a @book shorthand.
+Any shorthand is also printed in the same way as a @book shorthand.
+
+@book.
+
 The following values for the entrysubtype field are supported:
 ANRW
 
@@ -492,7 +472,10 @@ e.g.,
 
 1. Esarhaddon Chronicle, lines 3–4 (Albert Kirk Grayson, Assyrian and
 Babylonian Chronicles, TCS 5 [Locust Valley, NY: Augustin, 1975], 125).
-COS
+
+8
+
+COS
 
 Suppresses parentheses around COS and the postnote for subsequent citations. e.g.,
 \autocite[44]{greathymnaten}
@@ -510,9 +493,7 @@ upright shape font without quotation marks.
 An article in a journal or magazine. Also use this type for review articles (SBLHS §6.3.4)
 and electronic journal articles (SBLHS §6.3.10).
 
-9
-
-book A single-volume book with one or more authors where the authors share credit for the
+book A single-volume book with one or more authors where the authors share credit for the
 
 work as a whole.
 inbook A part of a book which forms a self-contained unit with its own title.
@@ -545,7 +526,10 @@ in the bibliography. The xref field is used to refer to the entry which should a
 bibliography instead of the @classictext entry.
 If present, the translator and series are printed in parentheses following the postnote.
 e.g.,
-\autocite[15.18-19]{tacitus:ann:jackson}
+
+9
+
+\autocite[15.18-19]{tacitus:ann:jackson}
 
 1. Tacitus, Ann. 15.18–19 (Jackson, LCL).
 \printbibliography
@@ -562,10 +546,7 @@ except that the title is set in italics instead of within quotation marks.
 @incollection
 
 The following values for the entrysubtype field are supported:
-
-10
-
-churchfather
+churchfather
 
 Entries using the churchfather entrysubtype print the entry pointed to
 by related within parentheses following the altpostnote. The postnote
@@ -600,7 +581,10 @@ mvcommentary A multi-volume commentary on a single book of the Bible by one or m
 
 multi-volume commentary on the whole Bible by multiple authors. Unlike @commentary,
 this behaves exactly the same as a @mvbook.
-incommentary A contribution to a commentary which forms a self-contained unit with a distinct author
+
+10
+
+incommentary A contribution to a commentary which forms a self-contained unit with a distinct author
 
 and title. This is typically a commentary on a book of the Bible appearing in a single or
 multi-volume commentary on the entire Bible.
@@ -617,9 +601,7 @@ mvlexicon
 
 A multi-volume lexicon or theological dictionary. This is similar to a @mvbook.
 
-11
-
-inlexicon An article in a lexicon or theological dictionary. This is a custom type for biblatex-sbl.
+inlexicon An article in a lexicon or theological dictionary. This is a custom type for biblatex-sbl.
 
 The required xref field must contain the entry name of a @lexicon or @mvlexicon. The
 entry does not appear in the bibliography. Instead the lexicon pointed to by
@@ -652,7 +634,10 @@ title of the periodical, it goes in the issuetitle field.
 This type could also be used to insert a journal into the list of abbreviations. In this case,
 just use title, shorttitle, and set options = {skipbib}.
 reference A single-volume encyclopaedia or dictionary. This is similar to a @book.
-mvreference
+
+11
+
+mvreference
 
 A multi-volume @reference. This is similar to a @mvbook.
 
@@ -668,10 +653,7 @@ Note that review articles are treated like articles and should use the @article 
 seminarpaper An SBL seminar paper. This is similar to an @incollection except that in is suppressed
 
 byfore the booktitle/maintitle. See §6.4.11 of biblatex-sbl-examples.pdf for an example.
-
-12
-
-series A multi-volume series. This is similar to a @mvbook except that an upright shaped font is
+series A multi-volume series. This is similar to a @mvbook except that an upright shaped font is
 
 used for the title field and the option field is set to {useauthor=false, useditor=false}
 by default.
@@ -708,7 +690,9 @@ field (date)
 The date a text edition published online with no print counterpart or an article in an online
 database is released. See §6.4.1 and §6.4.13 of biblatex-sbl-examples.pdf.
 
-eprintday
+12
+
+eprintday
 
 field (datepart)
 This field holds the day component of the eprintdate field.
@@ -724,10 +708,7 @@ This field holds the year component of the eprintdate field.
 maineditor list (name)
 
 The editor(s) of the maintitle.
-
-13
-
-maintranslator
+maintranslator
 
 list (name)
 The translator(s) of the maintitle.
@@ -763,7 +744,9 @@ field (literal)
 This field is used when a series is begun anew to distinguish between the old and new
 series. See SBLHS §6.2.24.
 
-shortbooktitle
+13
+
+shortbooktitle
 
 field (literal)
 The booktitle in abridged form.
@@ -778,10 +761,7 @@ is assumed to be short for the title and printed in italics, otherwise it is pri
 upright font. The shorthand is automatically inserted into the list of abbreviations.
 The separator between the shorthand and postnote depends on the content of the postnote.
 If the postnote contains a ‘.’, ‘:’, or ‘§’, then the separator is a space, otherwise it is a comma.
-
-14
-
-shortjournal field (literal)
+shortjournal field (literal)
 
 The journaltitle in abridged form. This is always printed instead of the journaltitle. The
 shortjournal and journaltitle is then automatically inserted into the list of abbreviations.
@@ -807,7 +787,10 @@ assist the author. If unspecified, the bibliography string with is used.
 witheditor list (name)
 
 The editor(s) who assist the editor.
-witheditortype field (literal)
+
+14
+
+witheditortype field (literal)
 
 The type of witheditor. This field will affect the string used to introduce the editor(s) who
 assist the editor. If unspecified, the bibliography string with is used.
@@ -822,12 +805,10 @@ Testament. Translated by Mark E. Biddle. 3 vols. Peabody, MA: Hendrickson, 1997.
 
 TLOT
 
+withtranslator
+
 Theological Lexicon of the Old Testament. Edited by Ernst Jenni, with assistance from Claus Westermann. Translated by Mark E. Biddle. 3 vols.
 Peabody, MA: Hendrickson, 1997
-
-15
-
-withtranslator
 
 list (name)
 The translator(s) who assist the translator.
@@ -856,7 +837,10 @@ This field is analogous to the witheditortype, but for the bookeditor.
 withbooktranslator list (name)
 
 The translator(s) who assist the booktranslator.
-withbooktranslatortype
+
+15
+
+withbooktranslatortype
 
 field (literal)
 This field is analogous to the withtranslatortype, but for the booktranslator.
@@ -875,10 +859,7 @@ The editor(s) who assist the maineditor.
 withmaineditortype field (literal)
 
 This field is analogous to the witheditortype, but for the maineditor.
-
-16
-
-withmaintranslator
+withmaintranslator
 
 list (name)
 The translator(s) who assist the maintranslator.
@@ -914,7 +895,10 @@ default: false
 This option controls what appears in the list of abbreviations for database entries containing
 both a shorthand and a shortseries. For entries not containing a shorthand just use the
 option skipbiblist. The possible options are:
-true
+
+16
+
+true
 
 Do not include the shortseries in the list of abbreviations.
 
@@ -944,20 +928,16 @@ citation. This does not affect other entry types.
 true
 
 Print the series.
-
-17
-
-\autocite[2.233-235]{josephus:ant:thackery}
+\autocite[2.233-235]{josephus:ant:thackery}
 
 1. Josephus, Ant. 2.233–235 (Thackeray, LCL).
 \printbibliography
 
 Josephus. Translated by Henry St. J. Thackeray et al. 10 vols. LCL. Cambridge:
 Harvard University Press, 1926–1965.
-Suppress printing the series.
-
 false
 
+Suppress printing the series.
 \autocite[10]{heraclitus:epistle1:worley}
 
 2. Heraclitus, Epistle 1, 10 (Worley).
@@ -985,7 +965,10 @@ default: true
 
 This option controls whether the volume is printed as part of the citation text or as part of
 the postnote.
-true
+
+17
+
+true
 
 Print the volume as part of the main citation information. e.g., “Vol. 1.”
 
@@ -1004,10 +987,7 @@ author = {Van Seters, John},
 title = {In Search of History: Histeriography in the Ancient
 World and the Origins of Biblical History},
 origlocation = {New Haven},
-
-18
-
-origpublisher = {Yale University Press},
+origpublisher = {Yale University Press},
 origdate = {1983},
 location = {Winona Lake, IN},
 publisher = {Eisenbrauns},
@@ -1032,7 +1012,10 @@ default being relatedstring = {\bibstring{reprint},}. e.g.,
 editor = {Sasson, Jack M.},
 title = {Civilizations of the Ancient Near East},
 volumes = {4},
-location = {New York},
+
+18
+
+location = {New York},
 publisher = {Scribner's Sons},
 year = {1995},
 related = {sasson:repr},
@@ -1045,9 +1028,7 @@ publisher = {Hendrickson},
 date = {2000}
 }
 
-19
-
-\autocite[1:40]{sasson:2000}
+\autocite[1:40]{sasson:2000}
 
 1. Jack M. Sasson, ed., Civilizations of the Ancient Near East, 4 vols. (New
 York: Scribner’s Sons, 1995; repr., 4 vols. in 2 [Peabody, MA: Hendrickson,
@@ -1073,7 +1054,10 @@ translator = {Black, J. Sutherland and Enzies, A.},
 preface = {Smith, W. Robertson},
 location = {Edinburgh},
 publisher = {Black},
-related = {wellhausen:1883},
+
+19
+
+related = {wellhausen:1883},
 relatedtype = {translationof},
 date = {1885}
 }
@@ -1087,9 +1071,7 @@ relatedtype = {reprintof},
 date = {1957}
 }
 
-20
-
-\autocite[20]{wellhausen:1957}
+\autocite[20]{wellhausen:1957}
 
 1. Julius Wellhausen, Prolegomena to the History of Ancient Israel (New
 York: Meridian Books, 1957), 20; repr. of Prolegomena to the History of Israel,
@@ -1103,7 +1085,27 @@ Meridian Books, 1957. Reprint of Prolegomena to the History of Israel. Translate
 Smith. Edinburgh: Black, 1885. Translation of Prolegomena zur Geschichte
 Israels. 2nd ed. Berlin: Reimer, 1883.
 
-Abbreviations
+5 Important Changes
+0.9
+
+2018-05-20
+• Support and require biblatex 3.11.
+• Use ibid and idem by default.
+•
+
+0.8.2
+
+polyglossia
+
+is no longer supported. You should use babel instead.
+
+2017-11-16
+
+• Support and require biblatex 3.8a
+
+20
+
+Abbreviations
 ABC
 
 Assyrian and Babylonian Chronicles. Albert Kirk Grayson. TCS 5. Locust Valley,
@@ -1163,9 +1165,7 @@ PGM
 
 Papyri Graecae Magicae: Die griechischen Zauberpapyri. Edited by Karl Preisendaz. 2nd ed. Stuttgart: Teubner, 1973–1974
 
-21
-
-RIMA
+RIMA
 
 The Royal Inscriptions of Mesopotamia, Assyrian Periods
 
@@ -1196,7 +1196,9 @@ TZ
 
 Theologische Zeitschrift
 
-References
+21
+
+References
 The Ante-Nicene Fathers. Edited by Alexander Roberts and James Donaldson. 10 vols. 1885–
 1887. Repr., Peabody, MA: Hendrickson, 1994.
 Augustine. The Letters of St. Augustin. In vol. 1 of The Nicene and Post-Nicene Fathers, Series 1.
@@ -1219,10 +1221,7 @@ Edition. Edited by Abraham J. Malherbe. SBS 12. Atlanta: Scholars Press, 1977.
 Irvine, Stuart A. “Idols [ktbwnm]: A note on Hosea 13:2a.” JBL 133 (2014): 509–17.
 Jenni, Ernst, ed., with assistance from Claus Westermann. Theological Lexicon of the Old
 Testament. Translated by Mark E. Biddle. 3 vols. Peabody, MA: Hendrickson, 1997.
-
-22
-
-Josephus. Translated by Henry St. J. Thackeray et al. 10 vols. LCL. Cambridge: Harvard
+Josephus. Translated by Henry St. J. Thackeray et al. 10 vols. LCL. Cambridge: Harvard
 University Press, 1926–1965.
 Leyerle, Blake. “John Chrysostom on the Gaze.” JECS 1 (1993): 159–74.
 Petersen, David L. “Hebrew Bible Textbooks: A Review Article.” CRBR 1 (1988): 1–18.
@@ -1232,7 +1231,10 @@ Robinson, James M., and Helmut Koester. Trajectories through Early Christianity.
 Sasson, Jack M., ed. Civilizations of the Ancient Near East. 4 vols. New York: Scribner’s Sons,
 1995. Repr., 4 vols. in 2. Peabody, MA: Hendrickson, 2000.
 Society of Biblical Literature Handbook of Style. 2nd ed. Atlanta, GA: SBL Press, 2014.
-Stendahl, Krister. “Biblical Theology, Contemporary.” IDB 1:418–32.
+
+22
+
+Stendahl, Krister. “Biblical Theology, Contemporary.” IDB 1:418–32.
 Student Supplement for the SBL Handbook of Style, Second Edition, compiled by Melanie
 Greer Nogalski, James D. Nogalski, Sophia G. Steibel, and Danny M. West. Edited by
 Joel M. LeMon and Brennan W. Breed. Atlanta, GA: SBL Press, February 2015. https:
@@ -1256,37 +1258,37 @@ Wildberger, Hans. “Das Abbild Gottes: Gen 1:26–30.” TZ 21 (1965): 245–59
 23
 
 Author Index
-Augustine, 11
+Augustine, 10
 
-Liefeld, Walter L., 12
+Liefeld, Walter L., 11
 
-Dahn, Karl, 12
+Dahn, Karl, 11
 
 Petersen, David L., 5
 
 Freedman, David Noel, 5
 
-Robinson, James M., 8
+Robinson, James M., 7
 
-Heraclitus, 18
+Heraclitus, 17
 
-Sasson, Jack M., 20
+Sasson, Jack M., 19
 
-Irvine, Stuart A., 5
+Irvine, Stuart A., 4
 
 Tacitus, 10
-Talbert, Charles H., 8
+Talbert, Charles H., 7
 
-Josephus, 4, 18
+Josephus, 3, 17
 
-Van Seters, John, 19
+Van Seters, John, 18
 
-Koester, Helmut, 8
+Koester, Helmut, 7
 
-Wellhausen, Julius, 21
+Wellhausen, Julius, 20
 Wildberger, Hans, 5
 
-Leyerle, Blake, 5
+Leyerle, Blake, 4
 
 24
 

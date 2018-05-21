@@ -3,12 +3,12 @@ David Purton
 This file tests the behaviour of the various options related to using ibidem and idem in
 Biblatex-SBL.
 
-Basic ibidem tracking
-Turn on ibidem using the ibidtracker option. By default ibid. is used across page
-breaks and ibidem is taking to mean ‘same author + same title’. See biblatex-sbl.pdf
-for a description of the options ibidtracker can take.
+Default ibidem tracking
+By default ibid. is not used across page breaks and ibidem is taken to mean ‘same author
++ same title’. See biblatex-sbl.pdf for a description of the options ibidtracker can
+take.
 Biblatex Output
-\usepackage[style=sbl,ibidtracker=constrict,backend=biber]{biblatex}
+\usepackage[style=sbl]{biblatex}
 \autocite[127]{talbert:1992}
 
 1. Charles H. Talbert, Reading John: A Literary and Theological Commentary on the
@@ -32,13 +32,13 @@ Fourth Gospel and the Johannine Epistles (New York: Crossroad, 1992), 127.
 
 \autocite[22]{talbert:1992}
 
-6. ibid., 22.
+6. Talbert, Reading John, 22.
 
-Tracking ibidem across pages
-Set the pagetracker option to true to ensure that the first citation on a page is never
+Not tracking ibidem across pages
+Set the pagetracker option to false to allow that the first citation on a page to be
 ibid.
 Biblatex Output
-\usepackage[style=sbl,ibidtracker=constrict,pagetracker,backend=biber]{biblatex}
+\usepackage[style=sbl,pagetracker=false]{biblatex}
 \autocite[53]{scott+etal:1993}
 
 7. Bernard Brandon Scott et al., Reading New Testament Greek (Peabody, MA:
@@ -52,13 +52,13 @@ Hendrickson, 1993), 53.
 
 \autocite[42]{scott+etal:1993}
 
-9. Scott et al., Reading New Testament Greek, 42.
+9. ibid., 42.
 
 Ibidem meaning ‘same author + same title + same page’
-Turn on the ibidpage option to indicate that ibidmen should mean ‘same author +
-same title + same page’.
+Turn on the ibidpage option to indicate that ibidem should mean ‘same author + same
+title + same page’.
 Biblatex Output
-\usepackage[style=sbl,ibidtracker=constrict,ibidpage,backend=biber]{biblatex}
+\usepackage[style=sbl,ibidpage]{biblatex}
 \autocite[28]{egger:1996}
 
 10. Wilhelm Egger, How to Read the New Testament: An Introduction to Linguistic
@@ -71,11 +71,11 @@ and Historical-Critical Methodology, trans. Peter Heinegg (Peabody, MA: Hendrick
 
 12. ibid., 291.
 
-Idem tracking
-Turn on idem using the idemtracker option. See biblatex-sbl.pdf for a description
-of the options idemtracker can take.
+Default idem tracking
+By default idem is used. Idem tracking is controlled using the idemtracker option. See
+biblatex-sbl.pdf for a description of the options idemtracker can take.
 Biblatex Output
-\usepackage[style=sbl,idemtracker=constrict,backend=biber]{biblatex}
+\usepackage[style=sbl]{biblatex}
 \autocites[35]{vanseters:1997}{vanseters:1995}
 
 13. John Van Seters, In Search of History: Histeriography in the Ancient World
