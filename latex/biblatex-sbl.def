@@ -2536,6 +2536,7 @@
 \csundef{abx@macro@related:origpubas}
 \csundef{abx@macro@related:origpubin}
 \csundef{abx@macro@related:reprintfrom}
+\csundef{begrelateddelimmultivolume}
 
 \newbibmacro*{setunitrelateddelim}{%
   \ifcsundef{relateddelim\strfield{relatedtype}}
@@ -2659,6 +2660,7 @@
 
 \newbibmacro*{related+volume+part+postnote}{%
   \renewbibmacro*{endrelatedloop}{%
+    \boolfalse{bbx@inset}%
     \iffieldundef{volume}
       {\iftoggle{cbx:volprinted}
          {\usebibmacro{volume+part}%

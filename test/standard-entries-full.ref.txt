@@ -301,7 +301,7 @@ http://www.example.com.
 Institution, 2 January 2016, Pubstate. Addendum. ISRN: 0123-4567. EprintType. Eprint (EprintClass).
 Accessed 3 February 2016. doi:10.1000/182. http://www.example.com.
 
-. “Title: SubTitle.” TitleAddon [in French]. Pages 1–5. Note. Type, Location: Institution, 2 January
+Author. “Title: SubTitle.” TitleAddon [in French]. Pages 1–5. Note. Type, Location: Institution, 2 January
 2016, Pubstate. Addendum. ISBN: 0321173856. EprintType. Eprint (EprintClass). Accessed 3 February
 2016. doi:10.1000/182. http://www.example.com.
 . “Title: SubTitle.” TitleAddon [in French]. Note. Location: HowPublished, 2 January 2016, Pubstate.
@@ -364,7 +364,7 @@ MainSubtitle. MaintitleAddon. 5 vols. Series 6. Note. Location: Organization, Pu
 Pubstate. Addendum. ISBN: 0321173856. EprintType. Eprint (EprintClass). Accessed 3 February 2016.
 doi:10.1000/182. http://www.example.com.
 
-. “Title: SubTitle.” TitleAddon [in French]. Translated from the German by Translator. With a
+Author. “Title: SubTitle.” TitleAddon [in French]. Translated from the German by Translator. With a
 commentary by Commentator. With annotations by Annotator. With an introduction by Introducer. With
 a foreword by Foreword. With an afterword by Afterword. Note. MainTitle 2.3:1–5. Addendum. ISBN:
 0321173856. EprintType. Eprint (EprintClass). Accessed 3 February 2016. doi:10.1000/182.
