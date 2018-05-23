@@ -112,8 +112,10 @@ xelatex or lualatex. See sbl-paper.pdf for example Greek and Hebrew usage with b
 \babelprovide[import=he]{hebrew}
 \babelprovide[import=el]{polutonikogreek}
 \babelfont[american]{rm}[Ligatures=TeX]{Linux Libertine O}
-\babelfont[hebrew]{rm}[Ligatures=TeX,Contextuals=Alternate,Scale=1.2]{SBL BibLit}
-\babelfont[polutonikogreek]{rm}[Ligatures=TeX,Contextuals=Alternate]{SBL BibLit}
+\babelfont[hebrew]{rm}%
+[Ligatures=TeX,Contextuals=Alternate]{SBL BibLit}
+\babelfont[polutonikogreek]{rm}%
+[Ligatures=TeX,Contextuals=Alternate]{SBL BibLit}
 
 2
 
@@ -175,7 +177,7 @@ and shorthands) can be printed using the following command:
 \printbiblist[...]{abbreviations}
 
 See the biblatex manual for an explanation of available optional arguments.
-\printbiblioraphy
+\printbibliography
 
 Inserts the bibliography. See the biblatex manual for an explanation of available optional
 arguments.
